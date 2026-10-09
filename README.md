@@ -23,7 +23,7 @@ The page includes navigation, hero, statistics, quiz, all four service tiers, ab
 - The tax calculator validates revenue/profit, supports companies, sole traders and equal-share partnerships, and announces results/errors. It calculates locally without sending financial inputs elsewhere.
 - Native dialogs support Escape, focus containment and focus restoration. The mobile navigation supports Escape. Skip navigation, semantic headings, form labels, image alternatives, visible focus and reduced-motion preferences are included.
 
-The exact original colour palette includes several insufficient text-contrast combinations. An **Increase text contrast** button in the footer provides a higher-contrast version; it also respects `prefers-contrast: more` and remembers the choice on the current device. The default palette remains the original design. See [validation](docs/validation.md) for audit results and limits.
+Footer text contrast is corrected directly: muted column headings and introduction copy meet 4.5:1 against the original white background. There is no extra footer contrast control or stored device preference. CSS respects the operating system's `prefers-contrast: more` preference. Contrast limitations in other original source colours remain documented in [validation](docs/validation.md).
 
 Figma does not supply external link or booking destinations. Verified Oxen service, story, podcast, privacy and social destinations are used where available. News links point to the local client-results section. The Twitter-labelled control opens verified social alternatives; the Spotify-labelled link opens the official podcast page. Cookies Policy explains this implementation's local behavior in a dialog.
 

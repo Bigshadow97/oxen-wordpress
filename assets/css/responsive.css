@@ -159,7 +159,6 @@
   .contact-section .layer-71 { font-size: 13px; }
   .site-footer-section { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); background: #fff; padding: 40px 32px; gap: 32px; }
   .site-footer-section .responsive-group { gap: 14px; }
-  .contrast-toggle { position: static; grid-column: 1/-1; justify-self: start; order: 8; }
   .footer-address { order: 0; }.footer-contact { order: 1; }.footer-services { order: 2; }.footer-other { order: 3; }
   .site-footer-section .layer-41 { order: 4 !important; }.footer-legal { order: 5; }.footer-social { order: 6; }.footer-badge { order: 7; }
   .site-footer-section .copy-layer { font-size: 14px; }

@@ -21,7 +21,7 @@
 <dialog id="policy-dialog" aria-labelledby="policy-dialog-title">
   <button type="button" class="dialog-close" data-close-dialog aria-label="Close cookie information">×</button>
   <h2 id="policy-dialog-title">Cookies Policy</h2>
-  <p>This homepage does not set analytics or advertising cookies. Images and fonts are hosted locally. WordPress may use login and administration cookies when you sign in. The text contrast preference is stored on your device.</p>
+  <p>This homepage does not set analytics or advertising cookies. Images and fonts are hosted locally. WordPress may use login and administration cookies when you sign in.</p>
 </dialog>
 <dialog id="social-dialog" aria-labelledby="social-dialog-title">
   <button type="button" class="dialog-close" data-close-dialog aria-label="Close social links">×</button>

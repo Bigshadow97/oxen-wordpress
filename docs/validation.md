@@ -25,7 +25,7 @@ Changed files: `template-parts/home/quiz.php`, `assets/css/quiz.css`, `assets/js
 | SVG divider length in quiz, calculator and footer | Fixed together: scale the original rotated SVG's inner height to its fluid container. All eight divider bounds pass. |
 | Generator overwriting verified corrections | Protected by the existing Git checkpoint, verified backups and non-writing default. No live regeneration was needed for these changes. |
 | Reference fidelity and responsive regression | Passed one complete regression after the batched fixes; screenshots compared at all six mandatory widths. Only the sandbox-denied WordPress status check was retried. |
-| Original source text contrast | Remains: 21 source-colour nodes fail automated contrast at 1440px. The optional higher-contrast mode has zero automated violations at 1440/2560/390px. |
+| Original source text contrast | The historical full-page audit flagged 21 source-colour nodes at 1440px. The focused footer correction now passes default text contrast at 1440/1920/768/390px; other source-colour limitations remain. Native `prefers-contrast: more` support is retained in CSS. |
 | Font availability and redistribution | All eight rendered original faces load locally. Reviewers must install Satoshi separately under its licence. The unavailable non-rendering wrapper font is documented below; no rendered font was substituted. |
 | LocalWP hostname and Imagick | Localhost works and the browser-only hostname mapping passes. System-wide hostname resolution and the unused Imagick startup warning remain environment limitations. |
 | Additional source states and booking backend | Only the first quiz state and one testimonial were supplied. Additional behavior is labelled/documented; booking provides the original phone/email options because no backend was supplied. |
@@ -106,12 +106,14 @@ The 9 October preservation check passed browser interaction, font/image, error, 
 
 axe-core 4.10.3 audited WCAG 2 A/AA, WCAG 2.1 A/AA and best-practice rules:
 
-- **Original desktop palette:** 21 nodes flagged for text contrast; no other automated violations. These colours are present in the source design, including section labels, footer labels and the white tax-introduction text on the pale background.
-- **Higher-contrast mode at 1440px:** zero automated violations.
-- **Higher-contrast mode at 2560px:** zero automated violations.
-- **Higher-contrast mode at 390px:** zero automated violations.
+- **Historical original desktop palette audit:** 21 nodes flagged for text contrast; no other automated violations. This predates the direct footer text-colour corrections below.
+- **Historical higher-contrast audit at 1440px:** zero automated violations.
+- **Historical higher-contrast audit at 2560px:** zero automated violations.
+- **Historical higher-contrast audit at 390px:** zero automated violations.
 
-The footer contrast toggle is keyboard accessible, respects the operating-system contrast preference and preserves the default Figma colours. Native dialogs and the mobile menu were checked for Escape behavior and focus restoration. Automated auditing does not establish full WCAG conformance or replace a screen-reader usability review. The original colour version does not meet all text-contrast requirements.
+The footer toggle and its JavaScript, event handlers, device-storage preference and dedicated CSS have been removed. Operating-system contrast preferences are handled directly by CSS. The default footer now uses muted blue `#62759f` (4.60:1) for its four column headings and grey `#727272` (4.81:1) for introduction copy on white. Other original source-colour limitations remain outside this focused footer pass.
+
+The footer-only contrast audit passes at 1440px, 1920px, 768px and 390px. Text, font metrics, content coordinates, column alignment and desktop footer height match the pre-change baseline; removing the button eliminates the extra responsive grid row and its gap. Cookies Policy and social-dialog keyboard activation, Escape and focus restoration pass. A stale saved contrast value no longer changes the page. Native system contrast support passes the mobile footer contrast check. PHP/JavaScript syntax and browser-error checks pass. The full-site regression suite was not rerun for this component fix; its assertions now use native contrast preference emulation and check the control is absent.
 
 ## Environment and source limitations
 

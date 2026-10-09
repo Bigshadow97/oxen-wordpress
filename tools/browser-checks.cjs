@@ -13,7 +13,7 @@ let browser;
   const folder = path.join(__dirname, 'screenshots');
   fs.mkdirSync(folder, { recursive: true });
   browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--host-resolver-rules=MAP oxen-development.local 127.0.0.1', '--no-proxy-server'] });
-  const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, reducedMotion: 'reduce' });
+  const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, reducedMotion: 'reduce', contrast: 'no-preference' });
   const page = await context.newPage();
   const errors = [];
   const layouts = [];
@@ -23,6 +23,7 @@ let browser;
       return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,sections:[...document.querySelectorAll('.home-section')].map(n=>({id:n.id,...bounds(n)})),cards:[...document.querySelectorAll('.service-card')].map(n=>({id:n.id,...bounds(n)})),portrait:bounds(document.querySelector('.layer-13')),controls:[...document.querySelectorAll('.service-card .action-link,.calculator-form .tax-control,.calculator-form .calculate-button,.hero-proof > .design-layer')].map(n=>({class:n.className,...bounds(n)})),statistics:[...document.querySelectorAll('.stat-card')].map(bounds)};
     });
     assert.equal(layout.scrollWidth,width,'Horizontal overflow at '+width);
+    assert.equal(await page.locator('[data-contrast-toggle],.contrast-toggle').count(),0,'No non-Figma footer contrast control');
     for (const section of layout.sections) {
       assert.ok(Math.abs(section.x)<1 && Math.abs(section.right-width)<1,'Section must span viewport: '+section.id+' at '+width);
     }
@@ -178,20 +179,20 @@ let browser;
   assert.deepEqual(await page.evaluate(() => [...document.fonts].filter(f=>f.status !== 'loaded').map(f=>f.family)),[]);
   if (process.argv.includes('--axe')) {
     await page.addScriptTag({path:path.join(__dirname,'axe.min.js')});
-    for (const mode of ['original','high-contrast']) {
-      if (mode==='high-contrast') {
-        await page.locator('[data-contrast-toggle]').click();
-        await page.waitForFunction(()=>document.documentElement.classList.contains('high-contrast'));
+    for (const mode of ['default','system-contrast']) {
+      if (mode==='system-contrast') {
+        await page.emulateMedia({contrast:'more'});
         await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
       }
       const audit=await page.evaluate(async () => axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice']}}));
       fs.writeFileSync(path.join(folder,'accessibility-'+mode+'.json'),JSON.stringify(audit,null,2));
       console.log('Accessibility '+mode+':',JSON.stringify(audit.violations.map(v=>({id:v.id,impact:v.impact,count:v.nodes.length,targets:v.nodes.map(n=>n.target)}))));
-      if (mode==='high-contrast') assert.deepEqual(audit.violations.map(v=>v.id),[]);
+      const footerAudit=await page.evaluate(async()=>axe.run(document.querySelector('#site-footer'),{runOnly:{type:'rule',values:['color-contrast']}}));
+      assert.deepEqual(footerAudit.violations,[],'Footer contrast is accessible in '+mode+' without a toggle');
+      if (mode==='system-contrast') assert.deepEqual(audit.violations.map(v=>v.id),[]);
       else assert.deepEqual(audit.violations.filter(v=>v.id !== 'color-contrast').map(v=>v.id),[]);
     }
-    await page.locator('[data-contrast-toggle]').click();
-    await page.evaluate(()=>localStorage.removeItem('oxen-contrast'));
+    await page.emulateMedia({contrast:'no-preference'});
   }
   await page.locator('[data-open-contact]').first().click();
   assert.equal(await page.locator('#contact-dialog').evaluate(n=>n.open),true);
@@ -263,12 +264,13 @@ let browser;
     if ([1920,768,390].includes(width)) await checkPartnerMotion();
     if (width>1440) {
       if (width===2560 && process.argv.includes('--axe')) {
-        await page.locator('[data-contrast-toggle]').click();
+        await page.emulateMedia({contrast:'more'});
+        await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
         const audit=await page.evaluate(async()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice']}}));
-        fs.writeFileSync(path.join(folder,'accessibility-wide-high-contrast.json'),JSON.stringify(audit,null,2));
-        console.log('Accessibility wide high contrast:',JSON.stringify(audit.violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)}))));
+        fs.writeFileSync(path.join(folder,'accessibility-wide-system-contrast.json'),JSON.stringify(audit,null,2));
+        console.log('Accessibility wide system contrast:',JSON.stringify(audit.violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)}))));
         assert.deepEqual(audit.violations.map(v=>v.id),[]);
-        await page.locator('[data-contrast-toggle]').click();
+        await page.emulateMedia({contrast:'no-preference'});
       }
       await page.locator('[data-preview-plan="0"]').first().click();
       assert.equal(await page.locator('#plan-dialog').evaluate(n=>n.open),true);
@@ -299,13 +301,15 @@ let browser;
       assert.equal(await page.locator('.menu-toggle').evaluate(n=>n===document.activeElement),true);
     }
     if (width === 390 && process.argv.includes('--axe')) {
-      await page.locator('[data-contrast-toggle]').click();
-      await page.waitForFunction(()=>document.documentElement.classList.contains('high-contrast'));
+      const footerAudit=await page.evaluate(async()=>axe.run(document.querySelector('#site-footer'),{runOnly:{type:'rule',values:['color-contrast']}}));
+      assert.deepEqual(footerAudit.violations,[],'Default mobile footer contrast');
+      await page.emulateMedia({contrast:'more'});
+      await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
       const audit = await page.evaluate(async () => axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice']}}));
-      fs.writeFileSync(path.join(folder,'accessibility-mobile-high-contrast.json'),JSON.stringify(audit,null,2));
-      console.log('Accessibility mobile high contrast:',JSON.stringify(audit.violations.map(v=>({id:v.id,count:v.nodes.length,targets:v.nodes.map(n=>n.target)}))));
+      fs.writeFileSync(path.join(folder,'accessibility-mobile-system-contrast.json'),JSON.stringify(audit,null,2));
+      console.log('Accessibility mobile system contrast:',JSON.stringify(audit.violations.map(v=>({id:v.id,count:v.nodes.length,targets:v.nodes.map(n=>n.target)}))));
       assert.deepEqual(audit.violations.map(v=>v.id),[]);
-      await page.locator('[data-contrast-toggle]').click();
+      await page.emulateMedia({contrast:'no-preference'});
     }
   }
   const broken = await page.locator('img').evaluateAll(images => images.filter(image => !image.complete || image.naturalWidth === 0).map(image => image.src));

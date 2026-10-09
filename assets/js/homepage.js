@@ -46,22 +46,6 @@
     openDialog($('#case-dialog'), button);
   }));
 
-  const contrastButton = $('[data-contrast-toggle]');
-  function setContrast(enabled) {
-    document.documentElement.classList.toggle('high-contrast', enabled);
-    contrastButton?.setAttribute('aria-pressed', String(enabled));
-    if (contrastButton) contrastButton.textContent = enabled ? 'Use original colours' : 'Increase text contrast';
-  }
-  const contrastPreference = window.matchMedia('(prefers-contrast: more)');
-  let savedContrast = null;
-  try { savedContrast = localStorage.getItem('oxen-contrast'); } catch {}
-  setContrast(savedContrast === null ? contrastPreference.matches : savedContrast === 'true');
-  contrastPreference.addEventListener('change', event => { if (savedContrast === null) setContrast(event.matches); });
-  contrastButton?.addEventListener('click', () => {
-    const enabled = !document.documentElement.classList.contains('high-contrast');
-    setContrast(enabled); savedContrast = String(enabled);
-    try { localStorage.setItem('oxen-contrast', savedContrast); } catch {}
-  });
   $$('[data-preview-plan]').forEach(button => button.addEventListener('click', () => {
     const plan = plans[Number(button.dataset.previewPlan)];
     $('#plan-dialog-title').textContent = plan.title;

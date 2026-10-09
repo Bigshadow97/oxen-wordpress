@@ -74,5 +74,4 @@
         </a></div>
 <div class="responsive-group footer-badge"><div data-node-id="1:74" class="design-layer layer-74 art-layer" aria-hidden="true"><div class="art-860"><div class="art-861"></div></div></div>
 <div data-node-id="1:75" class="design-layer layer-75 art-layer" aria-hidden="true"><div class="art-863"><img alt="" src="<?php echo oxen_asset( 'image16.png' ); ?>" decoding="async" class="art-864"></div></div></div>
-<button class="contrast-toggle" type="button" data-contrast-toggle aria-pressed="false">Increase text contrast</button>
 </footer>

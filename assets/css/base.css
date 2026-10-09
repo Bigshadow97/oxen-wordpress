@@ -67,23 +67,26 @@ dialog ul { padding-left: 22px; line-height: 1.7; }
 .comparison-table th,.comparison-table td { padding: 16px; text-align: left; border-bottom: 1px solid #bac7f9; vertical-align: top; }
 .comparison-table th { font-weight: 700; }
 .about-extra { display: none; }
-.contrast-toggle { position: absolute; left: 480px; bottom: 30px; z-index: 999; min-height: 44px; padding: 8px 16px; border: 1px solid var(--ink); background: white; color: var(--ink); font-size: 13px; }
-.high-contrast .copy-layer,.high-contrast .copy-layer * { color: #18265d !important; }
-.high-contrast :is(.statistics-section,.calculator-section,.contact-section,.service-advisory,.service-cfo,.process-final) .copy-layer,
-.high-contrast :is(.statistics-section,.calculator-section,.contact-section,.service-advisory,.service-cfo,.process-final) .copy-layer * { color: white !important; }
-.high-contrast :is(.calculator-form,.calculator-result) .copy-layer,.high-contrast :is(.calculator-form,.calculator-result) .copy-layer * { color: #18265d !important; }
-.high-contrast .action-link .copy-layer,.high-contrast .action-link .copy-layer * { color: white !important; }
-.high-contrast :is(.layer-610,.layer-617) .copy-layer,.high-contrast :is(.layer-610,.layer-617) .copy-layer * { color: #18265d !important; }
-.high-contrast .hero-copy .layer-183 .copy-layer { color: #18265d !important; }
-.high-contrast .service-card :is(.layer-158,.layer-161,.layer-588,.layer-592) { background: #18265d; color: white !important; }
-.high-contrast .quiz-answer:not(.is-selected) .copy-layer { color: #18265d !important; }
-.high-contrast .quiz-answer.is-selected .copy-layer { color: white !important; }
-.high-contrast .quiz-controls :is(a,button) { color: #18265d; }
-.high-contrast .tax-intro-section .layer-410 { background: #18265d; }
-.high-contrast .tax-intro-section .layer-410,.high-contrast .tax-intro-section .layer-410 * { color: white !important; }
-.high-contrast .home-section :is(button,a.action-link,input,select) { outline: 1px solid currentColor; outline-offset: 2px; }
-.high-contrast :focus-visible { outline: 3px solid #a96500 !important; outline-offset: 5px !important; }
-@media (min-width: 1440px) {
-  .high-contrast .quiz-copy :is(.layer-365,.layer-370,.layer-371) { color: white !important; }
+/* Native contrast preferences remain supported without custom controls,
+ * JavaScript, device storage or a second user-selected colour mode. */
+@media (prefers-contrast: more) {
+  .copy-layer,.copy-layer * { color: #18265d !important; }
+  :is(.statistics-section,.calculator-section,.contact-section,.service-advisory,.service-cfo,.process-final) .copy-layer,
+  :is(.statistics-section,.calculator-section,.contact-section,.service-advisory,.service-cfo,.process-final) .copy-layer * { color: white !important; }
+  :is(.calculator-form,.calculator-result) .copy-layer,:is(.calculator-form,.calculator-result) .copy-layer * { color: #18265d !important; }
+  .action-link .copy-layer,.action-link .copy-layer * { color: white !important; }
+  :is(.layer-610,.layer-617) .copy-layer,:is(.layer-610,.layer-617) .copy-layer * { color: #18265d !important; }
+  .hero-copy .layer-183 .copy-layer { color: #18265d !important; }
+  .service-card :is(.layer-158,.layer-161,.layer-588,.layer-592) { background: #18265d; color: white !important; }
+  .quiz-answer:not(.is-selected) .copy-layer { color: #18265d !important; }
+  .quiz-answer.is-selected .copy-layer { color: white !important; }
+  .quiz-controls :is(a,button) { color: #18265d; }
+  .tax-intro-section .layer-410 { background: #18265d; }
+  .tax-intro-section .layer-410,.tax-intro-section .layer-410 * { color: white !important; }
+  .home-section :is(button,a.action-link,input,select) { outline: 1px solid currentColor; outline-offset: 2px; }
+  :focus-visible { outline: 3px solid #a96500 !important; outline-offset: 5px !important; }
+  @media (min-width: 1440px) {
+    .quiz-copy :is(.layer-365,.layer-370,.layer-371) { color: white !important; }
+  }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *,*::before,*::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }

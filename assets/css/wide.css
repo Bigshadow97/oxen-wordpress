@@ -8,6 +8,10 @@
    * its fractional edge by 1px. Controls and the horizontal SVG stay put. */
   .calculator-section .layer-79 { width: calc(575.048px + 1px); }
 }
+/* Readable muted footer copy on the original white background: 4.60:1 and
+ * 4.81:1. Typography, reference coordinates and responsive columns stay put. */
+.site-footer-section :is(.layer-35,.layer-36,.layer-37,.layer-38) { color: #62759f; }
+.site-footer-section .layer-41 { color: #727272; }
 .services-section > .comparison-cta {
   display: inline-flex; align-items: center; gap: 4.789px;
   width: 227.789px !important; max-width: 100%; min-height: 31.29px;
@@ -192,5 +196,4 @@
   .site-footer-section .layer-32 { width: 100%; margin-left: 0; }
   .site-footer-section :is(.layer-33,.layer-34) { width: 96.111%; }
   .site-footer-section .layer-41 { max-width: 74ch; }
-  .contrast-toggle { left: 33.333%; }
 }

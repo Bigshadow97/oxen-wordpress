@@ -38,8 +38,6 @@
     event.preventDefault();
     openDialog($('#contact-dialog'), button);
   }));
-  $$('[data-open-policy]').forEach(button => button.addEventListener('click', () => openDialog($('#policy-dialog'), button)));
-  $$('[data-open-social]').forEach(button => button.addEventListener('click', () => openDialog($('#social-dialog'), button)));
   $$('[data-open-case-study]').forEach(button => button.addEventListener('click', () => {
     $('#case-dialog-title').textContent = text('.layer-454');
     $('#case-dialog-description').textContent = text('.layer-456');

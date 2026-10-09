@@ -115,6 +115,14 @@ The footer toggle and its JavaScript, event handlers, device-storage preference 
 
 The footer-only contrast audit passes at 1440px, 1920px, 768px and 390px. Text, font metrics, content coordinates, column alignment and desktop footer height match the pre-change baseline; removing the button eliminates the extra responsive grid row and its gap. Cookies Policy and social-dialog keyboard activation, Escape and focus restoration pass. A stale saved contrast value no longer changes the page. Native system contrast support passes the mobile footer contrast check. PHP/JavaScript syntax and browser-error checks pass. The full-site regression suite was not rerun for this component fix; its assertions now use native contrast preference emulation and check the control is absent.
 
+## Homepage footer removal — 10 October
+
+Per the updated requirement, `front-page.php` no longer renders the homepage footer. `template-parts/home/site-footer.php` and its exclusive CSS, cookie/social dialogs and JavaScript handlers have been removed. `footer.php` is unchanged: it still calls `wp_footer()` and closes `body` and `html`. The page ends immediately after the Contact CTA; no footer wrapper, reserved height or white space remains. Earlier footer validation entries describe the previous implementation.
+
+Checkpoint: `checkpoint/remove-home-footer-ad141ec`. `tools/footer-removal-checks.cjs` passed at **1440, 1920 and 390px**, checking absent footer HTML, document height ending at Contact CTA, full-width layout, loaded original contact assets, WordPress footer-script output and booking keyboard activation/Escape/focus restoration. Contact content geometry and typography match the pre-removal evidence, and screenshot comparisons have **zero changed pixels** in the retained Contact CTA region at all three widths. Page-end screenshots and results are in ignored `tools/screenshots/footer-removal/`.
+
+LocalWP PHP **8.2.29** lint passed for `front-page.php`, `footer.php` and `dialogs.php`. JavaScript syntax, browser errors and `git diff --check` passed. Consolidated browser assertions now expect the footer to be absent; only the focused removal check was run. Contact files, original Figma data/assets and the homepage generator were untouched.
+
 ## Environment and source limitations
 
 ### Contact CTA focused correction — 10 October

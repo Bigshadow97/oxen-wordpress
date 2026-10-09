@@ -18,19 +18,6 @@
   <h2 id="case-dialog-title"></h2><p id="case-dialog-description"></p>
   <a class="dialog-action" href="#contact" data-close-dialog>Talk to Oxen</a>
 </dialog>
-<dialog id="policy-dialog" aria-labelledby="policy-dialog-title">
-  <button type="button" class="dialog-close" data-close-dialog aria-label="Close cookie information">×</button>
-  <h2 id="policy-dialog-title">Cookies Policy</h2>
-  <p>This homepage does not set analytics or advertising cookies. Images and fonts are hosted locally. WordPress may use login and administration cookies when you sign in.</p>
-</dialog>
-<dialog id="social-dialog" aria-labelledby="social-dialog-title">
-  <button type="button" class="dialog-close" data-close-dialog aria-label="Close social links">×</button>
-  <h2 id="social-dialog-title">Connect with Oxen</h2>
-  <p>Find Oxen on these channels.</p>
-  <a class="dialog-action" href="https://www.linkedin.com/company/oxenaccounting/">LinkedIn</a>
-  <a class="dialog-action" href="https://www.instagram.com/oxenaccounting/">Instagram</a>
-  <a class="dialog-action" href="https://www.youtube.com/@OxenAccounting">YouTube</a>
-</dialog>
 <dialog id="comparison-dialog" aria-labelledby="comparison-title">
 	<button class="dialog-close" type="button" data-close-dialog aria-label="Close service comparison">×</button>
 	<h2 id="comparison-title">Compare all four side-by-side</h2>

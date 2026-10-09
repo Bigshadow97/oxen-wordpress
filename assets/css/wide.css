@@ -8,10 +8,6 @@
    * its fractional edge by 1px. Controls and the horizontal SVG stay put. */
   .calculator-section .layer-79 { width: calc(575.048px + 1px); }
 }
-/* Readable muted footer copy on the original white background: 4.60:1 and
- * 4.81:1. Typography, reference coordinates and responsive columns stay put. */
-.site-footer-section :is(.layer-35,.layer-36,.layer-37,.layer-38) { color: #62759f; }
-.site-footer-section .layer-41 { color: #727272; }
 .services-section > .comparison-cta {
   display: inline-flex; align-items: center; gap: 4.789px;
   width: 227.789px !important; max-width: 100%; min-height: 31.29px;
@@ -141,8 +137,7 @@
   .quiz-section :is(.layer-358,.layer-359,.layer-360,.layer-361) { width: 37.351319%; --divider-length: 37.351319vw; }
   .quiz-widget .layer-334 { --divider-length: 39.375vw; }
   .calculator-section .layer-115 { --divider-length: 33.333333vw; }
-  .site-footer-section :is(.layer-33,.layer-34) { --divider-length: 96.111vw; }
-  :is(.quiz-section,.calculator-section,.site-footer-section) :is(.layer-358,.layer-359,.layer-360,.layer-361,.layer-334,.layer-115,.layer-33,.layer-34) > div > div { width: 0; height: var(--divider-length); }
+  :is(.quiz-section,.calculator-section) :is(.layer-358,.layer-359,.layer-360,.layer-361,.layer-334,.layer-115) > div > div { width: 0; height: var(--divider-length); }
   .about-details .layer-532 { visibility: hidden; }
   .about-section :is(.layer-525,.layer-530,.layer-531,.layer-544) { width: 40.286%; margin-left: 50.497222%; }
   .about-team > .art-layer { height: 62px; }
@@ -192,8 +187,4 @@
   .contact-section .layer-67 { margin-left: calc(50% + 10px); }
   .contact-section :is(.layer-64,.layer-67) { width: 220px; }
 
-  .site-footer-section { background: white; }
-  .site-footer-section .layer-32 { width: 100%; margin-left: 0; }
-  .site-footer-section :is(.layer-33,.layer-34) { width: 96.111%; }
-  .site-footer-section .layer-41 { max-width: 74ch; }
 }

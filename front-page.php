@@ -12,6 +12,5 @@ foreach ( array( 'hero', 'statistics', 'quiz', 'services', 'about', 'process', '
 ?>
 </main>
 <?php
-get_template_part( 'template-parts/home/site-footer' );
 get_template_part( 'template-parts/home/dialogs' );
 get_footer();

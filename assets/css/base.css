@@ -21,7 +21,6 @@ button:disabled { cursor: default; }
 .desktop-navigation { display: contents; }
 .navigation-section { z-index: 10; }
 .statistics-section,.calculator-section,.contact-section { background: var(--ink); }
-.site-footer-section { background: var(--ink); }
 .text-button { padding: 0; border: 0; background: none; }
 .text-link,.text-button { position: relative; }
 .text-link:hover,.text-button:hover { text-decoration: underline; text-underline-offset: 4px; }

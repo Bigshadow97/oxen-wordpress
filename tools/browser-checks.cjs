@@ -23,6 +23,9 @@ let browser;
       return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,sections:[...document.querySelectorAll('.home-section')].map(n=>({id:n.id,...bounds(n)})),cards:[...document.querySelectorAll('.service-card')].map(n=>({id:n.id,...bounds(n)})),portrait:bounds(document.querySelector('.layer-13')),controls:[...document.querySelectorAll('.service-card .action-link,.calculator-form .tax-control,.calculator-form .calculate-button,.hero-proof > .design-layer')].map(n=>({class:n.className,...bounds(n)})),statistics:[...document.querySelectorAll('.stat-card')].map(bounds)};
     });
     assert.equal(layout.scrollWidth,width,'Horizontal overflow at '+width);
+    assert.equal(await page.locator('footer,#site-footer,.site-footer-section').count(),0,'Homepage footer removed from HTML');
+    assert.equal(layout.sections.at(-1).id,'contact','Homepage ends at Contact CTA');
+    assert.ok(Math.abs(await page.evaluate(()=>document.documentElement.scrollHeight)-(layout.sections.at(-1).y+layout.sections.at(-1).height))<1,'No whitespace after Contact CTA');
     assert.equal(await page.locator('[data-contrast-toggle],.contrast-toggle').count(),0,'No non-Figma footer contrast control');
     for (const section of layout.sections) {
       assert.ok(Math.abs(section.x)<1 && Math.abs(section.right-width)<1,'Section must span viewport: '+section.id+' at '+width);
@@ -73,7 +76,7 @@ let browser;
     const capture=fs.readFileSync(path.join(folder,width===1440?'desktop-1440.png':'responsive-'+width+'.png'));
     assert.equal(capture.readUInt32BE(16),width,'Screenshot width at '+width);
     const bottom=layout.sections.at(-1).y+layout.sections.at(-1).height;
-    assert.ok(capture.readUInt32BE(20)>=Math.floor(bottom),'Screenshot must include complete footer at '+width);
+    assert.ok(capture.readUInt32BE(20)>=Math.floor(bottom),'Screenshot must include complete Contact CTA at '+width);
     if (width>=1440) {
       assert.ok(Math.abs(layout.portrait.width/layout.portrait.height-1207.1/773.89)<.002,'Hero portrait aspect ratio at '+width);
       for(let i=1;i<layout.cards.length;i++) assert.ok(layout.cards[i].x>=layout.cards[i-1].right-1,'Service card overlap at '+width);
@@ -86,7 +89,7 @@ let browser;
       const panels=layout.calculatorPanels,overlap=panels.formBackground.right-panels.resultBackground.x;
       assert.ok(overlap>=.98&&overlap<=1.1,'Calculator background seam must be covered without moving panel content at '+width);
       assert.ok(Math.abs(panels.horizontalRule.width-width/3)<.05&&panels.horizontalRule.height>0&&panels.horizontalRule.height<=.51,'Calculator horizontal divider stays unchanged at '+width);
-      layout.dividers=await page.locator('.layer-358,.layer-359,.layer-360,.layer-361,.layer-334,.layer-115,.layer-33,.layer-34').evaluateAll(ns=>ns.map(n=>{
+      layout.dividers=await page.locator('.layer-358,.layer-359,.layer-360,.layer-361,.layer-334,.layer-115').evaluateAll(ns=>ns.map(n=>{
         const r=n.getBoundingClientRect(),line=n.querySelector('img').getBoundingClientRect();
         return {class:n.className,x:r.x,right:r.right,width:r.width,lineX:line.x,lineRight:line.right,lineWidth:line.width};
       }));
@@ -187,8 +190,6 @@ let browser;
       const audit=await page.evaluate(async () => axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice']}}));
       fs.writeFileSync(path.join(folder,'accessibility-'+mode+'.json'),JSON.stringify(audit,null,2));
       console.log('Accessibility '+mode+':',JSON.stringify(audit.violations.map(v=>({id:v.id,impact:v.impact,count:v.nodes.length,targets:v.nodes.map(n=>n.target)}))));
-      const footerAudit=await page.evaluate(async()=>axe.run(document.querySelector('#site-footer'),{runOnly:{type:'rule',values:['color-contrast']}}));
-      assert.deepEqual(footerAudit.violations,[],'Footer contrast is accessible in '+mode+' without a toggle');
       if (mode==='system-contrast') assert.deepEqual(audit.violations.map(v=>v.id),[]);
       else assert.deepEqual(audit.violations.filter(v=>v.id !== 'color-contrast').map(v=>v.id),[]);
     }
@@ -251,9 +252,6 @@ let browser;
   assert.equal(await page.locator('.why-panel:visible').count(),1);
   assert.equal(await page.locator('dialog[open]').count(),0);
   await page.locator('[data-about-detail="0"]').click();
-  await page.locator('[data-open-policy]').click();
-  assert.equal(await page.locator('#policy-dialog').evaluate(n=>n.open),true);
-  await page.keyboard.press('Escape');
   for (const width of [1600, 1920, 2560, 1280, 1024, 768, 390, 320]) {
     await page.setViewportSize({width,height:900});
     await page.evaluate(() => scrollTo(0,0));
@@ -301,8 +299,6 @@ let browser;
       assert.equal(await page.locator('.menu-toggle').evaluate(n=>n===document.activeElement),true);
     }
     if (width === 390 && process.argv.includes('--axe')) {
-      const footerAudit=await page.evaluate(async()=>axe.run(document.querySelector('#site-footer'),{runOnly:{type:'rule',values:['color-contrast']}}));
-      assert.deepEqual(footerAudit.violations,[],'Default mobile footer contrast');
       await page.emulateMedia({contrast:'more'});
       await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
       const audit = await page.evaluate(async () => axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice']}}));

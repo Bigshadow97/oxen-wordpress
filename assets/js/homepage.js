@@ -1,0 +1,194 @@
+(function () {
+  'use strict';
+  const $ = (selector, scope = document) => scope.querySelector(selector);
+  const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
+  const text = selector => $(selector)?.textContent.trim() || '';
+  const plans = [
+    { title: text('.layer-162'), stage: text('.layer-158'), description: text('.layer-164'), features: [166,168,170,172].map(id => text('.layer-' + id)) },
+    { title: text('.layer-163'), stage: text('.layer-161'), description: text('.layer-165'), features: [167,169,171,173].map(id => text('.layer-' + id)) },
+    { title: text('.layer-593'), stage: text('.layer-588'), description: text('.layer-595'), features: [597,599,601,603].map(id => text('.layer-' + id)) },
+    { title: text('.layer-594'), stage: text('.layer-592'), description: text('.layer-596'), features: [598,600,602,604].map(id => text('.layer-' + id)) }
+  ];
+  let opener = null;
+  function openDialog(dialog, trigger) {
+    opener = trigger;
+    dialog.showModal();
+    $('[data-close-dialog]', dialog)?.focus();
+  }
+  $$('dialog').forEach(dialog => {
+    dialog.addEventListener('close', () => { opener?.focus(); opener = null; });
+    dialog.addEventListener('keydown', event => {
+      if (event.key !== 'Tab') return;
+      const stops = $$('a[href],button,input,select,textarea,[tabindex]', dialog)
+        .filter(node => !node.disabled && node.tabIndex >= 0 && node.getClientRects().length);
+      if (!stops.length) { event.preventDefault(); dialog.focus(); return; }
+      const first = stops[0], last = stops[stops.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    });
+    dialog.addEventListener('click', event => {
+      if (event.target === dialog) {
+        const r = dialog.getBoundingClientRect();
+        if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close();
+      }
+    });
+  });
+  $$('[data-close-dialog]').forEach(button => button.addEventListener('click', () => button.closest('dialog').close()));
+  $$('[data-open-contact]').forEach(button => button.addEventListener('click', event => {
+    event.preventDefault();
+    openDialog($('#contact-dialog'), button);
+  }));
+  $$('[data-open-policy]').forEach(button => button.addEventListener('click', () => openDialog($('#policy-dialog'), button)));
+  $$('[data-open-social]').forEach(button => button.addEventListener('click', () => openDialog($('#social-dialog'), button)));
+  $$('[data-open-case-study]').forEach(button => button.addEventListener('click', () => {
+    $('#case-dialog-title').textContent = text('.layer-454');
+    $('#case-dialog-description').textContent = text('.layer-456');
+    openDialog($('#case-dialog'), button);
+  }));
+
+  const contrastButton = $('[data-contrast-toggle]');
+  function setContrast(enabled) {
+    document.documentElement.classList.toggle('high-contrast', enabled);
+    contrastButton?.setAttribute('aria-pressed', String(enabled));
+    if (contrastButton) contrastButton.textContent = enabled ? 'Use original colours' : 'Increase text contrast';
+  }
+  const contrastPreference = window.matchMedia('(prefers-contrast: more)');
+  let savedContrast = null;
+  try { savedContrast = localStorage.getItem('oxen-contrast'); } catch {}
+  setContrast(savedContrast === null ? contrastPreference.matches : savedContrast === 'true');
+  contrastPreference.addEventListener('change', event => { if (savedContrast === null) setContrast(event.matches); });
+  contrastButton?.addEventListener('click', () => {
+    const enabled = !document.documentElement.classList.contains('high-contrast');
+    setContrast(enabled); savedContrast = String(enabled);
+    try { localStorage.setItem('oxen-contrast', savedContrast); } catch {}
+  });
+  $$('[data-preview-plan]').forEach(button => button.addEventListener('click', () => {
+    const plan = plans[Number(button.dataset.previewPlan)];
+    $('#plan-dialog-title').textContent = plan.title;
+    $('#plan-dialog-description').textContent = plan.description;
+    $('#plan-dialog-features').replaceChildren(...plan.features.map(feature => { const li = document.createElement('li'); li.textContent = feature; return li; }));
+    openDialog($('#plan-dialog'), button);
+  }));
+  $('[data-open-comparison]')?.addEventListener('click', event => {
+    $('#comparison-rows').replaceChildren(...plans.map(plan => {
+      const row = document.createElement('tr');
+      [plan.title, plan.stage, plan.features.join(' · ')].forEach((value, index) => {
+        const cell = document.createElement(index === 0 ? 'th' : 'td');
+        if (index === 0) cell.scope = 'row';
+        cell.textContent = value; row.append(cell);
+      });
+      return row;
+    }));
+    openDialog($('#comparison-dialog'), event.currentTarget);
+  });
+  const aboutDescriptions = [text('.layer-526'), text('.layer-523'), text('.layer-174')];
+  $$('[data-about-detail]').forEach(button => button.addEventListener('click', () => {
+    $('#about-dialog-title').textContent = button.textContent;
+    $('#about-dialog-description').textContent = aboutDescriptions[Number(button.dataset.aboutDetail)];
+    openDialog($('#about-dialog'), button);
+  }));
+
+  const menuToggle = $('.menu-toggle'), menu = $('#mobile-navigation');
+  function closeMenu() { if (!menuToggle) return; menu.hidden = true; menuToggle.setAttribute('aria-expanded', 'false'); }
+  menuToggle?.addEventListener('click', () => { menu.hidden = !menu.hidden; menuToggle.setAttribute('aria-expanded', String(!menu.hidden)); });
+  $$('a', menu || document.createElement('nav')).forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && menu && !menu.hidden) { closeMenu(); menuToggle.focus(); } });
+  window.matchMedia('(min-width: 1200px)').addEventListener('change', closeMenu);
+
+  // The first question/options are exact Figma copy. Later steps add the
+  // required behavior in the same component; no personal data is collected.
+  const quiz = $('#quiz'), answers = $$('[data-quiz-answer]');
+  const originalQuestion = text('#quiz-question');
+  const questions = [
+    { title: originalQuestion, choices: ['Pre Revenue', 'Under $250K', '$250K - $1M', '$1M - $5M', '$5M +'] },
+    { title: 'Where is your business today?', choices: ['Just starting', 'Up and running', 'Growing fast', 'Scaling up'] },
+    { title: 'What support do you need most?', choices: ['Set things up', 'Tax & compliance', 'Planning & insights', 'A finance leader'] }
+  ];
+  let step = 0; let responses = [];
+  function renderQuiz() {
+    quiz.classList.remove('is-complete');
+    $('#quiz-progress').textContent = 'Question 0' + (step + 1) + ' of 03';
+    $('#quiz-question').textContent = questions[step].title;
+    answers.forEach(button => {
+      const index = Number(button.dataset.quizAnswer);
+      button.hidden = index >= questions[step].choices.length;
+      button.querySelector('.design-layer').textContent = questions[step].choices[index] || '';
+      button.classList.toggle('is-selected', responses[step] === index || (step === 0 && responses[0] === undefined && index === 0));
+      button.setAttribute('aria-pressed', String(responses[step] === index));
+      button.style.backgroundColor = (responses[step] === index || (step === 0 && responses[0] === undefined && index === 0)) ? '#18265d' : '#f0f2fb';
+      button.querySelector('.design-layer').style.color = (responses[step] === index || (step === 0 && responses[0] === undefined && index === 0)) ? '#fff' : '#18265d';
+    });
+    $('[data-quiz-back]').hidden = step === 0;
+    $('[data-quiz-restart]').hidden = true;
+    $('[data-quiz-result-link]').hidden = true;
+    $('#quiz-result').textContent = '';
+    $$('.layer-348,.layer-349,.layer-350',quiz).forEach((circle,index) => { circle.style.opacity = index <= step ? '1' : '.45'; });
+    $('.layer-351').textContent = String(step + 1);
+  }
+  answers.forEach(button => button.addEventListener('click', () => {
+    responses[step] = Number(button.dataset.quizAnswer);
+    if (step < 2) { step++; renderQuiz(); $('#quiz-question').setAttribute('tabindex','-1'); $('#quiz-question').focus({preventScroll:true}); }
+    else {
+      const revenueTier = [0,0,1,2,3][responses[0]];
+      const recommended = Math.max(revenueTier, responses[1], responses[2]);
+      quiz.classList.add('is-complete');
+      $('#quiz-progress').textContent = 'Your recommendation';
+      $('#quiz-question').textContent = plans[recommended].title;
+      $('#quiz-result').textContent = plans[recommended].description;
+      $('[data-quiz-restart]').hidden = false;
+      $('[data-quiz-result-link]').hidden = false;
+      $('[data-quiz-result-link]').href = '#service-' + recommended;
+      $('[data-quiz-back]').hidden = false;
+      $('[data-quiz-result-link]').focus({preventScroll:true});
+    }
+  }));
+  $('[data-quiz-back]')?.addEventListener('click', () => { step = Math.max(0, step - (quiz.classList.contains('is-complete') ? 0 : 1)); renderQuiz(); });
+  $('[data-quiz-restart]')?.addEventListener('click', () => { step = 0; responses = []; renderQuiz(); answers[0].focus({preventScroll:true}); });
+  ['foundations','essentials','advisory','cfo'].forEach((name,index) => { const card = $('.service-' + name); if (card) card.id = 'service-' + index; });
+  if (quiz) renderQuiz();
+
+  // Only supplied Figma copy is used. Additional slides are the two original
+  // case studies and are explicitly identified as client stories, not invented testimonials.
+  const stories = [
+    { body: text('#client-story'), name: text('#client-name'), role: text('#client-role'), testimonial: true },
+    { body: text('.layer-456'), name: 'Manufacturing · Auckland', role: text('.layer-454'), testimonial: false },
+    { body: text('.layer-457'), name: 'Professional services · Wellington', role: text('.layer-455'), testimonial: false }
+  ];
+  let story = 0;
+  function showStory(direction) {
+    story = (story + direction + stories.length) % stories.length;
+    $('#client-story').textContent = stories[story].body;
+    $('#client-name').textContent = stories[story].name;
+    $('#client-role').textContent = stories[story].role;
+    $('.layer-430').textContent = stories[story].testimonial ? 'Testimonials' : 'Client stories';
+    $('#slider-position').textContent = 'Client story ' + (story + 1) + ' of ' + stories.length;
+  }
+  $('[data-slider-next]')?.addEventListener('click', () => showStory(1));
+  $('[data-slider-previous]')?.addEventListener('click', () => showStory(-1));
+  $('#testimonials')?.addEventListener('keydown', event => { if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') { event.preventDefault(); showStory(event.key === 'ArrowRight' ? 1 : -1); } });
+
+  const taxForm = $('#tax-form');
+  const money = new Intl.NumberFormat('en-NZ', {style: 'currency', currency: 'NZD', maximumFractionDigits: 0});
+  function calculateTax(event) {
+    event?.preventDefault();
+    const revenue = OxenTax.parseMoney($('#annual-revenue').value);
+    const profit = OxenTax.parseMoney($('#annual-profit').value);
+    const structure = $('#business-structure').value;
+    const partners = Number($('#partner-count').value);
+    let error = '';
+    if (!Number.isFinite(revenue) || revenue < 0) error = 'Enter a valid annual revenue of $0 or more.';
+    else if (!Number.isFinite(profit)) error = 'Enter a valid annual profit, using up to two decimal places.';
+    else if (profit > revenue) error = 'Annual profit cannot be greater than annual revenue.';
+    else if (structure === 'partnership' && (!Number.isInteger(partners) || partners < 2 || partners > 100)) error = 'Enter between 2 and 100 equal-share partners.';
+    $('#tax-error').textContent = error;
+    if (error) { $('#tax-status').textContent = 'Estimate unchanged. ' + error; return; }
+    const estimate = OxenTax.estimateTax(profit, structure, partners);
+    $('#tax-owed').textContent = money.format(estimate.tax);
+    $('#effective-rate').textContent = estimate.rate.toFixed(1) + '%';
+    $('#after-tax-profit').textContent = money.format(estimate.afterTax);
+    $('#tax-status').textContent = 'Estimated tax ' + money.format(estimate.tax) + '. Effective rate ' + estimate.rate.toFixed(1) + ' percent. After-tax profit ' + money.format(estimate.afterTax) + (structure === 'partnership' ? '. Assumes equal shares and no other partner income.' : '.');
+  }
+  taxForm?.addEventListener('submit', calculateTax);
+  $('#business-structure')?.addEventListener('change', () => { $('.partnership-control').hidden = $('#business-structure').value !== 'partnership'; calculateTax(); });
+  if (taxForm) calculateTax();
+})();

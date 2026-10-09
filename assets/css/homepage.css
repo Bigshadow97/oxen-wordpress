@@ -1,0 +1,1177 @@
+/* Original Figma 1:3 geometry, translated to native CSS Grid compositions. */
+.layer-190 {display: flex; height: 45.419px; align-items: center; justify-content: center; width: 1441px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -0.5000px; margin-top: 0.0000px; z-index: 141;}
+.art-2 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-3 {background-color: #fff; height: 45.419px; position: relative; width: 1441px;}
+.layer-213 {height: 18.429px; width: 87.906px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 28.5450px; margin-top: 12.4900px; z-index: 151;}
+.art-5 {position: absolute; inset: 0; max-width: none; object-fit: cover; pointer-events: none; width: 100%; height: 100%;}
+.layer-208 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 485.8027px; margin-top: 12.0000px; z-index: 149;}
+.layer-209 {overflow: clip; width: 14px; height: 14px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 542.8820px; margin-top: 16.0000px; z-index: 150;}
+.art-8 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-203 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 597.4902px; margin-top: 12.0000px; z-index: 145;}
+.layer-206 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 695.0605px; margin-top: 12.0000px; z-index: 148;}
+.layer-204 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 796.6230px; margin-top: 12.0000px; z-index: 146;}
+.layer-205 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 890.1855px; margin-top: 12.0000px; z-index: 147;}
+.layer-200 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.25px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 17.4079px; margin-top: 11.0636px; z-index: 144;}
+.layer-196 {overflow: clip; width: 16px; height: 16px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 153.2860px; margin-top: 15.0000px; z-index: 143;}
+.art-16 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-195 {background-color: #4559a8; height: 45.47px; width: 187.191px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1253.2620px; margin-top: 0.0000px; z-index: 142; display: grid;}
+.navigation-section {height: 45.419px;}
+.layer-6 {height: 52.751px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -1.4800px; margin-top: -45.1990px; z-index: 3;}
+.art-18 {position: absolute; inset: 0 -0.5px;}
+.art-19 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-9 {display: flex; height: 779.239px; align-items: center; justify-content: center; width: 1441px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -0.5000px; margin-top: -45.4190px; z-index: 4;}
+.art-21 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-22 {background-color: #f0f2fb; height: 779.239px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-size: 1441px 779.239px; position: relative; width: 1441px; mask-image: url("../images/rectangle44.svg");}
+.layer-10 {height: 458.917px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-size: 1441px 779.239px; width: 1441.016px; background-image: linear-gradient(to bottom, #4559a8 0%, #f0f2fb 100%); mask-image: url("../images/rectangle44.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -0.5000px; margin-top: -45.4190px; z-index: 5;}
+.layer-11 {display: flex; height: 779.074px; align-items: center; justify-content: center; mix-blend-mode: screen; width: 1442px; mask-image: url("../images/rectangle44.svg"); mask-position: 1.0000px 0.0000px; mask-size: 1441px 779.239px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -1.5000px; margin-top: -45.4190px; z-index: 6;}
+.art-25 {flex: none; transform: rotate(-90deg);}
+.art-26 {height: 1442px; position: relative; width: 779.074px;}
+.art-27 {position: absolute; inset: 0; overflow: hidden; pointer-events: none;}
+.art-28 {position: absolute; height: 100%; left: -14.94%; max-width: none; top: 0; width: 123.41%;}
+.layer-12 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -467.477px -305.893px; mask-size: 1441px 779.239px; width: 1078.365px; height: 1078.365px; mask-image: url("../images/rectangle44.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 466.9800px; margin-top: 260.4710px; z-index: 7;}
+.art-30 {position: absolute; inset: -18.55%;}
+.art-31 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-13 {height: 773.89px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -78.008px -5.35px; mask-size: 1441px 779.239px; width: 1207.1px; mask-image: url("../images/rectangle44.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 77.4620px; margin-top: -40.0690px; z-index: 8;}
+.art-33 {position: absolute; inset: 0; overflow: hidden; pointer-events: none;}
+.art-34 {position: absolute; height: 102.21%; left: 0; max-width: none; top: 0; width: 100.21%;}
+.layer-13 {--reading-order: 54;}
+.layer-14 {backdrop-filter: blur(12px); height: 361.925px; width: 1441px; background-image: linear-gradient(to bottom, rgba(250,251,254,0) 0%, rgba(206,212,233,0.1) 20.681%, rgba(69,89,168,0.43) 85.169%); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -0.5000px; margin-top: 371.7310px; z-index: 9;}
+.layer-176 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #4559a8; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 81.5625px; margin-top: 82.0802px; z-index: 132;}
+.layer-316 {width: 7.906px; height: 7.906px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 62.0500px; margin-top: 89.5710px; z-index: 194;}
+.art-38 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-175 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 0; color: #18265d; font-size: 48px; letter-spacing: -2px; width: 494.867px; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 59.5625px; margin-top: 116.5430px; z-index: 131;}
+.art-40 {line-height: 53px;}
+.art-41 {font-family: 'Noto Serif'; font-weight: 400; font-style: italic; line-height: 53px; color: #4559a8;}
+.art-42 {line-height: 53px; color: #4559a8;}
+.art-43 {line-height: 53px;}
+.layer-177 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; width: 429.742px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 59.5625px; margin-top: 507.0427px; z-index: 133;}
+.layer-181 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 26.4188px; margin-top: 11.3282px; z-index: 135;}
+.layer-180 {background-color: #4559a8; height: 46.665px; border-radius: 2px; width: 214.703px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 59.3000px; margin-top: 636.5210px; z-index: 134; display: grid;}
+.layer-184 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 90.7345px; margin-top: 12.3282px; z-index: 137;}
+.layer-185 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 16.9064px; margin-top: 11.3282px; z-index: 138;}
+.layer-183 {border-width: 1px; border-style: solid; border-color: #fff; height: 46.665px; border-radius: 2px; width: 216.758px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 288.3280px; margin-top: 636.5210px; z-index: 136; display: grid;}
+.layer-176 {--reading-order: 1275;}
+.layer-316 {--reading-order: 1350;}
+.layer-175 {--reading-order: 1620;}
+.layer-177 {--reading-order: 5525;}
+.layer-180 {--reading-order: 6819;}
+.layer-183 {--reading-order: 6819;}
+.layer-220 {display: flex; height: 143.859px; align-items: center; justify-content: center; width: 118.411px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1279.7165px; margin-top: 321.8110px; z-index: 155;}
+.art-51 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-52 {background-color: #fff; height: 143.859px; position: relative; width: 118.411px;}
+.layer-222 {height: 24.514px; width: 23.939px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1326.9680px; margin-top: 340.9210px; z-index: 157;}
+.art-54 {position: absolute; inset: 0; max-width: none; object-fit: cover; pointer-events: none; width: 100%; height: 100%;}
+.layer-221 {word-break: break-word; font-family: 'Playfair Display'; font-weight: 400; font-style: normal; line-height: normal; color: #4559a8; font-size: 33px; letter-spacing: -2px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1321.3594px; margin-top: 361.5292px; z-index: 156;}
+.layer-229 {position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1297.1520px; margin-top: 371.6652px; z-index: 160; height: 42.2150px; width: 18.7200px;}
+.art-57 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-246 {display: flex; align-items: center; justify-content: center; container-type: size; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1361.8080px; margin-top: 371.6652px; z-index: 161; height: 42.2150px; width: 18.8640px;}
+.art-59 {flex: none; height: 100cqh; width: 100cqw; transform: scaleX(-1);}
+.art-60 {position: relative; width: 100%; height: 100%;}
+.art-61 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-224 {height: 0; width: 118.608px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1279.5420px; margin-top: 421.7410px; z-index: 159;}
+.art-63 {position: absolute; inset: -0.5px 0;}
+.art-64 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-223 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #00123a; font-size: 13px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1297.9688px; margin-top: 432.9405px; z-index: 158;}
+.layer-187 {display: flex; height: 110.059px; align-items: center; justify-content: center; width: 118.411px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1279.6765px; margin-top: 491.9810px; z-index: 139;}
+.art-67 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-68 {height: 110.059px; position: relative; width: 118.411px; background-image: linear-gradient(-70.36444760154794deg, rgb(69, 89, 168) 0%, rgb(33, 50, 119) 100%);}
+.layer-188 {height: 75.818px; width: 78.867px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1302.8880px; margin-top: 507.9410px; z-index: 140;}
+.art-70 {position: absolute; inset: 0; overflow: hidden; pointer-events: none;}
+.art-71 {position: absolute; height: 146.3%; left: -22.38%; max-width: none; top: -25.18%; width: 148.46%;}
+.layer-317 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 0; font-size: 14px; text-align: right; color: #fff; letter-spacing: -0.2679px; width: 165.906px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1230.5000px; margin-top: 628.8364px; z-index: 195;}
+.art-73 {line-height: 17px;}
+.art-74 {font-family: 'Satoshi'; font-weight: 700; font-style: normal; line-height: 17px;}
+.art-75 {line-height: 17px;}
+.layer-220 {--reading-order: 3672;}
+.layer-222 {--reading-order: 3863;}
+.layer-221 {--reading-order: 4069;}
+.layer-229 {--reading-order: 4171;}
+.layer-246 {--reading-order: 4171;}
+.layer-224 {--reading-order: 4672;}
+.layer-223 {--reading-order: 4784;}
+.layer-187 {--reading-order: 5374;}
+.layer-188 {--reading-order: 5534;}
+.layer-317 {--reading-order: 6743;}
+.layer-217 {height: 52.751px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 824.5200px; margin-top: 629.8010px; z-index: 154;}
+.art-77 {position: absolute; inset: 0 -0.5px;}
+.art-78 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-215 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 841.6250px; margin-top: 633.6400px; z-index: 152;}
+.layer-216 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: italic; line-height: normal; font-size: 12px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 841.6250px; margin-top: 659.8492px; z-index: 153;}
+.layer-217 {--reading-order: 6752;}
+.layer-215 {--reading-order: 6791;}
+.layer-216 {--reading-order: 7053;}
+.hero-section {height: 737.581px;}
+.layer-5 {display: flex; height: 201.176px; align-items: center; justify-content: center; width: 1441px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -1.0000px; margin-top: 0.0000px; z-index: 2;}
+.art-82 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-83 {background-color: #18265d; height: 201.176px; position: relative; width: 1441px;}
+.layer-15 {position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1245.0240px; margin-top: 23.3065px; z-index: 10; height: 49.8137px; width: 50.2560px;}
+.art-85 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-264 {border-color: #46517d; border-width: 0.5px; border-style: solid; height: 110.892px; width: 324.754px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 47.7700px; margin-top: 36.6100px; z-index: 162;}
+.layer-268 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 47px; font-size: 50px; color: #fff; letter-spacing: -2px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 267.0938px; margin-top: 64.0034px; z-index: 166;}
+.layer-272 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: 19px; font-size: 14px; color: #fff; letter-spacing: -0.2679px; width: 97.172px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 72.7266px; margin-top: 72.0034px; z-index: 170;}
+.layer-264 {--reading-order: 8196;}
+.layer-268 {--reading-order: 8470;}
+.layer-272 {--reading-order: 8550;}
+.layer-265 {border-color: #46517d; border-width: 0.5px; border-style: solid; height: 110.892px; width: 324.754px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 389.6600px; margin-top: 36.6100px; z-index: 163;}
+.layer-269 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 0; font-size: 50px; color: #fff; letter-spacing: -2px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 568.6250px; margin-top: 64.0034px; z-index: 167;}
+.art-91 {line-height: 47px;}
+.art-92 {line-height: 47px; color: #7185d2;}
+.layer-273 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: 0; font-size: 14px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 415.4609px; margin-top: 72.0034px; z-index: 171;}
+.art-94 {line-height: 19px; margin-bottom: 0; white-space: pre;}
+.art-95 {line-height: 19px; white-space: pre;}
+.layer-265 {--reading-order: 8196;}
+.layer-269 {--reading-order: 8470;}
+.layer-273 {--reading-order: 8550;}
+.layer-266 {border-color: #46517d; border-width: 0.5px; border-style: solid; height: 110.892px; width: 324.754px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 731.5500px; margin-top: 36.6100px; z-index: 164;}
+.layer-270 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 0; font-size: 50px; color: #fff; letter-spacing: -0.6667px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 904.3594px; margin-top: 65.0034px; z-index: 168;}
+.art-98 {line-height: 47px;}
+.art-99 {line-height: 47px; color: #7185d2;}
+.layer-274 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: 0; font-size: 14px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 750.6250px; margin-top: 72.0034px; z-index: 172;}
+.art-101 {line-height: 19px; margin-bottom: 0; white-space: pre;}
+.art-102 {line-height: 19px; white-space: pre;}
+.layer-266 {--reading-order: 8196;}
+.layer-270 {--reading-order: 8480;}
+.layer-274 {--reading-order: 8550;}
+.layer-267 {border-color: #46517d; border-width: 0.5px; border-style: solid; height: 110.892px; width: 324.754px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1073.4400px; margin-top: 36.6100px; z-index: 165;}
+.layer-271 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 47px; font-size: 50px; color: #fff; letter-spacing: -0.6667px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1286.0938px; margin-top: 67.0034px; z-index: 169;}
+.layer-275 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: 0; font-size: 14px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1092.6953px; margin-top: 72.0034px; z-index: 173;}
+.art-106 {line-height: 19px; margin-bottom: 0; white-space: pre;}
+.art-107 {line-height: 19px; white-space: pre;}
+.layer-267 {--reading-order: 8196;}
+.layer-271 {--reading-order: 8500;}
+.layer-275 {--reading-order: 8550;}
+.layer-278 {display: flex; height: 110.986px; align-items: center; justify-content: center; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 47.9800px; margin-top: 36.5100px; z-index: 174;}
+.art-109 {flex: none; transform: rotate(180deg);}
+.art-110 {height: 110.986px; opacity: .2; position: relative; width: 0;}
+.art-111 {position: absolute; inset: 0 -0.25px;}
+.art-112 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-280 {height: 6.845px; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 47.7700px; margin-top: 36.6100px; z-index: 175;}
+.art-114 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-115 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-281 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 47.7700px; margin-top: 140.6500px; z-index: 176;}
+.art-117 {flex: none; transform: scaleY(-1);}
+.art-118 {height: 6.845px; position: relative; width: 6.977px;}
+.art-119 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-120 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-283 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 365.5400px; margin-top: 36.6100px; z-index: 177;}
+.art-122 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-123 {height: 6.845px; position: relative; width: 6.977px;}
+.art-124 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-125 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-284 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 365.5400px; margin-top: 140.6500px; z-index: 178;}
+.art-127 {flex: none; transform: rotate(180deg);}
+.art-128 {height: 6.845px; position: relative; width: 6.977px;}
+.art-129 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-130 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-287 {height: 6.845px; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 389.6600px; margin-top: 36.6100px; z-index: 179;}
+.art-132 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-133 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-288 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 389.6600px; margin-top: 140.6500px; z-index: 180;}
+.art-135 {flex: none; transform: scaleY(-1);}
+.art-136 {height: 6.845px; position: relative; width: 6.977px;}
+.art-137 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-138 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-291 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1049.3680px; margin-top: 36.6100px; z-index: 181;}
+.art-140 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-141 {height: 6.845px; position: relative; width: 6.977px;}
+.art-142 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-143 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-292 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1049.3680px; margin-top: 140.6500px; z-index: 182;}
+.art-145 {flex: none; transform: rotate(180deg);}
+.art-146 {height: 6.845px; position: relative; width: 6.977px;}
+.art-147 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-148 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-295 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 707.4980px; margin-top: 36.6100px; z-index: 183;}
+.art-150 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-151 {height: 6.845px; position: relative; width: 6.977px;}
+.art-152 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-153 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-296 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 707.4980px; margin-top: 140.6500px; z-index: 184;}
+.art-155 {flex: none; transform: rotate(180deg);}
+.art-156 {height: 6.845px; position: relative; width: 6.977px;}
+.art-157 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-158 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-299 {height: 6.845px; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 731.5500px; margin-top: 36.6100px; z-index: 185;}
+.art-160 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-161 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-300 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 731.5500px; margin-top: 140.6500px; z-index: 186;}
+.art-163 {flex: none; transform: scaleY(-1);}
+.art-164 {height: 6.845px; position: relative; width: 6.977px;}
+.art-165 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-166 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-303 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1391.2680px; margin-top: 36.6100px; z-index: 187;}
+.art-168 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-169 {height: 6.845px; position: relative; width: 6.977px;}
+.art-170 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-171 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-304 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1391.2680px; margin-top: 140.6500px; z-index: 188;}
+.art-173 {flex: none; transform: rotate(180deg);}
+.art-174 {height: 6.845px; position: relative; width: 6.977px;}
+.art-175 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-176 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-307 {height: 6.845px; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1073.4400px; margin-top: 36.6100px; z-index: 189;}
+.art-178 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-179 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-308 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1073.4400px; margin-top: 140.6500px; z-index: 190;}
+.art-181 {flex: none; transform: scaleY(-1);}
+.art-182 {height: 6.845px; position: relative; width: 6.977px;}
+.art-183 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-184 {display: block; max-width: none; width: 100%; height: 100%;}
+.statistics-section {height: 201.176px;}
+.layer-319 {width: 1440px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 0.0000px; margin-top: 148.0303px; z-index: 196; height: 601.1416px;}
+.art-186 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-320 {height: 658.691px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1398.2480px; margin-top: 90.3640px; z-index: 197;}
+.art-188 {position: absolute; inset: 0 -0.5px;}
+.art-189 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-321 {height: 534.992px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1083.6600px; margin-top: 214.0640px; z-index: 198;}
+.art-191 {position: absolute; inset: 0 -0.5px;}
+.art-192 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-322 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 0; color: #18265d; font-size: 40px; text-align: center; width: 525.111px; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 455.4375px; margin-top: 80.1372px; z-index: 199;}
+.art-194 {line-height: 47px;}
+.art-195 {font-family: 'Noto Serif'; font-weight: 400; font-style: italic; line-height: 47px; color: #4559a8;}
+.layer-323 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #8898d9; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 679.5000px; margin-top: 54.3679px; z-index: 200;}
+.layer-324 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 0; font-size: 16px; color: #000; letter-spacing: -0.2679px; width: 534.375px; white-space: pre-wrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 61.6250px; margin-top: 260.5640px; z-index: 201;}
+.art-198 {line-height: normal; margin-bottom: 0;}
+.art-199 {line-height: normal;}
+.layer-325 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #4559a8; font-size: 14px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 59.5625px; margin-top: 384.2136px; z-index: 202;}
+.layer-352 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #a2b1eb; font-size: 21px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 61.6250px; margin-top: 437.7136px; z-index: 227;}
+.layer-355 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 18px; color: #000; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 99.3672px; margin-top: 440.7136px; z-index: 230;}
+.layer-326 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #18265d; font-size: 14px; text-align: right; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 474.0000px; margin-top: 442.6765px; z-index: 203;}
+.layer-353 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #a2b1eb; font-size: 21px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 61.6250px; margin-top: 496.9600px; z-index: 228;}
+.layer-356 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 18px; color: #000; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 99.3672px; margin-top: 499.9600px; z-index: 231;}
+.layer-327 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #18265d; font-size: 14px; text-align: right; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 451.0000px; margin-top: 501.9229px; z-index: 204;}
+.layer-377 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #4559a8; font-size: 21px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 61.6250px; margin-top: 558.1123px; z-index: 249;}
+.layer-378 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #4559a8; font-size: 18px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 99.3672px; margin-top: 561.1123px; z-index: 250;}
+.layer-376 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: italic; line-height: normal; color: #18265d; font-size: 14px; text-align: right; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 219.3359px; margin-top: 562.2218px; z-index: 248;}
+.layer-373 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #4559a8; font-size: 14px; text-align: right; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 469.0000px; margin-top: 565.0752px; z-index: 246;}
+.layer-360 {display: flex; height: 0; align-items: center; justify-content: center; width: 537.859px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 58.1400px; margin-top: 606.1840px; z-index: 235;}
+.art-212 {flex: none; transform: rotate(90deg);}
+.art-213 {height: 537.859px; position: relative; width: 0;}
+.art-214 {position: absolute; inset: 0 -0.25px;}
+.art-215 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-354 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #a2b1eb; font-size: 21px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 61.6250px; margin-top: 624.2647px; z-index: 229;}
+.layer-357 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 18px; color: #000; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 99.3672px; margin-top: 627.2647px; z-index: 232;}
+.layer-328 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #18265d; font-size: 14px; text-align: right; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 482.0000px; margin-top: 629.2276px; z-index: 205;}
+.layer-369 {display: flex; height: 72.392px; align-items: center; justify-content: center; width: 272.276px; mask-image: url("../images/rectangle33.svg"); mask-position: -345.8300px 38.8600px; mask-size: 537.859px 116.436px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 403.9700px; margin-top: 689.7240px; z-index: 242;}
+.art-220 {flex: none; transform: rotate(153.99deg) scaleY(0.56) skewX(55.96deg);}
+.art-221 {height: 176.068px; position: relative; width: 108.97px;}
+.art-222 {position: absolute; inset: -19.31% -31.2%;}
+.art-223 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-366 {height: 89.992px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: 73.859px 16.597px; mask-size: 537.859px 116.436px; width: 358.081px; mask-image: url("../images/rectangle33.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -15.7200px; margin-top: 711.9940px; z-index: 239;}
+.art-225 {position: absolute; inset: -37.78% -9.5%;}
+.art-226 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-370 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #fff; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 80.1016px; margin-top: 745.0596px; z-index: 243;}
+.layer-367 {display: flex; height: 131.707px; align-items: center; justify-content: center; width: 516.338px; mask-image: url("../images/rectangle33.svg"); mask-position: -93.6020px -30.5900px; mask-size: 537.859px 116.436px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 151.7420px; margin-top: 759.1740px; z-index: 240;}
+.art-229 {flex: none; transform: rotate(153.99deg) scaleY(0.56) skewX(55.96deg);}
+.art-230 {height: 350.135px; position: relative; width: 188.752px;}
+.art-231 {position: absolute; inset: -11.42% -21.19%;}
+.art-232 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-371 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 19px; font-size: 16px; color: #fff; letter-spacing: -0.25px; width: 365.844px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 80.1016px; margin-top: 783.2296px; z-index: 244;}
+.layer-368 {display: flex; height: 72.392px; align-items: center; justify-content: center; width: 272.276px; mask-image: url("../images/rectangle33.svg"); mask-position: 39.8100px -72.9700px; mask-size: 537.859px 116.436px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 18.3300px; margin-top: 801.5540px; z-index: 241;}
+.art-235 {flex: none; transform: rotate(153.99deg) scaleY(0.56) skewX(55.96deg);}
+.art-236 {height: 176.068px; position: relative; width: 108.97px;}
+.art-237 {position: absolute; inset: -19.31% -31.2%;}
+.art-238 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-365 {text-decoration-skip-ink: none; text-underline-position: from-font; word-break: break-word; text-decoration-thickness: from-font; text-decoration-style: solid; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -180.375px -73.643px; mask-size: 537.859px 116.436px; font-size: 16px; color: #fff; letter-spacing: -0.2679px; text-decoration-line: underline; white-space: nowrap; mask-image: url("../images/rectangle33.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 238.5156px; margin-top: 802.2296px; z-index: 238;}
+.layer-324 {--reading-order: 12447;}
+.layer-325 {--reading-order: 13684;}
+.layer-352 {--reading-order: 14219;}
+.layer-355 {--reading-order: 14249;}
+.layer-326 {--reading-order: 14269;}
+.layer-353 {--reading-order: 14811;}
+.layer-356 {--reading-order: 14841;}
+.layer-327 {--reading-order: 14861;}
+.layer-377 {--reading-order: 15423;}
+.layer-378 {--reading-order: 15453;}
+.layer-376 {--reading-order: 15464;}
+.layer-373 {--reading-order: 15493;}
+.layer-360 {--reading-order: 15904;}
+.layer-354 {--reading-order: 16084;}
+.layer-357 {--reading-order: 16114;}
+.layer-328 {--reading-order: 16134;}
+.layer-369 {--reading-order: 16739;}
+.layer-366 {--reading-order: 16962;}
+.layer-370 {--reading-order: 17292;}
+.layer-367 {--reading-order: 17434;}
+.layer-371 {--reading-order: 17674;}
+.layer-368 {--reading-order: 17857;}
+.layer-365 {--reading-order: 17864;}
+.layer-329 {height: 6.845px; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 58.1400px; margin-top: 411.3840px; z-index: 206;}
+.art-241 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-242 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-330 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 58.1400px; margin-top: 452.8340px; z-index: 207;}
+.art-244 {flex: none; transform: scaleY(-1);}
+.art-245 {height: 6.845px; position: relative; width: 6.977px;}
+.art-246 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-247 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-333 {background-color: #fff; height: 452.849px; border-radius: 1px; width: 567px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 792.0000px; margin-top: 312.2140px; z-index: 208;}
+.layer-348 {width: 26.637px; height: 26.637px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1230.3420px; margin-top: 342.7440px; z-index: 223;}
+.art-250 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-349 {width: 26.637px; height: 26.637px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1266.7820px; margin-top: 342.7440px; z-index: 224;}
+.art-252 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-350 {width: 26.637px; height: 26.637px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1303.3180px; margin-top: 342.7440px; z-index: 225;}
+.art-254 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-347 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #8898d9; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 827.0000px; margin-top: 343.3825px; z-index: 222;}
+.layer-351 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1241.2109px; margin-top: 346.5640px; z-index: 226;}
+.layer-334 {display: flex; height: 0; align-items: center; justify-content: center; width: 567px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 792.0000px; margin-top: 395.7840px; z-index: 209;}
+.art-258 {flex: none; transform: rotate(-90deg);}
+.art-259 {height: 567px; position: relative; width: 0;}
+.art-260 {position: absolute; inset: 0 -0.38px;}
+.art-261 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-346 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 21px; color: #000; letter-spacing: -1px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 824.0000px; margin-top: 421.7136px; z-index: 221;}
+.layer-341 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 19px; color: #fff; letter-spacing: -0.8333px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 31.3438px; margin-top: 14.1779px; z-index: 216;}
+.layer-336 {background-color: #18265d; border-color: #18265d; border-width: 0.5px; border-style: solid; height: 55px; border-radius: 2px; width: 159.695px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 824.0000px; margin-top: 519.7940px; z-index: 211; display: grid;}
+.layer-343 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #18265d; font-size: 19px; letter-spacing: -0.8333px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 28.3001px; margin-top: 14.1779px; z-index: 218;}
+.layer-338 {background-color: #f0f2fb; border-color: #8998d3; border-width: 0.5px; border-style: solid; height: 55px; border-radius: 2px; width: 159.695px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 994.0280px; margin-top: 519.7940px; z-index: 213; display: grid;}
+.layer-345 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #18265d; font-size: 19px; letter-spacing: -0.8333px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 30.3425px; margin-top: 14.1779px; z-index: 220;}
+.layer-340 {background-color: #f0f2fb; border-color: #8998d3; border-width: 0.5px; border-style: solid; height: 55px; border-radius: 2px; width: 159.695px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1163.9700px; margin-top: 519.7940px; z-index: 215; display: grid;}
+.layer-342 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #18265d; font-size: 19px; letter-spacing: -0.8333px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 38.3438px; margin-top: 14.1820px; z-index: 217;}
+.layer-337 {background-color: #f0f2fb; border-color: #8998d3; border-width: 0.5px; border-style: solid; height: 55px; border-radius: 2px; width: 159.695px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 824.0000px; margin-top: 587.8640px; z-index: 212; display: grid;}
+.layer-344 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #18265d; font-size: 19px; letter-spacing: -0.8333px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 54.8001px; margin-top: 14.1820px; z-index: 219;}
+.layer-339 {background-color: #f0f2fb; border-color: #8998d3; border-width: 0.5px; border-style: solid; height: 55px; border-radius: 2px; width: 159.695px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 994.0280px; margin-top: 587.8640px; z-index: 214; display: grid;}
+.layer-335 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #979797; font-size: 14px; letter-spacing: -0.2679px; width: 375.518px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 824.0078px; margin-top: 723.6726px; z-index: 210;}
+.layer-333 {--reading-order: 12964;}
+.layer-348 {--reading-order: 13269;}
+.layer-349 {--reading-order: 13269;}
+.layer-350 {--reading-order: 13269;}
+.layer-347 {--reading-order: 13276;}
+.layer-351 {--reading-order: 13307;}
+.layer-334 {--reading-order: 13800;}
+.layer-346 {--reading-order: 14059;}
+.layer-336 {--reading-order: 15040;}
+.layer-338 {--reading-order: 15040;}
+.layer-340 {--reading-order: 15040;}
+.layer-337 {--reading-order: 15720;}
+.layer-339 {--reading-order: 15720;}
+.layer-335 {--reading-order: 17078;}
+.layer-358 {display: flex; height: 0; align-items: center; justify-content: center; width: 537.859px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 58.1400px; margin-top: 481.7940px; z-index: 233;}
+.art-275 {flex: none; transform: rotate(90deg);}
+.art-276 {height: 537.859px; position: relative; width: 0;}
+.art-277 {position: absolute; inset: 0 -0.25px;}
+.art-278 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-359 {display: flex; height: 0; align-items: center; justify-content: center; width: 537.859px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 58.1400px; margin-top: 544.0340px; z-index: 234;}
+.art-280 {flex: none; transform: rotate(90deg);}
+.art-281 {height: 537.859px; position: relative; width: 0;}
+.art-282 {position: absolute; inset: 0 -0.25px;}
+.art-283 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-361 {display: flex; height: 0; align-items: center; justify-content: center; width: 537.859px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 58.1400px; margin-top: 671.3440px; z-index: 236;}
+.art-285 {flex: none; transform: rotate(90deg);}
+.art-286 {height: 537.859px; position: relative; width: 0;}
+.art-287 {position: absolute; inset: 0 -0.25px;}
+.art-288 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-364 {background-color: #18265d; height: 116.436px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-size: 537.859px 116.436px; border-radius: 1px; width: 537.859px; mask-image: url("../images/rectangle33.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 58.1400px; margin-top: 728.5840px; z-index: 237;}
+.layer-372 {background-color: #fff; height: 55.573px; width: 563.508px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 47.4900px; margin-top: 547.4240px; z-index: 245;}
+.layer-375 {background-color: #f0f2fb; height: 26.943px; border-radius: 2px; width: 99.836px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 209.8920px; margin-top: 559.6740px; z-index: 247;}
+.quiz-section {height: 915.824px;}
+.layer-17 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #00123a; font-size: 16px; text-align: center; letter-spacing: -0.2679px; width: 771.753px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 332.6250px; margin-top: 212.4497px; z-index: 11;}
+.layer-18 {word-break: break-word; font-family: 'Noto Sans Devanagari UI Condensed'; font-weight: 400; font-style: normal; line-height: 0; color: #18265d; font-size: 40px; text-align: center; letter-spacing: -1px; width: 559.717px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 438.1328px; margin-top: 88.6350px; z-index: 12;}
+.art-294 {font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 47px; font-variation-settings: "CTGR" 0, "wdth" 100;}
+.art-295 {font-family: 'Noto Serif'; font-weight: 400; font-style: italic; line-height: 47px; color: #4559a8;}
+.layer-20 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #8898d9; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 690.5000px; margin-top: 66.6348px; z-index: 13;}
+@media (min-width:1200px) {.services-section .service-foundations {display:grid;grid-area:1/1;align-self:start;justify-self:start;width:333.98px;height:599.528px;margin-left:26.0px;margin-top:474.53999999999996px;overflow:clip;}}
+.layer-126 {display: flex; height: 372.745px; align-items: center; justify-content: center; width: 169.068px; mask-image: url("../images/rectangle31.svg"); mask-position: -214.6920px 200.1000px; mask-size: 333.98px 599.528px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 214.6920px; margin-top: -200.1000px; z-index: 99;}
+.art-298 {flex: none; transform: rotate(103.89deg) scaleY(0.81) skewX(-35.61deg);}
+.art-299 {height: 166.674px; position: relative; width: 253.417px;}
+.art-300 {position: absolute; inset: -50.4% -33.15%;}
+.art-301 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-123 {height: 463.365px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: 16.672px 130.952px; mask-size: 333.98px 599.528px; width: 222.348px; mask-image: url("../images/rectangle31.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -16.6700px; margin-top: -130.9600px; z-index: 96;}
+.art-303 {position: absolute; inset: -18.13% -37.78%;}
+.art-304 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-122 {background-color: #fff; border-color: #bac7f9; border-width: 0.25px; border-style: solid; height: 599.528px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-size: 333.98px 599.528px; border-radius: 1px; width: 333.98px; mask-image: url("../images/rectangle31.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 0.0000px; margin-top: 0.0000px; z-index: 95;}
+.layer-157 {background-color: #4559a8; height: 33.329px; border-radius: 3px; width: 108.17px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 20.0000px; margin-top: 16.0200px; z-index: 114;}
+.layer-158 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 31.5000px; margin-top: 21.1038px; z-index: 115;}
+.layer-162 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 21px; color: #000; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 20.0000px; margin-top: 72.7268px; z-index: 118;}
+.layer-555 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #4559a8; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 20.0000px; margin-top: 107.8311px; z-index: 376;}
+.layer-553 {display: flex; height: 0; align-items: center; justify-content: center; width: 277.578px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 20.0000px; margin-top: 156.9400px; z-index: 374;}
+.art-311 {flex: none; transform: rotate(90deg);}
+.art-312 {height: 277.578px; position: relative; width: 0;}
+.art-313 {position: absolute; inset: 0 -0.25px;}
+.art-314 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-164 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; width: 287.496px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 20.0000px; margin-top: 169.1844px; z-index: 120;}
+.layer-124 {display: flex; height: 678.155px; align-items: center; justify-content: center; width: 320.617px; mask-image: url("../images/rectangle31.svg"); mask-position: -96.1600px -236.9500px; mask-size: 333.98px 599.528px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 96.1600px; margin-top: 236.9500px; z-index: 97;}
+.art-317 {flex: none; transform: rotate(103.89deg) scaleY(0.81) skewX(-35.61deg);}
+.art-318 {height: 331.454px; position: relative; width: 438.955px;}
+.art-319 {position: absolute; inset: -27.15% -20.5%;}
+.art-320 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-127 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -22px -296.139px; mask-size: 333.98px 599.528px; width: 20px; height: 20px; mask-image: url("../images/rectangle31.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 22.0000px; margin-top: 296.1400px; z-index: 100;}
+.art-322 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-166 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; width: 213.82px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 56.4766px; margin-top: 296.1350px; z-index: 122;}
+.layer-129 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -22px -349.908px; mask-size: 333.98px 599.528px; width: 20px; height: 20px; mask-image: url("../images/rectangle31.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 22.0000px; margin-top: 349.9000px; z-index: 101;}
+.art-325 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-168 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; width: 213.82px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 56.4766px; margin-top: 349.9041px; z-index: 124;}
+.layer-125 {display: flex; height: 372.745px; align-items: center; justify-content: center; width: 169.068px; mask-image: url("../images/rectangle31.svg"); mask-position: 101.7100px -396.7600px; mask-size: 333.98px 599.528px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -101.7100px; margin-top: 396.7600px; z-index: 98;}
+.art-328 {flex: none; transform: rotate(103.89deg) scaleY(0.81) skewX(-35.61deg);}
+.art-329 {height: 166.674px; position: relative; width: 253.417px;}
+.art-330 {position: absolute; inset: -50.4% -33.15%;}
+.art-331 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-131 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -22px -404.25px; mask-size: 333.98px 599.528px; width: 20px; height: 20px; mask-image: url("../images/rectangle31.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 22.0000px; margin-top: 404.2500px; z-index: 102;}
+.art-333 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-170 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; width: 287.5px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 56.4766px; margin-top: 404.2456px; z-index: 126;}
+.layer-133 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -22px -441.92px; mask-size: 333.98px 599.528px; width: 20px; height: 20px; mask-image: url("../images/rectangle31.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 22.0000px; margin-top: 441.9200px; z-index: 103;}
+.art-336 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-172 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; width: 287.5px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 56.4766px; margin-top: 441.9163px; z-index: 128;}
+.layer-574 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 22.1053px; margin-top: 14.9334px; z-index: 388;}
+.layer-575 {overflow: clip; width: 16px; height: 16px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 278.6780px; margin-top: 18.9300px; z-index: 389;}
+.art-341 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-573 {background-color: #18265d; height: 53.858px; border-radius: 2px; width: 313.016px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 10.5900px; margin-top: 531.5600px; z-index: 387; display: grid;}
+.layer-126 {--reading-order: 21744;}
+.layer-123 {--reading-order: 22436;}
+.layer-122 {--reading-order: 23745;}
+.layer-157 {--reading-order: 23906;}
+.layer-158 {--reading-order: 23956;}
+.layer-162 {--reading-order: 24473;}
+.layer-555 {--reading-order: 24824;}
+.layer-553 {--reading-order: 25315;}
+.layer-164 {--reading-order: 25437;}
+.layer-124 {--reading-order: 26115;}
+.layer-127 {--reading-order: 26707;}
+.layer-166 {--reading-order: 26707;}
+.layer-129 {--reading-order: 27244;}
+.layer-168 {--reading-order: 27244;}
+.layer-125 {--reading-order: 27713;}
+.layer-131 {--reading-order: 27788;}
+.layer-170 {--reading-order: 27788;}
+.layer-133 {--reading-order: 28165;}
+.layer-172 {--reading-order: 28165;}
+.layer-573 {--reading-order: 29061;}
+@media (min-width:1200px) {.services-section .service-essentials {display:grid;grid-area:1/1;align-self:start;justify-self:start;width:333.98px;height:599.528px;margin-left:376.25px;margin-top:474.53999999999996px;overflow:clip;}}
+.layer-136 {background-color: #fff; height: 599.528px; border-radius: 1px; width: 333.98px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 0.0000px; margin-top: 0.0000px; z-index: 104;}
+.layer-160 {background-color: #4559a8; height: 33.329px; border-radius: 3px; width: 135.508px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 20.7700px; margin-top: 16.0200px; z-index: 116;}
+.layer-161 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 32.2734px; margin-top: 21.1038px; z-index: 117;}
+.layer-163 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 21px; color: #000; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 20.7734px; margin-top: 72.7268px; z-index: 119;}
+.layer-556 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #4559a8; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 20.7734px; margin-top: 107.8311px; z-index: 377;}
+.layer-554 {display: flex; height: 0; align-items: center; justify-content: center; width: 277.578px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 20.7700px; margin-top: 156.9400px; z-index: 375;}
+.art-348 {flex: none; transform: rotate(90deg);}
+.art-349 {height: 277.578px; position: relative; width: 0;}
+.art-350 {position: absolute; inset: 0 -0.25px;}
+.art-351 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-165 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; width: 287.496px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 20.7734px; margin-top: 169.1844px; z-index: 121;}
+.layer-137 {width: 20px; height: 20px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.7500px; margin-top: 296.1400px; z-index: 105;}
+.art-354 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-167 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; width: 223.297px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 57.2500px; margin-top: 296.1350px; z-index: 123;}
+.layer-139 {width: 20px; height: 20px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.7500px; margin-top: 349.9000px; z-index: 106;}
+.art-357 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-169 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; width: 245.414px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 57.2500px; margin-top: 349.9041px; z-index: 125;}
+.layer-141 {width: 20px; height: 20px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.7500px; margin-top: 404.2500px; z-index: 107;}
+.art-360 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-171 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; width: 232.742px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 57.2500px; margin-top: 404.2456px; z-index: 127;}
+.layer-143 {width: 20px; height: 20px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.7500px; margin-top: 460.9200px; z-index: 108;}
+.art-363 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-173 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; width: 223.297px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 57.2500px; margin-top: 460.9163px; z-index: 129;}
+.layer-581 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 22.1087px; margin-top: 14.9334px; z-index: 391;}
+.layer-582 {overflow: clip; width: 16px; height: 16px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 278.6780px; margin-top: 18.9300px; z-index: 392;}
+.art-368 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-580 {background-color: #18265d; height: 53.858px; border-radius: 2px; width: 313.016px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 11.3600px; margin-top: 531.5600px; z-index: 390; display: grid;}
+.layer-136 {--reading-order: 23745;}
+.layer-160 {--reading-order: 23906;}
+.layer-161 {--reading-order: 23956;}
+.layer-163 {--reading-order: 24473;}
+.layer-556 {--reading-order: 24824;}
+.layer-554 {--reading-order: 25315;}
+.layer-165 {--reading-order: 25437;}
+.layer-137 {--reading-order: 26707;}
+.layer-167 {--reading-order: 26707;}
+.layer-139 {--reading-order: 27244;}
+.layer-169 {--reading-order: 27244;}
+.layer-141 {--reading-order: 27788;}
+.layer-171 {--reading-order: 27788;}
+.layer-143 {--reading-order: 28355;}
+.layer-173 {--reading-order: 28355;}
+.layer-580 {--reading-order: 29061;}
+@media (min-width:1200px) {.services-section .service-cfo {display:grid;grid-area:1/1;align-self:start;justify-self:start;width:333.98px;height:599.528px;margin-left:1076.77px;margin-top:474.53999999999996px;overflow:clip;}}
+.layer-147 {height: 599.528px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-size: 333.98px 599.528px; border-radius: 1px; width: 333.98px; mask-image: url("../images/rectangle31.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 0.0000px; margin-top: 0.0000px; z-index: 109;}
+.art-370 {position: absolute; inset: 0; pointer-events: none; border-radius: 1px;}
+.art-371 {position: absolute; max-width: none; object-fit: cover; border-radius: 1px; width: 100%; height: 100%;}
+.art-372 {position: absolute; background-color: rgba(0,0,0,0.7); inset: 0; border-radius: 1px;}
+.layer-591 {background-color: #7185d2; height: 33.329px; border-radius: 3px; width: 98.852px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.4600px; margin-top: 16.0200px; z-index: 396;}
+.layer-592 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 35.9566px; margin-top: 21.1038px; z-index: 397;}
+.layer-594 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 21px; color: #fff; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.4566px; margin-top: 72.7268px; z-index: 399;}
+.layer-608 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #bac7f9; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.4566px; margin-top: 107.8311px; z-index: 413;}
+.layer-606 {display: flex; height: 0; align-items: center; justify-content: center; width: 277.578px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.4600px; margin-top: 156.9400px; z-index: 411;}
+.art-378 {flex: none; transform: rotate(90deg);}
+.art-379 {height: 277.578px; position: relative; width: 0;}
+.art-380 {position: absolute; inset: 0 -0.25px;}
+.art-381 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-596 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; width: 287.496px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.4566px; margin-top: 169.1844px; z-index: 401;}
+.layer-148 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -21.234px -296.139px; mask-size: 333.98px 599.528px; width: 20px; height: 20px; mask-image: url("../images/rectangle31.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.2300px; margin-top: 296.1400px; z-index: 110;}
+.art-384 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-598 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #fff; letter-spacing: -0.2679px; width: 223.297px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 57.9331px; margin-top: 296.1350px; z-index: 403;}
+.layer-600 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #fff; letter-spacing: -0.2679px; width: 245.414px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 57.9331px; margin-top: 335.9041px; z-index: 405;}
+.layer-150 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -21.234px -336.908px; mask-size: 333.98px 599.528px; width: 20px; height: 20px; mask-image: url("../images/rectangle31.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.2300px; margin-top: 336.9000px; z-index: 111;}
+.art-388 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-602 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #fff; letter-spacing: -0.2679px; width: 211.063px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 57.9331px; margin-top: 380.2456px; z-index: 407;}
+.layer-152 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -21.234px -382.25px; mask-size: 333.98px 599.528px; width: 20px; height: 20px; mask-image: url("../images/rectangle31.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.2300px; margin-top: 382.2500px; z-index: 112;}
+.art-391 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-604 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #fff; letter-spacing: -0.2679px; width: 223.297px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 57.9331px; margin-top: 438.9163px; z-index: 409;}
+.layer-154 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -21.234px -439.92px; mask-size: 333.98px 599.528px; width: 20px; height: 20px; mask-image: url("../images/rectangle31.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.2300px; margin-top: 439.9200px; z-index: 113;}
+.art-394 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-618 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #18265d; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 22.1119px; margin-top: 14.9334px; z-index: 418;}
+.layer-619 {overflow: clip; width: 16px; height: 16px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 278.6880px; margin-top: 18.9300px; z-index: 419;}
+.art-398 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-617 {background-color: #fff; height: 53.858px; border-radius: 2px; width: 313.016px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 12.0400px; margin-top: 531.5600px; z-index: 417; display: grid;}
+.layer-147 {--reading-order: 23745;}
+.layer-591 {--reading-order: 23906;}
+.layer-592 {--reading-order: 23956;}
+.layer-594 {--reading-order: 24473;}
+.layer-608 {--reading-order: 24824;}
+.layer-606 {--reading-order: 25315;}
+.layer-596 {--reading-order: 25437;}
+.layer-148 {--reading-order: 26707;}
+.layer-598 {--reading-order: 26707;}
+.layer-600 {--reading-order: 27104;}
+.layer-150 {--reading-order: 27114;}
+.layer-602 {--reading-order: 27548;}
+.layer-152 {--reading-order: 27568;}
+.layer-604 {--reading-order: 28135;}
+.layer-154 {--reading-order: 28145;}
+.layer-617 {--reading-order: 29061;}
+.layer-174 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; text-align: center; letter-spacing: -0.2679px; width: 505.075px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 465.4531px; margin-top: 1127.0149px; z-index: 130;}
+.layer-310 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #18265d; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 606.1094px; margin-top: 1197.0242px; z-index: 191;}
+.layer-311 {overflow: clip; width: 16px; height: 16px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 817.9000px; margin-top: 1201.6500px; z-index: 192;}
+.art-402 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-315 {height: 0; width: 224.914px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 606.1580px; margin-top: 1228.3100px; z-index: 193;}
+.art-404 {position: absolute; inset: -0.5px 0;}
+.art-405 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-384 {display: flex; height: 110.986px; align-items: center; justify-content: center; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 26.2200px; margin-top: 299.9500px; z-index: 253;}
+.art-407 {flex: none; transform: rotate(180deg);}
+.art-408 {height: 110.986px; opacity: .2; position: relative; width: 0;}
+.art-409 {position: absolute; inset: 0 -0.25px;}
+.art-410 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-380 {background-color: #fff; height: 110.995px; width: 687px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 26.0000px; margin-top: 300.0400px; z-index: 251;}
+.layer-381 {border-color: #a2b1eb; border-width: 0.5px; border-style: solid; height: 110.892px; width: 1386px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 26.0000px; margin-top: 300.0500px; z-index: 252;}
+.layer-386 {height: 6.845px; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 26.0000px; margin-top: 300.0500px; z-index: 254;}
+.art-414 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-415 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-389 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1403.8180px; margin-top: 300.0500px; z-index: 256;}
+.art-417 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-418 {height: 6.845px; position: relative; width: 6.977px;}
+.art-419 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-420 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-392 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #18265d; font-size: 21px; letter-spacing: -1px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 67.0000px; margin-top: 328.9453px; z-index: 259;}
+.layer-394 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 18px; color: #000; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 755.9531px; margin-top: 340.9927px; z-index: 260;}
+.layer-395 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 18px; color: #000; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 915.1953px; margin-top: 340.9927px; z-index: 261;}
+.layer-396 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 18px; color: #000; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1108.4375px; margin-top: 340.9927px; z-index: 262;}
+.layer-397 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 18px; color: #000; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1275.6797px; margin-top: 340.9927px; z-index: 263;}
+.layer-398 {width: 16px; height: 16px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 882.2620px; margin-top: 347.4900px; z-index: 264;}
+.art-427 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-400 {width: 16px; height: 16px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1073.8100px; margin-top: 347.4900px; z-index: 265;}
+.art-429 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-402 {width: 16px; height: 16px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1241.0120px; margin-top: 347.4900px; z-index: 266;}
+.art-431 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-391 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #4559a8; font-size: 14px; text-align: right; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 67.0000px; margin-top: 359.9453px; z-index: 258;}
+.layer-387 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 26.0000px; margin-top: 404.0900px; z-index: 255;}
+.art-434 {flex: none; transform: scaleY(-1);}
+.art-435 {height: 6.845px; position: relative; width: 6.977px;}
+.art-436 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-437 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-390 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1403.8180px; margin-top: 404.0900px; z-index: 257;}
+.art-439 {flex: none; transform: rotate(180deg);}
+.art-440 {height: 6.845px; position: relative; width: 6.977px;}
+.art-441 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-442 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-384 {--reading-order: 22000;}
+.layer-380 {--reading-order: 22000;}
+.layer-381 {--reading-order: 22000;}
+.layer-386 {--reading-order: 22000;}
+.layer-389 {--reading-order: 22000;}
+.layer-392 {--reading-order: 22289;}
+.layer-394 {--reading-order: 22410;}
+.layer-395 {--reading-order: 22410;}
+.layer-396 {--reading-order: 22410;}
+.layer-397 {--reading-order: 22410;}
+.layer-398 {--reading-order: 22475;}
+.layer-400 {--reading-order: 22475;}
+.layer-402 {--reading-order: 22475;}
+.layer-391 {--reading-order: 22599;}
+.layer-387 {--reading-order: 23041;}
+.layer-390 {--reading-order: 23041;}
+@media (min-width:1200px) {.services-section .service-advisory {display:grid;grid-area:1/1;align-self:start;justify-self:start;width:334.0px;height:599.528px;margin-left:726.5px;margin-top:474.53999999999996px;overflow:clip;}}
+.layer-563 {display: flex; height: 372.745px; align-items: center; justify-content: center; width: 169.078px; mask-image: url("../images/rectangle35.svg"); mask-position: -214.7220px 200.1000px; mask-size: 334px 599.528px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 214.7220px; margin-top: -200.1000px; z-index: 382;}
+.art-444 {flex: none; transform: rotate(103.89deg) scaleY(0.81) skewX(-35.61deg);}
+.art-445 {height: 166.678px; position: relative; width: 253.417px;}
+.art-446 {position: absolute; inset: -50.4% -33.15%;}
+.art-447 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-560 {height: 463.365px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: 45.859px 85.459px; mask-size: 334px 599.528px; width: 222.361px; mask-image: url("../images/rectangle35.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -45.8120px; margin-top: -85.4600px; z-index: 379;}
+.art-449 {position: absolute; inset: -18.13% -37.78%;}
+.art-450 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-559 {background-color: #18265d; height: 599.528px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-size: 334px 599.528px; border-radius: 1px; width: 334px; mask-image: url("../images/rectangle35.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 0.0000px; margin-top: 0.0000px; z-index: 378;}
+.layer-587 {background-color: #7185d2; height: 33.329px; border-radius: 3px; width: 112.727px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 19.9100px; margin-top: 16.0200px; z-index: 393;}
+.layer-588 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 31.4062px; margin-top: 21.1038px; z-index: 394;}
+.layer-589 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: italic; line-height: normal; color: #e6cb8e; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 221.4062px; margin-top: 21.1038px; z-index: 395;}
+.layer-593 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 21px; color: #fff; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 19.9062px; margin-top: 72.7268px; z-index: 398;}
+.layer-607 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #bac7f9; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 19.9062px; margin-top: 107.8311px; z-index: 412;}
+.layer-605 {display: flex; height: 0; align-items: center; justify-content: center; width: 277.578px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 19.9100px; margin-top: 156.9400px; z-index: 410;}
+.art-458 {flex: none; transform: rotate(90deg);}
+.art-459 {height: 277.578px; position: relative; width: 0;}
+.art-460 {position: absolute; inset: 0 -0.25px;}
+.art-461 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-561 {display: flex; height: 678.155px; align-items: center; justify-content: center; width: 320.636px; mask-image: url("../images/rectangle35.svg"); mask-position: -58.1500px -157.4700px; mask-size: 334px 599.528px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 58.1500px; margin-top: 157.4700px; z-index: 380;}
+.art-463 {flex: none; transform: rotate(103.89deg) scaleY(0.81) skewX(-35.61deg);}
+.art-464 {height: 331.463px; position: relative; width: 438.957px;}
+.art-465 {position: absolute; inset: -27.15% -20.5%;}
+.art-466 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-595 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; width: 287.496px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 19.9062px; margin-top: 169.1844px; z-index: 400;}
+.layer-564 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -21.5px -296.139px; mask-size: 334px 599.528px; width: 20px; height: 20px; mask-image: url("../images/rectangle35.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.5000px; margin-top: 296.1400px; z-index: 383;}
+.art-469 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-597 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #fff; letter-spacing: -0.2679px; width: 223.297px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 56.3828px; margin-top: 296.1350px; z-index: 402;}
+.layer-566 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -21.5px -335.908px; mask-size: 334px 599.528px; width: 20px; height: 20px; mask-image: url("../images/rectangle35.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.5000px; margin-top: 335.9000px; z-index: 384;}
+.art-472 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-599 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #fff; letter-spacing: -0.2679px; width: 245.414px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 56.3828px; margin-top: 335.9041px; z-index: 404;}
+.layer-562 {display: flex; height: 372.745px; align-items: center; justify-content: center; width: 169.078px; mask-image: url("../images/rectangle35.svg"); mask-position: 24.6820px -375.6800px; mask-size: 334px 599.528px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -24.6820px; margin-top: 375.6800px; z-index: 381;}
+.art-475 {flex: none; transform: rotate(103.89deg) scaleY(0.81) skewX(-35.61deg);}
+.art-476 {height: 166.678px; position: relative; width: 253.417px;}
+.art-477 {position: absolute; inset: -50.4% -33.15%;}
+.art-478 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-568 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -21.5px -395.25px; mask-size: 334px 599.528px; width: 20px; height: 20px; mask-image: url("../images/rectangle35.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.5000px; margin-top: 395.2500px; z-index: 385;}
+.art-480 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-601 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #fff; letter-spacing: -0.2679px; width: 232.742px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 56.3828px; margin-top: 395.2456px; z-index: 406;}
+.layer-570 {mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -21.5px -455.92px; mask-size: 334px 599.528px; width: 20px; height: 20px; mask-image: url("../images/rectangle35.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 21.5000px; margin-top: 455.9200px; z-index: 386;}
+.art-483 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-603 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #fff; letter-spacing: -0.2679px; width: 223.297px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 56.3828px; margin-top: 456.9163px; z-index: 408;}
+.layer-611 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #18265d; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 22.1116px; margin-top: 14.9334px; z-index: 415;}
+.layer-612 {overflow: clip; width: 16px; height: 16px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 278.6780px; margin-top: 18.9300px; z-index: 416;}
+.art-488 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-610 {background-color: #fff; height: 53.858px; border-radius: 2px; width: 313.016px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 10.4900px; margin-top: 531.5600px; z-index: 414; display: grid;}
+.layer-563 {--reading-order: 21744;}
+.layer-560 {--reading-order: 22891;}
+.layer-559 {--reading-order: 23745;}
+.layer-587 {--reading-order: 23906;}
+.layer-588 {--reading-order: 23956;}
+.layer-589 {--reading-order: 23956;}
+.layer-593 {--reading-order: 24473;}
+.layer-607 {--reading-order: 24824;}
+.layer-605 {--reading-order: 25315;}
+.layer-561 {--reading-order: 25320;}
+.layer-595 {--reading-order: 25437;}
+.layer-564 {--reading-order: 26707;}
+.layer-597 {--reading-order: 26707;}
+.layer-566 {--reading-order: 27104;}
+.layer-599 {--reading-order: 27104;}
+.layer-562 {--reading-order: 27502;}
+.layer-568 {--reading-order: 27698;}
+.layer-601 {--reading-order: 27698;}
+.layer-570 {--reading-order: 28305;}
+.layer-603 {--reading-order: 28315;}
+.layer-610 {--reading-order: 29061;}
+.services-section {height: 1290px;}
+.layer-518 {display: flex; height: 385.775px; align-items: center; justify-content: center; width: 405.708px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 535.9920px; margin-top: 239.4100px; z-index: 346;}
+.art-490 {flex: none; transform: rotate(106.99deg);}
+.art-491 {height: 331.956px; position: relative; width: 301.94px;}
+.art-492 {position: absolute; inset: -45.19% -49.68%;}
+.art-493 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-522 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #7185d2; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 128.7422px; margin-top: 77.2744px; z-index: 349;}
+.layer-520 {word-break: break-word; font-family: 'Playfair Display'; font-weight: 400; font-style: normal; line-height: 0; color: #00123a; font-size: 40px; letter-spacing: -1px; width: 518.002px; white-space: normal; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 128.7422px; margin-top: 110.4800px; z-index: 348;}
+.art-496 {font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 51px; margin-bottom: 0; display: block; font-variation-settings: "CTGR" 0, "wdth" 100;}
+.art-497 {display: block;}
+.art-498 {font-family: 'Noto Serif'; font-weight: 400; font-style: italic; line-height: 51px; color: #4559a8;}
+.art-499 {font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 51px; font-variation-settings: "CTGR" 0, "wdth" 100;}
+.layer-523 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; width: 509.035px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 128.7422px; margin-top: 432.4807px; z-index: 350;}
+.layer-519 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: italic; line-height: normal; color: #4559a8; font-size: 14px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 128.7422px; margin-top: 521.8508px; z-index: 347;}
+.layer-522 {--reading-order: 32673;}
+.layer-520 {--reading-order: 33005;}
+.layer-523 {--reading-order: 36225;}
+.layer-519 {--reading-order: 37119;}
+.layer-537 {height: 6.845px; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 725.7400px; margin-top: 88.2700px; z-index: 362;}
+.art-503 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-504 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-540 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1301.8180px; margin-top: 88.2700px; z-index: 364;}
+.art-506 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-507 {height: 6.845px; position: relative; width: 6.977px;}
+.art-508 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-509 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-525 {background-color: #fff; height: 389.97px; width: 580.117px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 727.1600px; margin-top: 89.9200px; z-index: 351;}
+.layer-545 {background-color: #4559a8; height: 2.817px; width: 393.598px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 726.6300px; margin-top: 318.7100px; z-index: 367;}
+.layer-527 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #8898d9; font-size: 21px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 766.2188px; margin-top: 351.5161px; z-index: 353;}
+.layer-528 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #00123a; font-size: 21px; letter-spacing: -1px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 808.2188px; margin-top: 351.5161px; z-index: 354;}
+.layer-526 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; width: 495.453px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 766.2188px; margin-top: 403.4807px; z-index: 352;}
+.layer-538 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 725.7400px; margin-top: 473.7200px; z-index: 363;}
+.art-516 {flex: none; transform: scaleY(-1);}
+.art-517 {height: 6.845px; position: relative; width: 6.977px;}
+.art-518 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-519 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-541 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1301.8180px; margin-top: 473.7200px; z-index: 365;}
+.art-521 {flex: none; transform: rotate(180deg);}
+.art-522 {height: 6.845px; position: relative; width: 6.977px;}
+.art-523 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-524 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-530 {background-color: #fff; height: 70.604px; width: 580.117px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 727.1600px; margin-top: 493.2100px; z-index: 355;}
+.layer-532 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 0; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 774.9375px; margin-top: 504.4438px; z-index: 357;}
+.art-527 {line-height: normal;}
+.art-528 {font-family: 'Satoshi'; font-weight: 700; font-style: normal; line-height: normal;}
+.art-529 {line-height: normal;}
+.layer-533 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #4559a8; font-size: 21px; letter-spacing: -1px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 808.2188px; margin-top: 511.4438px; z-index: 358;}
+.layer-534 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #8898d9; font-size: 21px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 766.2188px; margin-top: 511.9438px; z-index: 359;}
+.layer-531 {background-color: #fff; height: 70.604px; width: 580.117px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 727.1600px; margin-top: 577.2300px; z-index: 356;}
+.layer-535 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #8898d9; font-size: 21px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 766.2188px; margin-top: 595.4656px; z-index: 360;}
+.layer-536 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #4559a8; font-size: 21px; letter-spacing: -1px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 808.2188px; margin-top: 595.4656px; z-index: 361;}
+.layer-537 {--reading-order: 32783;}
+.layer-540 {--reading-order: 32783;}
+.layer-525 {--reading-order: 32799;}
+.layer-545 {--reading-order: 35087;}
+.layer-527 {--reading-order: 35415;}
+.layer-528 {--reading-order: 35415;}
+.layer-526 {--reading-order: 35935;}
+.layer-538 {--reading-order: 36637;}
+.layer-541 {--reading-order: 36637;}
+.layer-530 {--reading-order: 36832;}
+.layer-532 {--reading-order: 36944;}
+.layer-533 {--reading-order: 37014;}
+.layer-534 {--reading-order: 37019;}
+.layer-531 {--reading-order: 37672;}
+.layer-535 {--reading-order: 37855;}
+.layer-536 {--reading-order: 37855;}
+.layer-544 {height: 228.594px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: 19.047px -0.201px; mask-size: 580.117px 228.795px; border-radius: 5px; width: 611.764px; mask-image: url("../images/team-photos-fauxels5.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 708.1580px; margin-top: 90.1200px; z-index: 366;}
+.art-536 {position: absolute; inset: 0; max-width: none; object-fit: cover; pointer-events: none; border-radius: 5px; width: 100%; height: 100%;}
+.layer-544 {--reading-order: 32801;}
+.layer-547 {width: 63.969px; height: 63.969px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 128.7400px; margin-top: 576.9900px; z-index: 368;}
+.art-538 {position: absolute; inset: -6.25% -12.51% -18.76% -12.51%;}
+.art-539 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-548 {width: 63.969px; height: 63.969px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 161.2420px; margin-top: 576.9900px; z-index: 369;}
+.art-541 {position: absolute; inset: -6.25% -12.51% -18.76% -12.51%;}
+.art-542 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-549 {width: 63.969px; height: 63.969px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 193.7920px; margin-top: 576.9900px; z-index: 370;}
+.art-544 {position: absolute; inset: -6.25% -12.51% -18.76% -12.51%;}
+.art-545 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-550 {width: 63.969px; height: 63.969px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 226.3320px; margin-top: 576.9900px; z-index: 371;}
+.art-547 {position: absolute; inset: -6.25% -12.51% -18.76% -12.51%;}
+.art-548 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-551 {width: 63.969px; height: 63.969px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 258.9780px; margin-top: 576.9900px; z-index: 372;}
+.art-550 {position: absolute; inset: -6.25% -12.51% -18.76% -12.51%;}
+.art-551 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-552 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 0; color: #00123a; font-size: 16px; letter-spacing: -0.25px; width: 301.406px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 338.3750px; margin-top: 590.9695px; z-index: 373;}
+.art-553 {line-height: 19px;}
+.art-554 {text-decoration-skip-ink: none; text-underline-position: from-font; text-decoration-thickness: from-font; text-decoration-style: solid; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: 19px; text-decoration-line: underline;}
+.layer-547 {--reading-order: 37670;}
+.layer-548 {--reading-order: 37670;}
+.layer-549 {--reading-order: 37670;}
+.layer-550 {--reading-order: 37670;}
+.layer-551 {--reading-order: 37670;}
+.layer-552 {--reading-order: 37810;}
+.about-section {height: 740px;}
+.layer-492 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 0; color: #18265d; font-size: 40px; text-align: center; letter-spacing: -0.25px; width: 572.123px; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 431.9297px; margin-top: 93.8213px; z-index: 329;}
+.art-556 {line-height: 47px;}
+.art-557 {font-family: 'Noto Serif'; font-weight: 400; font-style: italic; line-height: 47px; color: #4559a8;}
+.art-558 {line-height: 47px;}
+.layer-494 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #8898d9; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 622.0000px; margin-top: 71.8213px; z-index: 330;}
+.layer-497 {border-color: #7185d2; border-width: 0.5px; border-style: solid; height: 374.107px; border-radius: 1px; width: 451px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 28.2500px; margin-top: 247.3900px; z-index: 331;}
+.layer-500 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #bac7f9; font-size: 71px; letter-spacing: -0.8333px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 56.5625px; margin-top: 281.0410px; z-index: 334;}
+.layer-499 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 21px; color: #000; letter-spacing: -0.42px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 56.5625px; margin-top: 392.5925px; z-index: 333;}
+.layer-498 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 0; font-size: 16px; color: #000; letter-spacing: -0.2679px; width: 339.703px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 58.2578px; margin-top: 527.2148px; z-index: 332;}
+.art-564 {font-family: 'Satoshi'; font-weight: 700; font-style: normal; line-height: normal;}
+.art-565 {line-height: normal;}
+.layer-497 {--reading-order: 41774;}
+.layer-500 {--reading-order: 42110;}
+.layer-499 {--reading-order: 43226;}
+.layer-498 {--reading-order: 44572;}
+.layer-502 {border-color: #7185d2; border-width: 0.5px; border-style: solid; height: 374.107px; border-radius: 1px; width: 451px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 494.2020px; margin-top: 247.3900px; z-index: 335;}
+.layer-503 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; color: #bac7f9; font-size: 71px; letter-spacing: -0.8333px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 522.5625px; margin-top: 281.0410px; z-index: 336;}
+.layer-505 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 21px; color: #000; letter-spacing: -0.42px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 525.5625px; margin-top: 392.5925px; z-index: 338;}
+.layer-504 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; width: 365.426px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 527.2656px; margin-top: 527.2148px; z-index: 337;}
+.layer-502 {--reading-order: 41774;}
+.layer-503 {--reading-order: 42110;}
+.layer-505 {--reading-order: 43226;}
+.layer-504 {--reading-order: 44572;}
+.layer-514 {height: 329.184px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -223.945px 129.711px; mask-size: 451.5px 374.107px; width: 319.477px; mask-image: url("../images/rectangle34.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1184.1520px; margin-top: 117.6800px; z-index: 343;}
+.art-571 {position: absolute; inset: -75.95% -78.25%;}
+.art-572 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-509 {background-color: #00123a; height: 374.107px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-size: 451.5px 374.107px; border-radius: 1px; width: 451.5px; mask-image: url("../images/rectangle34.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 960.2980px; margin-top: 247.3900px; z-index: 339;}
+.layer-513 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -28.313px -33.649px; mask-size: 451.5px 374.107px; color: #a2b1eb; font-size: 71px; letter-spacing: -0.8333px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; mask-image: url("../images/rectangle34.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 988.5625px; margin-top: 281.0410px; z-index: 342;}
+.layer-516 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 21px; color: #fff; letter-spacing: -0.42px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 989.1016px; margin-top: 392.5925px; z-index: 345;}
+.layer-515 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 0; font-size: 16px; color: #fff; letter-spacing: -0.2679px; width: 389.594px; white-space: pre-wrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 990.8047px; margin-top: 457.2148px; z-index: 344;}
+.art-577 {line-height: normal; margin-bottom: 0;}
+.art-578 {line-height: normal;}
+.layer-512 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -55.273px -313.156px; mask-size: 451.5px 374.107px; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; mask-image: url("../images/rectangle34.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 26.3754px; margin-top: 11.3373px; z-index: 341;}
+.layer-511 {background-color: #4559a8; height: 46.665px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: -28.852px -301.823px; mask-size: 451.5px 374.107px; border-radius: 2px; width: 399.266px; mask-image: url("../images/rectangle34.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 989.1480px; margin-top: 549.2100px; z-index: 340; display: grid;}
+.layer-514 {--reading-order: 40477;}
+.layer-509 {--reading-order: 41774;}
+.layer-513 {--reading-order: 42110;}
+.layer-516 {--reading-order: 43226;}
+.layer-515 {--reading-order: 43872;}
+.layer-511 {--reading-order: 44792;}
+.process-section {height: 670px;}
+.layer-4 {border-color: #7185d2; border-width: 0.5px; border-style: solid; height: 436.527px; width: 642.457px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 69.1200px; margin-top: 281.2400px; z-index: 1;}
+.layer-467 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 704.6580px; margin-top: 281.2900px; z-index: 312;}
+.art-583 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-584 {height: 6.845px; position: relative; width: 6.977px;}
+.art-585 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-586 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-469 {height: 6.845px; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 727.1600px; margin-top: 281.2900px; z-index: 313;}
+.art-588 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-589 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-445 {background-color: #fff; height: 422.788px; width: 629.336px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 75.2700px; margin-top: 288.1300px; z-index: 292;}
+.layer-448 {height: 156.789px; width: 629.344px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 75.2700px; margin-top: 288.1300px; z-index: 295;}
+.art-592 {position: absolute; inset: 0; pointer-events: none;}
+.art-593 {position: absolute; background-color: #d9d9d9; inset: 0;}
+.art-594 {position: absolute; inset: 0; overflow: hidden;}
+.art-595 {position: absolute; height: 648.35%; left: 0; max-width: none; top: -217.36%; width: 100%;}
+.layer-450 {background-color: rgba(0,0,0,0.45); height: 156.789px; width: 629.344px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 75.2700px; margin-top: 288.1300px; z-index: 297;}
+.layer-459 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 103.0000px; margin-top: 366.8452px; z-index: 305;}
+.layer-454 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 21px; color: #fff; letter-spacing: -0.25px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 103.0000px; margin-top: 391.5044px; z-index: 300;}
+.layer-461 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 47px; color: #18265d; font-size: 50px; letter-spacing: -0.6667px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 117.0000px; margin-top: 497.5957px; z-index: 307;}
+.layer-463 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 117.0000px; margin-top: 555.5825px; z-index: 309;}
+.layer-462 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 47px; color: #18265d; font-size: 50px; letter-spacing: -0.6667px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 429.8281px; margin-top: 497.5957px; z-index: 308;}
+.layer-464 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 429.8281px; margin-top: 555.5825px; z-index: 310;}
+.layer-456 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; width: 470.664px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 104.0000px; margin-top: 623.4829px; z-index: 302;}
+.layer-487 {overflow: clip; width: 16px; height: 16px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 17.6700px; margin-top: 17.6700px; z-index: 328;}
+.art-606 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-486 {background-color: #18265d; width: 51.348px; height: 51.348px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 633.5980px; margin-top: 635.4800px; z-index: 327; display: grid; border: 0; padding: 0;}
+.layer-473 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 704.6480px; margin-top: 710.9200px; z-index: 316;}
+.art-608 {flex: none; transform: rotate(180deg);}
+.art-609 {height: 6.845px; position: relative; width: 6.977px;}
+.art-610 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-611 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-475 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 727.1600px; margin-top: 710.9200px; z-index: 317;}
+.art-613 {flex: none; transform: scaleY(-1);}
+.art-614 {height: 6.845px; position: relative; width: 6.977px;}
+.art-615 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-616 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-4 {--reading-order: 48812;}
+.layer-467 {--reading-order: 48813;}
+.layer-469 {--reading-order: 48813;}
+.layer-445 {--reading-order: 48881;}
+.layer-448 {--reading-order: 48881;}
+.layer-450 {--reading-order: 48881;}
+.layer-459 {--reading-order: 49668;}
+.layer-454 {--reading-order: 49915;}
+.layer-461 {--reading-order: 50976;}
+.layer-462 {--reading-order: 50976;}
+.layer-463 {--reading-order: 51556;}
+.layer-464 {--reading-order: 51556;}
+.layer-456 {--reading-order: 52235;}
+.layer-486 {--reading-order: 52355;}
+.layer-473 {--reading-order: 53109;}
+.layer-475 {--reading-order: 53109;}
+.layer-446 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #00123a; font-size: 16px; text-align: center; letter-spacing: -0.2679px; width: 620.185px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 408.4062px; margin-top: 174.0483px; z-index: 293;}
+.layer-447 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 0; font-size: 40px; color: #000; text-align: center; letter-spacing: -1px; width: 525.111px; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 455.4375px; margin-top: 109.1714px; z-index: 294;}
+.art-619 {line-height: 47px;}
+.art-620 {font-family: 'Noto Serif'; font-weight: 400; font-style: italic; line-height: 47px; color: #4559a8;}
+.layer-458 {border-color: #7185d2; border-width: 0.5px; border-style: solid; height: 436.527px; width: 642.457px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 727.1600px; margin-top: 281.2600px; z-index: 304;}
+.layer-449 {height: 156.789px; width: 626px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 734.1300px; margin-top: 288.1300px; z-index: 296;}
+.art-623 {position: absolute; inset: 0; pointer-events: none;}
+.art-624 {position: absolute; background-color: #d9d9d9; inset: 0;}
+.art-625 {position: absolute; max-width: none; object-fit: cover; width: 100%; height: 100%;}
+.layer-451 {background-color: rgba(0,0,0,0.45); height: 156.789px; width: 626px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 734.1300px; margin-top: 288.1300px; z-index: 298;}
+.layer-460 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 766.2188px; margin-top: 366.8452px; z-index: 306;}
+.layer-455 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: normal; font-size: 21px; color: #fff; letter-spacing: -0.25px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 766.2188px; margin-top: 391.5044px; z-index: 301;}
+.layer-481 {height: 88.512px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 105.0000px; margin-top: 494.3100px; z-index: 323;}
+.art-630 {position: absolute; inset: 0 -0.25px;}
+.art-631 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-483 {height: 88.512px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 766.2200px; margin-top: 494.3100px; z-index: 325;}
+.art-633 {position: absolute; inset: 0 -0.25px;}
+.art-634 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-477 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 47px; color: #18265d; font-size: 50px; letter-spacing: -0.6667px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 787.2188px; margin-top: 497.5957px; z-index: 319;}
+.layer-479 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 787.2188px; margin-top: 555.5825px; z-index: 321;}
+.layer-478 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 47px; color: #18265d; font-size: 50px; letter-spacing: -0.6667px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1092.0469px; margin-top: 497.5957px; z-index: 320;}
+.layer-480 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1092.0469px; margin-top: 555.5825px; z-index: 322;}
+.layer-457 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; width: 470.664px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 766.2188px; margin-top: 623.4829px; z-index: 303;}
+.layer-458 {--reading-order: 48813;}
+.layer-449 {--reading-order: 48881;}
+.layer-451 {--reading-order: 48881;}
+.layer-460 {--reading-order: 49668;}
+.layer-455 {--reading-order: 49915;}
+.layer-481 {--reading-order: 50943;}
+.layer-483 {--reading-order: 50943;}
+.layer-477 {--reading-order: 50976;}
+.layer-478 {--reading-order: 50976;}
+.layer-479 {--reading-order: 51556;}
+.layer-480 {--reading-order: 51556;}
+.layer-457 {--reading-order: 52235;}
+.layer-453 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #8898d9; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 634.6641px; margin-top: 83.4023px; z-index: 299;}
+.layer-466 {height: 6.845px; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 69.0500px; margin-top: 281.2900px; z-index: 311;}
+.art-642 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-643 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-470 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1360.1780px; margin-top: 281.2900px; z-index: 314;}
+.art-645 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-646 {height: 6.845px; position: relative; width: 6.977px;}
+.art-647 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-648 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-472 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 69.0300px; margin-top: 710.9200px; z-index: 315;}
+.art-650 {flex: none; transform: scaleY(-1);}
+.art-651 {height: 6.845px; position: relative; width: 6.977px;}
+.art-652 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-653 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-476 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1360.1780px; margin-top: 710.9200px; z-index: 318;}
+.art-655 {flex: none; transform: rotate(180deg);}
+.art-656 {height: 6.845px; position: relative; width: 6.977px;}
+.art-657 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-658 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-482 {height: 88.512px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 415.8900px; margin-top: 494.3100px; z-index: 324;}
+.art-660 {position: absolute; inset: 0 -0.25px;}
+.art-661 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-484 {height: 88.512px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1077.0000px; margin-top: 494.3100px; z-index: 326;}
+.art-663 {position: absolute; inset: 0 -0.25px;}
+.art-664 {display: block; max-width: none; width: 100%; height: 100%;}
+.results-section {height: 790px;}
+.layer-416 {display: flex; height: 1162.248px; align-items: center; justify-content: center; width: 1518.556px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -40.3500px; margin-top: 69.7800px; z-index: 273;}
+.art-666 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-667 {height: 1162.248px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: 67.516px 17.838px; mask-size: 1384px 724.934px; position: relative; border-radius: 5px; width: 1518.556px; mask-image: url("../images/team-photos-fauxels3.svg");}
+.art-668 {position: absolute; inset: 0; max-width: none; object-fit: cover; pointer-events: none; border-radius: 5px; width: 100%; height: 100%;}
+.layer-414 {background-color: #d8d8d8; height: 724.934px; border-radius: 5px; width: 1384px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 27.1600px; margin-top: 87.6100px; z-index: 272;}
+.layer-416 {--reading-order: 54598;}
+.layer-414 {--reading-order: 54776;}
+.layer-418 {background-color: #fff; height: 578.635px; width: 567px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 47.2500px; margin-top: 160.7600px; z-index: 274;}
+.layer-433 {height: 6.845px; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 54.8000px; margin-top: 169.4600px; z-index: 282;}
+.art-672 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-673 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-434 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 599.5280px; margin-top: 169.4600px; z-index: 283;}
+.art-675 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-676 {height: 6.845px; position: relative; width: 6.977px;}
+.art-677 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-678 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-430 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #8898d9; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 69.7031px; margin-top: 190.2246px; z-index: 280;}
+.layer-438 {word-break: break-word; font-family: 'Playfair Display'; font-weight: 400; font-style: normal; line-height: normal; color: #18265d; font-size: 26px; letter-spacing: -0.8333px; width: 285.922px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 69.7031px; margin-top: 212.2246px; z-index: 286;}
+.layer-420 {width: 13px; height: 13px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 69.7000px; margin-top: 372.3500px; z-index: 275;}
+.art-682 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-422 {width: 13px; height: 13px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 86.9500px; margin-top: 372.3500px; z-index: 276;}
+.art-684 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-424 {width: 13px; height: 13px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 104.2200px; margin-top: 372.3500px; z-index: 277;}
+.art-686 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-426 {width: 13px; height: 13px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 121.4700px; margin-top: 372.3500px; z-index: 278;}
+.art-688 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-428 {width: 13px; height: 13px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 138.6820px; margin-top: 372.3500px; z-index: 279;}
+.art-690 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-440 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.25px; width: 452.673px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 69.7031px; margin-top: 406.0811px; z-index: 288;}
+.layer-439 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; color: #18265d; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 69.7031px; margin-top: 670.3960px; z-index: 287;}
+.layer-441 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #8898d9; font-size: 14px; letter-spacing: -0.25px; width: 267.369px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 69.7031px; margin-top: 694.3960px; z-index: 289;}
+.layer-431 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 557.7109px; margin-top: 694.3960px; z-index: 281;}
+.layer-436 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 54.8000px; margin-top: 722.4600px; z-index: 284;}
+.art-696 {flex: none; transform: scaleY(-1);}
+.art-697 {height: 6.845px; position: relative; width: 6.977px;}
+.art-698 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-699 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-437 {display: flex; height: 6.845px; align-items: center; justify-content: center; width: 6.977px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 599.5280px; margin-top: 722.4600px; z-index: 285;}
+.art-701 {flex: none; transform: rotate(180deg);}
+.art-702 {height: 6.845px; position: relative; width: 6.977px;}
+.art-703 {position: absolute; inset: -7.3% 0 0 -7.17%;}
+.art-704 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-418 {--reading-order: 55508;}
+.layer-433 {--reading-order: 55595;}
+.layer-434 {--reading-order: 55595;}
+.layer-430 {--reading-order: 55802;}
+.layer-438 {--reading-order: 56022;}
+.layer-420 {--reading-order: 57624;}
+.layer-422 {--reading-order: 57624;}
+.layer-424 {--reading-order: 57624;}
+.layer-426 {--reading-order: 57624;}
+.layer-428 {--reading-order: 57624;}
+.layer-440 {--reading-order: 57961;}
+.layer-439 {--reading-order: 60604;}
+.layer-441 {--reading-order: 60844;}
+.layer-431 {--reading-order: 60844;}
+.layer-436 {--reading-order: 61125;}
+.layer-437 {--reading-order: 61125;}
+.testimonials-section {height: 850px;}
+.layer-626 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; font-size: 16px; color: #000; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 651.2750px; margin-top: 34.1816px; z-index: 420;}
+.layer-628 {width: 128.603px; height: 128.603px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 201.9220px; margin-top: 88.0800px; z-index: 421; background-color: #f0f0f0;}
+.art-707 {position: absolute; inset: 0; pointer-events: none;}
+.art-708 {position: absolute; max-width: none; object-fit: cover; width: 100%; height: 100%;}
+.art-709 {position: absolute; background-color: #000; inset: 0; mix-blend-mode: color;}
+.layer-629 {width: 128.603px; height: 128.603px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: -56.8500px; margin-top: 88.0800px; z-index: 422;}
+.art-711 {position: absolute; inset: 0; max-width: none; object-fit: cover; pointer-events: none; width: 100%; height: 100%;}
+.layer-630 {width: 192.314px; height: 192.314px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 460.7900px; margin-top: 51.2200px; z-index: 423;}
+.art-713 {position: absolute; inset: 0; max-width: none; object-fit: cover; pointer-events: none; width: 100%; height: 100%;}
+.layer-631 {width: 138.613px; height: 138.613px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 783.3100px; margin-top: 78.0700px; z-index: 424;}
+.art-715 {position: absolute; inset: 0; max-width: none; object-fit: cover; pointer-events: none; width: 100%; height: 100%;}
+.layer-632 {width: 128.231px; height: 128.231px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1052.1880px; margin-top: 83.2600px; z-index: 425;}
+.art-717 {position: absolute; inset: 0; max-width: none; object-fit: cover; pointer-events: none; width: 100%; height: 100%;}
+.layer-633 {width: 144.773px; height: 144.773px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1310.6280px; margin-top: 78.0900px; z-index: 426;}
+.art-719 {position: absolute; inset: 0; max-width: none; object-fit: cover; pointer-events: none; width: 100%; height: 100%;}
+.partners-section {height: 310px;}
+.layer-404 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #fff; letter-spacing: -0.2679px; width: 367.648px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 927.3516px; margin-top: 87.8149px; z-index: 267;}
+.layer-405 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #000; letter-spacing: -0.2679px; width: 367.648px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 757.0000px; margin-top: 492.8433px; z-index: 268;}
+.layer-407 {background-color: #4559a8; height: 44.967px; width: 367.648px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 927.3020px; margin-top: 146.1900px; z-index: 269;}
+.layer-408 {width: 18px; height: 18px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 939.5220px; margin-top: 159.6700px; z-index: 270;}
+.art-724 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-410 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 0; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 975.1406px; margin-top: 157.4204px; z-index: 271;}
+.art-726 {line-height: normal;}
+.art-727 {font-family: 'Satoshi'; font-weight: 700; font-style: normal; line-height: normal;}
+.art-728 {line-height: normal;}
+.layer-442 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 0; color: #00123a; font-size: 40px; letter-spacing: -0.6667px; white-space: nowrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 754.8281px; margin-top: 373.0259px; z-index: 290;}
+.art-730 {line-height: normal; color: #4559a8;}
+.art-731 {line-height: normal;}
+.layer-443 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #18265d; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 755.1719px; margin-top: 295.7935px; z-index: 291;}
+.tax-intro-section {height: 586px;}
+.layer-106 {display: flex; height: 340.373px; align-items: center; justify-content: center; width: 291.77px; mask-image: url("../images/rectangle30.svg"); mask-position: -370.6000px 182.7200px; mask-size: 576.367px 547.461px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1089.7300px; margin-top: 103.4600px; z-index: 83;}
+.art-734 {flex: none; transform: rotate(115.04deg) scaleY(0.99) skewX(-6.74deg);}
+.art-735 {height: 219.76px; opacity: .3; position: relative; width: 247.952px;}
+.art-736 {position: absolute; inset: -38.22% -33.88%;}
+.art-737 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-103 {height: 423.124px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-position: 79.141px 78.038px; mask-size: 576.367px 547.46px; opacity: .3; width: 383.717px; mask-image: url("../images/rectangle30.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 640.0380px; margin-top: 208.1400px; z-index: 80;}
+.art-739 {position: absolute; inset: -19.85% -21.89%;}
+.art-740 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-77 {height: 666.729px; width: 782.521px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 327.9180px; margin-top: 217.7500px; z-index: 62;}
+.art-742 {position: absolute; inset: -30% -25.56%;}
+.art-743 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-102 {background-color: #fff; height: 547.461px; mask-mode: alpha; mask-composite: intersect; mask-clip: no-clip; mask-repeat: no-repeat; mask-size: 576.367px 547.46px; opacity: .3; border-radius: 1px; width: 576.367px; mask-image: url("../images/rectangle30.svg"); position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 719.1300px; margin-top: 286.1800px; z-index: 79;}
+.layer-99 {background-color: #fff; height: 547.461px; border-radius: 1px; width: 575px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 720.5000px; margin-top: 286.1800px; z-index: 78;}
+.layer-104 {display: flex; height: 619.259px; align-items: center; justify-content: center; width: 553.305px; mask-image: url("../images/rectangle30.svg"); mask-position: -100.3500px -143.8000px; mask-size: 576.367px 547.461px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 819.4800px; margin-top: 429.9800px; z-index: 81;}
+.art-747 {flex: none; transform: rotate(115.04deg) scaleY(0.99) skewX(-6.74deg);}
+.art-748 {height: 437.023px; opacity: .3; position: relative; width: 429.49px;}
+.art-749 {position: absolute; inset: -20.59% -20.96%;}
+.art-750 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-115 {display: flex; height: 0; align-items: center; justify-content: center; width: 480px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 756.6600px; margin-top: 603.8500px; z-index: 91;}
+.art-752 {flex: none; transform: rotate(90deg);}
+.art-753 {height: 480px; position: relative; width: 0;}
+.art-754 {position: absolute; inset: 0 -0.25px;}
+.art-755 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-105 {display: flex; height: 340.373px; align-items: center; justify-content: center; width: 291.77px; mask-image: url("../images/rectangle30.svg"); mask-position: 42.6120px -343.0600px; mask-size: 576.367px 547.461px; mask-repeat: no-repeat; mask-mode: alpha; mask-clip: no-clip; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 676.5180px; margin-top: 629.2400px; z-index: 82;}
+.art-757 {flex: none; transform: rotate(115.04deg) scaleY(0.99) skewX(-6.74deg);}
+.art-758 {height: 219.76px; opacity: .3; position: relative; width: 247.952px;}
+.art-759 {position: absolute; inset: -38.22% -33.88%;}
+.art-760 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-113 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; height: 19px; line-height: normal; font-size: 21px; color: #000; width: 76px; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 757.5000px; margin-top: 632.2031px; z-index: 89;}
+.layer-114 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; height: 19px; line-height: normal; font-size: 21px; color: #000; width: 60px; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 955.0312px; margin-top: 632.2031px; z-index: 90;}
+.layer-116 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; height: 19px; line-height: normal; font-size: 21px; color: #000; width: 88px; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1148.6641px; margin-top: 632.2031px; z-index: 92;}
+.layer-110 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; height: 9px; line-height: normal; color: #4559a8; font-size: 14px; letter-spacing: -0.2679px; width: 58px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 757.5000px; margin-top: 664.9429px; z-index: 86;}
+.layer-111 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; height: 9px; line-height: normal; color: #4559a8; font-size: 14px; letter-spacing: -0.2679px; width: 83px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 955.0312px; margin-top: 664.9429px; z-index: 87;}
+.layer-112 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; height: 9px; line-height: normal; color: #4559a8; font-size: 14px; letter-spacing: -0.2679px; width: 89px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1148.6641px; margin-top: 664.9429px; z-index: 88;}
+.layer-106 {--reading-order: 72395;}
+.layer-103 {--reading-order: 73441;}
+.layer-77 {--reading-order: 73538;}
+.layer-102 {--reading-order: 74222;}
+.layer-99 {--reading-order: 74222;}
+.layer-104 {--reading-order: 75660;}
+.layer-115 {--reading-order: 77398;}
+.layer-105 {--reading-order: 77652;}
+.layer-113 {--reading-order: 77682;}
+.layer-114 {--reading-order: 77682;}
+.layer-116 {--reading-order: 77682;}
+.layer-110 {--reading-order: 78009;}
+.layer-111 {--reading-order: 78009;}
+.layer-112 {--reading-order: 78009;}
+.layer-79 {background-color: #fff; height: 547.461px; border-radius: 1px; width: 575px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 145.4520px; margin-top: 286.1800px; z-index: 63;}
+.layer-87 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #00123a; font-size: 16px; letter-spacing: -0.25px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 191.5000px; margin-top: 336.6343px; z-index: 69;}
+.layer-97 {background-color: #f0f2fb; border-color: #8998d3; border-width: 0.5px; border-style: solid; height: 55px; border-radius: 2px; width: 483.338px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 191.4520px; margin-top: 367.0800px; z-index: 76; padding: 0 14px; font-family: 'Satoshi'; font-size: 19px; color: #18265d; letter-spacing: -.8333px;}
+.layer-86 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #00123a; font-size: 16px; letter-spacing: -0.25px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 191.5000px; margin-top: 450.9683px; z-index: 68;}
+.layer-94 {background-color: #f0f2fb; border-color: #8998d3; border-width: 0.5px; border-style: solid; height: 55px; border-radius: 2px; width: 483.338px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 191.4520px; margin-top: 481.8700px; z-index: 74; padding: 0 14px; font-family: 'Satoshi'; font-size: 19px; color: #18265d; letter-spacing: -.8333px;}
+.layer-88 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #00123a; font-size: 16px; letter-spacing: -0.25px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 191.5000px; margin-top: 563.7520px; z-index: 70;}
+.layer-90 {background-color: #f0f2fb; border-color: #8998d3; border-width: 0.5px; border-style: solid; height: 55px; border-radius: 2px; width: 483.338px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 191.4520px; margin-top: 596.9200px; z-index: 71; padding: 0 14px; font-family: 'Satoshi'; font-size: 19px; color: #18265d; letter-spacing: -.8333px;}
+.layer-81 {background-color: #18265d; height: 53.858px; border-radius: 2px; width: 483.338px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 191.4520px; margin-top: 682.8100px; z-index: 64; text-align: left;}
+.layer-85 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #979797; font-size: 14px; letter-spacing: -0.2679px; width: 404.992px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 191.5078px; margin-top: 756.7490px; z-index: 67;}
+.layer-79 {--reading-order: 74222;}
+.layer-87 {--reading-order: 74726;}
+.layer-97 {--reading-order: 75031;}
+.layer-86 {--reading-order: 75870;}
+.layer-94 {--reading-order: 76179;}
+.layer-88 {--reading-order: 76998;}
+.layer-90 {--reading-order: 77329;}
+.layer-81 {--reading-order: 78188;}
+.layer-85 {--reading-order: 78927;}
+.layer-107 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 0; font-size: 40px; color: #fff; letter-spacing: -0.6667px; width: 525.111px; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 145.5000px; margin-top: 136.1772px; z-index: 84;}
+.art-777 {line-height: 47px;}
+.art-778 {font-family: 'Noto Serif'; font-weight: 400; font-style: italic; line-height: 47px; color: #bac7f9;}
+.art-779 {line-height: 47px;}
+.layer-109 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #8898d9; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 145.5000px; margin-top: 110.4077px; z-index: 85;}
+.layer-119 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 159.6700px; margin-top: 14.9265px; z-index: 94;}
+.layer-118 {background-color: #4559a8; height: 53.858px; border-radius: 2px; width: 483.338px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 753.8300px; margin-top: 110.7200px; z-index: 93; display: grid;}
+.calculator-section {height: 884px;}
+.layer-24 {position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 0.0000px; margin-top: -10.1259px; z-index: 15; height: 513.3344px; width: 1441.0080px;}
+.art-784 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-25 {position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 0.0000px; margin-top: 124.9621px; z-index: 16; height: 378.2464px; width: 1441.0080px;}
+.art-786 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.layer-26 {height: 562.772px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1401.2280px; margin-top: -59.7300px; z-index: 17;}
+.art-788 {position: absolute; inset: 0 -0.5px;}
+.art-789 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-27 {height: 457.086px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1133.2600px; margin-top: 45.9600px; z-index: 18;}
+.art-791 {position: absolute; inset: 0 -0.5px;}
+.art-792 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-28 {height: 201.224px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 597.4780px; margin-top: 301.8200px; z-index: 19;}
+.art-794 {position: absolute; inset: 0 -0.5px;}
+.art-795 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-29 {height: 160.112px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 329.5680px; margin-top: 342.9300px; z-index: 20;}
+.art-797 {position: absolute; inset: 0 -0.5px;}
+.art-798 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-30 {height: 160.112px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 61.6000px; margin-top: 342.9300px; z-index: 21;}
+.art-800 {position: absolute; inset: 0 -0.5px;}
+.art-801 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-31 {height: 196.063px; width: 0; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 865.3020px; margin-top: 306.9800px; z-index: 22;}
+.art-803 {position: absolute; inset: 0 -0.5px;}
+.art-804 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-60 {word-break: break-word; font-family: 'Noto Serif'; font-weight: 400; font-style: normal; line-height: 0; font-size: 40px; text-align: center; color: #fff; letter-spacing: -1px; width: 557.113px; white-space: pre-wrap; font-variation-settings: "CTGR" 0, "wdth" 100; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 441.9453px; margin-top: 59.3032px; z-index: 51;}
+.art-806 {line-height: 46px; margin-bottom: 0; display: block;}
+.art-807 {line-height: 46px; display: block;}
+.layer-61 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; color: #8898d9; font-size: 16px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 691.5000px; margin-top: 36.5488px; z-index: 52;}
+.layer-65 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 42.2949px; margin-top: 11.8623px; z-index: 54;}
+.layer-64 {background-color: #4559a8; border-width: 1px; border-color: #7d8ed3; border-style: solid; height: 46.665px; border-radius: 1px; width: 220.507px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 491.0020px; margin-top: 292.9600px; z-index: 53; display: grid;}
+.layer-68 {word-break: break-word; font-family: 'Satoshi'; font-weight: 500; font-style: normal; line-height: normal; font-size: 16px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 40.7609px; margin-top: 11.8623px; z-index: 56;}
+.layer-67 {border-width: 1px; border-style: solid; border-color: #fff; height: 46.665px; border-radius: 1px; width: 220.507px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 729.4500px; margin-top: 292.9600px; z-index: 55; display: grid;}
+.layer-69 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; text-align: center; color: #fff; letter-spacing: -0.2679px; width: 572.738px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 434.1328px; margin-top: 179.2710px; z-index: 57;}
+.layer-71 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: normal; font-size: 14px; color: #fff; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 605.1328px; margin-top: 369.6587px; z-index: 58;}
+.layer-72 {width: 7.906px; height: 7.906px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 587.8220px; margin-top: 375.2100px; z-index: 59;}
+.art-816 {position: absolute; display: block; inset: 0; max-width: none; width: 100%; height: 100%;}
+.contact-section {height: 503.046px;}
+.layer-32 {background-color: #fff; height: 548.977px; width: 1402.203px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 19.3985px; margin-top: 0.0040px; z-index: 23;}
+.layer-33 {display: flex; height: 0; align-items: center; justify-content: center; width: 1384px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 27.3400px; margin-top: 357.1740px; z-index: 24;}
+.art-819 {flex: none; transform: rotate(-90deg);}
+.art-820 {height: 1384px; position: relative; width: 0;}
+.art-821 {position: absolute; inset: 0 -0.38px;}
+.art-822 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-34 {display: flex; height: 0; align-items: center; justify-content: center; width: 1384px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 27.3400px; margin-top: 440.7740px; z-index: 25;}
+.art-824 {flex: none; transform: rotate(-90deg);}
+.art-825 {height: 1384px; position: relative; width: 0;}
+.art-826 {position: absolute; inset: 0 -0.38px;}
+.art-827 {display: block; max-width: none; width: 100%; height: 100%;}
+.layer-35 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 21px; color: #798cb6; font-size: 15px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 905.6172px; margin-top: 35.9603px; z-index: 26;}
+.layer-39 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 905.6172px; margin-top: 78.9603px; z-index: 30;}
+.layer-55 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 905.6172px; margin-top: 113.4154px; z-index: 46;}
+.layer-58 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 905.6172px; margin-top: 147.8705px; z-index: 49;}
+.layer-57 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 905.6172px; margin-top: 182.3256px; z-index: 48;}
+.layer-45 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 905.6172px; margin-top: 216.7797px; z-index: 36;}
+.layer-35 {--reading-order: 85590;}
+.layer-39 {--reading-order: 86020;}
+.layer-55 {--reading-order: 86365;}
+.layer-58 {--reading-order: 86709;}
+.layer-57 {--reading-order: 87054;}
+.layer-45 {--reading-order: 87398;}
+.layer-36 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 21px; color: #798cb6; font-size: 15px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 42.9219px; margin-top: 35.9603px; z-index: 27;}
+.layer-42 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 0; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 42.9219px; margin-top: 74.1186px; z-index: 33;}
+.art-836 {line-height: 23px; margin-bottom: 0; white-space: pre;}
+.art-837 {line-height: 23px; margin-bottom: 0; white-space: pre;}
+.art-838 {line-height: 23px; white-space: pre;}
+.layer-36 {--reading-order: 85590;}
+.layer-42 {--reading-order: 85972;}
+.layer-37 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 21px; color: #798cb6; font-size: 15px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 266.3359px; margin-top: 36.8812px; z-index: 28;}
+.layer-40 {word-break: break-word; display: block; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 0; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 266.3359px; margin-top: 75.0394px; z-index: 31;}
+.art-841 {cursor: pointer; line-height: 23px;}
+.layer-43 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 266.3359px; margin-top: 98.0394px; z-index: 34;}
+.layer-37 {--reading-order: 85599;}
+.layer-40 {--reading-order: 85981;}
+.layer-43 {--reading-order: 86211;}
+.layer-38 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 21px; color: #798cb6; font-size: 15px; letter-spacing: -0.2679px; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1123.6562px; margin-top: 35.9603px; z-index: 29;}
+.layer-44 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1123.6562px; margin-top: 78.9603px; z-index: 35;}
+.layer-56 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1123.6562px; margin-top: 113.4154px; z-index: 47;}
+.layer-59 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1123.6562px; margin-top: 147.8705px; z-index: 50;}
+.layer-38 {--reading-order: 85590;}
+.layer-44 {--reading-order: 86020;}
+.layer-56 {--reading-order: 86365;}
+.layer-59 {--reading-order: 86709;}
+.layer-41 {word-break: break-word; display: block; cursor: pointer; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 0; color: #979797; font-size: 14px; width: 714.793px; white-space: pre-wrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 42.9219px; margin-top: 252.9477px; z-index: 32;}
+.art-848 {line-height: 23px; margin-bottom: 0;}
+.art-849 {line-height: 23px;}
+.layer-46 {text-decoration-skip-ink: none; text-underline-position: from-font; word-break: break-word; text-decoration-thickness: from-font; text-decoration-style: solid; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; text-decoration-line: underline; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 42.9219px; margin-top: 384.8344px; z-index: 37;}
+.layer-47 {text-decoration-skip-ink: none; text-underline-position: from-font; word-break: break-word; text-decoration-thickness: from-font; text-decoration-style: solid; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; text-decoration-line: underline; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 157.4297px; margin-top: 384.8344px; z-index: 38;}
+.layer-53 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 12px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 42.9219px; margin-top: 481.8559px; z-index: 44;}
+.layer-54 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 12px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 905.6172px; margin-top: 481.8559px; z-index: 45;}
+.layer-46 {--reading-order: 89079;}
+.layer-47 {--reading-order: 89079;}
+.layer-53 {--reading-order: 90049;}
+.layer-54 {--reading-order: 90049;}
+.layer-52 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 905.6172px; margin-top: 384.8344px; z-index: 43;}
+.layer-51 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 992.3047px; margin-top: 384.8344px; z-index: 42;}
+.layer-50 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1070.9766px; margin-top: 384.8344px; z-index: 41;}
+.layer-49 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1148.6562px; margin-top: 384.8344px; z-index: 40;}
+.layer-48 {word-break: break-word; font-family: 'Satoshi'; font-weight: 400; font-style: normal; line-height: 23px; font-size: 14px; color: #000; white-space: nowrap; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1246.3359px; margin-top: 384.8344px; z-index: 39;}
+.layer-52 {--reading-order: 89079;}
+.layer-51 {--reading-order: 89079;}
+.layer-50 {--reading-order: 89079;}
+.layer-49 {--reading-order: 89079;}
+.layer-48 {--reading-order: 89079;}
+.layer-74 {display: flex; height: 110.059px; align-items: center; justify-content: center; width: 118.411px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1287.5665px; margin-top: 14.8540px; z-index: 60;}
+.art-860 {flex: none; transform: scaleY(-1) rotate(180deg);}
+.art-861 {height: 110.059px; position: relative; width: 118.411px; background-image: linear-gradient(-70.36444760154794deg, rgb(69, 89, 168) 0%, rgb(33, 50, 119) 100%);}
+.layer-75 {height: 75.818px; width: 78.867px; position: relative; grid-area: 1 / 1; align-self: start; justify-self: start; margin-left: 1310.7780px; margin-top: 30.8040px; z-index: 61;}
+.art-863 {position: absolute; inset: 0; overflow: hidden; pointer-events: none;}
+.art-864 {position: absolute; height: 146.3%; left: -22.38%; max-width: none; top: -25.18%; width: 148.46%;}
+.layer-74 {--reading-order: 85379;}
+.layer-75 {--reading-order: 85538;}
+.site-footer-section {height: 548.978px;}

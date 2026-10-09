@@ -1,0 +1,17 @@
+* text=auto
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.php text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.cjs text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+*.md text eol=lf
+# Preserve the bytes of every original design asset, including SVGs.
+assets/images/** -text
+assets/fonts/*.ttf -text
+assets/fonts/*.woff2 -text
+assets/fonts/*-OFL.txt -text -whitespace
+*.png -text

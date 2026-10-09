@@ -1,0 +1,8 @@
+@font-face { font-family: 'Satoshi'; src: url('../fonts/satoshi-400-normal.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Satoshi'; src: url('../fonts/satoshi-400-italic.woff2') format('woff2'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Satoshi'; src: url('../fonts/satoshi-500-normal.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Satoshi'; src: url('../fonts/satoshi-500-italic.woff2') format('woff2'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Satoshi'; src: url('../fonts/satoshi-700-normal.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../fonts/noto-serif-400-italic.ttf') format('truetype'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Noto Serif'; src: url('../fonts/noto-serif-400-normal.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Playfair Display'; src: url('../fonts/playfair-display-400-normal.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }

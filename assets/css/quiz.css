@@ -84,3 +84,103 @@
   .quiz-section .quiz-widget .quiz-controls { margin-inline: 20px; }
   .quiz-section .quiz-widget .layer-335 { width: calc(100% - 40px); margin-inline: 20px; margin-bottom: 20px; }
 }
+
+/* Stage previews from 1:318: one set of tracks for numbers, names, badge
+ * and right-aligned descriptions. Other source artwork keeps its coordinates. */
+.quiz-section {
+  --stage-left: 47.49px; --stage-width: 563.508px;
+  --stage-start: 419.554px; --stage-step: 62.24px; --stage-height: 55.573px;
+}
+.quiz-section .quiz-copy {
+  display: grid; grid-area: 1 / 1; width: 100%; height: 100%; gap: 0;
+  grid-template-columns: var(--stage-left) 14.135px 37.7422px 110.5248px 99.836px
+    minmax(0,calc(var(--stage-width) - 277.238px)) 15px minmax(0,1fr);
+  grid-template-rows: var(--stage-start) repeat(4,var(--stage-step)) minmax(0,1fr);
+}
+.quiz-section .quiz-copy > .design-layer { grid-area: 1 / 1 / -1 / -1; }
+.quiz-copy :is(.layer-352,.layer-355,.layer-326) { --stage-row: 2; }
+.quiz-copy :is(.layer-353,.layer-356,.layer-327) { --stage-row: 3; }
+.quiz-copy :is(.layer-377,.layer-378,.layer-373,.layer-376) { --stage-row: 4; }
+.quiz-copy :is(.layer-354,.layer-357,.layer-328) { --stage-row: 5; }
+.quiz-section .quiz-copy > [data-preview-plan] {
+  grid-row: var(--stage-row); grid-column: 2 / 8;
+  position: relative; align-self: center !important; justify-self: stretch !important;
+  width: 100% !important; height: var(--stage-height) !important; margin: 0 !important;
+  padding: 0 15px 0 51.8772px; border: 0; text-align: left;
+  display: flex; align-items: center; white-space: nowrap !important; line-height: 25px !important;
+}
+/* Full-row buttons already have adequate targets; enlarged pseudo-targets
+ * would overlap adjacent rows and swallow clicks on their padding. */
+.quiz-section .quiz-copy > [data-preview-plan]::before { content: none; }
+.quiz-section .quiz-copy > [data-preview-plan]:hover { background: rgb(255 255 255 / .6); }
+.quiz-section .quiz-copy > .layer-378 { background: #fff; }
+.quiz-section .quiz-copy > :is(.layer-352,.layer-353,.layer-377,.layer-354,.layer-326,.layer-327,.layer-373,.layer-328,.layer-376) {
+  grid-row: var(--stage-row); position: static; align-self: center !important;
+  width: auto !important; height: auto !important; margin: 0 !important;
+  pointer-events: none; z-index: 251;
+}
+.quiz-section .quiz-copy > :is(.layer-352,.layer-353,.layer-377,.layer-354) {
+  display: block; grid-column: 3; justify-self: start !important; line-height: 29px !important;
+}
+.quiz-section .quiz-copy > :is(.layer-326,.layer-327,.layer-373,.layer-328) {
+  grid-column: 6; justify-self: end !important; text-align: right; line-height: 19px !important;
+}
+.quiz-section .quiz-copy > .layer-376 {
+  grid-column: 5; justify-self: stretch !important; display: grid; place-items: center;
+  height: 26.943px !important; background: var(--lavender); border-radius: 2px;
+  line-height: 19px !important; text-align: center;
+}
+/* Backgrounds now belong to their content instead of detached rectangles. */
+.quiz-section :is(.layer-372,.layer-375) { display: none; }
+.quiz-section .layer-358 { --divider-index: 1; }
+.quiz-section .layer-359 { --divider-index: 2; }
+.quiz-section .layer-360 { --divider-index: 3; }
+.quiz-section .layer-361 { --divider-index: 4; }
+.quiz-section :is(.layer-358,.layer-359,.layer-360,.layer-361) {
+  --divider-length: calc(var(--stage-width) - 25.65px);
+  width: var(--divider-length); margin-left: calc(var(--stage-left) + 10.65px);
+  margin-top: calc(var(--stage-start) + var(--divider-index) * var(--stage-step));
+}
+.quiz-section :is(.layer-358,.layer-359,.layer-360,.layer-361) > div > div {
+  width: 0; height: var(--divider-length);
+}
+@media (min-width: 1441px) {
+  .quiz-section { --stage-left: 3.297917vw; --stage-width: 39.1325vw; }
+}
+@media (max-width: 1439px) {
+  .quiz-section { --stage-step: 86px; --stage-height: 80px; }
+  .quiz-section .quiz-copy {
+    grid-area: auto; grid-column: 1; height: auto;
+    grid-template-columns: 12px 26px minmax(0,1fr) 99.836px 12px;
+    grid-template-rows: auto auto repeat(4,var(--stage-step)) auto auto auto;
+  }
+  .quiz-section .quiz-copy > .layer-324 { grid-area: 1 / 1 / 2 / -1; margin-bottom: 24px !important; }
+  .quiz-section .quiz-copy > .layer-325 { grid-area: 2 / 1 / 3 / -1; margin-bottom: 16px !important; }
+  .quiz-copy :is(.layer-352,.layer-355,.layer-326) { --stage-row: 3; }
+  .quiz-copy :is(.layer-353,.layer-356,.layer-327) { --stage-row: 4; }
+  .quiz-copy :is(.layer-377,.layer-378,.layer-373,.layer-376) { --stage-row: 5; }
+  .quiz-copy :is(.layer-354,.layer-357,.layer-328) { --stage-row: 6; }
+  .quiz-section .quiz-copy > [data-preview-plan] {
+    grid-column: 1 / -1; padding: 10px 12px 0 38px; align-items: start;
+  }
+  .quiz-section .quiz-copy > [data-preview-plan]::after {
+    content: ''; position: absolute; left: 12px; right: 12px; bottom: -3px;
+    border-bottom: .5px solid var(--line); pointer-events: none;
+  }
+  .quiz-section .quiz-copy > :is(.layer-352,.layer-353,.layer-377,.layer-354) {
+    grid-column: 2; align-self: start !important; margin-top: 11px !important;
+  }
+  .quiz-section .quiz-copy > :is(.layer-326,.layer-327,.layer-373,.layer-328) {
+    grid-column: 3 / 5; align-self: end !important; justify-self: start !important;
+    margin-bottom: 13px !important; text-align: left;
+  }
+  .quiz-section .quiz-copy > .layer-376 {
+    grid-column: 4; align-self: start !important; margin-top: 12px !important;
+  }
+  .quiz-section .quiz-copy > .layer-370 { grid-area: 7 / 1 / 8 / -1; margin-top: 24px !important; }
+  .quiz-section .quiz-copy > .layer-371 { grid-area: 8 / 1 / 9 / -1; margin-top: 18px !important; }
+  .quiz-section .quiz-copy > .layer-365 { grid-area: 9 / 1 / 10 / -1; margin-top: 12px !important; }
+}
+@media (max-width: 767px) {
+  .quiz-section .quiz-copy { grid-column: 1 / -1; }
+}

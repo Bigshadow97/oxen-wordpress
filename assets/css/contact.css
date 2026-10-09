@@ -1,0 +1,79 @@
+/* Figma 1:23–72. The native SVG gradients share a fixed-size artboard;
+ * wider viewports extend the navy canvas, without stretching the graph paths. */
+.contact-section { display: block; height: 503.046px; padding: 0; background: #18265d; text-align: center; overflow: visible; }
+/* Figma 1:23 begins at y7960.274, 59.727px before the CTA content section.
+ * Clip horizontally to the viewport while retaining this intentional overlap.
+ * The glow has its own clip so the calculator's existing glow isn't doubled. */
+.contact-glow-clip, .contact-artwork-clip { position: absolute; inset: 0; overflow: clip; pointer-events: none; z-index: 0; }
+.contact-artwork-clip { top: -59.726766px; }
+.contact-glow, .contact-artwork { position: absolute; pointer-events: none; z-index: 0; }
+.contact-glow { left: 22.772083%; top: -666.25px; width: 54.341736%; height: 666.729px; }
+.contact-glow img { position: absolute; left: -25.56%; top: -30%; width: 151.12%; height: 160%; max-width: none; }
+.contact-artwork { right: -1px; bottom: 0; width: 1441px; height: 562.772766px; transform-origin: bottom right; }
+.contact-artwork img { position: absolute; display: block; max-width: none; }
+.contact-graph { left: 0; width: 1441px; }
+.contact-graph--primary { top: 49.275112px; height: 513.497070px; }
+.contact-graph--secondary { top: 185.028854px; height: 377.743164px; }
+/* The six 1px, 30%-opacity dashed guides are present in the original SVGs. */
+.contact-guide { width: 1px; }
+.contact-guide--one { left: 1400.679688px; top: 0; height: 562.772156px; }
+.contact-guide--two { left: 1132.757813px; top: 105.686035px; height: 457.086243px; }
+.contact-guide--three { left: 596.929688px; top: 361.548340px; height: 201.223709px; }
+.contact-guide--four { left: 329.023438px; top: 402.660156px; height: 160.112473px; }
+.contact-guide--five { left: 61.101563px; top: 402.660156px; height: 160.112473px; }
+.contact-guide--six { left: 864.851563px; top: 366.708984px; height: 196.063477px; }
+.contact-content {
+  position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center;
+  width: calc(100% - 1px); margin-left: 1px; padding-top: 36.548828px;
+  color: #fff; font-family: 'Satoshi', sans-serif; font-weight: 400; letter-spacing: -.2679px;
+}
+.contact-eyebrow { width: 58px; font-size: 16px; line-height: 22px; color: #8898d9; }
+.contact-heading {
+  width: 557.113281px; max-width: 100%; margin-top: .754395px;
+  font-family: 'Noto Serif', serif; font-weight: 400; font-size: 40px;
+  line-height: 46px; letter-spacing: -1px; white-space: pre-wrap;
+  font-variation-settings: 'CTGR' 0, 'wdth' 100;
+}
+.contact-heading span { display: block; }
+.contact-copy { width: 572.738281px; max-width: 100%; margin-top: 27.967773px; font-size: 14px; line-height: 19px; }
+.contact-actions { display: flex; gap: 17.899658px; margin-top: 75.693848px; max-width: 100%; }
+.contact-button {
+  display: inline-flex; align-items: flex-start; justify-content: center;
+  width: 220.506592px; height: 46.664932px; padding: 10.862305px 16px 0;
+  border: 1px solid #fff; border-radius: 1px;
+  color: #fff; font-size: 16px; font-weight: 500; line-height: 22px;
+}
+.contact-button--primary { background: #4559a8; border-color: #7d8ed3; }
+.contact-button:hover { background-color: #4559a8; }
+.contact-button:focus-visible { outline: 3px solid #e5bd65; outline-offset: 5px; }
+.contact-response {
+  display: flex; align-items: center; gap: 9.359375px;
+  width: 265.265625px; max-width: 100%; margin-top: 30.028916px;
+  font-size: 14px; line-height: 19px; text-align: left;
+}
+.contact-response img { flex: 0 0 7.90625px; width: 7.90625px; height: 7.90625px; }
+.contact-response span { min-width: 0; }
+@media (max-width: 1439px) {
+  .contact-section { height: auto; min-height: 503.046px; padding: 64px 32px; }
+  /* The calculator's glow is absent after its form/results reflow. */
+  .contact-glow { display: none; }
+  .contact-artwork { transform: scale(.85); }
+  .contact-content { width: 100%; margin: 0; padding: 0; }
+  .contact-heading { margin-top: 8px; }
+  .contact-copy { margin-top: 24px; }
+  .contact-actions { margin-top: 32px; }
+  .contact-button { min-height: 48px; }
+  .contact-response { margin-top: 24px; }
+}
+@media (max-width: 767px) {
+  .contact-section { padding: 56px 20px; }
+  /* Keep white copy readable when the cropped graph sits behind mobile text. */
+  .contact-artwork { transform: scale(.65); opacity: .6; }
+  .contact-section .contact-heading { font-size: clamp(29px, 4.5vw, 40px); line-height: 1.25 !important; }
+  .contact-section .contact-copy { line-height: 1.45 !important; }
+  .contact-section .contact-response { width: auto; font-size: 13px; line-height: 19px; }
+}
+@media (max-width: 540px) {
+  .contact-actions { width: 100%; flex-direction: column; gap: 16px; }
+  .contact-button { width: 100%; }
+}

@@ -117,6 +117,14 @@ The footer-only contrast audit passes at 1440px, 1920px, 768px and 390px. Text, 
 
 ## Environment and source limitations
 
+### Contact CTA focused correction — 10 October
+
+Checkpoint: `checkpoint/contact-cta-a5ec4cf`. The contact component now uses the original two gradient SVGs and six dashed guides on one right-aligned artboard, with native proportions at desktop widths. Figma's angular graph edges and dotted lines are intentional and retained. The original calculator glow continues into the CTA; separate clipping containers avoid a doubled glow and preserve the source artwork's 59.727px overlap into the calculator transition. The section background stays full-width. Heading, paragraph, button and response geometry at 1440px agrees with the saved original node measurements within 0.15px of browser rounding. Normal-flow content keeps reading widths and alignment stable at larger widths; mobile text precedes the stacked buttons and retains the response dot.
+
+Focused browser checks and screenshots passed at **1440, 1920, 2560 and 390px**: both SVG aspect ratios and shared baselines, continuous calculator/CTA glow coordinates, original copy, viewport width, no clipped copy or controls, button-label fit, keyboard focus, booking-dialog activation/Escape/focus restoration, telephone destination and hover state. No browser console/page errors occurred. LocalWP PHP **8.2.29** lint passed for `contact.php` and `functions.php`; `git diff --check` passed. The full-site suite was not rerun.
+
+Evidence is stored locally in ignored `tools/screenshots/contact/`: before/after screenshots, `report.json`, `1440-reference-overlay.png` and `visual-comparison.json`. Comparison uses the saved original Figma node data, SVG assets and reference PNG; live MCP access was previously quota-limited. The PNG ends at y8443, so its visual overlay covers the transition and first 423px of the CTA; the remaining 80px is checked against the original SVGs and node bounds. Background RMS difference in the available comparison region fell from 4.84 to 1.76 per RGB channel (0–255), excluding text rasterization. Figma and its original assets were not modified, and the homepage generator was not run.
+
 Satoshi is installed locally but intentionally excluded from Git because Fontshare prohibits repository redistribution. Reviewers must run `tools/install-fonts.ps1` to obtain their own original files. Noto Serif and Playfair Display are included with OFL license texts. The non-rendering wrapper font `Noto Sans Devanagari UI Condensed` was unavailable; its visible child spans explicitly use Noto Serif.
 
 The LocalWP Imagick dependency startup warning remains. The theme does not require it; PHP lint, activation and browser rendering succeed. The canonical localhost URL works without Windows administrator access. A system-wide hosts edit was unavailable; the alias is resolved inside the test browser only.

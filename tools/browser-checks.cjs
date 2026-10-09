@@ -37,6 +37,20 @@ let browser;
       assert.ok(Math.abs(layout.portrait.width/layout.portrait.height-1207.1/773.89)<.002,'Hero portrait aspect ratio at '+width);
       for(let i=1;i<layout.cards.length;i++) assert.ok(layout.cards[i].x>=layout.cards[i-1].right-1,'Service card overlap at '+width);
     }
+    if (width>=1440) {
+      layout.dividers=await page.locator('.layer-358,.layer-359,.layer-360,.layer-361,.layer-334,.layer-115,.layer-33,.layer-34').evaluateAll(ns=>ns.map(n=>{
+        const r=n.getBoundingClientRect(),line=n.querySelector('img').getBoundingClientRect();
+        return {class:n.className,x:r.x,right:r.right,width:r.width,lineX:line.x,lineRight:line.right,lineWidth:line.width};
+      }));
+      for(const divider of layout.dividers) assert.ok(Math.abs(divider.lineX-divider.x)<1 && Math.abs(divider.lineRight-divider.right)<1,'SVG divider must fill its fluid container: '+divider.class+' at '+width);
+      layout.quizBadge=await page.evaluate(()=>{
+        const bounds=selector=>{const r=document.querySelector(selector).getBoundingClientRect();return {x:r.x,right:r.right};};
+        return {label:bounds('.layer-378'),badge:bounds('.layer-375'),text:bounds('.layer-376')};
+      });
+      const {label,badge,text}=layout.quizBadge;
+      assert.ok(badge.x>=label.right+8,'Quiz badge overlaps the service label at '+width);
+      assert.ok(text.x>=badge.x && text.right<=badge.right,'Quiz badge text outside background at '+width);
+    }
     layouts.push(layout);
     fs.writeFileSync(path.join(folder,'full-width-layout.json'),JSON.stringify(layouts,null,2));
   }

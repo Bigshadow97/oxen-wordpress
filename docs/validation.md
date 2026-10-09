@@ -1,12 +1,36 @@
-# Implementation validation — 9 October 2026
+# Implementation validation — 10 October 2026
 
 The active theme is **Oxen 1.0.0**, on `develop`, in the LocalWP theme directory. Validation used LocalWP PHP **8.2.29** and Chrome against **http://localhost:10016**. No files were modified in Figma, and nothing was pushed or deployed externally.
+
+## Consolidated issue record
+
+| Issue | Status and resolution |
+| --- | --- |
+| Outer page capped at the Figma frame width | Completed: all 14 sections span the viewport; content and artwork adapt independently above 1440px. |
+| Wide quiz badge drift | Fixed: badge and text retain the original measured offsets from Advisory, with no overlap at 1440/1600/1920/2560px. |
+| SVG divider length in quiz, calculator and footer | Fixed together: scale the original rotated SVG's inner height to its fluid container. All eight divider bounds pass. |
+| Generator overwriting verified corrections | Protected by the existing Git checkpoint, verified backups and non-writing default. No live regeneration was needed for these changes. |
+| Reference fidelity and responsive regression | Passed one complete regression after the batched fixes; screenshots compared at all six mandatory widths. Only the sandbox-denied WordPress status check was retried. |
+| Original source text contrast | Remains: 21 source-colour nodes fail automated contrast at 1440px. The optional higher-contrast mode has zero automated violations at 1440/2560/390px. |
+| Font availability and redistribution | All eight rendered original faces load locally. Reviewers must install Satoshi separately under its licence. The unavailable non-rendering wrapper font is documented below; no rendered font was substituted. |
+| LocalWP hostname and Imagick | Localhost works and the browser-only hostname mapping passes. System-wide hostname resolution and the unused Imagick startup warning remain environment limitations. |
+| Additional source states and booking backend | Only the first quiz state and one testimonial were supplied. Additional behavior is labelled/documented; booking provides the original phone/email options because no backend was supplied. |
+
+There are no remaining known layout or interaction failures from this consolidated implementation queue. The source and environment limitations above remain explicit assessment notes.
+
+## Batched correction verification — 10 October
+
+Changed only the authored wide-screen stylesheet, related browser assertions and validation records. Generated PHP/CSS, existing responsive rules, application JavaScript, original image assets and font files were preserved. The CSS correction applies only above 1440px.
+
+One complete regression passed: all 20 PHP files under LocalWP PHP 8.2.29, both application JavaScript syntax checks, four tax tests, three generator-preservation tests, 90 original asset hashes, active-theme status, browser interactions, fonts/images, HTTP/JavaScript errors and all nine existing viewport checks. Required screenshots at **1440, 1600, 1920, 2560, 1024 and 390px** include the complete footer. Wide quiz and calculator/footer crops were reviewed after comparison; no further implementation changes or full-suite reruns were needed.
+
+The current 1440px capture is pixel-identical to `before-full-width-1440.png`. Compared with the preservation checkpoint, its mean RGB difference is **0.00283** on a 0–255 scale, confined to hero compositing; section geometry is unchanged. The 1024px and 390px captures are pixel-identical to the checkpoint. Wide captures show the intended badge/divider corrections and retain their previous page dimensions. Comparisons against the original Figma screenshot still have the rendering differences documented below; no pixel-identical Figma claim is made.
 
 ## Completed checks
 
 | Check | Result |
 | --- | --- |
-| WordPress activation and final WP-CLI theme status | Active |
+| WordPress activation and WP-CLI theme status | Active |
 | Local PHP syntax | All 20 PHP files pass |
 | JavaScript syntax | Both application scripts pass |
 | Tax calculation tests | 4 pass: source company example/losses, individual thresholds, partnerships, currency validation |
@@ -29,7 +53,7 @@ The active theme is **Oxen 1.0.0**, on `develop`, in the LocalWP theme directory
 
 Original Figma frame: **1440 × 8443**. Browser page including all footer children: **1440 × 9072**. Side-by-side comparisons were reviewed for every section at 1440px, followed by full mobile and tablet captures. Corrections included image mask placement, source paint order, artwork clipping, text wrapping, the hero blur, partner-logo blending, responsive heading/grid placement, calculator columns and component reading order.
 
-[visual-metrics.json](visual-metrics.json) records the final per-section mean absolute RGB channel difference against the original screenshot, on a 0–255 scale. It is a raw rendering comparison, **not a percentage of design accuracy**. Browser antialiasing, blur/mask compositing, native select controls and the added previous-slide control leave nonzero differences. Source measurements, fonts and original assets remain the basis of the implementation. No pixel-identical claim is made.
+[visual-metrics.json](visual-metrics.json) records the latest per-section mean absolute RGB channel difference against the original screenshot, on a 0–255 scale. It is a raw rendering comparison, **not a percentage of design accuracy**. Browser antialiasing, blur/mask compositing, native select controls and the added previous-slide control leave nonzero differences. Source measurements, fonts and original assets remain the basis of the implementation. No pixel-identical Figma claim is made.
 
 The original 8443px screenshot does not include the footer that extends below the frame. That portion was implemented from the original child-node measurements and reviewed in browser captures.
 
@@ -39,7 +63,7 @@ Screenshots, side-by-side section comparisons and complete audit JSON are retain
 
 Removed the outer 1440px section width and fixed grid track. Section backgrounds now span the browser, including navigation, hero artwork, statistics, content, calculator, CTA and footer. Wide layout rules use source-derived percentage anchors, four fluid statistics/service tracks, bounded copy widths and proportional portrait sizing. Nested image containers and decorative backgrounds were corrected rather than stretching the entire page. Below 1440px, Grid/Flex reflow replaces the old intermediate page-zoom behavior.
 
-The **1440 × 9072** page retains its original section geometry and measured CSS. An intermediate capture matched the saved pre-fix browser capture pixel-for-pixel. The final capture's mean absolute RGB difference is **0.00283** on a 0–255 scale, with differences confined to the hero's compositing area. This confirms that this correction preserved the previous reference layout; the original Figma comparison retains the nonzero rendering differences documented above.
+The **1440 × 9072** page retains its original section geometry and measured CSS. The 10 October capture matches the saved pre-fix browser capture pixel-for-pixel. Relative to the preservation checkpoint, its mean absolute RGB difference is **0.00283** on a 0–255 scale, with differences confined to the hero's compositing area. This confirms that this correction preserved the previous reference layout; the original Figma comparison retains the nonzero rendering differences documented above.
 
 Full-page captures and section crops were inspected at all mandatory sizes:
 
@@ -62,7 +86,7 @@ The staged generator check confirms that all **17 generated files** already matc
 
 The generator now defaults to a non-writing check. Explicit `--write` requires the current theme directory and `develop`, verifies a backup before applying differences, and leaves matching files and separate authored styles/scripts untouched. Three tests on isolated theme copies pass: default non-writing behavior, preservation/reporting of a manual CSS correction, and backup integrity before an explicit write.
 
-Browser interaction, font/image, error, viewport and accessibility checks were rerun. Screenshot comparisons against the checkpoint show **zero changed pixels at 1440, 1600, 1920, 1024 and 390px**. At 2560px, page dimensions and source files are unchanged; raw mean RGB difference is **0.03274** on a 0–255 scale. All 14 section bounds and complete-footer captures pass. Original Figma comparisons were also regenerated from the read-only local source capture. Figma was not modified.
+The 9 October preservation check passed browser interaction, font/image, error, viewport and accessibility checks. Its screenshot comparisons against the checkpoint showed **zero changed pixels at 1440, 1600, 1920, 1024 and 390px**. At 2560px, page dimensions and source files were unchanged; raw mean RGB difference was **0.03274** on a 0–255 scale. The subsequent batched correction results are recorded above. Figma was not modified.
 
 ## Accessibility findings
 

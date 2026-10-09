@@ -78,11 +78,16 @@
   .quiz-section .layer-364 { mask-image: none; }
   .quiz-section :is(.layer-367,.layer-368,.layer-369) { display: none; }
   .quiz-section .layer-365 { margin-left: calc(4.0375% + 180.375px); }
-  .quiz-copy .layer-376 { margin-left: calc(3.298611% + 190px); }
-  .quiz-section .layer-375 { margin-left: calc(3.298611% + 162.4px); }
-  .quiz-section :is(.layer-358,.layer-359,.layer-360,.layer-361) { width: 37.3%; }
-  .quiz-section :is(.layer-358,.layer-359,.layer-360,.layer-361) > div > div { width: 100%; }
-  .quiz-widget .layer-334 > div > div { width: 100%; }
+  /* Keep the source offsets from Advisory, so the badge travels with its label. */
+  .quiz-copy .layer-376 { margin-left: calc(6.900499% + 119.9687px); }
+  .quiz-section .layer-375 { margin-left: calc(6.900499% + 110.5248px); }
+  /* These original SVGs are vertical lines rotated into horizontal dividers.
+   * Their inner height, rather than inner width, sets the rendered length. */
+  .quiz-section :is(.layer-358,.layer-359,.layer-360,.layer-361) { width: 37.351319%; --divider-length: 37.351319vw; }
+  .quiz-widget .layer-334 { --divider-length: 39.375vw; }
+  .calculator-section .layer-115 { --divider-length: 33.333333vw; }
+  .site-footer-section :is(.layer-33,.layer-34) { --divider-length: 96.111vw; }
+  :is(.quiz-section,.calculator-section,.site-footer-section) :is(.layer-358,.layer-359,.layer-360,.layer-361,.layer-334,.layer-115,.layer-33,.layer-34) > div > div { width: 0; height: var(--divider-length); }
   .about-details .layer-532 { visibility: hidden; }
   .about-section :is(.layer-525,.layer-530,.layer-531,.layer-544) { width: 40.286%; margin-left: 50.497222%; }
   .about-team > .art-layer { height: 62px; }
@@ -139,7 +144,6 @@
   .site-footer-section { background: white; }
   .site-footer-section .layer-32 { width: 100%; margin-left: 0; }
   .site-footer-section :is(.layer-33,.layer-34) { width: 96.111%; }
-  .site-footer-section :is(.layer-33,.layer-34) > div > div { width: 100%; }
   .site-footer-section .layer-41 { max-width: 74ch; }
   .contrast-toggle { left: 33.333%; }
 }

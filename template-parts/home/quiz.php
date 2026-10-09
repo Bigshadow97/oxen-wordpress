@@ -66,18 +66,21 @@
           </a></div>
 <div data-node-id="1:329" class="design-layer layer-329 art-layer" aria-hidden="true"><div class="art-241"><img alt="" src="<?php echo oxen_asset( 'vector1019.svg' ); ?>" decoding="async" class="art-242"></div></div>
 <div data-node-id="1:330" class="design-layer layer-330 art-layer" aria-hidden="true"><div class="art-244"><div class="art-245"><div class="art-246"><img alt="" src="<?php echo oxen_asset( 'vector1019.svg' ); ?>" decoding="async" class="art-247"></div></div></div></div>
-<div class="responsive-group quiz-widget"><div data-node-id="1:333" class="design-layer layer-333 art-layer" aria-hidden="true"></div>
-<div data-node-id="1:348" class="design-layer layer-348 art-layer" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'ellipse2141.svg' ); ?>" decoding="async" class="art-250"></div>
-<div data-node-id="1:349" class="design-layer layer-349 art-layer" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'ellipse2142.svg' ); ?>" decoding="async" class="art-252"></div>
-<div data-node-id="1:350" class="design-layer layer-350 art-layer" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'ellipse2142.svg' ); ?>" decoding="async" class="art-254"></div>
-<p data-node-id="1:347" class="design-layer layer-347 copy-layer" id="quiz-progress">
+<?php // Authored interactive card: preserve this structure when a generator check reports drift. ?>
+<div data-node-id="1:333" class="responsive-group quiz-widget layer-333" data-choice-count="5" aria-describedby="quiz-support">
+<div class="quiz-header">
+<p data-node-id="1:347" class="layer-347 copy-layer" id="quiz-progress" aria-live="polite" aria-atomic="true">
             Question 01 of 03
           </p>
-<p data-node-id="1:351" class="design-layer layer-351 copy-layer">
-            1
-          </p>
-<div data-node-id="1:334" class="design-layer layer-334 art-layer" aria-hidden="true"><div class="art-258"><div class="art-259"><div class="art-260"><img alt="" src="<?php echo oxen_asset( 'vector8.svg' ); ?>" decoding="async" class="art-261"></div></div></div></div>
-<p data-node-id="1:346" class="design-layer layer-346 copy-layer" id="quiz-question">What&#x27;s your annual revenue?</p>
+<ol class="quiz-steps" aria-label="Quiz progress" data-active-image="<?php echo oxen_asset( 'ellipse2141.svg' ); ?>" data-inactive-image="<?php echo oxen_asset( 'ellipse2142.svg' ); ?>">
+<li data-node-id="1:348" data-quiz-step="0" data-state="active" aria-current="step" aria-label="Question 1 of 3, current"><img alt="" aria-hidden="true" src="<?php echo oxen_asset( 'ellipse2141.svg' ); ?>" decoding="async"><span data-node-id="1:351" class="quiz-step-number" aria-hidden="true">1</span></li>
+<li data-node-id="1:349" data-quiz-step="1" data-state="upcoming" aria-label="Question 2 of 3, upcoming"><img alt="" aria-hidden="true" src="<?php echo oxen_asset( 'ellipse2142.svg' ); ?>" decoding="async"><span class="quiz-step-number" aria-hidden="true">2</span></li>
+<li data-node-id="1:350" data-quiz-step="2" data-state="upcoming" aria-label="Question 3 of 3, upcoming"><img alt="" aria-hidden="true" src="<?php echo oxen_asset( 'ellipse2142.svg' ); ?>" decoding="async"><span class="quiz-step-number" aria-hidden="true">3</span></li>
+</ol>
+</div>
+<div data-node-id="1:334" class="layer-334 quiz-divider" aria-hidden="true"><div class="art-258"><div class="art-259"><div class="art-260"><img alt="" src="<?php echo oxen_asset( 'vector8.svg' ); ?>" decoding="async" class="art-261"></div></div></div></div>
+<p data-node-id="1:346" class="layer-346 copy-layer" id="quiz-question" tabindex="-1">What&#x27;s your annual revenue?</p>
+<div class="quiz-answers" role="group" aria-labelledby="quiz-question">
 <button data-node-id="1:336" type="button" data-quiz-answer="0" aria-pressed="false" class="design-layer layer-336 art-layer quiz-answer"><span data-node-id="1:341" class="design-layer layer-341 copy-layer">
               Pre Revenue
             </span></button>
@@ -93,7 +96,9 @@
 <button data-node-id="1:339" type="button" data-quiz-answer="4" aria-pressed="false" class="design-layer layer-339 art-layer quiz-answer"><span data-node-id="1:344" class="design-layer layer-344 copy-layer">
               $5M +
             </span></button>
-<p data-node-id="1:335" class="design-layer layer-335 copy-layer">
+</div>
+<div class="quiz-controls" hidden><button type="button" data-quiz-back hidden>Back</button><button type="button" data-quiz-restart hidden>Start again</button><a href="#services" data-quiz-result-link hidden>View your recommended service</a><p id="quiz-result" role="status"></p></div>
+<p data-node-id="1:335" class="layer-335 copy-layer" id="quiz-support">
               This is based on the latest gov values and up-to-date evaluation
             </p></div>
 <div data-node-id="1:358" class="design-layer layer-358 art-layer" aria-hidden="true"><div class="art-275"><div class="art-276"><div class="art-277"><img alt="" src="<?php echo oxen_asset( 'vector1032.svg' ); ?>" decoding="async" class="art-278"></div></div></div></div>
@@ -102,5 +107,4 @@
 <div data-node-id="1:364" class="design-layer layer-364 art-layer" aria-hidden="true"></div>
 <div data-node-id="1:372" class="design-layer layer-372 art-layer" aria-hidden="true"></div>
 <div data-node-id="1:375" class="design-layer layer-375 art-layer" aria-hidden="true"></div>
-<div class="quiz-controls"><button type="button" data-quiz-back hidden>Back</button><button type="button" data-quiz-restart hidden>Start again</button><a href="#services" data-quiz-result-link hidden>View your recommended service</a><p id="quiz-result" role="status"></p></div>
 </section>

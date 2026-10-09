@@ -2,6 +2,20 @@
 
 The active theme is **Oxen 1.0.0**, on `develop`, in the LocalWP theme directory. Validation used LocalWP PHP **8.2.29** and Chrome against **http://localhost:10016**. No files were modified in Figma, and nothing was pushed or deployed externally.
 
+## Focused quiz refinement — 10 October
+
+Checkpoint: **`checkpoint/oxen-before-quiz-refinement-e240b82`**. This pass follows the latest instruction to fix quiz states only. The broader stage-list, case-study, testimonial, statistics, skip-panel and footer refinement requests were not included or retested.
+
+Read-only Figma context and screenshot for node **1:331** confirm the 567 × 452.849px first-question card, 26.637px progress circles, 55px answer buttons and original fonts/colours. The original first question keeps its desktop 3+2 arrangement; the four-answer later questions use two equal Grid columns. The same original circle and divider SVG assets are reused. The card remains fluid above 1440px, and the full-width section rules are untouched.
+
+Progress now has three individually labelled steps with active/completed/upcoming states and `aria-current`. Labels wrap within padded buttons; selected classes and `aria-pressed` agree. Header, question, answers, Back and supporting text flow inside the card instead of relying on page offsets. Back restores earlier selections and focuses the question; automatic advancement, restart and the existing recommendation algorithm are preserved.
+
+**Targeted checks passed at 1440, 768 and 390px:** progress states for every question, balanced 2×2 rows, label containment, circle dimensions, header/divider ordering, answer/Back/support spacing, keyboard focus and activation, previous selections, restart and recommendation destinations. No HTTP or JavaScript errors occurred. LocalWP PHP lint passed for the two changed PHP files, and JavaScript syntax passed. Screenshot review found an older responsive ordering rule; it was corrected and only these focused quiz checks were rerun. The full homepage regression suite was not restarted.
+
+First-question crops were compared with the original cached Figma render: raw mean RGB channel difference decreased from **3.242 to 2.414** on a 0–255 scale. This is not a percentage of design accuracy or a pixel-identical claim. Captures for questions 1/3 and recommendations, comparison images and geometry are retained in gitignored `tools/screenshots/quiz-refinement/`.
+
+Changed files: `template-parts/home/quiz.php`, `assets/css/quiz.css`, `assets/js/homepage.js`, `functions.php` (stylesheet loading), `tools/quiz-checks.cjs` and this validation record. There are no remaining known failures in the requested quiz states. No homepage regeneration was performed. The generator's default check is expected to report the deliberately authored quiz-template difference; retain this structure and the existing checkpoint/backup protections rather than overwriting it with generated markup. Earlier full-homepage results below describe their recorded runs, not a new whole-page audit after this focused change.
+
 ## Consolidated issue record
 
 | Issue | Status and resolution |

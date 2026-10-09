@@ -105,33 +105,47 @@
     { title: 'What support do you need most?', choices: ['Set things up', 'Tax & compliance', 'Planning & insights', 'A finance leader'] }
   ];
   let step = 0; let responses = [];
+  const quizSteps = $('.quiz-steps', quiz);
+  function renderQuizProgress(complete = false) {
+    $$('[data-quiz-step]', quiz).forEach((circle, index) => {
+      const state = complete || index < step ? 'completed' : index === step ? 'active' : 'upcoming';
+      circle.dataset.state = state;
+      circle.setAttribute('aria-label', 'Question ' + (index + 1) + ' of 3, ' + (state === 'active' ? 'current' : state));
+      if (state === 'active') circle.setAttribute('aria-current', 'step');
+      else circle.removeAttribute('aria-current');
+      $('img', circle).src = state === 'active' ? quizSteps.dataset.activeImage : quizSteps.dataset.inactiveImage;
+    });
+  }
   function renderQuiz() {
     quiz.classList.remove('is-complete');
     $('#quiz-progress').textContent = 'Question 0' + (step + 1) + ' of 03';
     $('#quiz-question').textContent = questions[step].title;
+    $('.quiz-widget', quiz).dataset.choiceCount = String(questions[step].choices.length);
+    $('.quiz-controls', quiz).hidden = step === 0;
+    $('#quiz-support').hidden = false;
     answers.forEach(button => {
       const index = Number(button.dataset.quizAnswer);
       button.hidden = index >= questions[step].choices.length;
       button.querySelector('.design-layer').textContent = questions[step].choices[index] || '';
-      button.classList.toggle('is-selected', responses[step] === index || (step === 0 && responses[0] === undefined && index === 0));
-      button.setAttribute('aria-pressed', String(responses[step] === index));
-      button.style.backgroundColor = (responses[step] === index || (step === 0 && responses[0] === undefined && index === 0)) ? '#18265d' : '#f0f2fb';
-      button.querySelector('.design-layer').style.color = (responses[step] === index || (step === 0 && responses[0] === undefined && index === 0)) ? '#fff' : '#18265d';
+      const selected = responses[step] === index || (step === 0 && responses[0] === undefined && index === 0);
+      button.classList.toggle('is-selected', selected);
+      button.setAttribute('aria-pressed', String(selected));
     });
     $('[data-quiz-back]').hidden = step === 0;
     $('[data-quiz-restart]').hidden = true;
     $('[data-quiz-result-link]').hidden = true;
     $('#quiz-result').textContent = '';
-    $$('.layer-348,.layer-349,.layer-350',quiz).forEach((circle,index) => { circle.style.opacity = index <= step ? '1' : '.45'; });
-    $('.layer-351').textContent = String(step + 1);
+    renderQuizProgress();
   }
   answers.forEach(button => button.addEventListener('click', () => {
     responses[step] = Number(button.dataset.quizAnswer);
-    if (step < 2) { step++; renderQuiz(); $('#quiz-question').setAttribute('tabindex','-1'); $('#quiz-question').focus({preventScroll:true}); }
+    if (step < 2) { step++; renderQuiz(); $('#quiz-question').focus({preventScroll:true}); }
     else {
       const revenueTier = [0,0,1,2,3][responses[0]];
       const recommended = Math.max(revenueTier, responses[1], responses[2]);
       quiz.classList.add('is-complete');
+      renderQuizProgress(true);
+      $('#quiz-support').hidden = true;
       $('#quiz-progress').textContent = 'Your recommendation';
       $('#quiz-question').textContent = plans[recommended].title;
       $('#quiz-result').textContent = plans[recommended].description;
@@ -142,7 +156,7 @@
       $('[data-quiz-result-link]').focus({preventScroll:true});
     }
   }));
-  $('[data-quiz-back]')?.addEventListener('click', () => { step = Math.max(0, step - (quiz.classList.contains('is-complete') ? 0 : 1)); renderQuiz(); });
+  $('[data-quiz-back]')?.addEventListener('click', () => { step = Math.max(0, step - (quiz.classList.contains('is-complete') ? 0 : 1)); renderQuiz(); $('#quiz-question').focus({preventScroll:true}); });
   $('[data-quiz-restart]')?.addEventListener('click', () => { step = 0; responses = []; renderQuiz(); answers[0].focus({preventScroll:true}); });
   ['foundations','essentials','advisory','cfo'].forEach((name,index) => { const card = $('.service-' + name); if (card) card.id = 'service-' + index; });
   if (quiz) renderQuiz();

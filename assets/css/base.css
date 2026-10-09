@@ -52,7 +52,6 @@ button:disabled { cursor: default; }
 .partnership-control { position: absolute; left: 191.5px; top: 798px; z-index: 4; font-size: 13px; color: white; }
 .partnership-control input { width: 64px; margin-left: 12px; }
 .tax-error { position: absolute; left: 191.5px; top: 766px; max-width: 484px; z-index: 4; font-size: 13px; color: #842626; }
-.slider-previous { position: absolute; left: 450px; top: 694.4px; z-index: 999; padding: 0; background: none; border: 0; color: var(--ink); }
 .menu-toggle,.mobile-navigation { display: none; }
 .content-page { max-width: 900px; padding: 80px 24px; margin-inline: auto; }
 dialog { width: min(100% - 32px, 1020px); max-height: 85vh; padding: 40px; color: var(--ink); background: var(--lavender); border: 1px solid var(--line); border-radius: 4px; }

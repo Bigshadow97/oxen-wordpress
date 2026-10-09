@@ -160,7 +160,6 @@
   .testimonial-photo .layer-416 img { object-fit: cover; object-position: center; }
   .testimonials-section .layer-418 { width: 39.375%; margin-left: 3.28125%; }
   .testimonial-card .layer-440 { width: min(34.224%,650px); }
-  .slider-previous { left: 31.25%; }
   .partners-section { grid-template-columns: repeat(6,minmax(0,1fr)); grid-template-rows: 1fr; align-items: center; padding: 90px 4% 70px; gap: 4%; }
   .partners-section .layer-626 { position: absolute; grid-area: auto; margin: 0; left: 0; top: 25px; width: 100%; text-align: center; }
   .partners-section > .art-layer { grid-area: auto; margin: 0; width: 100%; height: 100px; align-self: center; }

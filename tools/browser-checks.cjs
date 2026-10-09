@@ -84,6 +84,35 @@ let browser;
     layouts.push(layout);
     fs.writeFileSync(path.join(folder,'full-width-layout.json'),JSON.stringify(layouts,null,2));
   }
+  async function checkStoryNavigation() {
+    const next=page.locator('[data-slider-next]'),previous=page.locator('[data-slider-previous]');
+    assert.equal(await next.count(),1);assert.equal(await previous.count(),1);
+    assert.equal((await next.textContent()).trim(),'Next');
+    const quote=await page.locator('#client-story').textContent();
+    async function checkState(slide) {
+      assert.equal(await previous.isVisible(),slide>1);assert.equal(await next.isVisible(),slide<3);
+      assert.equal(await page.locator('#slider-position').textContent(),'Client story '+slide+' of 3');
+      const layout=await page.locator('.testimonial-navigation').evaluate(n=>{
+        const r=n.getBoundingClientRect(),card=n.closest('.testimonial-card');
+        const frame=(innerWidth>=1440?card.querySelector('.layer-418'):card).getBoundingClientRect();
+        const styles=[...n.querySelectorAll('button')].map(b=>{const s=getComputedStyle(b);return ['fontFamily','fontSize','fontWeight','lineHeight','color','padding','textAlign'].map(k=>s[k]);});
+        return {height:r.height,right:r.right,bottom:r.bottom,cardRight:frame.right,cardBottom:frame.bottom,styles};
+      });
+      assert.equal(layout.height,44);assert.deepEqual(layout.styles[0],layout.styles[1]);
+      assert.ok(layout.right<=layout.cardRight+1&&layout.bottom<=layout.cardBottom+1&&layout.cardBottom-layout.bottom<=25,'Navigation stays inside the card bottom-right');
+    }
+    await checkState(1);await next.focus();await page.keyboard.press('ArrowLeft');await checkState(1);
+    await page.keyboard.press('Enter');await checkState(2);
+    await next.focus();await page.keyboard.press('Space');await checkState(3);
+    assert.equal(await previous.evaluate(n=>n===document.activeElement),true,'Focus transfers from hidden Next');
+    await page.keyboard.press('ArrowRight');await checkState(3);
+    await previous.click();await checkState(2);
+    await previous.focus();await page.keyboard.press('Enter');await checkState(1);
+    assert.equal(await next.evaluate(n=>n===document.activeElement),true,'Focus transfers from hidden Previous');
+    assert.equal(await page.locator('#client-story').textContent(),quote);
+    await page.keyboard.press('ArrowRight');await checkState(2);
+    await page.keyboard.press('ArrowLeft');await checkState(1);
+  }
   page.on('pageerror', error => errors.push(error.message));
   page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
   page.on('response', response => { if (response.status() >= 400) errors.push('HTTP ' + response.status() + ' ' + response.url()); });
@@ -183,16 +212,7 @@ let browser;
   await page.locator('[data-open-comparison]').click();
   assert.equal(await page.locator('#comparison-rows tr').count(), 4);
   await page.keyboard.press('Escape');
-  const quote = await page.locator('#client-story').textContent();
-  await page.locator('[data-slider-next]').click();
-  assert.notEqual(await page.locator('#client-story').textContent(), quote);
-  await page.locator('[data-slider-previous]').click();
-  assert.equal(await page.locator('#client-story').textContent(), quote);
-  await page.locator('[data-slider-next]').focus();
-  await page.keyboard.press('ArrowRight');
-  assert.notEqual(await page.locator('#client-story').textContent(),quote);
-  await page.keyboard.press('ArrowLeft');
-  assert.equal(await page.locator('#client-story').textContent(),quote);
+  await checkStoryNavigation();
   await page.locator('[data-about-detail="1"]').click();
   assert.equal(await page.locator('#why-panel-1').isVisible(),true);
   assert.equal(await page.locator('.why-panel:visible').count(),1);
@@ -237,6 +257,7 @@ let browser;
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
     assert.equal(overflow, false, 'Horizontal overflow at ' + width);
     if (width < 1440) {
+      if (width === 390) await checkStoryNavigation();
       assert.deepEqual(await page.locator('.stat-card,.service-card,.result-card').evaluateAll(ns=>ns.filter(n=>n.getBoundingClientRect().height < 44).map(n=>n.className)),[],'Collapsed cards at '+width);
       await page.locator('.menu-toggle').click();
       assert.equal(await page.locator('#mobile-navigation').isVisible(),true);

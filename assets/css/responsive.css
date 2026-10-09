@@ -130,9 +130,6 @@
   .testimonial-card .layer-440 { font-size: 16px; flex-grow: 1; }
   .testimonial-card #client-name { order: 3 !important; }
   .testimonial-card #client-role { order: 4 !important; }
-  .testimonial-card .layer-431 { order: 5 !important; }
-  .testimonial-card .layer-431 { align-self: flex-end !important; }
-  .testimonials-section .slider-previous { position: static; grid-column: 1; padding: 0 24px 24px; background: white; text-align: left; }
   .partners-section { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); justify-items: center; gap: 20px; padding: 32px; }
   .partners-section .layer-626 { grid-column: 1/-1; text-align: center; }
   .partners-section .art-layer { display: block; position: relative; height: 110px !important; width: 110px !important; }
@@ -212,7 +209,6 @@
   .testimonial-photo { order: 0; }
   .testimonial-photo .layer-416 { height: 240px !important; min-height: 0; }
   .testimonial-card { order: 1; padding: 24px; }
-  .testimonials-section .slider-previous { order: 2; padding: 0 24px 24px; margin-top: -24px; }
   .partners-section { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .tax-intro-section { display: flex; }
   .calculator-section { display: flex; }

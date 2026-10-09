@@ -179,17 +179,33 @@
     { body: text('.layer-457'), name: 'Professional services · Wellington', role: text('.layer-455'), testimonial: false }
   ];
   let story = 0;
+  const storyPrevious = $('[data-slider-previous]');
+  const storyNext = $('[data-slider-next]');
+  function updateStoryNavigation() {
+    if (!storyPrevious || !storyNext) return;
+    const focusedControl = document.activeElement;
+    storyPrevious.hidden = story === 0;
+    storyNext.hidden = story === stories.length - 1;
+    // A boundary control may disappear after activation. Keep focus in the
+    // navigation, on the remaining control, without moving the viewport.
+    if (focusedControl === storyPrevious && storyPrevious.hidden) storyNext.focus({preventScroll:true});
+    if (focusedControl === storyNext && storyNext.hidden) storyPrevious.focus({preventScroll:true});
+  }
   function showStory(direction) {
-    story = (story + direction + stories.length) % stories.length;
+    const nextStory = Math.max(0, Math.min(stories.length - 1, story + direction));
+    if (nextStory === story) return;
+    story = nextStory;
     $('#client-story').textContent = stories[story].body;
     $('#client-name').textContent = stories[story].name;
     $('#client-role').textContent = stories[story].role;
     $('.layer-430').textContent = stories[story].testimonial ? 'Testimonials' : 'Client stories';
     $('#slider-position').textContent = 'Client story ' + (story + 1) + ' of ' + stories.length;
+    updateStoryNavigation();
   }
-  $('[data-slider-next]')?.addEventListener('click', () => showStory(1));
-  $('[data-slider-previous]')?.addEventListener('click', () => showStory(-1));
-  $('#testimonials')?.addEventListener('keydown', event => { if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') { event.preventDefault(); showStory(event.key === 'ArrowRight' ? 1 : -1); } });
+  storyNext?.addEventListener('click', () => showStory(1));
+  storyPrevious?.addEventListener('click', () => showStory(-1));
+  $('.testimonial-navigation')?.addEventListener('keydown', event => { if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') { event.preventDefault(); showStory(event.key === 'ArrowRight' ? 1 : -1); } });
+  updateStoryNavigation();
 
   const taxForm = $('#tax-form');
   const money = new Intl.NumberFormat('en-NZ', {style: 'currency', currency: 'NZD', maximumFractionDigits: 0});

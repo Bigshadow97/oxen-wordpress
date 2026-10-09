@@ -177,9 +177,67 @@
   .quiz-section .quiz-copy > .layer-376 {
     grid-column: 4; align-self: start !important; margin-top: 12px !important;
   }
-  .quiz-section .quiz-copy > .layer-370 { grid-area: 7 / 1 / 8 / -1; margin-top: 24px !important; }
-  .quiz-section .quiz-copy > .layer-371 { grid-area: 8 / 1 / 9 / -1; margin-top: 18px !important; }
-  .quiz-section .quiz-copy > .layer-365 { grid-area: 9 / 1 / 10 / -1; margin-top: 12px !important; }
+}
+
+/* 1:362, 1:370 and 1:371 share a single card. Only artwork is clipped;
+ * text and the telephone focus outline remain above that background. */
+.quiz-section .skip-quiz-card {
+  position: relative; isolation: isolate; grid-area: 1 / 1 / -1 / -1;
+  align-self: start; justify-self: start; margin: 728.584px 0 0 58.14px;
+  width: 537.859px; min-height: 116.436px; padding: 16.472px 21.961px 23.793px;
+  border-radius: 1px; background: var(--ink); color: #fff; z-index: 243;
+}
+.skip-quiz-art {
+  position: absolute; inset: 0; overflow: clip; border-radius: inherit;
+  pointer-events: none; z-index: -1;
+}
+.quiz-section .skip-quiz-art > .design-layer {
+  position: absolute; grid-area: auto; margin: 0 !important; mask-image: none;
+  display: flex; align-items: center; justify-content: center;
+}
+.quiz-section .skip-quiz-art > .layer-366 {
+  left: -73.859px; top: -14.254%; width: 358.081px !important; height: 89.992px !important; z-index: 0;
+}
+.quiz-section .skip-quiz-art > .layer-367 {
+  left: 17.403%; top: 26.272%; width: 516.338px !important; height: 131.707px !important; z-index: 1;
+}
+.quiz-section .skip-quiz-art > .layer-368 {
+  left: -39.81px; top: 62.669%; width: 272.276px !important; height: 72.392px !important; z-index: 2;
+}
+.quiz-section .skip-quiz-art > .layer-369 {
+  right: -80.247px; top: -33.375%; width: 272.276px !important; height: 72.392px !important; z-index: 3;
+}
+.skip-quiz-art img { width: auto; height: auto; }
+/* Figma's shear precedes vertical scale: this yields the measured
+ * 516.338 x 131.707 and 272.276 x 72.392 artwork bounds. */
+.skip-quiz-art :is(.art-220,.art-229,.art-235) {
+  transform: rotate(153.99deg) skewX(55.96deg) scaleY(.56);
+}
+.quiz-section .skip-quiz-card .skip-quiz-heading {
+  position: static; grid-area: auto; margin: 0 0 16.17px; width: auto;
+  font-family: 'Noto Serif', serif; font-size: 16px; font-weight: 400;
+  line-height: 22px !important; white-space: normal; color: #fff;
+}
+.quiz-section .skip-quiz-card .skip-quiz-description {
+  position: static; grid-area: auto; margin: 0; width: min(365.844px,100%);
+  font-family: 'Satoshi', sans-serif; font-size: 16px; font-weight: 400;
+  line-height: 19px; letter-spacing: -.25px; color: #fff;
+}
+.quiz-section .skip-quiz-card .skip-quiz-phone {
+  position: relative; grid-area: auto; display: inline; margin: 0; padding: 0;
+  width: auto; mask-image: none; color: inherit; font: inherit; font-weight: 500;
+  white-space: nowrap; letter-spacing: -.2679px; text-decoration: underline;
+  margin-inline-start: 6.094px;
+}
+.skip-quiz-phone::before { content: none; }
+@media (min-width: 1441px) {
+  .quiz-section .skip-quiz-card { margin-left: 4.0375%; width: 37.351319%; }
+}
+@media (max-width: 1439px) {
+  .quiz-section .skip-quiz-card {
+    grid-area: 7 / 1 / 8 / -1; margin: 24px 0 0; width: 100%;
+  }
+  .quiz-section .skip-quiz-card .skip-quiz-phone { margin-inline-start: 0; }
 }
 @media (max-width: 767px) {
   .quiz-section .quiz-copy { grid-column: 1 / -1; }

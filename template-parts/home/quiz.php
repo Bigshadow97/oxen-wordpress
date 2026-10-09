@@ -51,19 +51,16 @@
 <p data-node-id="1:328" class="design-layer layer-328 copy-layer">
           If you’re scaling up
         </p>
-<div data-node-id="1:369" class="design-layer layer-369 art-layer" aria-hidden="true"><div class="art-220"><div class="art-221"><div class="art-222"><img alt="" src="<?php echo oxen_asset( 'ellipse2145.svg' ); ?>" decoding="async" class="art-223"></div></div></div></div>
-<div data-node-id="1:366" class="design-layer layer-366 art-layer" aria-hidden="true"><div class="art-225"><img alt="" src="<?php echo oxen_asset( 'ellipse2143.svg' ); ?>" decoding="async" class="art-226"></div></div>
-<p data-node-id="1:370" class="design-layer layer-370 copy-layer">
-          Or skip the quiz
-        </p>
-<div data-node-id="1:367" class="design-layer layer-367 art-layer" aria-hidden="true"><div class="art-229"><div class="art-230"><div class="art-231"><img alt="" src="<?php echo oxen_asset( 'ellipse2144.svg' ); ?>" decoding="async" class="art-232"></div></div></div></div>
-<p data-node-id="1:371" class="design-layer layer-371 copy-layer">
-          Jeremy answers the phone weekdays. Tell him what you do, hear what fits.
-        </p>
-<div data-node-id="1:368" class="design-layer layer-368 art-layer" aria-hidden="true"><div class="art-235"><div class="art-236"><div class="art-237"><img alt="" src="<?php echo oxen_asset( 'ellipse2145.svg' ); ?>" decoding="async" class="art-238"></div></div></div></div>
-<a data-node-id="1:365" href="tel:0800640001" class="design-layer layer-365 copy-layer text-link">
-            0800 640 001
-          </a></div>
+<aside class="skip-quiz-card" data-node-id="1:362" aria-labelledby="skip-quiz-heading">
+  <div class="skip-quiz-art" data-node-id="1:364" aria-hidden="true">
+    <div data-node-id="1:366" class="design-layer layer-366 art-layer"><div class="art-225"><img alt="" src="<?php echo oxen_asset( 'ellipse2143.svg' ); ?>" decoding="async" class="art-226"></div></div>
+    <div data-node-id="1:367" class="design-layer layer-367 art-layer"><div class="art-229"><div class="art-230"><div class="art-231"><img alt="" src="<?php echo oxen_asset( 'ellipse2144.svg' ); ?>" decoding="async" class="art-232"></div></div></div></div>
+    <div data-node-id="1:368" class="design-layer layer-368 art-layer"><div class="art-235"><div class="art-236"><div class="art-237"><img alt="" src="<?php echo oxen_asset( 'ellipse2145.svg' ); ?>" decoding="async" class="art-238"></div></div></div></div>
+    <div data-node-id="1:369" class="design-layer layer-369 art-layer"><div class="art-220"><div class="art-221"><div class="art-222"><img alt="" src="<?php echo oxen_asset( 'ellipse2145.svg' ); ?>" decoding="async" class="art-223"></div></div></div></div>
+  </div>
+  <h3 id="skip-quiz-heading" data-node-id="1:370" class="skip-quiz-heading layer-370">Or skip the quiz</h3>
+  <p data-node-id="1:371" class="skip-quiz-description layer-371">Jeremy answers the phone weekdays. Tell him what you do, hear what fits. <a data-node-id="1:365" href="tel:0800640001" class="skip-quiz-phone layer-365 text-link">0800 640 001</a></p>
+</aside></div>
 <div data-node-id="1:329" class="design-layer layer-329 art-layer" aria-hidden="true"><div class="art-241"><img alt="" src="<?php echo oxen_asset( 'vector1019.svg' ); ?>" decoding="async" class="art-242"></div></div>
 <div data-node-id="1:330" class="design-layer layer-330 art-layer" aria-hidden="true"><div class="art-244"><div class="art-245"><div class="art-246"><img alt="" src="<?php echo oxen_asset( 'vector1019.svg' ); ?>" decoding="async" class="art-247"></div></div></div></div>
 <?php // Authored interactive card: preserve this structure when a generator check reports drift. ?>
@@ -104,7 +101,6 @@
 <div data-node-id="1:358" class="design-layer layer-358 art-layer" aria-hidden="true"><div class="art-275"><div class="art-276"><div class="art-277"><img alt="" src="<?php echo oxen_asset( 'vector1032.svg' ); ?>" decoding="async" class="art-278"></div></div></div></div>
 <div data-node-id="1:359" class="design-layer layer-359 art-layer" aria-hidden="true"><div class="art-280"><div class="art-281"><div class="art-282"><img alt="" src="<?php echo oxen_asset( 'vector1032.svg' ); ?>" decoding="async" class="art-283"></div></div></div></div>
 <div data-node-id="1:361" class="design-layer layer-361 art-layer" aria-hidden="true"><div class="art-285"><div class="art-286"><div class="art-287"><img alt="" src="<?php echo oxen_asset( 'vector1032.svg' ); ?>" decoding="async" class="art-288"></div></div></div></div>
-<div data-node-id="1:364" class="design-layer layer-364 art-layer" aria-hidden="true"></div>
 <div data-node-id="1:372" class="design-layer layer-372 art-layer" aria-hidden="true"></div>
 <div data-node-id="1:375" class="design-layer layer-375 art-layer" aria-hidden="true"></div>
 </section>

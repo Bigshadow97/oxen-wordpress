@@ -1,11 +1,8 @@
-/* Desktop composes the original 1440 px artboard. Smaller screens reflow the
+/* 1440 px is the measured reference. Smaller screens reflow the
  * same PHP content into normal, independently sized Grid/Flex components. */
 .responsive-group { display: contents; }
 .metric-pair,.metric-unit { display: contents; }
-@media (min-width: 1200px) and (max-width: 1439px) {
-  .home-section { zoom: calc(100vw / 1440px); margin-inline: 0; }
-}
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
   .home-section { display: flex; flex-direction: column; grid-template-rows: none; width: 100%; height: auto; padding: 64px 32px; gap: 24px; overflow: clip; }
   .home-section .design-layer { grid-area: auto; margin: 0 !important; width: auto !important; height: auto !important; transform: none !important; align-self: auto !important; justify-self: auto !important; order: var(--reading-order, 0); }
   .home-section .copy-layer { line-height: 1.45 !important; white-space: normal !important; }
@@ -114,7 +111,7 @@
   .results-section > .copy-layer { grid-column: 1/-1; text-align: center; }
   .result-card { display: flex; flex-direction: column; background: #fff; padding: 24px; border: .5px solid var(--line); gap: 18px; }
   .result-card .layer-448,.result-card .layer-449 { height: 180px !important; order: -1; margin: -24px -24px 0 !important; width: calc(100% + 48px) !important; }
-  .result-card .layer-448 img { height: 100%; top: 0; object-fit: cover; }
+  .result-card .layer-448 img { height: 100%; top: 0; object-fit: cover; object-position: center 36.4%; }
   .result-card .layer-454,.result-card .layer-455,.result-card .layer-459,.result-card .layer-460 { color: var(--ink); }
   .result-card .layer-461,.result-card .layer-462,.result-card .layer-477,.result-card .layer-478 { font-size: 40px; }
   .metric-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; order: 2; }

@@ -93,7 +93,7 @@
   menuToggle?.addEventListener('click', () => { menu.hidden = !menu.hidden; menuToggle.setAttribute('aria-expanded', String(!menu.hidden)); });
   $$('a', menu || document.createElement('nav')).forEach(link => link.addEventListener('click', closeMenu));
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && menu && !menu.hidden) { closeMenu(); menuToggle.focus(); } });
-  window.matchMedia('(min-width: 1200px)').addEventListener('change', closeMenu);
+  window.matchMedia('(min-width: 1440px)').addEventListener('change', closeMenu);
 
   // The first question/options are exact Figma copy. Later steps add the
   // required behavior in the same component; no personal data is collected.

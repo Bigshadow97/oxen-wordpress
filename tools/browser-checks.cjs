@@ -16,6 +16,30 @@ let browser;
   const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, reducedMotion: 'reduce' });
   const page = await context.newPage();
   const errors = [];
+  const layouts = [];
+  async function checkLayout(width) {
+    const layout = await page.evaluate(() => {
+      const bounds = n => { const r=n.getBoundingClientRect(); return {x:r.x,y:r.y+scrollY,width:r.width,height:r.height,right:r.right}; };
+      return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,sections:[...document.querySelectorAll('.home-section')].map(n=>({id:n.id,...bounds(n)})),cards:[...document.querySelectorAll('.service-card')].map(n=>({id:n.id,...bounds(n)})),portrait:bounds(document.querySelector('.layer-13')),controls:[...document.querySelectorAll('.service-card .action-link,.calculator-form .tax-control,.calculator-form .calculate-button,.hero-proof > .design-layer')].map(n=>({class:n.className,...bounds(n)})),statistics:[...document.querySelectorAll('.stat-card')].map(bounds)};
+    });
+    assert.equal(layout.scrollWidth,width,'Horizontal overflow at '+width);
+    for (const section of layout.sections) {
+      assert.ok(Math.abs(section.x)<1 && Math.abs(section.right-width)<1,'Section must span viewport: '+section.id+' at '+width);
+    }
+    for(const control of layout.controls) assert.ok(control.x>=-1 && control.right<=width+1,'Control outside viewport: '+control.class+' at '+width);
+    assert.deepEqual(await page.locator('.service-card .action-link').evaluateAll(ns=>ns.filter(n=>{const r=n.getBoundingClientRect(),p=n.closest('.service-card').getBoundingClientRect();return r.x<p.x-1 || r.right>p.right+1 || r.bottom>p.bottom+1;}).map(n=>n.className)),[],'Service CTA outside card at '+width);
+    if (width!==1440) for(const stat of layout.statistics) assert.ok(stat.width>44 && stat.height>44,'Collapsed statistic at '+width);
+    const capture=fs.readFileSync(path.join(folder,width===1440?'desktop-1440.png':'responsive-'+width+'.png'));
+    assert.equal(capture.readUInt32BE(16),width,'Screenshot width at '+width);
+    const bottom=layout.sections.at(-1).y+layout.sections.at(-1).height;
+    assert.ok(capture.readUInt32BE(20)>=Math.floor(bottom),'Screenshot must include complete footer at '+width);
+    if (width>=1440) {
+      assert.ok(Math.abs(layout.portrait.width/layout.portrait.height-1207.1/773.89)<.002,'Hero portrait aspect ratio at '+width);
+      for(let i=1;i<layout.cards.length;i++) assert.ok(layout.cards[i].x>=layout.cards[i-1].right-1,'Service card overlap at '+width);
+    }
+    layouts.push(layout);
+    fs.writeFileSync(path.join(folder,'full-width-layout.json'),JSON.stringify(layouts,null,2));
+  }
   page.on('pageerror', error => errors.push(error.message));
   page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
   page.on('response', response => { if (response.status() >= 400) errors.push('HTTP ' + response.status() + ' ' + response.url()); });
@@ -26,6 +50,7 @@ let browser;
     await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
   });
   await page.screenshot({ path: path.join(folder, 'desktop-1440.png'), fullPage: true });
+  await checkLayout(1440);
   if (process.argv.includes('--blur-variants')) {
     const masks = ['linear-gradient(to bottom,transparent,black)', 'linear-gradient(to bottom,transparent,rgba(0,0,0,.1) 20.681%,rgba(0,0,0,.43) 85.169%)', 'linear-gradient(to bottom,transparent,black 70%)'];
     for (let i=0;i<masks.length;i++) {
@@ -130,13 +155,42 @@ let browser;
   await page.locator('[data-open-policy]').click();
   assert.equal(await page.locator('#policy-dialog').evaluate(n=>n.open),true);
   await page.keyboard.press('Escape');
-  for (const width of [1280, 1024, 768, 390, 320]) {
+  for (const width of [1600, 1920, 2560, 1280, 1024, 768, 390, 320]) {
     await page.setViewportSize({width,height:900});
     await page.evaluate(() => scrollTo(0,0));
+    await page.evaluate(() => document.activeElement.blur());
+    await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
     await page.screenshot({path:path.join(folder, 'responsive-' + width + '.png'),fullPage:true});
+    await checkLayout(width);
+    if (width>1440) {
+      if (width===2560 && process.argv.includes('--axe')) {
+        await page.locator('[data-contrast-toggle]').click();
+        const audit=await page.evaluate(async()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice']}}));
+        fs.writeFileSync(path.join(folder,'accessibility-wide-high-contrast.json'),JSON.stringify(audit,null,2));
+        console.log('Accessibility wide high contrast:',JSON.stringify(audit.violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)}))));
+        assert.deepEqual(audit.violations.map(v=>v.id),[]);
+        await page.locator('[data-contrast-toggle]').click();
+      }
+      await page.locator('[data-preview-plan="0"]').first().click();
+      assert.equal(await page.locator('#plan-dialog').evaluate(n=>n.open),true);
+      await page.keyboard.press('Escape');
+      await page.locator('[data-quiz-answer="1"]').click();
+      assert.match(await page.locator('#quiz-progress').textContent(),/02/);
+      await page.locator('[data-quiz-back]').click();
+      await page.locator('[data-quiz-answer="2"]').click();
+      await page.locator('[data-quiz-answer="2"]').click();
+      await page.locator('[data-quiz-answer="2"]').click();
+      assert.equal(await page.locator('#quiz-question').textContent(),'Advisory +');
+      await page.locator('[data-quiz-restart]').click();
+      await page.locator('#annual-profit').fill('100000');
+      await page.locator('.calculate-button').click();
+      assert.equal(await page.locator('#tax-owed').textContent(),'$28,000');
+      await page.locator('#annual-profit').fill('$ 250,000.00');
+      await page.locator('.calculate-button').click();
+    }
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
     assert.equal(overflow, false, 'Horizontal overflow at ' + width);
-    if (width < 1200) {
+    if (width < 1440) {
       assert.deepEqual(await page.locator('.stat-card,.service-card,.result-card').evaluateAll(ns=>ns.filter(n=>n.getBoundingClientRect().height < 44).map(n=>n.className)),[],'Collapsed cards at '+width);
       await page.locator('.menu-toggle').click();
       assert.equal(await page.locator('#mobile-navigation').isVisible(),true);

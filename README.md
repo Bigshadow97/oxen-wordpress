@@ -31,7 +31,7 @@ Figma does not supply external link or booking destinations. Verified Oxen servi
 
 Figma remained strictly **read-only**. The source was read using design context, node metadata, screenshots and asset exports. When an export hit the 20-asset cap, smaller node groups were requested. All **90 original PNG/SVG assets** are stored in `assets/images`; the mapping and original-download SHA-256 checksums are in `assets/asset-map.json` and `assets/provenance.json`. No stock-image replacements or recreated icons were used.
 
-Desktop CSS follows the original 1440px coordinates, typography, masks, image cropping, colours and paint order. `data-node-id` attributes preserve source references. The source frame is 1440 × 8443, but its footer children extend to approximately y=9072; the implemented page includes that full footer. The 1440px comparison covers the entire exported frame, and the remaining footer uses the original child measurements. At 1200–1439px the desktop composition scales; below 1200px the same semantic content reflows into tablet/mobile Grid and Flexbox layouts.
+Desktop CSS follows the original 1440px coordinates, typography, masks, image cropping, colours and paint order. `data-node-id` attributes preserve source references. The source frame is 1440 × 8443, but its footer children extend to approximately y=9072; the implemented page includes that full footer. The 1440px comparison covers the entire exported frame, and the remaining footer uses the original child measurements. **1440px is the reference viewport, not a maximum page width.** All section containers span the viewport. Above 1440px, percentage anchors, fluid Grid/Flex components and bounded reading widths adapt the composition; photographs use cover/contain crops and the hero portrait scales uniformly. Below 1440px the same semantic content reflows into tablet/mobile layouts, without page zoom.
 
 Rendered fonts are **Satoshi** (400/500 normal and italic, 700 normal), **Noto Serif** (400 normal/italic), and **Playfair Display** (400 normal). Eight original font faces were loaded successfully in browser verification.
 
@@ -41,7 +41,7 @@ Rendered fonts are **Satoshi** (400/500 normal and italic, 700 normal), **Noto S
 
 ## Source layout and checks
 
-`template-parts/home/` contains one PHP component per section plus dialogs. `assets/css/` separates fonts, shared behavior, measured desktop styling and responsive styling. `assets/js/homepage.js` handles UI; `assets/js/tax.js` contains independently testable calculations.
+`template-parts/home/` contains one PHP component per section plus dialogs. `assets/css/` separates fonts, shared behavior, measured desktop styling and responsive styling. `wide-measurements.css` translates source anchors to percentages; `wide.css` controls fluid components, backgrounds and image focal points above the reference viewport. `assets/js/homepage.js` handles UI; `assets/js/tax.js` contains independently testable calculations.
 
 ```powershell
 # In Local's site shell (or use the explicit Local PHP 8.2.29 executable):
@@ -60,7 +60,7 @@ $env:OXEN_URL = 'http://localhost:10016'
 node tools/browser-checks.cjs --axe
 ```
 
-The check covers all interactions, image/font loads, browser/network errors, hostname mapping and widths 1440, 1280, 1024, 768, 390 and 320. The alias check targets this Local site's port; adapt it for another installation. It saves screenshots/audit JSON in gitignored `tools/screenshots/`.
+The check covers all interactions, image/font loads, browser/network errors, hostname mapping and widths **1440, 1600, 1920, 2560, 1280, 1024, 768, 390 and 320**. It checks every section's viewport bounds, horizontal overflow, hero portrait proportions, card/CTA containment and complete-footer screenshot coverage. Wide-screen quiz, service dialog and calculator behavior is also exercised. The alias check targets this Local site's port; adapt it for another installation. It saves screenshots, geometry and audit JSON in gitignored `tools/screenshots/`.
 
 `tools/flat-layers.json` retains the original measured layer data. `python tools/build-homepage.py` reproduces section PHP and measured desktop CSS from that data without connecting to Figma. Responsive CSS, shared behavior and dialogs are maintained separately. For a future read-only design refresh, `parse-figma.py` accepts a fresh `figma-reference.jsx` and `figma-metadata.xml` export. `compare-screenshots.py` uses Pillow and a fresh original `tools/figma-reference.png` to produce side-by-side comparisons and channel-difference metrics. Expiring Figma asset URLs and bulky QA captures are intentionally excluded from Git.
 

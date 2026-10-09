@@ -14,7 +14,7 @@ button:disabled { cursor: default; }
 .sr-only { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; border: 0 !important; }
 .skip-link { position: fixed; left: 16px; top: -100px; z-index: 100; background: #fff; color: var(--ink); padding: 12px 20px; }
 .skip-link:focus { top: 12px; }
-.home-section { display: grid; grid-template-columns: 1440px; grid-template-rows: 100%; position: relative; width: 1440px; margin-inline: auto; isolation: isolate; overflow: clip; }
+.home-section { display: grid; grid-template-columns: minmax(0,1fr); grid-template-rows: 100%; position: relative; width: 100%; margin-inline: 0; isolation: isolate; overflow: clip; }
 .design-layer { min-width: 0; }
 .art-layer { pointer-events: none; }
 .copy-layer { z-index: 2; }
@@ -84,7 +84,7 @@ dialog ul { padding-left: 22px; line-height: 1.7; }
 .high-contrast .tax-intro-section .layer-410,.high-contrast .tax-intro-section .layer-410 * { color: white !important; }
 .high-contrast .home-section :is(button,a.action-link,input,select) { outline: 1px solid currentColor; outline-offset: 2px; }
 .high-contrast :focus-visible { outline: 3px solid #a96500 !important; outline-offset: 5px !important; }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .high-contrast .quiz-copy :is(.layer-365,.layer-370,.layer-371) { color: white !important; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *,*::before,*::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }

@@ -133,7 +133,7 @@ def geom(n):
     return x,y,w,h,d
 
 def text(n): return re.sub(r'\s+',' ',n['text']+''.join(text(c)+c['tail'] for c in n['children'])).strip()
-css=[]; counter=0; used=set(); removed={22}
+css=[]; fluid=[]; counter=0; used=set(); removed={22}
 HEADINGS={175:'h1',18:'h2',322:'h2',520:'h2',492:'h2',447:'h2',438:'h2',107:'h2',60:'h2',
 162:'h3',163:'h3',593:'h3',594:'h3',499:'h3',505:'h3',516:'h3',454:'h3',455:'h3'}
 LINKS={203:'#about',204:'https://oxen.nz/podcasts/',205:'#results',206:'#calculator',208:'#services',
@@ -258,6 +258,24 @@ def serialize(n, start=0, root=False, local_origin=None):
     if nid==628:d['background-color']='#f0f0f0'
     if root and nid in ACTION_MAP and ACTION_MAP[nid][2]=='#contact':
         a['data-open-contact']='';a['aria-haspopup']='dialog'
+    # Wide layouts retain the source's horizontal anchors, without retaining
+    # an outer 1440px canvas. Component-local button/card children stay local.
+    if root and not local_origin:
+        wide={'margin-left':f'{x/1440*100:.6f}%'}
+        width=d.get('width','')
+        if width.endswith('px') and float(width[:-2]) > 200:
+            rw=float(width[:-2])
+            if 'copy-layer' in classes:
+                maximum=max(rw,min(rw*1.25,720))
+            fw=f'clamp({rw}px, {rw/1440*100:.6f}vw, {maximum:.4f}px)' if 'copy-layer' in classes else f'{rw/1440*100:.6f}%'
+            wide['width']=fw
+            if d.get('text-align')=='center':
+                wide['margin-left']=f'calc({(x+rw/2)/1440*100:.6f}% - ({fw}) / 2)'
+        if start==45.419:
+            wide['margin-top']=f'calc({y:.4f}px + var(--hero-growth) * {y/737.581:.8f})'
+            if nid in {187,188,220,221,222,223,224,229,246,317}:
+                wide['margin-left']=f'calc(100% - {1440-x:.4f}px)'
+        fluid.append('.'+cls+' {'+'; '.join(k+': '+v for k,v in wide.items())+';}')
     css.append('.'+cls+' {'+'; '.join(k+': '+v for k,v in d.items())+';}')
     attributes=' '.join(k+'="'+(v if k=='src' and v.startswith('<?php') else html.escape(v,quote=True))+'"' for k,v in a.items())
     if tag=='input' or tag=='img':return '<'+tag+' '+attributes+'>'
@@ -323,7 +341,8 @@ for name,start,end in SECTIONS:
         if groupclass.startswith('service-card'):
             bg=next(i for i in (122,136,559,147) if i in ids)
             gx,gy,gw,gh,_=geom(by_id[bg]);group_origin=(gx,gy)
-            css.append('@media (min-width:1200px) {.services-section .'+groupclass.split()[-1]+' {display:grid;grid-area:1/1;align-self:start;justify-self:start;width:'+str(gw)+'px;height:'+str(gh)+'px;margin-left:'+str(gx)+'px;margin-top:'+str(gy-start)+'px;overflow:clip;}}')
+            css.append('@media (min-width:1440px) {.services-section .'+groupclass.split()[-1]+' {display:grid;grid-area:1/1;align-self:start;justify-self:start;width:'+str(gw)+'px;height:'+str(gh)+'px;margin-left:'+str(gx)+'px;margin-top:'+str(gy-start)+'px;overflow:clip;}}')
+            fluid.append('.services-section .'+groupclass.split()[-1]+' {width:'+str(gw/1440*100)+'%;margin-left:'+str(gx/1440*100)+'%;}')
         metric_ids=({461,462,463,464} if 461 in ids else {477,478,479,480}) if groupclass=='result-card' else set()
         bodies=[];metrics_rendered=False
         for v in members:
@@ -362,6 +381,7 @@ for name,start,end in SECTIONS:
 
 (ROOT/'assets/css').mkdir(parents=True,exist_ok=True)
 (ROOT/'assets/css/homepage.css').write_text('/* Original Figma 1:3 geometry, translated to native CSS Grid compositions. */\n'+'\n'.join(css)+'\n',encoding='utf-8')
+(ROOT/'assets/css/wide-measurements.css').write_text('/* Fluid source anchors; component layout and image crops are in wide.css. */\n@media (min-width:1441px) {\n'+'\n'.join(fluid)+'\n}\n',encoding='utf-8')
 # Record names/slots rather than temporary URLs in the repository.
 (ROOT/'assets/asset-map.json').write_text(json.dumps([{'name':a['name'],'file':a['file']} for a in manifest],indent=2),encoding='utf-8')
 print(f'Built {len(SECTIONS)} PHP sections; {len(css)} native CSS rules; {len(used)} img assets used. Masks are recorded separately in CSS.')

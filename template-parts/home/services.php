@@ -76,11 +76,11 @@
 <p data-node-id="1:174" class="design-layer layer-174 copy-layer">
         Budgeting, financial planning, and coaching to build sustainable business models and achieve goals.
       </p>
-<button data-node-id="1:310" type="button" data-open-comparison="" aria-haspopup="dialog" class="design-layer layer-310 copy-layer text-button">
-          Compare all four side-by-side
-        </button>
-<div data-node-id="1:311" class="design-layer layer-311 art-layer" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'add-line7.svg' ); ?>" decoding="async" class="art-402"></div>
-<div data-node-id="1:315" class="design-layer layer-315 art-layer" aria-hidden="true"><div class="art-404"><img alt="" src="<?php echo oxen_asset( 'vector1016.svg' ); ?>" decoding="async" class="art-405"></div></div>
+<button data-node-id="1:310" type="button" data-open-comparison="" aria-haspopup="dialog" aria-controls="comparison-dialog" class="design-layer layer-310 copy-layer text-button comparison-cta">
+  <span class="comparison-cta-label">Compare all four side-by-side</span>
+  <img data-node-id="1:311" class="comparison-cta-icon" alt="" aria-hidden="true" src="<?php echo oxen_asset( 'add-line7.svg' ); ?>" decoding="async">
+  <img data-node-id="1:315" class="comparison-cta-rule" alt="" aria-hidden="true" src="<?php echo oxen_asset( 'vector1016.svg' ); ?>" decoding="async">
+</button>
 <div class="responsive-group service-timeline"><div data-node-id="1:384" class="design-layer layer-384 art-layer" aria-hidden="true"><div class="art-407"><div class="art-408"><div class="art-409"><img alt="" src="<?php echo oxen_asset( 'vector1015.svg' ); ?>" decoding="async" class="art-410"></div></div></div></div>
 <div data-node-id="1:380" class="design-layer layer-380 art-layer" aria-hidden="true"></div>
 <div data-node-id="1:381" class="design-layer layer-381 art-layer" aria-hidden="true"></div>

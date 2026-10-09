@@ -1,6 +1,27 @@
 /* 1440 is a reference, not a maximum. Measured anchors become percentages;
  * real component layouts, capped reading widths and cover/contain crops keep
  * wide screens balanced without scaling the page or stretching photographs. */
+/* 1:309: keep the original icon and rule with the comparison control rather
+ * than treating them as independently positioned section artwork. */
+.services-section > .comparison-cta {
+  display: inline-flex; align-items: center; gap: 4.789px;
+  width: 227.789px !important; max-width: 100%; min-height: 31.29px;
+  padding: 0 0 9.29px; margin-inline: 0;
+  align-self: start !important; justify-self: center !important;
+  font-family: 'Satoshi', sans-serif; font-size: 16px; font-weight: 500;
+  line-height: 22px !important; letter-spacing: -.2679px;
+  color: var(--ink); text-align: left; white-space: nowrap !important;
+}
+.comparison-cta-label { flex: 0 0 207px; }
+.comparison-cta-icon { display: block; flex: none; transform: translateY(1.621px); pointer-events: none; }
+.comparison-cta-rule {
+  position: absolute; left: 0; bottom: -.5px; display: block;
+  width: 224.914px; height: 1px; pointer-events: none;
+}
+.services-section > .comparison-cta:hover { color: var(--blue); text-decoration: none; }
+@media (max-width: 1439px) {
+  .services-section > .comparison-cta { align-self: center !important; }
+}
 /* Statistics 1:263: one .5px #46517d outline and four original 1px
  * #f1f1f1 SVG accents per card. Remove the duplicate first-edge overlay. */
 .statistics-section > :is(.layer-15,.layer-278) { display: none; }

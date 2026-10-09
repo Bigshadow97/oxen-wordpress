@@ -27,6 +27,16 @@ let browser;
       assert.ok(Math.abs(section.x)<1 && Math.abs(section.right-width)<1,'Section must span viewport: '+section.id+' at '+width);
     }
     for(const control of layout.controls) assert.ok(control.x>=-1 && control.right<=width+1,'Control outside viewport: '+control.class+' at '+width);
+    layout.comparisonCTA = await page.locator('[data-open-comparison]').evaluate(button => {
+      const bounds=n=>{const r=n.getBoundingClientRect();return {x:r.x,right:r.right,width:r.width,height:r.height};};
+      return {button:bounds(button),display:getComputedStyle(button).display,art:[...button.querySelectorAll('img')].map(n=>({...bounds(n),loaded:n.complete&&n.naturalWidth>0}))};
+    });
+    const comparison=layout.comparisonCTA;
+    // Grid/Flex items blockify inline-flex's outer display; its inner layout stays Flex.
+    assert.ok(['flex','inline-flex'].includes(comparison.display),'Comparison CTA layout at '+width);
+    assert.equal(comparison.art.length,2,'Comparison icon and underline must belong to the button');
+    assert.ok(comparison.art.every(n=>n.loaded&&n.x>=comparison.button.x-1&&n.right<=comparison.button.right+1&&n.height>0),'Comparison artwork hidden or detached at '+width);
+    assert.ok(Math.abs(comparison.art[0].width-16)<.1&&Math.abs(comparison.art[0].height-16)<.1&&Math.abs(comparison.art[1].width-224.914)<.1,'Comparison source dimensions at '+width);
     assert.deepEqual(await page.locator('.service-card .action-link').evaluateAll(ns=>ns.filter(n=>{const r=n.getBoundingClientRect(),p=n.closest('.service-card').getBoundingClientRect();return r.x<p.x-1 || r.right>p.right+1 || r.bottom>p.bottom+1;}).map(n=>n.className)),[],'Service CTA outside card at '+width);
     if (width!==1440) for(const stat of layout.statistics) assert.ok(stat.width>44 && stat.height>44,'Collapsed statistic at '+width);
     const capture=fs.readFileSync(path.join(folder,width===1440?'desktop-1440.png':'responsive-'+width+'.png'));

@@ -27,6 +27,16 @@ let browser;
       assert.ok(Math.abs(section.x)<1 && Math.abs(section.right-width)<1,'Section must span viewport: '+section.id+' at '+width);
     }
     for(const control of layout.controls) assert.ok(control.x>=-1 && control.right<=width+1,'Control outside viewport: '+control.class+' at '+width);
+    layout.partnerLogos = await page.locator('[data-logo-carousel]').evaluate(carousel=>{
+      const r=carousel.getBoundingClientRect(),groups=[...carousel.querySelectorAll('.partners-logo-group')];
+      return {groups:groups.length,cloneHidden:groups[1].getAttribute('aria-hidden')==='true'&&groups[1].inert,
+        cloneDisplay:getComputedStyle(groups[1]).display,animations:carousel.querySelector('.partners-track').getAnimations().length,
+        images:[...groups[0].querySelectorAll('img')].map(n=>{const b=n.getBoundingClientRect();return {alt:n.alt,loaded:n.complete&&n.naturalWidth>0,fit:getComputedStyle(n).objectFit,ratio:b.width/b.height,naturalRatio:n.naturalWidth/n.naturalHeight,inside:b.x>=r.x&&b.right<=r.right+.1&&b.y>=r.y&&b.bottom<=r.bottom+.1};})};
+    });
+    const logos=layout.partnerLogos;
+    assert.equal(logos.groups,2);assert.equal(logos.images.length,6);assert.equal(logos.cloneHidden,true);
+    assert.ok(logos.images.every(n=>n.alt&&n.loaded&&n.fit==='contain'&&Math.abs(n.ratio-n.naturalRatio)<.001&&n.inside),'All six original logos remain visible and undistorted in reduced motion at '+width);
+    assert.equal(logos.cloneDisplay,'none');assert.equal(logos.animations,0,'Reduced motion disables logo autoplay');
     layout.comparisonCTA = await page.locator('[data-open-comparison]').evaluate(button => {
       const bounds=n=>{const r=n.getBoundingClientRect();return {x:r.x,right:r.right,width:r.width,height:r.height};};
       return {button:bounds(button),display:getComputedStyle(button).display,art:[...button.querySelectorAll('img')].map(n=>({...bounds(n),loaded:n.complete&&n.naturalWidth>0}))};
@@ -84,6 +94,20 @@ let browser;
     layouts.push(layout);
     fs.writeFileSync(path.join(folder,'full-width-layout.json'),JSON.stringify(layouts,null,2));
   }
+  async function checkPartnerMotion() {
+    await page.mouse.move(0,0);await page.evaluate(()=>document.activeElement.blur());
+    await page.emulateMedia({reducedMotion:'no-preference'});
+    await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
+    const track=page.locator('.partners-track');
+    const sample=()=>track.evaluate(n=>{const a=n.getAnimations()[0],t=a.effect.getTiming();return {time:Number(a.currentTime),duration:t.duration,state:a.playState,easing:t.easing,iterations:t.iterations,width:n.querySelector('.partners-logo-group').getBoundingClientRect().width,trackWidth:n.getBoundingClientRect().width};});
+    const before=await sample();assert.equal(before.state,'running');assert.equal(before.easing,'linear');assert.equal(before.iterations,Infinity);
+    assert.ok(Math.abs(before.width/(before.duration/1000)-24)<.01&&Math.abs(before.trackWidth-2*before.width)<.02,'Exact cycles at constant logo scrolling speed');
+    await page.waitForTimeout(100);assert.ok((await sample()).time>before.time,'Logo autoplay starts without interaction');
+    await page.locator('[data-logo-carousel]').focus();await page.evaluate(()=>new Promise(r=>requestAnimationFrame(r)));
+    const paused=await sample();assert.equal(paused.state,'paused');await page.waitForTimeout(100);assert.ok(Math.abs((await sample()).time-paused.time)<1,'Focus pauses logos');
+    await page.evaluate(()=>document.activeElement.blur());await page.emulateMedia({reducedMotion:'reduce'});
+    await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
+  }
   async function checkStoryNavigation() {
     const next=page.locator('[data-slider-next]'),previous=page.locator('[data-slider-previous]');
     assert.equal(await next.count(),1);assert.equal(await previous.count(),1);
@@ -124,6 +148,7 @@ let browser;
   });
   await page.screenshot({ path: path.join(folder, 'desktop-1440.png'), fullPage: true });
   await checkLayout(1440);
+  await checkPartnerMotion();
   if (process.argv.includes('--blur-variants')) {
     const masks = ['linear-gradient(to bottom,transparent,black)', 'linear-gradient(to bottom,transparent,rgba(0,0,0,.1) 20.681%,rgba(0,0,0,.43) 85.169%)', 'linear-gradient(to bottom,transparent,black 70%)'];
     for (let i=0;i<masks.length;i++) {
@@ -228,6 +253,7 @@ let browser;
     await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
     await page.screenshot({path:path.join(folder, 'responsive-' + width + '.png'),fullPage:true});
     await checkLayout(width);
+    if ([1920,768,390].includes(width)) await checkPartnerMotion();
     if (width>1440) {
       if (width===2560 && process.argv.includes('--axe')) {
         await page.locator('[data-contrast-toggle]').click();

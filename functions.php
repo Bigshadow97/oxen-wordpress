@@ -12,7 +12,7 @@ add_action( 'after_setup_theme', function () {
 add_action( 'wp_enqueue_scripts', function () {
 	$path = get_template_directory();
 	$uri  = get_template_directory_uri();
-	$sheets = is_front_page() ? array( 'fonts', 'base', 'homepage', 'responsive', 'wide-measurements', 'wide', 'quiz', 'about', 'results', 'testimonials' ) : array( 'fonts', 'base' );
+	$sheets = is_front_page() ? array( 'fonts', 'base', 'homepage', 'responsive', 'wide-measurements', 'wide', 'quiz', 'about', 'results', 'testimonials', 'partners' ) : array( 'fonts', 'base' );
 	foreach ( $sheets as $sheet ) {
 		$file = '/assets/css/' . $sheet . '.css';
 		if ( file_exists( $path . $file ) ) {
@@ -21,6 +21,7 @@ add_action( 'wp_enqueue_scripts', function () {
 	}
 	$file = '/assets/js/homepage.js';
 	if ( is_front_page() && file_exists( $path . $file ) ) {
+		wp_enqueue_script( 'oxen-partners', $uri . '/assets/js/partners.js', array(), (string) filemtime( $path . '/assets/js/partners.js' ), array( 'in_footer' => true, 'strategy' => 'defer' ) );
 		wp_enqueue_script( 'oxen-tax', $uri . '/assets/js/tax.js', array(), (string) filemtime( $path . '/assets/js/tax.js' ), array( 'in_footer' => true, 'strategy' => 'defer' ) );
 		wp_enqueue_script( 'oxen-homepage', $uri . $file, array( 'oxen-tax' ), (string) filemtime( $path . $file ), array( 'in_footer' => true, 'strategy' => 'defer' ) );
 	}

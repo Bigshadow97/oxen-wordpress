@@ -3,6 +3,11 @@
  * wide screens balanced without scaling the page or stretching photographs. */
 /* 1:309: keep the original icon and rule with the comparison control rather
  * than treating them as independently positioned section artwork. */
+@media (min-width: 1440px) {
+  /* Only the background grows: meet the results base at x720.5 and overlap
+   * its fractional edge by 1px. Controls and the horizontal SVG stay put. */
+  .calculator-section .layer-79 { width: calc(575.048px + 1px); }
+}
 .services-section > .comparison-cta {
   display: inline-flex; align-items: center; gap: 4.789px;
   width: 227.789px !important; max-width: 100%; min-height: 31.29px;
@@ -161,7 +166,9 @@
   .testimonials-section .layer-418 { width: 39.375%; margin-left: 3.28125%; }
   .testimonial-card .layer-440 { width: min(34.224%,650px); }
 
-  .calculator-section .layer-79 { width: 39.931%; margin-left: 10.028%; }
+  /* Bridge the background seam at 50.035%; the extra pixel prevents
+   * fractional-edge antialiasing from exposing the blue section below. */
+  .calculator-section .layer-79 { width: calc(40.007% + 1px); margin-left: 10.028%; }
   .calculator-section :is(.layer-99,.layer-102) { width: 39.931%; margin-left: 50.035%; mask-image: none; }
   .calculator-form :is(.tax-control,.calculate-button) { width: 33.565%; }
   .calculator-form :is(.tax-control,.calculate-button) { margin-left: 13.299%; }

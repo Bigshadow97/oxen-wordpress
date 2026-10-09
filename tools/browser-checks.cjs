@@ -78,6 +78,13 @@ let browser;
       for(let i=1;i<layout.cards.length;i++) assert.ok(layout.cards[i].x>=layout.cards[i-1].right-1,'Service card overlap at '+width);
     }
     if (width>=1440) {
+      layout.calculatorPanels = await page.locator('#calculator').evaluate(section=>{
+        const bounds=n=>{const r=n.getBoundingClientRect();return {x:r.x,right:r.right,width:r.width,height:r.height};};
+        return {formBackground:bounds(section.querySelector('.layer-79')),resultBackground:bounds(section.querySelector('.layer-99')),horizontalRule:bounds(section.querySelector('.layer-115 img'))};
+      });
+      const panels=layout.calculatorPanels,overlap=panels.formBackground.right-panels.resultBackground.x;
+      assert.ok(overlap>=.98&&overlap<=1.1,'Calculator background seam must be covered without moving panel content at '+width);
+      assert.ok(Math.abs(panels.horizontalRule.width-width/3)<.05&&panels.horizontalRule.height>0&&panels.horizontalRule.height<=.51,'Calculator horizontal divider stays unchanged at '+width);
       layout.dividers=await page.locator('.layer-358,.layer-359,.layer-360,.layer-361,.layer-334,.layer-115,.layer-33,.layer-34').evaluateAll(ns=>ns.map(n=>{
         const r=n.getBoundingClientRect(),line=n.querySelector('img').getBoundingClientRect();
         return {class:n.className,x:r.x,right:r.right,width:r.width,lineX:line.x,lineRight:line.right,lineWidth:line.width};

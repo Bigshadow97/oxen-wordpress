@@ -12,7 +12,7 @@ add_action( 'after_setup_theme', function () {
 add_action( 'wp_enqueue_scripts', function () {
 	$path = get_template_directory();
 	$uri  = get_template_directory_uri();
-	$sheets = is_front_page() ? array( 'fonts', 'base', 'homepage', 'responsive', 'wide-measurements', 'wide', 'quiz', 'about' ) : array( 'fonts', 'base' );
+	$sheets = is_front_page() ? array( 'fonts', 'base', 'homepage', 'responsive', 'wide-measurements', 'wide', 'quiz', 'about', 'results' ) : array( 'fonts', 'base' );
 	foreach ( $sheets as $sheet ) {
 		$file = '/assets/css/' . $sheet . '.css';
 		if ( file_exists( $path . $file ) ) {

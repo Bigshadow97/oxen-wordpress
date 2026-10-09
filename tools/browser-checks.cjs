@@ -37,6 +37,26 @@ let browser;
     assert.equal(comparison.art.length,2,'Comparison icon and underline must belong to the button');
     assert.ok(comparison.art.every(n=>n.loaded&&n.x>=comparison.button.x-1&&n.right<=comparison.button.right+1&&n.height>0),'Comparison artwork hidden or detached at '+width);
     assert.ok(Math.abs(comparison.art[0].width-16)<.1&&Math.abs(comparison.art[0].height-16)<.1&&Math.abs(comparison.art[1].width-224.914)<.1,'Comparison source dimensions at '+width);
+    layout.caseStudyDecorations = await page.locator('.result-card').evaluateAll(cards => cards.map(card => {
+      const bounds=n=>{const r=n.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height,right:r.right,bottom:r.bottom};};
+      const frame=card.querySelector('.result-frame');
+      return {frame:bounds(frame),border:getComputedStyle(frame).borderTopWidth,ruleSizes:getComputedStyle(frame,'::before').backgroundSize,
+        corners:[...frame.querySelectorAll('.result-corner')].map(n=>({...bounds(n),loaded:n.complete&&n.naturalWidth>0})),
+        dividers:[...card.querySelectorAll('.result-divider img')].map(n=>({...bounds(n),loaded:n.complete&&n.naturalWidth>0}))};
+    }));
+    assert.equal(layout.caseStudyDecorations.length,2);
+    for(const card of layout.caseStudyDecorations) {
+      assert.equal(card.border,'0px','No rounded full-pixel or duplicate case-study border at '+width);
+      assert.equal(card.ruleSizes,'100% 0.5px, 100% 0.5px, 0.5px 100%, 0.5px 100%','Original faint frame rules at '+width);
+      assert.equal(card.corners.length,4);assert.equal(card.dividers.length,2);
+      card.corners.forEach((corner,index)=>{
+        const left=index%2===0,top=index<2;
+        assert.ok(corner.loaded&&Math.abs(corner.width-7.47656)<.1&&Math.abs(corner.height-7.34527)<.1,'Original corner artwork at '+width);
+        assert.ok(Math.abs((left?corner.x:corner.right)-(left?card.frame.x:card.frame.right))<1.2&&Math.abs((top?corner.y:corner.bottom)-(top?card.frame.y:card.frame.bottom))<1.2,'Detached case-study corner at '+width);
+      });
+      assert.ok(card.dividers.every(line=>line.loaded&&Math.abs(line.width-.5)<.02&&line.height>44),'Missing thin statistic divider at '+width);
+      assert.ok(Math.abs(card.dividers[0].y-card.dividers[1].y)<.1&&Math.abs(card.dividers[0].height-card.dividers[1].height)<.1,'Uneven statistic dividers at '+width);
+    }
     assert.deepEqual(await page.locator('.service-card .action-link').evaluateAll(ns=>ns.filter(n=>{const r=n.getBoundingClientRect(),p=n.closest('.service-card').getBoundingClientRect();return r.x<p.x-1 || r.right>p.right+1 || r.bottom>p.bottom+1;}).map(n=>n.className)),[],'Service CTA outside card at '+width);
     if (width!==1440) for(const stat of layout.statistics) assert.ok(stat.width>44 && stat.height>44,'Collapsed statistic at '+width);
     const capture=fs.readFileSync(path.join(folder,width===1440?'desktop-1440.png':'responsive-'+width+'.png'));

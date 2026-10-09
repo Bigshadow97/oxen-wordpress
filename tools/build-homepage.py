@@ -2,12 +2,31 @@
 
 Sections use CSS Grid for their desktop composition. Artwork retains Figma's
 internal transforms and crop masks. Responsive components reflow independently.
+The default / --check stages output without modifying the theme. --write
+backs up the current CSS/PHP/JS before applying changed generated files.
 Run parse-figma.py first; this generator never reads or writes to Figma.
 """
 from pathlib import Path
-import json, re, html, copy
+import argparse, atexit, copy, hashlib, html, json, re, shutil, subprocess, tempfile
+from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parent.parent
+parser = argparse.ArgumentParser(description=__doc__)
+mode = parser.add_mutually_exclusive_group()
+mode.add_argument('--check', action='store_true', help='Compare staged output without modifying theme files (default).')
+mode.add_argument('--write', action='store_true', help='Back up verified files, then apply changed generated output on develop.')
+args = parser.parse_args()
+if args.write:
+    if Path.cwd().resolve() != ROOT:
+        parser.error('--write must run in the current WordPress theme directory.')
+    branch = subprocess.check_output(['git','branch','--show-current'],cwd=ROOT,text=True).strip()
+    if branch != 'develop':
+        parser.error('--write is allowed only on develop.')
+backup_root = ROOT/'tools/generator-backups'
+backup_root.mkdir(parents=True,exist_ok=True)
+staging = tempfile.TemporaryDirectory(prefix='staging-',dir=backup_root)
+atexit.register(staging.cleanup)
+OUTPUT = Path(staging.name)
 layers = json.loads((ROOT/'tools/flat-layers.json').read_text(encoding='utf-8'))
 manifest = json.loads((ROOT/'assets/asset-map.json').read_text())
 asset_names = {a['name']:a['file'] for a in manifest}
@@ -317,7 +336,7 @@ for i,(border,metric,label) in enumerate([(264,268,272),(265,269,273),(266,270,2
 
 headids={'hero':175,'quiz':322,'services':18,'about':520,'process':492,'results':447,'testimonials':438,'calculator':107,'contact':60}
 for name,start,end in SECTIONS:
-    part=ROOT/'template-parts/home'/f'{name}.php';part.parent.mkdir(parents=True,exist_ok=True)
+    part=OUTPUT/'template-parts/home'/f'{name}.php';part.parent.mkdir(parents=True,exist_ok=True)
     tag='header' if name=='navigation' else 'footer' if name=='site-footer' else 'section'
     attrs=f'id="{name}" class="home-section {name}-section"'
     if name in headids:attrs+=' aria-labelledby="'+('homepage-title' if name=='hero' else 'heading-'+str(headids[name]))+'"'
@@ -379,10 +398,39 @@ for name,start,end in SECTIONS:
     part.write_text('<?php defined( \'ABSPATH\' ) || exit; ?>\n<'+tag+' '+attrs+'>\n'+content+'\n</'+tag+'>\n',encoding='utf-8')
     css.append('.'+name+'-section {height: '+str(round(end-start,4))+'px;}')
 
-(ROOT/'assets/css').mkdir(parents=True,exist_ok=True)
-(ROOT/'assets/css/homepage.css').write_text('/* Original Figma 1:3 geometry, translated to native CSS Grid compositions. */\n'+'\n'.join(css)+'\n',encoding='utf-8')
-(ROOT/'assets/css/wide-measurements.css').write_text('/* Fluid source anchors; component layout and image crops are in wide.css. */\n@media (min-width:1441px) {\n'+'\n'.join(fluid)+'\n}\n',encoding='utf-8')
+(OUTPUT/'assets/css').mkdir(parents=True,exist_ok=True)
+(OUTPUT/'assets/css/homepage.css').write_text('/* Original Figma 1:3 geometry, translated to native CSS Grid compositions. */\n'+'\n'.join(css)+'\n',encoding='utf-8')
+(OUTPUT/'assets/css/wide-measurements.css').write_text('/* Fluid source anchors; component layout and image crops are in wide.css. */\n@media (min-width:1441px) {\n'+'\n'.join(fluid)+'\n}\n',encoding='utf-8')
 # Record names/slots rather than temporary URLs in the repository.
-(ROOT/'assets/asset-map.json').write_text(json.dumps([{'name':a['name'],'file':a['file']} for a in manifest],indent=2),encoding='utf-8')
-print(f'Built {len(SECTIONS)} PHP sections; {len(css)} native CSS rules; {len(used)} img assets used. Masks are recorded separately in CSS.')
+(OUTPUT/'assets/asset-map.json').write_text(json.dumps([{'name':a['name'],'file':a['file']} for a in manifest],indent=2),encoding='utf-8')
+print(f'Staged {len(SECTIONS)} PHP sections; {len(css)} native CSS rules; {len(used)} img assets used. Masks are recorded separately in CSS.')
 print('Image assets not directly used as img:',sorted({a['file'] for a in manifest}-used))
+
+generated=sorted(p.relative_to(OUTPUT) for p in OUTPUT.rglob('*') if p.is_file())
+# Ignore platform newline differences; leave matching live files byte-for-byte intact.
+changed=[p for p in generated if not (ROOT/p).exists() or (ROOT/p).read_text(encoding='utf-8') != (OUTPUT/p).read_text(encoding='utf-8')]
+if not changed:
+    print(f'PASS: all {len(generated)} generated files match the current theme; no regeneration needed.')
+elif not args.write:
+    print('CHECK: generated differences (theme files were not modified):')
+    for p in changed:print('  '+p.as_posix())
+    raise SystemExit(1)
+else:
+    backup=backup_root/datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
+    protected=sorted(set(ROOT.glob('*.php')) | set((ROOT/'template-parts').rglob('*.php')) | set((ROOT/'assets/css').glob('*.css')) | set((ROOT/'assets/js').glob('*.js')) | {ROOT/'assets/asset-map.json',Path(__file__).resolve(),ROOT/'tools/flat-layers.json'})
+    records=[]
+    for source in protected:
+        relative=source.relative_to(ROOT)
+        target=backup/relative;target.parent.mkdir(parents=True,exist_ok=True)
+        shutil.copy2(source,target)
+        digest=hashlib.sha256(source.read_bytes()).hexdigest()
+        if hashlib.sha256(target.read_bytes()).hexdigest()!=digest:
+            raise RuntimeError('Backup verification failed: '+relative.as_posix())
+        records.append({'file':relative.as_posix(),'sha256':digest})
+    head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
+    (backup/'manifest.json').write_text(json.dumps({'git_head':head,'files':records,'generated_changes':[p.as_posix() for p in changed]},indent=2),encoding='utf-8')
+    print('Verified backup: '+str(backup))
+    for relative in changed:
+        target=ROOT/relative;target.parent.mkdir(parents=True,exist_ok=True)
+        shutil.copy2(OUTPUT/relative,target)
+    print(f'Applied {len(changed)} changed generated files. Review the backup diff and reapply intentional custom changes before browser/screenshot validation.')

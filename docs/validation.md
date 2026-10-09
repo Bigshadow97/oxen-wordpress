@@ -54,6 +54,16 @@ Full-page captures and section crops were inspected at all mandatory sizes:
 
 Captures are in `tools/screenshots/`. `full-width-layout.json` records section/card/control geometry; `reference-regression.json` records the 1440px before/after comparison. The browser check waits for responsive layout to settle and verifies PNG dimensions include the complete footer. Original assets and fonts are unchanged, and Figma was not modified.
 
+## Generator preservation checkpoint
+
+Created local Git tag **`checkpoint/oxen-verified-full-width-5adfd96`** before checking the generator. A SHA-256 manifest, 27 source-file copies and all six mandatory viewport captures are retained in gitignored `tools/generator-backups/verified-5adfd96/`.
+
+The staged generator check confirms that all **17 generated files** already match the verified theme. No live regeneration was needed. Backed-up theme CSS, PHP, JavaScript and asset mapping remain byte-for-byte unchanged; existing corrections in the generator and separate override stylesheets were retained.
+
+The generator now defaults to a non-writing check. Explicit `--write` requires the current theme directory and `develop`, verifies a backup before applying differences, and leaves matching files and separate authored styles/scripts untouched. Three tests on isolated theme copies pass: default non-writing behavior, preservation/reporting of a manual CSS correction, and backup integrity before an explicit write.
+
+Browser interaction, font/image, error, viewport and accessibility checks were rerun. Screenshot comparisons against the checkpoint show **zero changed pixels at 1440, 1600, 1920, 1024 and 390px**. At 2560px, page dimensions and source files are unchanged; raw mean RGB difference is **0.03274** on a 0–255 scale. All 14 section bounds and complete-footer captures pass. Original Figma comparisons were also regenerated from the read-only local source capture. Figma was not modified.
+
 ## Accessibility findings
 
 axe-core 4.10.3 audited WCAG 2 A/AA, WCAG 2.1 A/AA and best-practice rules:

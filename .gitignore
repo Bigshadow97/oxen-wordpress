@@ -3,6 +3,7 @@ tools/figma-metadata.xml
 tools/assets.json
 tools/figma-reference.png
 tools/screenshots/
+tools/generator-backups/
 tools/asset-provenance.json
 assets/fonts/satoshi*.woff2
 node_modules/

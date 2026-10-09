@@ -1,6 +1,21 @@
 /* 1440 is a reference, not a maximum. Measured anchors become percentages;
  * real component layouts, capped reading widths and cover/contain crops keep
  * wide screens balanced without scaling the page or stretching photographs. */
+/* Statistics 1:263: one .5px #46517d outline and four original 1px
+ * #f1f1f1 SVG accents per card. Remove the duplicate first-edge overlay. */
+.statistics-section > :is(.layer-15,.layer-278) { display: none; }
+@media (min-width: 1440px) {
+  .statistics-section > .art-layer:is(.layer-280,.layer-281,.layer-283,.layer-284,.layer-287,.layer-288,.layer-291,.layer-292,.layer-295,.layer-296,.layer-299,.layer-300,.layer-303,.layer-304,.layer-307,.layer-308) {
+    display: flex; width: 6.977px; height: 6.845px;
+    margin-left: var(--stat-edge-x); margin-top: 36.61px;
+  }
+  .statistics-section > :is(.layer-280,.layer-281,.layer-283,.layer-284) { --stat-edge-x: 47.77px; --stat-column: 1; }
+  .statistics-section > :is(.layer-287,.layer-288,.layer-295,.layer-296) { --stat-edge-x: 389.66px; --stat-column: 2; }
+  .statistics-section > :is(.layer-299,.layer-300,.layer-291,.layer-292) { --stat-edge-x: 731.55px; --stat-column: 3; }
+  .statistics-section > :is(.layer-307,.layer-308,.layer-303,.layer-304) { --stat-edge-x: 1073.44px; --stat-column: 4; }
+  .statistics-section > .art-layer:is(.layer-283,.layer-284,.layer-295,.layer-296,.layer-291,.layer-292,.layer-303,.layer-304) { margin-left: calc(var(--stat-edge-x) + 324.754px - 6.977px); }
+  .statistics-section > .art-layer:is(.layer-281,.layer-284,.layer-288,.layer-296,.layer-300,.layer-292,.layer-308,.layer-304) { margin-top: calc(36.61px + 110.892px - 6.845px); }
+}
 @media (min-width: 1441px) {
   .navigation-section { background: white; height: clamp(45.419px,3.1541vw,60px); }
   .desktop-navigation > .design-layer { align-self: center; margin-top: 0; }
@@ -41,6 +56,16 @@
   .stat-card > .art-layer { display: none; }
   .stat-card > .copy-layer { margin: 0; width: auto; align-self: auto; }
   .stat-card :is(.layer-268,.layer-269,.layer-270,.layer-271) { font-size: clamp(48px,3.3333vw,64px); }
+  /* Overlay the source corner SVGs in the same fluid tracks as their cards.
+   * Explicit card cells keep decorative grid items from shifting auto-placement. */
+  .statistics-section > .stat-card { grid-row: 1; }
+  .statistics-section > .stat-card:nth-child(3) { grid-column: 1; }
+  .statistics-section > .stat-card:nth-child(4) { grid-column: 2; }
+  .statistics-section > .stat-card:nth-child(5) { grid-column: 3; }
+  .statistics-section > .stat-card:nth-child(6) { grid-column: 4; }
+  .statistics-section > .art-layer:is(.layer-280,.layer-281,.layer-283,.layer-284,.layer-287,.layer-288,.layer-291,.layer-292,.layer-295,.layer-296,.layer-299,.layer-300,.layer-303,.layer-304,.layer-307,.layer-308) { grid-row: 1; grid-column: var(--stat-column); margin: 0; }
+  .statistics-section > :is(.layer-283,.layer-284,.layer-295,.layer-296,.layer-291,.layer-292,.layer-303,.layer-304) { justify-self: end; }
+  .statistics-section > :is(.layer-281,.layer-284,.layer-288,.layer-296,.layer-300,.layer-292,.layer-308,.layer-304) { align-self: end; }
 
   /* Cards grow with the viewport, while their content flows inside the card. */
   .services-section .service-card { display: flex; position: relative; flex-direction: column; padding: clamp(20px,1.5vw,32px); gap: 16px; border: .5px solid #bac7f9; background: white; }

@@ -42,8 +42,3 @@
 		</table>
 	</div>
 </dialog>
-<dialog id="about-dialog" aria-labelledby="about-dialog-title">
-	<button class="dialog-close" type="button" data-close-dialog aria-label="Close details">×</button>
-	<h2 id="about-dialog-title"></h2><p id="about-dialog-description"></p>
-	<a class="dialog-action" href="#contact" data-close-dialog>Talk to Jeremy</a>
-</dialog>

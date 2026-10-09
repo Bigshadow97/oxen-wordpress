@@ -81,12 +81,22 @@
     }));
     openDialog($('#comparison-dialog'), event.currentTarget);
   });
-  const aboutDescriptions = [text('.layer-526'), text('.layer-523'), text('.layer-174')];
-  $$('[data-about-detail]').forEach(button => button.addEventListener('click', () => {
-    $('#about-dialog-title').textContent = button.textContent;
-    $('#about-dialog-description').textContent = aboutDescriptions[Number(button.dataset.aboutDetail)];
-    openDialog($('#about-dialog'), button);
-  }));
+  const whyAccordion = $('[data-why-accordion]');
+  if (whyAccordion) {
+    const controls = $$('[data-about-detail]', whyAccordion);
+    function selectWhyPanel(selected) {
+      controls.forEach(button => {
+        const expanded = button === selected;
+        button.setAttribute('aria-expanded', String(expanded));
+        button.closest('.why-item').classList.toggle('is-open', expanded);
+        document.getElementById(button.getAttribute('aria-controls')).hidden = !expanded;
+      });
+    }
+    controls.forEach(button => button.addEventListener('click', () => selectWhyPanel(button)));
+    // Native buttons provide Enter/Space activation; selecting the open item
+    // keeps it open so this accordion always has exactly one visible panel.
+    selectWhyPanel(controls.find(button => button.getAttribute('aria-expanded') === 'true') || controls[0]);
+  }
 
   const menuToggle = $('.menu-toggle'), menu = $('#mobile-navigation');
   function closeMenu() { if (!menuToggle) return; menu.hidden = true; menuToggle.setAttribute('aria-expanded', 'false'); }

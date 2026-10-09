@@ -1,0 +1,70 @@
+/* Single-open accordion; 1:524 supplies the reference expanded geometry.
+ * Subgrid lets the native heading sit between the panel photo and copy,
+ * while longer headings/descriptions grow their shared rows naturally. */
+.why-accordion {
+  --why-photo-height: 228.795px; --why-inline-padding: 39.059px;
+  display: grid; gap: 13.368px; grid-area: 1 / 1;
+  align-self: start; justify-self: start; width: 580.117px;
+  margin: 89.92px 0 0 727.16px; z-index: 351;
+}
+.why-item { position: relative; display: grid; grid-template-columns: minmax(0,1fr); background: #fff; }
+.why-item.is-open { grid-template-rows: var(--why-photo-height) auto auto; }
+.why-heading { grid-area: 1 / 1; margin: 0; min-width: 0; z-index: 1; }
+.why-item.is-open .why-heading { grid-area: 2 / 1; padding-top: 32.801px; }
+.why-toggle {
+  position: relative; display: grid; grid-template-columns: 42px minmax(0,1fr);
+  width: 100%; padding: 18.234px var(--why-inline-padding) 23.37px;
+  border: 0; background: none; text-align: left;
+  font-family: 'Noto Serif', serif; font-size: 21px; font-weight: 400; line-height: 29px;
+  letter-spacing: -1px; color: var(--blue);
+}
+.why-toggle:hover .why-label { text-decoration: underline; text-underline-offset: 4px; }
+.why-item.is-open .why-toggle { padding-block: 0; color: #00123a; }
+.why-item.is-open .why-toggle::before { content: ''; position: absolute; inset: -8px 0; }
+.why-number { color: var(--muted); letter-spacing: normal; }
+.why-panel { display: grid; grid-area: 1 / 1 / 4 / 2; grid-template-rows: subgrid; min-width: 0; }
+.why-photo {
+  grid-row: 1; position: relative; overflow: clip; border-radius: 5px;
+  mask-image: url('../images/team-photos-fauxels5.svg'); mask-size: 100% 100%; mask-repeat: no-repeat;
+}
+.why-photo img {
+  position: absolute; top: .201px; left: -19.047px;
+  width: calc(100% + 31.647px); height: 228.594px;
+  object-fit: cover; max-width: none; border-radius: 5px;
+}
+.why-panel::after {
+  content: ''; position: absolute; left: -.53px; top: var(--why-photo-height);
+  width: min(393.598px,67.8479%); height: 2.817px; background: var(--blue); pointer-events: none;
+}
+.why-description {
+  grid-row: 3; max-width: 495.453px; margin: 22.964px 45.605px 32.409px var(--why-inline-padding);
+  font-family: 'Satoshi', sans-serif; font-size: 16px; font-weight: 400;
+  line-height: 22px; letter-spacing: -.2679px; color: #000;
+}
+.why-corners { display: none; position: absolute; inset: 0; pointer-events: none; }
+.why-item.is-open .why-corners { display: block; }
+.why-corner { position: absolute; display: block; }
+.why-corner.top-left { left: -1.92px; top: -2.15px; }
+.why-corner.top-right { right: -.518px; top: -2.15px; transform: rotate(180deg) scaleY(-1); }
+.why-corner.bottom-left { left: -1.92px; bottom: -.675px; transform: scaleY(-1); }
+.why-corner.bottom-right { right: -.518px; bottom: -.675px; transform: rotate(180deg); }
+@media (min-width: 1440px) {
+  .about-section { height: auto; min-height: 740px; grid-template-rows: minmax(740px,auto); }
+}
+@media (min-width: 1441px) {
+  .why-accordion { width: 40.286%; margin-left: 50.497222%; --why-photo-height: clamp(228.795px,15.8885vw,320px); }
+  .why-photo img { inset: 0; width: 100%; height: 100%; object-position: center 30%; }
+}
+@media (max-width: 1439px) {
+  .why-accordion {
+    grid-area: 1 / 2 / 3 / 3; margin: 0; width: 100%;
+    --why-inline-padding: 24px; --why-photo-height: 240px;
+  }
+  .why-toggle { grid-template-columns: 34px minmax(0,1fr); font-size: 18px; line-height: 25px; padding-block: 20px; }
+  .why-item.is-open .why-heading { padding-top: 24px; }
+  .why-photo img { inset: 0; width: 100%; height: 100%; }
+  .why-description { margin: 18px var(--why-inline-padding) 24px; font-size: 15px; line-height: 22px; }
+}
+@media (max-width: 767px) {
+  .why-accordion { order: 1; --why-inline-padding: 20px; }
+}

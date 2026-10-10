@@ -6,8 +6,7 @@
     const group = track?.querySelector('.partners__group');
     if (!group) return;
     let cycleWidth = 0;
-    function measureCycle() {
-      const width = group.getBoundingClientRect().width;
+    function measureCycle(width) {
       if (!width || Math.abs(width - cycleWidth) < .01) return;
       const animation = track.getAnimations()[0];
       // Retain the pixel position when the measured cycle length changes;
@@ -15,11 +14,25 @@
       const offset = animation && cycleWidth ? (Number(animation.currentTime) * pixelsPerSecond / 1000) % cycleWidth : 0;
       cycleWidth = width;
       track.style.setProperty('--partners-duration', (width / pixelsPerSecond) + 's');
-      const updatedAnimation = track.getAnimations()[0];
-      if (updatedAnimation) updatedAnimation.currentTime = (offset % width) / pixelsPerSecond * 1000;
+      // CSS duration changes retain the same CSSAnimation. Reusing it avoids
+      // a second style/layout flush immediately after writing the duration.
+      if (animation) animation.currentTime = (offset % width) / pixelsPerSecond * 1000;
     }
-    measureCycle();
-    if ('ResizeObserver' in window) new ResizeObserver(measureCycle).observe(group);
-    else window.addEventListener('resize', measureCycle);
+    if ('ResizeObserver' in window) {
+      // Observer measurements arrive after layout, including the initial size.
+      // Do not synchronously lay out the entire page while deferred scripts run.
+      new ResizeObserver(entries => {
+        const entry = entries[0];
+        measureCycle(entry.borderBoxSize?.[0]?.inlineSize ?? entry.contentRect.width);
+      }).observe(group);
+    } else {
+      let frame;
+      const schedule = () => {
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(() => measureCycle(group.getBoundingClientRect().width));
+      };
+      schedule();
+      window.addEventListener('resize', schedule);
+    }
   });
 })();

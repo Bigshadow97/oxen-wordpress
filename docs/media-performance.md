@@ -1,5 +1,7 @@
 # Native media and local performance — 10 October 2026
 
+Follow-up: [measured LCP diagnosis and browser-environment comparison](lcp-investigation.md). The updated isolated medians are mobile 61 / desktop 93; the 97–100 target remains unmet.
+
 The LocalWP implementation is complete. The **97–100 performance target is not achieved** in this workstation's measured environment. These are local Lighthouse results, **not Google PageSpeed Insights results**. No public staging URL exists; nothing was deployed or pushed. The original Figma document was not modified.
 
 ## Assets and CMS

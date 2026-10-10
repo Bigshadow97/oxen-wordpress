@@ -2,6 +2,19 @@
 /** Prebuilt assets only: no compilation or image processing on page requests. */
 defined( 'ABSPATH' ) || exit;
 
+// This dedicated template renders theme components, never Gutenberg content.
+// Keep native block/global styles on standard pages and in the WordPress editor.
+add_action( 'wp', function () {
+	if ( ! is_page_template( 'page-templates/template-oxen-home.php' ) ) { return; }
+	remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
+	remove_action( 'wp_footer', 'wp_enqueue_global_styles', 1 );
+	add_action( 'wp_enqueue_scripts', function () {
+		foreach ( array( 'wp-block-library', 'wp-block-library-theme', 'classic-theme-styles', 'global-styles', 'wp-global-styles-placeholder' ) as $handle ) {
+			wp_dequeue_style( $handle );
+		}
+	}, 20 );
+} );
+
 add_action( 'wp_enqueue_scripts', function () {
 	$path = get_template_directory(); $uri = get_template_directory_uri();
 	$home = is_page_template( 'page-templates/template-oxen-home.php' );

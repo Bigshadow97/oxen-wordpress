@@ -8,6 +8,8 @@ WordPress 7.1.3 and PHP 8.2.34 run in the dedicated Oxen document root and datab
 
 HTTPS validation and the HTTP-to-HTTPS redirect passed. Production debugging is disabled; `wp-config.php` is protected with mode 0600. Directory indexing is disabled, and static assets use caching and Brotli compression. Backups are private, outside the document root with restricted permissions. The initial database credential was rotated immediately after a CLI utility unexpectedly echoed it; that credential is no longer valid.
 
+At the assessment owner's request, the native Theme File Editor is enabled for authorised Administrators: production `DISALLOW_FILE_EDIT` is `false`, while `DISALLOW_FILE_MODS` remains unset. The configuration was backed up outside the document root before changing only that flag; permissions remain 0600. LocalWP already has neither restriction. Authenticated Appearance menu access and reading Oxen's stylesheet and `functions.php` passed on 11 October. Logged-out editor requests redirect to login. Desktop and mobile smoke checks passed without theme, asset, account or password changes.
+
 ## Recorded verification
 
 The deployment verification covered quiz/recommendations/Back, calculator results, the inline animated accordion, testimonial boundaries, partner autoplay/pause/reduced motion, service/comparison/contact dialogs, mobile navigation, image loading and shared standard-page templates. Desktop, tablet and mobile layouts had no horizontal overflow. All 28 deployed PHP files passed syntax checks. The hero source-order correction preserved the established layout.

@@ -248,8 +248,8 @@ let browser;
   await page.keyboard.press('Escape');
   await checkStoryNavigation();
   await page.locator('[data-about-detail="1"]').click();
-  assert.equal(await page.locator('#why-panel-1').isVisible(),true);
-  assert.equal(await page.locator('.why-panel:visible').count(),1);
+  await page.locator('#why-panel-1').waitFor({state:'visible'});
+  assert.equal(await page.locator('.why-panel[aria-hidden="false"]').count(),1);
   assert.equal(await page.locator('dialog[open]').count(),0);
   await page.locator('[data-about-detail="0"]').click();
   for (const width of [1600, 1920, 2560, 1280, 1024, 768, 390, 320]) {

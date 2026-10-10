@@ -20,15 +20,18 @@ $why_items = array(
 <div class="why-accordion" data-why-accordion>
 <?php foreach ( $why_items as $index => $item ) : ?>
   <div class="why-item<?php echo 0 === $index ? ' is-open' : ''; ?>">
+    <div id="why-image-<?php echo esc_attr( $index ); ?>" class="why-reveal why-image-reveal" aria-hidden="<?php echo 0 === $index ? 'false' : 'true'; ?>"<?php echo 0 === $index ? '' : ' inert'; ?>>
+      <div class="why-photo-clip"><div class="why-photo"><img alt="" src="<?php echo oxen_asset( 'team-photos-fauxels6.png' ); ?>" decoding="async"></div></div>
+    </div>
     <h3 class="why-heading">
-      <button id="why-control-<?php echo esc_attr( $index ); ?>" class="why-toggle" type="button" data-node-id="<?php echo esc_attr( $item['node'] ); ?>" data-about-detail="<?php echo esc_attr( $index ); ?>" aria-expanded="<?php echo 0 === $index ? 'true' : 'false'; ?>" aria-controls="why-panel-<?php echo esc_attr( $index ); ?>">
+      <button id="why-control-<?php echo esc_attr( $index ); ?>" class="why-toggle" type="button" data-node-id="<?php echo esc_attr( $item['node'] ); ?>" data-about-detail="<?php echo esc_attr( $index ); ?>" aria-expanded="<?php echo 0 === $index ? 'true' : 'false'; ?>" aria-controls="why-image-<?php echo esc_attr( $index ); ?> why-panel-<?php echo esc_attr( $index ); ?>">
         <span class="why-number" aria-hidden="true"><?php echo esc_html( sprintf( '%02d', $index + 1 ) ); ?></span>
         <span class="why-label"><?php echo esc_html( $item['title'] ); ?></span>
+        <span class="why-icon" aria-hidden="true"><?php echo 0 === $index ? '−' : '+'; ?></span>
       </button>
     </h3>
-    <div id="why-panel-<?php echo esc_attr( $index ); ?>" class="why-panel" role="region" aria-labelledby="why-control-<?php echo esc_attr( $index ); ?>"<?php echo 0 === $index ? '' : ' hidden'; ?>>
-      <div class="why-photo"><img alt="" src="<?php echo oxen_asset( 'team-photos-fauxels6.png' ); ?>" decoding="async"></div>
-      <p class="why-description"><?php echo esc_html( $item['description'] ); ?></p>
+    <div id="why-panel-<?php echo esc_attr( $index ); ?>" class="why-reveal why-panel" role="region" aria-labelledby="why-control-<?php echo esc_attr( $index ); ?>" aria-hidden="<?php echo 0 === $index ? 'false' : 'true'; ?>"<?php echo 0 === $index ? '' : ' inert'; ?>>
+      <div class="why-copy-clip"><p class="why-description"><?php echo esc_html( $item['description'] ); ?></p></div>
     </div>
     <div class="why-corners" aria-hidden="true">
       <?php foreach ( array( 'top-left', 'top-right', 'bottom-left', 'bottom-right' ) as $corner ) : ?>

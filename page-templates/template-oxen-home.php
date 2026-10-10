@@ -1,8 +1,11 @@
 <?php
-/** Complete original Oxen homepage: Figma file X8BzSNzhFvn61KCmzWsEPY, node 1:3. */
+/**
+ * Template Name: Oxen Homepage
+ * Template Post Type: page
+ */
 defined( 'ABSPATH' ) || exit;
 get_header();
-get_template_part( 'template-parts/home/navigation' );
+
 ?>
 <main id="main-content" class="oxen-home">
 <?php

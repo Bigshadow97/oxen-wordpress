@@ -9,35 +9,7 @@
     { title: text('.layer-593'), stage: text('.layer-588'), description: text('.layer-595'), features: [597,599,601,603].map(id => text('.layer-' + id)) },
     { title: text('.layer-594'), stage: text('.layer-592'), description: text('.layer-596'), features: [598,600,602,604].map(id => text('.layer-' + id)) }
   ];
-  let opener = null;
-  function openDialog(dialog, trigger) {
-    opener = trigger;
-    dialog.showModal();
-    $('[data-close-dialog]', dialog)?.focus();
-  }
-  $$('dialog').forEach(dialog => {
-    dialog.addEventListener('close', () => { opener?.focus(); opener = null; });
-    dialog.addEventListener('keydown', event => {
-      if (event.key !== 'Tab') return;
-      const stops = $$('a[href],button,input,select,textarea,[tabindex]', dialog)
-        .filter(node => !node.disabled && node.tabIndex >= 0 && node.getClientRects().length);
-      if (!stops.length) { event.preventDefault(); dialog.focus(); return; }
-      const first = stops[0], last = stops[stops.length - 1];
-      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
-    });
-    dialog.addEventListener('click', event => {
-      if (event.target === dialog) {
-        const r = dialog.getBoundingClientRect();
-        if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close();
-      }
-    });
-  });
-  $$('[data-close-dialog]').forEach(button => button.addEventListener('click', () => button.closest('dialog').close()));
-  $$('[data-open-contact]').forEach(button => button.addEventListener('click', event => {
-    event.preventDefault();
-    openDialog($('#contact-dialog'), button);
-  }));
+  const openDialog = window.OxenDialogs.open;
   $$('[data-open-case-study]').forEach(button => button.addEventListener('click', () => {
     $('#case-dialog-title').textContent = text('.layer-454');
     $('#case-dialog-description').textContent = text('.layer-456');
@@ -96,13 +68,6 @@
     requestAnimationFrame(() => requestAnimationFrame(() => { accordion.dataset.motionReady = ''; }));
   }
   $$('[data-why-accordion]').forEach(initWhyAccordion);
-
-  const menuToggle = $('.menu-toggle'), menu = $('#mobile-navigation');
-  function closeMenu() { if (!menuToggle) return; menu.hidden = true; menuToggle.setAttribute('aria-expanded', 'false'); }
-  menuToggle?.addEventListener('click', () => { menu.hidden = !menu.hidden; menuToggle.setAttribute('aria-expanded', String(!menu.hidden)); });
-  $$('a', menu || document.createElement('nav')).forEach(link => link.addEventListener('click', closeMenu));
-  document.addEventListener('keydown', event => { if (event.key === 'Escape' && menu && !menu.hidden) { closeMenu(); menuToggle.focus(); } });
-  window.matchMedia('(min-width: 1440px)').addEventListener('change', closeMenu);
 
   // The first question/options are exact Figma copy. Later steps add the
   // required behavior in the same component; no personal data is collected.

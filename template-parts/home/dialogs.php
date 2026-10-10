@@ -1,11 +1,4 @@
 <?php defined( 'ABSPATH' ) || exit; ?>
-<dialog id="contact-dialog" aria-labelledby="contact-dialog-title">
-  <button type="button" class="dialog-close" data-close-dialog aria-label="Close contact options">×</button>
-  <h2 id="contact-dialog-title">Book a free 30-minute call</h2>
-  <p>Speak with a senior accountant about your business. Call or email Oxen to arrange a time.</p>
-  <a class="dialog-action" href="tel:0800640001">Call 0800 640 001</a>
-  <a class="dialog-action" href="mailto:hello@oxen.nz?subject=Book%20a%2030-minute%20call">Email hello@oxen.nz</a>
-</dialog>
 <dialog id="plan-dialog" aria-labelledby="plan-dialog-title">
 	<button class="dialog-close" type="button" data-close-dialog aria-label="Close service details">×</button>
 	<h2 id="plan-dialog-title">Your service</h2>

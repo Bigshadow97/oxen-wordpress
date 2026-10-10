@@ -23,9 +23,9 @@ let browser;
       return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,sections:[...document.querySelectorAll('.home-section')].map(n=>({id:n.id,...bounds(n)})),cards:[...document.querySelectorAll('.service-card')].map(n=>({id:n.id,...bounds(n)})),portrait:bounds(document.querySelector('.layer-13')),controls:[...document.querySelectorAll('.service-card .action-link,.calculator-form .tax-control,.calculator-form .calculate-button,.hero-proof > .design-layer')].map(n=>({class:n.className,...bounds(n)})),statistics:[...document.querySelectorAll('.stat-card')].map(bounds)};
     });
     assert.equal(layout.scrollWidth,width,'Horizontal overflow at '+width);
-    assert.equal(await page.locator('footer,#site-footer,.site-footer-section').count(),0,'Homepage footer removed from HTML');
-    assert.equal(layout.sections.at(-1).id,'contact','Homepage ends at Contact CTA');
-    assert.ok(Math.abs(await page.evaluate(()=>document.documentElement.scrollHeight)-(layout.sections.at(-1).y+layout.sections.at(-1).height))<1,'No whitespace after Contact CTA');
+    assert.equal(await page.locator('footer,#site-footer,.site-footer-section').count(),1,'Shared footer rendered once');
+    assert.equal(layout.sections.at(-1).id,'site-footer','Homepage ends with reusable footer');
+    assert.ok(Math.abs(await page.evaluate(()=>document.documentElement.scrollHeight)-(layout.sections.at(-1).y+layout.sections.at(-1).height))<1,'No whitespace after footer');
     assert.equal(await page.locator('[data-contrast-toggle],.contrast-toggle').count(),0,'No non-Figma footer contrast control');
     for (const section of layout.sections) {
       assert.ok(Math.abs(section.x)<1 && Math.abs(section.right-width)<1,'Section must span viewport: '+section.id+' at '+width);
@@ -76,7 +76,7 @@ let browser;
     const capture=fs.readFileSync(path.join(folder,width===1440?'desktop-1440.png':'responsive-'+width+'.png'));
     assert.equal(capture.readUInt32BE(16),width,'Screenshot width at '+width);
     const bottom=layout.sections.at(-1).y+layout.sections.at(-1).height;
-    assert.ok(capture.readUInt32BE(20)>=Math.floor(bottom),'Screenshot must include complete Contact CTA at '+width);
+    assert.ok(capture.readUInt32BE(20)>=Math.floor(bottom),'Screenshot must include complete footer at '+width);
     if (width>=1440) {
       assert.ok(Math.abs(layout.portrait.width/layout.portrait.height-1207.1/773.89)<.002,'Hero portrait aspect ratio at '+width);
       for(let i=1;i<layout.cards.length;i++) assert.ok(layout.cards[i].x>=layout.cards[i-1].right-1,'Service card overlap at '+width);

@@ -15,3 +15,27 @@ tools/text-layers.json
 
 tools/performance-runtime/
 tools/media-build/
+
+# Temporary deployment helpers and private hosting material.
+tools/oxen-quick-workflow/
+tools/oxen-workflow.sh
+tools/deployment-artifacts/
+.env
+.env.*
+*.env
+*.env.*
+*.sql
+*.sql.gz
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+oxen_deploy*
+*.tar.gz
+*.bak
+*.backup
+*.log
+__pycache__/
+.pytest_cache/

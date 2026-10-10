@@ -1,0 +1,1047 @@
+/* Case Studies: component geometry, states and responsive layout. */
+
+.case-study__frame--manufacturing {
+  border-color: var(--line);
+  border-width: 0.5px;
+  border-style: solid;
+  height: 436.527px;
+  width: 642.457px;
+  margin-left: 69.1200px;
+  margin-top: 281.2400px;
+  z-index: 1;
+}
+
+.case-study__background--manufacturing {
+  background-color: #fff;
+  height: 422.788px;
+  width: 629.336px;
+  margin-left: 75.2700px;
+  margin-top: 288.1300px;
+  z-index: 292;
+}
+
+.case-study__photo--manufacturing {
+  height: 156.789px;
+  width: 629.344px;
+  margin-left: 75.2700px;
+  margin-top: 288.1300px;
+  z-index: 295;
+}
+
+.case-study__photo-frame--manufacturing {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.case-study__photo-fill--manufacturing {
+  position: absolute;
+  background-color: #d9d9d9;
+  inset: 0;
+}
+
+.case-study__photo-frame-inner--manufacturing {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.case-study__photo-image--manufacturing {
+  position: absolute;
+  height: 648.35%;
+  left: 0;
+  max-width: none;
+  top: -217.36%;
+  width: 100%;
+}
+
+.case-study__overlay--manufacturing {
+  background-color: rgba(0,0,0,0.45);
+  height: 156.789px;
+  width: 629.344px;
+  margin-left: 75.2700px;
+  margin-top: 288.1300px;
+  z-index: 297;
+}
+
+.case-study__eyebrow--manufacturing {
+  word-break: break-word;
+  line-height: normal;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: -0.2679px;
+  white-space: nowrap;
+  margin-left: 103.0000px;
+  margin-top: 366.8452px;
+  z-index: 305;
+}
+
+.case-study__title--manufacturing {
+  word-break: break-word;
+  font-family: var(--font-heading);
+  line-height: normal;
+  font-size: 21px;
+  color: #fff;
+  letter-spacing: -0.25px;
+  white-space: nowrap;
+  font-variation-settings: "CTGR" 0, "wdth" 100;
+  margin-left: 103.0000px;
+  margin-top: 391.5044px;
+  z-index: 300;
+}
+
+.case-study__revenue-value {
+  word-break: break-word;
+  font-family: var(--font-heading);
+  line-height: 47px;
+  color: var(--ink);
+  font-size: 50px;
+  letter-spacing: -0.6667px;
+  white-space: nowrap;
+  font-variation-settings: "CTGR" 0, "wdth" 100;
+  margin-left: 117.0000px;
+  margin-top: 497.5957px;
+  z-index: 307;
+}
+
+.case-study__revenue-label {
+  word-break: break-word;
+  line-height: normal;
+  font-size: 16px;
+  color: #000;
+  letter-spacing: -0.2679px;
+  white-space: nowrap;
+  margin-left: 117.0000px;
+  margin-top: 555.5825px;
+  z-index: 309;
+}
+
+.case-study__profit-value {
+  word-break: break-word;
+  font-family: var(--font-heading);
+  line-height: 47px;
+  color: var(--ink);
+  font-size: 50px;
+  letter-spacing: -0.6667px;
+  white-space: nowrap;
+  font-variation-settings: "CTGR" 0, "wdth" 100;
+  margin-left: 429.8281px;
+  margin-top: 497.5957px;
+  z-index: 308;
+}
+
+.case-study__profit-label {
+  word-break: break-word;
+  line-height: normal;
+  font-size: 16px;
+  color: #000;
+  letter-spacing: -0.2679px;
+  white-space: nowrap;
+  margin-left: 429.8281px;
+  margin-top: 555.5825px;
+  z-index: 310;
+}
+
+.case-study__description--manufacturing {
+  word-break: break-word;
+  line-height: normal;
+  font-size: 16px;
+  color: #000;
+  letter-spacing: -0.2679px;
+  width: 470.664px;
+  margin-left: 104.0000px;
+  margin-top: 623.4829px;
+  z-index: 302;
+}
+
+.case-study__button-icon {
+  overflow: clip;
+  width: 16px;
+  height: 16px;
+  margin-left: 17.6700px;
+  margin-top: 17.6700px;
+  z-index: 328;
+}
+
+.case-study__button-icon-image {
+  position: absolute;
+  display: block;
+  inset: 0;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.case-study__button {
+  background-color: var(--ink);
+  width: 51.348px;
+  height: 51.348px;
+  margin-left: 633.5980px;
+  margin-top: 635.4800px;
+  z-index: 327;
+  display: grid;
+  border: 0;
+  padding: 0;
+}
+
+.case-study__frame--manufacturing {
+  --content-order: 117;
+}
+
+.case-study__background--manufacturing {
+  --content-order: 119;
+}
+
+.case-study__photo--manufacturing {
+  --content-order: 119;
+}
+
+.case-study__overlay--manufacturing {
+  --content-order: 119;
+}
+
+.case-study__eyebrow--manufacturing {
+  --content-order: 120;
+}
+
+.case-study__title--manufacturing {
+  --content-order: 121;
+}
+
+.case-study__revenue-value {
+  --content-order: 123;
+}
+
+.case-study__profit-value {
+  --content-order: 123;
+}
+
+.case-study__revenue-label {
+  --content-order: 124;
+}
+
+.case-study__profit-label {
+  --content-order: 124;
+}
+
+.case-study__description--manufacturing {
+  --content-order: 125;
+}
+
+.case-study__button {
+  --content-order: 126;
+}
+
+.case-studies__introduction {
+  word-break: break-word;
+  line-height: normal;
+  color: #00123a;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.2679px;
+  width: 620.185px;
+  margin-left: 408.4062px;
+  margin-top: 174.0483px;
+  z-index: 293;
+}
+
+.case-studies__title {
+  word-break: break-word;
+  font-family: var(--font-heading);
+  line-height: 0;
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  letter-spacing: -1px;
+  width: 525.111px;
+  font-variation-settings: "CTGR" 0, "wdth" 100;
+  margin-left: 455.4375px;
+  margin-top: 109.1714px;
+  z-index: 294;
+}
+
+.case-studies__title-prefix {
+  line-height: 47px;
+}
+
+.case-studies__title-emphasis {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 47px;
+  color: var(--blue);
+}
+
+.case-study__frame--consulting {
+  border-color: var(--line);
+  border-width: 0.5px;
+  border-style: solid;
+  height: 436.527px;
+  width: 642.457px;
+  margin-left: 727.1600px;
+  margin-top: 281.2600px;
+  z-index: 304;
+}
+
+.case-study__photo--consulting {
+  height: 156.789px;
+  width: 626px;
+  margin-left: 734.1300px;
+  margin-top: 288.1300px;
+  z-index: 296;
+}
+
+.case-study__photo-frame--consulting {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.case-study__photo-fill--consulting {
+  position: absolute;
+  background-color: #d9d9d9;
+  inset: 0;
+}
+
+.case-study__photo-image--consulting {
+  position: absolute;
+  max-width: none;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.case-study__overlay--consulting {
+  background-color: rgba(0,0,0,0.45);
+  height: 156.789px;
+  width: 626px;
+  margin-left: 734.1300px;
+  margin-top: 288.1300px;
+  z-index: 298;
+}
+
+.case-study__eyebrow--consulting {
+  word-break: break-word;
+  line-height: normal;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: -0.2679px;
+  white-space: nowrap;
+  margin-left: 766.2188px;
+  margin-top: 366.8452px;
+  z-index: 306;
+}
+
+.case-study__title--consulting {
+  word-break: break-word;
+  font-family: var(--font-heading);
+  line-height: normal;
+  font-size: 21px;
+  color: #fff;
+  letter-spacing: -0.25px;
+  white-space: nowrap;
+  font-variation-settings: "CTGR" 0, "wdth" 100;
+  margin-left: 766.2188px;
+  margin-top: 391.5044px;
+  z-index: 301;
+}
+
+.case-study__revenue-divider {
+  height: 88.512px;
+  width: 0;
+  margin-left: 105.0000px;
+  margin-top: 494.3100px;
+  z-index: 323;
+}
+
+.case-study__tenure-divider {
+  height: 88.512px;
+  width: 0;
+  margin-left: 766.2200px;
+  margin-top: 494.3100px;
+  z-index: 325;
+}
+
+.case-study__tenure-value {
+  word-break: break-word;
+  font-family: var(--font-heading);
+  line-height: 47px;
+  color: var(--ink);
+  font-size: 50px;
+  letter-spacing: -0.6667px;
+  white-space: nowrap;
+  font-variation-settings: "CTGR" 0, "wdth" 100;
+  margin-left: 787.2188px;
+  margin-top: 497.5957px;
+  z-index: 319;
+}
+
+.case-study__tenure-label {
+  word-break: break-word;
+  line-height: normal;
+  font-size: 16px;
+  color: #000;
+  letter-spacing: -0.2679px;
+  white-space: nowrap;
+  margin-left: 787.2188px;
+  margin-top: 555.5825px;
+  z-index: 321;
+}
+
+.case-study__businesses-value {
+  word-break: break-word;
+  font-family: var(--font-heading);
+  line-height: 47px;
+  color: var(--ink);
+  font-size: 50px;
+  letter-spacing: -0.6667px;
+  white-space: nowrap;
+  font-variation-settings: "CTGR" 0, "wdth" 100;
+  margin-left: 1092.0469px;
+  margin-top: 497.5957px;
+  z-index: 320;
+}
+
+.case-study__businesses-label {
+  word-break: break-word;
+  line-height: normal;
+  font-size: 16px;
+  color: #000;
+  letter-spacing: -0.2679px;
+  white-space: nowrap;
+  margin-left: 1092.0469px;
+  margin-top: 555.5825px;
+  z-index: 322;
+}
+
+.case-study__description--consulting {
+  word-break: break-word;
+  line-height: normal;
+  font-size: 16px;
+  color: #000;
+  letter-spacing: -0.2679px;
+  width: 470.664px;
+  margin-left: 766.2188px;
+  margin-top: 623.4829px;
+  z-index: 303;
+}
+
+.case-study__frame--consulting {
+  --content-order: 118;
+}
+
+.case-study__photo--consulting {
+  --content-order: 119;
+}
+
+.case-study__overlay--consulting {
+  --content-order: 119;
+}
+
+.case-study__eyebrow--consulting {
+  --content-order: 120;
+}
+
+.case-study__title--consulting {
+  --content-order: 121;
+}
+
+.case-study__revenue-divider {
+  --content-order: 122;
+}
+
+.case-study__tenure-divider {
+  --content-order: 122;
+}
+
+.case-study__tenure-value {
+  --content-order: 123;
+}
+
+.case-study__businesses-value {
+  --content-order: 123;
+}
+
+.case-study__tenure-label {
+  --content-order: 124;
+}
+
+.case-study__businesses-label {
+  --content-order: 124;
+}
+
+.case-study__description--consulting {
+  --content-order: 125;
+}
+
+.case-studies__eyebrow {
+  word-break: break-word;
+  line-height: normal;
+  color: var(--muted);
+  font-size: 16px;
+  letter-spacing: -0.2679px;
+  white-space: nowrap;
+  margin-left: 634.6641px;
+  margin-top: 83.4023px;
+  z-index: 299;
+}
+
+.case-study__profit-divider {
+  height: 88.512px;
+  width: 0;
+  margin-left: 415.8900px;
+  margin-top: 494.3100px;
+  z-index: 324;
+}
+
+.case-study__businesses-divider {
+  height: 88.512px;
+  width: 0;
+  margin-left: 1077.0000px;
+  margin-top: 494.3100px;
+  z-index: 326;
+}
+
+.case-studies {
+  height: 790px;
+}
+
+:where(:where(.case-studies)) .layout-group {
+  display: contents;
+}
+
+.case-study__metrics {
+  display: contents;
+}
+
+.case-study__metric {
+  display: contents;
+}
+
+@media (max-width: 1439px) {
+  .case-studies {
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: none;
+    width: 100%;
+    height: auto;
+    padding: 64px 32px;
+    gap: 24px;
+    overflow: clip;
+  }
+
+  :where(:where(.case-studies)) .layout-group {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-width: 0;
+  }
+
+  .case-studies {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 24px;
+  }
+
+  .case-study {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 24px;
+    border: .5px solid var(--line);
+    gap: 18px;
+  }
+
+  .case-study__metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    order: 2;
+  }
+
+  .case-study__metric {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-left: 1px solid #bac7f9;
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .case-studies {
+    padding: 48px 20px;
+    gap: 24px;
+    display: flex;
+  }
+}
+
+@media (min-width:1441px) {
+  .case-study__frame--manufacturing {
+    margin-left: 4.800000%;
+    width: 44.615069%;
+  }
+
+  .case-study__background--manufacturing {
+    margin-left: 5.227083%;
+    width: 43.703889%;
+  }
+
+  .case-study__photo--manufacturing {
+    margin-left: 5.227083%;
+    width: 43.704444%;
+  }
+
+  .case-study__overlay--manufacturing {
+    margin-left: 5.227083%;
+    width: 43.704444%;
+  }
+
+  .case-study__eyebrow--manufacturing {
+    margin-left: 7.152778%;
+  }
+
+  .case-study__title--manufacturing {
+    margin-left: 7.152778%;
+  }
+
+  .case-study__revenue-value {
+    margin-left: 8.125000%;
+  }
+
+  .case-study__revenue-label {
+    margin-left: 8.125000%;
+  }
+
+  .case-study__profit-value {
+    margin-left: 29.849175%;
+  }
+
+  .case-study__profit-label {
+    margin-left: 29.849175%;
+  }
+
+  .case-study__description--manufacturing {
+    margin-left: 7.222222%;
+    width: clamp(470.664px, 32.685000vw, 588.3300px);
+  }
+
+  .case-study__button {
+    margin-left: 43.999861%;
+  }
+
+  .case-studies__introduction {
+    margin-left: calc(49.895747% - (clamp(620.185px, 43.068403vw, 720.0000px)) / 2);
+    width: clamp(620.185px, 43.068403vw, 720.0000px);
+  }
+
+  .case-studies__title {
+    margin-left: calc(49.860625% - (clamp(525.111px, 36.466042vw, 656.3887px)) / 2);
+    width: clamp(525.111px, 36.466042vw, 656.3887px);
+  }
+
+  .case-study__frame--consulting {
+    margin-left: 50.497222%;
+    width: 44.615069%;
+  }
+
+  .case-study__photo--consulting {
+    margin-left: 50.981250%;
+    width: 43.472222%;
+  }
+
+  .case-study__overlay--consulting {
+    margin-left: 50.981250%;
+    width: 43.472222%;
+  }
+
+  .case-study__eyebrow--consulting {
+    margin-left: 53.209635%;
+  }
+
+  .case-study__title--consulting {
+    margin-left: 53.209635%;
+  }
+
+  .case-study__revenue-divider {
+    margin-left: 7.291667%;
+  }
+
+  .case-study__tenure-divider {
+    margin-left: 53.209722%;
+  }
+
+  .case-study__tenure-value {
+    margin-left: 54.667969%;
+  }
+
+  .case-study__tenure-label {
+    margin-left: 54.667969%;
+  }
+
+  .case-study__businesses-value {
+    margin-left: 75.836589%;
+  }
+
+  .case-study__businesses-label {
+    margin-left: 75.836589%;
+  }
+
+  .case-study__description--consulting {
+    margin-left: 53.209635%;
+    width: clamp(470.664px, 32.685000vw, 588.3300px);
+  }
+
+  .case-studies__eyebrow {
+    margin-left: 44.073893%;
+  }
+
+  .case-study__profit-divider {
+    margin-left: 28.881250%;
+  }
+
+  .case-study__businesses-divider {
+    margin-left: 74.791667%;
+  }
+}
+
+.case-study__corner--top-left {
+  left: -.5px;
+  top: -.5px;
+}
+
+.case-study__corner--top-right {
+  right: -.5px;
+  top: -.5px;
+  transform: scaleX(-1);
+}
+
+.case-study__corner--bottom-left {
+  left: -.5px;
+  bottom: -.5px;
+  transform: scaleY(-1);
+}
+
+.case-study__corner--bottom-right {
+  right: -.5px;
+  bottom: -.5px;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1439px) {
+
+
+  :where(.case-studies) :is(.case-studies__title) {
+    font-size: clamp(29px, 4.5vw, 40px);
+    letter-spacing: -1px;
+  }
+
+  :where(.case-studies) :is(.case-study__title--consulting,.case-study__title--manufacturing) {
+    font-size: 21px;
+  }
+}
+
+:where(.case-study__divider) img {
+  position: absolute;
+  display: block;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+
+@media (max-width: 1439px) {
+  :where(.case-studies) .section__item {
+    grid-area: auto;
+    order: var(--content-order, 0);
+  }
+
+  :where(.case-studies) .section__visual {
+    display: none;
+  }
+
+  :where(.case-studies) .button {
+    display: flex;
+  }
+
+  :where(.case-study) .case-study__photo--manufacturing {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  :where(.case-study) .case-study__photo--consulting {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  :where(.case-studies) > .section__text {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+
+  :where(.case-study) .case-study__photo--manufacturing {
+    order: -1;
+  }
+
+  :where(.case-study) .case-study__photo--consulting {
+    order: -1;
+  }
+
+  :where(.case-study) .case-study__title--manufacturing {
+    color: var(--ink);
+  }
+
+  :where(.case-study) .case-study__title--consulting {
+    color: var(--ink);
+  }
+
+  :where(.case-study) .case-study__eyebrow--manufacturing {
+    color: var(--ink);
+  }
+
+  :where(.case-study) .case-study__eyebrow--consulting {
+    color: var(--ink);
+  }
+
+  :where(.case-study) .case-study__revenue-value {
+    font-size: 40px;
+  }
+
+  :where(.case-study) .case-study__profit-value {
+    font-size: 40px;
+  }
+
+  :where(.case-study) .case-study__tenure-value {
+    font-size: 40px;
+  }
+
+  :where(.case-study) .case-study__businesses-value {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1441px) {
+  :where(.case-studies) :is(.case-study__frame--manufacturing,.case-study__frame--consulting) {
+    width: 44.615%;
+  }
+
+  :where(.case-studies) :is(.case-study__background--manufacturing,.case-study__photo--manufacturing) {
+    width: 43.704%;
+    margin-left: 5.227%;
+  }
+
+  :where(.case-studies) :is(.case-study__photo--consulting,.case-study__overlay--consulting) {
+    width: 43.472%;
+    margin-left: 50.981%;
+  }
+
+  :where(.case-study :is(.case-study__photo--manufacturing,.case-study__photo--consulting)) :is(.case-study__photo-fill--consulting,.case-study__photo-frame--consulting,.case-study__photo-image--consulting) {
+    inset: 0;
+    transform: none;
+  }
+
+  :where(.case-studies) .case-study__overlay--manufacturing {
+    width: 43.704%;
+  }
+
+  :where(.case-studies) > .section__visual {
+    display: none;
+  }
+
+  :where(.case-study) :is(.case-study__description--manufacturing,.case-study__description--consulting) {
+    max-width: 65ch;
+  }
+}
+
+:where(.case-studies) .case-study__frame {
+  border: 0;
+  pointer-events: none;
+}
+
+.case-study__frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(var(--line), var(--line)) left top / 100% .5px,
+    linear-gradient(var(--line), var(--line)) left bottom / 100% .5px,
+    linear-gradient(var(--line), var(--line)) left top / .5px 100%,
+    linear-gradient(var(--line), var(--line)) right top / .5px 100%;
+  background-repeat: no-repeat;
+}
+
+:where(.case-study__frame) .case-study__corner {
+  position: absolute;
+  display: block;
+  width: 7.47656px;
+  height: 7.34527px;
+  max-width: none;
+}
+
+:where(.case-studies) .case-study__divider {
+  width: .5px;
+  transform: translateX(-.25px);
+  pointer-events: none;
+}
+
+@media (max-width: 1439px) {
+  :where(.case-studies) .case-study {
+    position: relative;
+    border-color: transparent;
+  }
+
+  :where(.case-studies) .case-study__frame {
+    display: block;
+    position: absolute;
+    inset: -1px;
+    z-index: 1;
+  }
+
+  :where(.case-studies) .case-study__metric {
+    position: relative;
+    border-left-color: transparent;
+  }
+
+  :where(.case-studies) .case-study__divider {
+    position: absolute;
+    left: -1px;
+    top: 0;
+  }
+
+  :where(.case-study .case-study__photo--manufacturing) :is(.case-study__photo-image--manufacturing) {
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+    object-position: center 36.4%;
+  }
+
+  :where(.case-study .case-study__button) .case-study__button-icon {
+    display: block;
+  }
+
+  :where(:where(.case-studies) .section__text) span {
+    line-height: inherit;
+  }
+
+
+
+  :where(.case-studies) :is(.case-studies__title) {
+    line-height: 1.25;
+  }
+
+  :where(.case-studies) :is(.case-study__title--consulting,.case-study__title--manufacturing) {
+    line-height: 1.3;
+  }
+
+  :where(.case-studies) > :is(.case-studies__title) {
+    order: -2;
+  }
+
+  :where(.case-studies) .section__item {
+    margin: 0;
+    width: auto;
+    height: auto;
+    transform: none;
+    align-self: auto;
+    justify-self: auto;
+  }
+
+  :where(.case-studies) .section__text {
+    line-height: 1.45;
+    white-space: normal;
+  }
+
+  :where(.section) .case-studies__eyebrow {
+    order: -3;
+  }
+
+  :where(.section) .case-studies__introduction {
+    order: -1;
+  }
+
+  :where(.case-study) .case-study__photo--manufacturing {
+    height: 240px;
+    width: 100%;
+  }
+
+  :where(.case-study) .case-study__photo--consulting {
+    height: 240px;
+    width: 100%;
+  }
+
+  :where(.case-study) .case-study__photo--manufacturing {
+    height: 180px;
+    margin: -24px -24px 0;
+    width: calc(100% + 48px);
+  }
+
+  :where(.case-study) .case-study__photo--consulting {
+    height: 180px;
+    margin: -24px -24px 0;
+    width: calc(100% + 48px);
+  }
+
+  :where(.case-study) .case-study__title--manufacturing {
+    order: 1;
+  }
+
+  :where(.case-study) .case-study__title--consulting {
+    order: 1;
+  }
+
+  :where(.case-study) .case-study__eyebrow--manufacturing {
+    order: 0;
+  }
+
+  :where(.case-study) .case-study__eyebrow--consulting {
+    order: 0;
+  }
+
+  :where(.case-study) .case-study__description--manufacturing {
+    order: 3;
+  }
+
+  :where(.case-study) .case-study__description--consulting {
+    order: 3;
+  }
+
+  :where(.case-study) .case-study__button {
+    order: 4;
+    width: 48px;
+    height: 48px;
+    align-self: end;
+  }
+
+  :where(.case-studies) .case-study__frame {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+  }
+
+  :where(.case-studies) .case-study__divider {
+    width: .5px;
+    height: 100%;
+  }
+
+  :where(.case-study .case-study__button) .case-study__button-icon {
+    width: 16px;
+    height: 16px;
+    margin: auto;
+  }
+
+
+}
+
+@media (min-width: 1441px) {
+  :where(.case-study :is(.case-study__photo--manufacturing,.case-study__photo--consulting)) :is(.case-study__photo-image--consulting,.case-study__photo-image--manufacturing) {
+    top: 0;
+    object-fit: cover;
+    object-position: center 36.4%;
+    width: 100%;
+    height: 100%;
+  }
+
+  :where(.case-study) > .section__visual:not(:is(.case-study__frame--manufacturing,.case-study__frame--consulting,.case-study__background--manufacturing,.case-study__photo--manufacturing,.case-study__photo--consulting,.case-study__overlay--manufacturing,.case-study__overlay--consulting,.button)) {
+    display: none;
+  }
+}

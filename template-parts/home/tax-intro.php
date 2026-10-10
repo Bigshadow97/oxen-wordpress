@@ -1,16 +1,16 @@
 <?php defined( 'ABSPATH' ) || exit; ?>
-<section id="tax-intro" class="home-section tax-intro-section" aria-label="Tax planning">
-<p data-node-id="1:404" class="design-layer layer-404 copy-layer">
+<section id="tax-intro" class="section tax-intro" aria-label="Tax planning">
+<p class="section__item tax-intro__description section__text">
         A rough-cut estimate based on the latest NZ IRD rates. Useful as a sanity check — not a substitute for proper planning.
       </p>
-<p data-node-id="1:405" class="design-layer layer-405 copy-layer">
+<p class="section__item tax-intro__supporting-copy section__text">
         Most of our clients save more in their first year of planning than they pay us in fees.
       </p>
-<div data-node-id="1:407" class="design-layer layer-407 art-layer" aria-hidden="true"></div>
-<div data-node-id="1:408" class="design-layer layer-408 art-layer" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'frame4.svg' ); ?>" decoding="async" class="art-724"></div>
-<p data-node-id="1:410" class="design-layer layer-410 copy-layer"><span class="art-726">Used by </span><span class="art-727">2.4K</span><span class="art-728"> NZ Business owners this year</span></p>
-<p data-node-id="1:442" class="design-layer layer-442 copy-layer"><span class="art-730">up to $</span><span class="art-731">14,000</span></p>
-<p data-node-id="1:443" class="design-layer layer-443 copy-layer">
+<div class="section__item tax-intro__savings-background section__visual" aria-hidden="true"></div>
+<div class="section__item tax-intro__activity-dot section__visual" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'frame4.svg' ); ?>" decoding="async" class="tax-intro__activity-dot-image"></div>
+<p class="section__item tax-intro__activity section__text"><span class="tax-intro__activity-text">Used by </span><span class="tax-intro__activity-text-inner">2.4K</span><span class="tax-intro__activity-text-outer"> NZ Business owners this year</span></p>
+<p class="section__item tax-intro__savings section__text"><span class="tax-intro__savings-text">up to $</span><span class="tax-intro__savings-text-inner">14,000</span></p>
+<p class="section__item tax-intro__savings-caption section__text">
         Potential annual savings with planning
       </p>
 </section>

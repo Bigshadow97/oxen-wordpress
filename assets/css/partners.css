@@ -1,30 +1,80 @@
-/* The 310px reference section and heading remain unchanged. Each group has
- * six equal slots, including the spacing after its last logo. Two adjacent
- * groups therefore translate exactly 50% of the track, with no seam gap. */
-.partners-section { display: flow-root; height: 310px; padding: 0; }
-.partners-section .layer-626 {
-  position: relative;
-  grid-area: auto;
-  left: auto;
-  top: auto;
-  width: 100% !important;
-  margin: 34.1816px 0 0 !important;
-  text-align: center;
+/* Partners: component geometry, states and responsive layout. */
+
+.partners__title {
+  word-break: break-word;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 16px;
+  color: #000;
+  letter-spacing: -0.2679px;
+  white-space: nowrap;
+  margin-left: 651.2750px;
+  margin-top: 34.1816px;
+  z-index: 420;
 }
-.partners-carousel {
+
+.partners {
+  height: 310px;
+}
+
+:where(:where(.partners)) .layout-group {
+  display: contents;
+}
+
+@media (max-width: 1439px) {
+  .partners {
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: none;
+    width: 100%;
+    height: auto;
+    padding: 64px 32px;
+    gap: 24px;
+    overflow: clip;
+  }
+
+  :where(:where(.partners)) .layout-group {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .partners {
+    padding: 48px 20px;
+    gap: 24px;
+  }
+}
+
+@media (min-width:1441px) {
+  .partners__title {
+    margin-left: 45.227428%;
+  }
+}
+
+.partners {
+  display: flow-root;
+  height: 310px;
+  padding: 0;
+}
+
+.partners__carousel {
   position: absolute;
   inset-inline: 0;
   top: 51.222px;
   height: 192.314px;
   overflow: hidden;
 }
-.partners-carousel:focus-visible { outline-offset: -3px; }
-.partners-track {
+
+.partners__track {
   display: flex;
   width: max-content;
   animation: partners-scroll var(--partners-duration, 65s) linear infinite;
 }
-.partners-logo-group {
+
+.partners__group {
   flex: none;
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -34,33 +84,186 @@
   padding: 0;
   list-style: none;
 }
-.partner-logo { display: flex; align-items: center; justify-content: center; min-width: 0; }
-.partner-logo-image {
+
+.partners__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.partners__image {
   display: block;
   position: relative;
   isolation: isolate;
   width: min(var(--logo-size), calc(100% - 32px));
   aspect-ratio: 1;
 }
-.partner-logo-image img { display: block; width: 100%; height: 100%; object-fit: contain; }
-/* Figma applies a black colour-blend overlay to this original logo. */
-.partner-logo--bootleg .partner-logo-image { background: #f0f0f0; }
-.partner-logo--bootleg .partner-logo-image::after { content: ''; position: absolute; inset: 0; background: #000; mix-blend-mode: color; }
-@keyframes partners-scroll { to { transform: translate3d(-50%, 0, 0); } }
-.partners-carousel:hover .partners-track,
-.partners-carousel:focus-within .partners-track { animation-play-state: paused; }
+
 @media (prefers-reduced-motion: reduce) {
-  .partners-section { height: auto; min-height: 310px; padding-bottom: 32px; }
-  .partners-carousel { position: relative; top: auto; height: auto; margin-top: 16px; }
-  .partners-track { display: block; width: 100%; animation: none; transform: none; }
-  .partners-logo-group { width: 100%; height: auto; }
-  .partner-logo { min-height: 192.314px; }
-  .partners-logo-group[data-logo-clone] { display: none; }
+  .partners {
+    height: auto;
+    min-height: 310px;
+    padding-bottom: 32px;
+  }
+
+  .partners__carousel {
+    position: relative;
+    top: auto;
+    height: auto;
+    margin-top: 16px;
+  }
+
+  .partners__track {
+    display: block;
+    width: 100%;
+    animation: none;
+    transform: none;
+  }
+
+  .partners__group {
+    width: 100%;
+    height: auto;
+  }
+
+  .partners__logo {
+    min-height: 192.314px;
+  }
 }
+
 @media (prefers-reduced-motion: reduce) and (max-width: 900px) {
-  .partners-logo-group { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .partner-logo { min-height: 150px; }
+  .partners__group {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .partners__logo {
+    min-height: 150px;
+  }
 }
+
 @media (prefers-reduced-motion: reduce) and (max-width: 599px) {
-  .partners-logo-group { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .partners__group {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
+
+
+
+:where(.partners__image) img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1439px) {
+  :where(.partners) .section__item {
+    grid-area: auto;
+    order: var(--content-order, 0);
+  }
+
+  :where(.partners) .section__visual {
+    display: none;
+  }
+
+  :where(.partners) .button {
+    display: flex;
+  }
+}
+
+:where(.partners) .partners__title {
+  position: relative;
+  grid-area: auto;
+  left: auto;
+  top: auto;
+  text-align: center;
+}
+
+.partners__carousel:focus-visible {
+  outline-offset: -3px;
+}
+
+:where(.partners__logo--bootleg) .partners__image {
+  background: #f0f0f0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .partners__group[data-logo-clone] {
+    display: none;
+  }
+}
+
+:where(.partners__logo--bootleg) .partners__image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #000;
+  mix-blend-mode: color;
+}
+
+:where(.partners__carousel:hover) .partners__track {
+  animation-play-state: paused;
+}
+
+:where(.partners__carousel:focus-within) .partners__track {
+  animation-play-state: paused;
+}
+
+@media (max-width: 1439px) {
+  :where(:where(.partners) .section__text) span {
+    line-height: inherit;
+  }
+
+
+
+
+
+
+
+
+
+  :where(.partners) .section__item {
+    margin: 0;
+    width: auto;
+    height: auto;
+    transform: none;
+    align-self: auto;
+    justify-self: auto;
+  }
+
+  :where(.partners) .section__text {
+    line-height: 1.45;
+    white-space: normal;
+  }
+}
+
+:where(.partners) .partners__title {
+  width: 100%;
+  margin: 34.1816px 0 0;
+}
+
+.partners__logo--bootleg {
+  --logo-size: 128.603px;
+}
+
+.partners__logo--cali {
+  --logo-size: 128.603px;
+}
+
+.partners__logo--low-carb {
+  --logo-size: 192.314px;
+}
+
+.partners__logo--manage {
+  --logo-size: 138.613px;
+}
+
+.partners__logo--follow {
+  --logo-size: 128.231px;
+}
+
+.partners__logo--tikitibu {
+  --logo-size: 144.773px;
+}
+
+@keyframes partners-scroll { to { transform: translate3d(-50%, 0, 0); } }

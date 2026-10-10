@@ -29,7 +29,7 @@ class Oxen_Menu_Walker extends Walker_Nav_Menu {
 			}
 		}
 		if ( $has_children ) {
-			$markup .= '<button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="' . esc_attr( $this->prefix . '-submenu-' . $item->ID ) . '" aria-label="' . esc_attr( sprintf( __( 'Toggle submenu for %s', 'oxen' ), wp_strip_all_tags( $item->title ) ) ) . '"><span aria-hidden="true">+</span></button>';
+			$markup .= '<button class="menu__toggle" type="button" aria-expanded="false" aria-controls="' . esc_attr( $this->prefix . '-submenu-' . $item->ID ) . '" aria-label="' . esc_attr( sprintf( __( 'Toggle submenu for %s', 'oxen' ), wp_strip_all_tags( $item->title ) ) ) . '"><span aria-hidden="true">+</span></button>';
 		}
 		$output = substr( $output, 0, $start ) . $markup;
 	}

@@ -41,12 +41,14 @@ Rendered fonts are **Satoshi** (400/500 normal and italic, 700 normal), **Noto S
 
 ## Source layout and checks
 
-`header.php` and `footer.php` provide the shared site shell; `page.php` handles standard CMS pages. Appearance → Menus manages Primary navigation and four footer locations. Preserve the `menu-contact` class on the contact CTA and `menu-plus` on Services (Screen Options → CSS Classes); submenu hierarchy is managed normally in Menus. `template-parts/home/` contains one PHP component per section plus homepage dialogs. `assets/js/site.js` owns shared mobile navigation, submenu controls and dialogs; `site.css` and `site-footer.css` style the shared shell. `assets/css/` separates fonts, shared behavior, measured desktop styling and responsive styling. `wide-measurements.css` translates source anchors to percentages; `wide.css` controls fluid components, backgrounds and image focal points above the reference viewport. `assets/js/homepage.js` handles UI; `assets/js/tax.js` contains independently testable calculations.
+`header.php` and `footer.php` provide the shared site shell; `page.php` handles standard CMS pages. Appearance → Menus manages Primary navigation and four footer locations. Preserve the `menu-contact` class on the contact CTA and `menu-plus` on Services (Screen Options → CSS Classes); submenu hierarchy is managed normally in Menus. `template-parts/home/` contains one PHP component per section plus homepage dialogs. `assets/js/site.js` owns shared mobile navigation, submenu controls and dialogs; `site.css` and `site-footer.css` style the shared shell. `assets/css/` contains shared tokens/primitives and one stylesheet per homepage component, including each component’s responsive rules and states. `template-parts/components/` renders reusable service and process cards from the escaped content in `inc/home-services.php` and `inc/home-process.php`. `inc/visuals.php` renders original decorative assets with only the transform/crop containers they need. All production classes use descriptive component names; Figma node metadata stays in development reference files.
+
+Homepage interactions are isolated in `services.js`, `quiz.js`, `accordion.js`, `testimonials.js`, `calculator.js` and `partners.js`. They use stable component/data hooks, and service dialogs communicate with the shared shell through a DOM event. `tax.js` remains the independently testable calculation API. Homepage modules load only on the selectable Home template.
 
 ```powershell
 # In Local's site shell (or use the explicit Local PHP 8.2.29 executable):
 php -n -l functions.php
-node --check assets/js/homepage.js
+node --check assets/js/quiz.js
 node --check assets/js/tax.js
 node --test tools/tax.test.cjs
 ```
@@ -64,10 +66,13 @@ The check covers all interactions, image/font loads, browser/network errors, hos
 
 `tools/flat-layers.json` retains the original measured layer data. The legacy generator predates this CMS architecture. **Do not run `tools/build-homepage.py --write` on this theme:** it would recreate the superseded homepage/navigation files and overwrite verified components. Any future generator update must account for the selectable template and reusable site shell before regeneration is considered.
 
-Responsive CSS, `wide.css`, shared behavior, JavaScript and dialogs are maintained separately and are not generator outputs. The measured corrections and fluid source anchors are encoded in the generator itself. No generator operation connects to Figma. For a future read-only design refresh, `parse-figma.py` accepts a fresh `figma-reference.jsx` and `figma-metadata.xml` export. `compare-screenshots.py` uses Pillow and a fresh original `tools/figma-reference.png` to produce side-by-side comparisons and channel-difference metrics. Expiring Figma asset URLs and bulky QA captures are intentionally excluded from Git.
+The legacy generator targets the superseded generated markup and CSS. It is retained only as reference tooling; do not use it to modify this semantic theme. Original image/font assets and development reference data remain unchanged. Expiring Figma asset URLs and bulky QA captures are excluded from Git.
 
 `python tools/generator-check.test.py` tests non-writing checks, manual-correction preservation and verified backups using isolated copies inside the theme's ignored backup directory.
 
 The calculator uses [IRD business rates](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses) and [individual rates effective 1 April 2025](https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals): company tax is 28%; individual tax uses progressive brackets. Partnerships assume equal shares and no other partner income. GST, ACC, credits, deductions, provisional tax and shareholder-specific circumstances are outside this estimate.
 
 Focused architecture verification: `node tools/architecture-checks.cjs`. It verifies static Home/template settings, idempotent setup, reusable header/footer on Sample Page, CMS menu edits with restoration, and interaction smoke checks. The site-specific CLI launcher uses LocalWP PHP 8.2.29 and MySQL port 10017; adapt those paths/port for another workstation.
+
+
+Semantic refactor verification: `node tools/refactor-checks.cjs --baseline` captures an explicit checkpoint; `node tools/refactor-checks.cjs` checks the 1440/1920/768/390 layouts and interactions against it. Captures and migration diagnostics are gitignored. `node tools/architecture-checks.cjs --navigation-only` checks CMS configuration, a standard page and temporary menu edits with restoration. See `docs/semantic-refactor.md` for the scope and validation record.

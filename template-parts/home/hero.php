@@ -1,43 +1,43 @@
 <?php defined( 'ABSPATH' ) || exit; ?>
-<section id="hero" class="home-section hero-section" aria-labelledby="homepage-title">
-<div data-node-id="1:6" class="design-layer layer-6 art-layer" aria-hidden="true"><div class="art-18"><img alt="" src="<?php echo oxen_asset( 'vector1012.svg' ); ?>" decoding="async" class="art-19"></div></div>
-<div data-node-id="1:9" class="design-layer layer-9 art-layer" aria-hidden="true"><div class="art-21"><div class="art-22"></div></div></div>
-<div data-node-id="1:10" class="design-layer layer-10 art-layer" aria-hidden="true"></div>
-<div data-node-id="1:11" class="design-layer layer-11 art-layer" aria-hidden="true"><div class="art-25"><div class="art-26"><div class="art-27"><img alt="" src="<?php echo oxen_asset( 'texture-picture-from-unsplash1.png' ); ?>" decoding="async" class="art-28"></div></div></div></div>
-<div data-node-id="1:12" class="design-layer layer-12 art-layer" aria-hidden="true"><div class="art-30"><img alt="" src="<?php echo oxen_asset( 'ellipse2130.svg' ); ?>" decoding="async" class="art-31"></div></div>
-<div class="responsive-group hero-portrait"><div data-node-id="1:13" class="design-layer layer-13 art-layer"><div class="art-33"><img alt="Jeremy Wilson, Founder and Managing Director of Oxen" src="<?php echo oxen_asset( 'image15.png' ); ?>" decoding="async" class="art-34"></div></div></div>
-<div data-node-id="1:14" class="design-layer layer-14 art-layer" aria-hidden="true"></div>
-<div class="responsive-group hero-copy"><p data-node-id="1:176" class="design-layer layer-176 copy-layer">Accepting new clients · Auckland &amp; NZ-wide</p>
-<div data-node-id="1:316" class="design-layer layer-316 art-layer" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'ellipse2137.svg' ); ?>" decoding="async" class="art-38"></div>
-<h1 data-node-id="1:175" class="design-layer layer-175 copy-layer" id="homepage-title"><span class="art-40">The </span><span class="art-41">Senior Accountant</span><span class="art-42"> </span><span class="art-43">who actually sits at your table.</span></h1>
-<p data-node-id="1:177" class="design-layer layer-177 copy-layer">
+<section id="hero" class="section hero" aria-labelledby="homepage-title">
+<div class="section__item hero__edge-mark section__visual" aria-hidden="true"><div class="hero__edge-mark-frame"><img alt="" src="<?php echo oxen_asset( 'vector1012.svg' ); ?>" decoding="async" class="hero__edge-mark-image"></div></div>
+<div class="section__item hero__canvas section__visual" aria-hidden="true"><div class="hero__canvas-orientation"><div class="hero__canvas-fill"></div></div></div>
+<div class="section__item hero__fade section__visual" aria-hidden="true"></div>
+<div class="section__item hero__texture section__visual" aria-hidden="true"><div class="hero__texture-orientation"><div class="hero__texture-canvas"><div class="hero__texture-frame"><img alt="" src="<?php echo oxen_asset( 'texture-picture-from-unsplash1.png' ); ?>" decoding="async" class="hero__texture-image"></div></div></div></div>
+<div class="section__item hero__halo section__visual" aria-hidden="true"><div class="hero__halo-frame"><img alt="" src="<?php echo oxen_asset( 'ellipse2130.svg' ); ?>" decoding="async" class="hero__halo-image"></div></div>
+<div class="layout-group hero__visual"><div class="section__item hero__portrait section__visual"><div class="hero__portrait-frame"><img alt="Jeremy Wilson, Founder and Managing Director of Oxen" src="<?php echo oxen_asset( 'image15.png' ); ?>" decoding="async" class="hero__portrait-image"></div></div></div>
+<div class="section__item hero__overlay section__visual" aria-hidden="true"></div>
+<div class="layout-group hero__content"><p class="section__item hero__eyebrow section__text">Accepting new clients · Auckland &amp; NZ-wide</p>
+<div class="section__item hero__status-dot section__visual" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'ellipse2137.svg' ); ?>" decoding="async" class="hero__status-dot-image"></div>
+<h1 class="section__item hero__title section__text" id="homepage-title"><span class="hero__title-prefix">The </span><span class="hero__title-emphasis">Senior Accountant</span><span class="hero__title-space"> </span><span class="hero__title-ending">who actually sits at your table.</span></h1>
+<p class="section__item hero__description section__text">
         30 years of senior accounting experience working directly with NZ business owners. No juniors on your file. No surprises at year-end. Just one strategist who knows your numbers — and your business.
       </p>
-<a data-node-id="1:180" href="#contact" class="design-layer layer-180 art-layer action-link" data-open-contact="" aria-haspopup="dialog"><span data-node-id="1:181" class="design-layer layer-181 copy-layer">
+<a href="#contact" class="section__item hero__call-button section__visual button" data-open-contact="" aria-haspopup="dialog"><span class="section__item hero__call-label section__text">
             Book a free 30min Call
           </span></a>
-<a data-node-id="1:183" href="tel:0800640001" class="design-layer layer-183 art-layer action-link"><span data-node-id="1:184" class="design-layer layer-184 copy-layer">
+<a href="tel:0800640001" class="section__item hero__phone-button section__visual button"><span class="section__item hero__phone-number section__text">
             0800 640 001
-          </span><span data-node-id="1:185" class="design-layer layer-185 copy-layer">
+          </span><span class="section__item hero__phone-prefix section__text">
             Call
           </span></a></div>
-<div class="responsive-group hero-proof"><div data-node-id="1:220" class="design-layer layer-220 art-layer" aria-hidden="true"><div class="art-51"><div class="art-52"></div></div></div>
-<div data-node-id="1:222" class="design-layer layer-222 art-layer" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'image14.png' ); ?>" decoding="async" class="art-54"></div>
-<p data-node-id="1:221" class="design-layer layer-221 copy-layer">
+<div class="layout-group hero__proof"><div class="section__item hero__rating-background section__visual" aria-hidden="true"><div class="hero__rating-background-orientation"><div class="hero__rating-background-fill"></div></div></div>
+<div class="section__item hero__google-logo section__visual" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'image14.png' ); ?>" decoding="async" class="hero__google-logo-image"></div>
+<p class="section__item hero__rating-value section__text">
             4.9
           </p>
-<div data-node-id="1:229" class="design-layer layer-229 art-layer" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'group2609157.svg' ); ?>" decoding="async" class="art-57"></div>
-<div data-node-id="1:246" class="design-layer layer-246 art-layer" aria-hidden="true"><div class="art-59"><div class="art-60"><img alt="" src="<?php echo oxen_asset( 'group2609158.svg' ); ?>" decoding="async" class="art-61"></div></div></div>
-<div data-node-id="1:224" class="design-layer layer-224 art-layer" aria-hidden="true"><div class="art-63"><img alt="" src="<?php echo oxen_asset( 'vector1013.svg' ); ?>" decoding="async" class="art-64"></div></div>
-<p data-node-id="1:223" class="design-layer layer-223 copy-layer">
+<div class="section__item hero__rating-stars section__visual" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'group2609157.svg' ); ?>" decoding="async" class="hero__rating-stars-image"></div>
+<div class="section__item hero__rating-star-outline section__visual" aria-hidden="true"><div class="hero__rating-star-outline-orientation"><div class="hero__rating-star-outline-canvas"><img alt="" src="<?php echo oxen_asset( 'group2609158.svg' ); ?>" decoding="async" class="hero__rating-star-outline-image"></div></div></div>
+<div class="section__item hero__rating-divider section__visual" aria-hidden="true"><div class="hero__rating-divider-frame"><img alt="" src="<?php echo oxen_asset( 'vector1013.svg' ); ?>" decoding="async" class="hero__rating-divider-image"></div></div>
+<p class="section__item hero__rating-label section__text">
             Google Rating
           </p>
-<div data-node-id="1:187" class="design-layer layer-187 art-layer" aria-hidden="true"><div class="art-67"><div class="art-68"></div></div></div>
-<div data-node-id="1:188" class="design-layer layer-188 art-layer" aria-hidden="true"><div class="art-70"><img alt="" src="<?php echo oxen_asset( 'image16.png' ); ?>" decoding="async" class="art-71"></div></div>
-<p data-node-id="1:317" class="design-layer layer-317 copy-layer"><span class="art-73">Trusted by </span><span class="art-74">184+ NZ business owners</span><span class="art-75">. Same-day response, every time.</span></p></div>
-<div class="responsive-group hero-author"><div data-node-id="1:217" class="design-layer layer-217 art-layer" aria-hidden="true"><div class="art-77"><img alt="" src="<?php echo oxen_asset( 'vector1012.svg' ); ?>" decoding="async" class="art-78"></div></div>
-<p data-node-id="1:215" class="design-layer layer-215 copy-layer">
+<div class="section__item hero__partner-background section__visual" aria-hidden="true"><div class="hero__partner-background-orientation"><div class="hero__partner-background-fill"></div></div></div>
+<div class="section__item hero__partner-badge section__visual" aria-hidden="true"><div class="hero__partner-badge-frame"><img alt="" src="<?php echo oxen_asset( 'image16.png' ); ?>" decoding="async" class="hero__partner-badge-image"></div></div>
+<p class="section__item hero__proof-text section__text"><span class="hero__proof-prefix">Trusted by </span><span class="hero__proof-emphasis">184+ NZ business owners</span><span class="hero__proof-ending">. Same-day response, every time.</span></p></div>
+<div class="layout-group hero__author"><div class="section__item hero__author-mark section__visual" aria-hidden="true"><div class="hero__author-mark-frame"><img alt="" src="<?php echo oxen_asset( 'vector1012.svg' ); ?>" decoding="async" class="hero__author-mark-image"></div></div>
+<p class="section__item hero__author-name section__text">
           Jeremey Wilson
         </p>
-<p data-node-id="1:216" class="design-layer layer-216 copy-layer">Founder &amp; Managing Director, CA</p></div><div class="hero-blur" aria-hidden="true"></div>
+<p class="section__item hero__author-role section__text">Founder &amp; Managing Director, CA</p></div><div class="hero__blur" aria-hidden="true"></div>
 </section>

@@ -1,62 +1,62 @@
 <?php defined( 'ABSPATH' ) || exit; ?>
-<section id="results" class="home-section results-section" aria-labelledby="heading-447">
-<div class="responsive-group result-card"><div data-node-id="1:4" class="design-layer layer-4 art-layer result-frame" aria-hidden="true">
-<img class="result-corner result-corner--top-left" alt="" src="<?php echo oxen_asset( 'vector1020.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
-<img class="result-corner result-corner--top-right" alt="" src="<?php echo oxen_asset( 'vector1033.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
-<img class="result-corner result-corner--bottom-left" alt="" src="<?php echo oxen_asset( 'vector1020.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
-<img class="result-corner result-corner--bottom-right" alt="" src="<?php echo oxen_asset( 'vector1033.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
+<section id="results" class="section case-studies" aria-labelledby="case-studies-title">
+<article class="layout-group case-study"><div class="section__item case-study__frame--manufacturing section__visual case-study__frame" aria-hidden="true">
+<img class="case-study__corner case-study__corner--top-left" alt="" src="<?php echo oxen_asset( 'vector1020.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
+<img class="case-study__corner case-study__corner--top-right" alt="" src="<?php echo oxen_asset( 'vector1033.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
+<img class="case-study__corner case-study__corner--bottom-left" alt="" src="<?php echo oxen_asset( 'vector1020.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
+<img class="case-study__corner case-study__corner--bottom-right" alt="" src="<?php echo oxen_asset( 'vector1033.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
 </div>
 
-<div data-node-id="1:445" class="design-layer layer-445 art-layer" aria-hidden="true"></div>
-<div data-node-id="1:448" class="design-layer layer-448 art-layer" aria-hidden="true"><div aria-hidden="true" class="art-592"><div class="art-593"></div><div class="art-594"><img alt="" src="<?php echo oxen_asset( 'rectangle28.png' ); ?>" decoding="async" class="art-595"></div></div></div>
-<div data-node-id="1:450" class="design-layer layer-450 art-layer" aria-hidden="true"></div>
-<p data-node-id="1:459" class="design-layer layer-459 copy-layer">
+<div class="section__item case-study__background--manufacturing section__visual" aria-hidden="true"></div>
+<div class="section__item case-study__photo--manufacturing section__visual" aria-hidden="true"><div class="case-study__photo-fill--manufacturing"></div><div class="case-study__photo-frame-inner--manufacturing"><img alt="" src="<?php echo oxen_asset( 'rectangle28.png' ); ?>" decoding="async" class="case-study__photo-image--manufacturing"></div></div>
+<div class="section__item case-study__overlay--manufacturing section__visual" aria-hidden="true"></div>
+<p class="section__item case-study__eyebrow--manufacturing section__text">
           Case study · Manufacturing · Auckland
         </p>
-<h3 data-node-id="1:454" class="design-layer layer-454 copy-layer">From &quot;good year&quot; to forecast-ready in 6 months.</h3>
-<div class="metric-pair"><div class="metric-unit"><div data-node-id="1:481" class="design-layer layer-481 result-divider" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'vector1034.svg' ); ?>" decoding="async"></div><p data-node-id="1:461" class="design-layer layer-461 copy-layer">
+<h3 class="section__item case-study__title--manufacturing section__text">From &quot;good year&quot; to forecast-ready in 6 months.</h3>
+<div class="case-study__metrics"><div class="case-study__metric"><div class="section__item case-study__revenue-divider case-study__divider" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'vector1034.svg' ); ?>" decoding="async"></div><p class="section__item case-study__revenue-value section__text">
           +74%
-        </p><p data-node-id="1:463" class="design-layer layer-463 copy-layer">
+        </p><p class="section__item case-study__revenue-label section__text">
           Revenue Growth
-        </p></div><div class="metric-unit"><div data-node-id="1:482" class="design-layer layer-482 result-divider" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'vector1034.svg' ); ?>" decoding="async"></div><p data-node-id="1:462" class="design-layer layer-462 copy-layer">
+        </p></div><div class="case-study__metric"><div class="section__item case-study__profit-divider case-study__divider" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'vector1034.svg' ); ?>" decoding="async"></div><p class="section__item case-study__profit-value section__text">
           5.0x
-        </p><p data-node-id="1:464" class="design-layer layer-464 copy-layer">
+        </p><p class="section__item case-study__profit-label section__text">
           Profit Increase
         </p></div></div>
-<p data-node-id="1:456" class="design-layer layer-456 copy-layer">
+<p class="section__item case-study__description--manufacturing section__text">
           A 12-person manufacturer with strong sales but no visibility on margin by product line. We rebuilt their reporting and unlocked $45K in savings the first quarter.
         </p>
-<button data-node-id="1:486" type="button" data-open-case-study="" aria-label="Read the manufacturing client story" aria-haspopup="dialog" class="design-layer layer-486 art-layer action-link"><div data-node-id="1:487" class="design-layer layer-487 art-layer" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'add-line8.svg' ); ?>" decoding="async" class="art-606"></div></button>
+<button type="button" data-open-case-study="" aria-label="Read the manufacturing client story" aria-haspopup="dialog" class="section__item case-study__button section__visual button"><div class="section__item case-study__button-icon section__visual" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'add-line8.svg' ); ?>" decoding="async" class="case-study__button-icon-image"></div></button>
 
-</div>
-<p data-node-id="1:446" class="design-layer layer-446 copy-layer">
+</article>
+<p class="section__item case-studies__introduction section__text">
           Two New Zealand businesses. Two different stages. Same outcome: clarity on the numbers, then a plan to grow them.
         </p>
-<h2 data-node-id="1:447" class="design-layer layer-447 copy-layer" id="heading-447"><span class="art-619">Numbers that </span><span class="art-620">moved.</span></h2>
-<div class="responsive-group result-card"><div data-node-id="1:458" class="design-layer layer-458 art-layer result-frame" aria-hidden="true">
-<img class="result-corner result-corner--top-left" alt="" src="<?php echo oxen_asset( 'vector1020.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
-<img class="result-corner result-corner--top-right" alt="" src="<?php echo oxen_asset( 'vector1033.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
-<img class="result-corner result-corner--bottom-left" alt="" src="<?php echo oxen_asset( 'vector1020.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
-<img class="result-corner result-corner--bottom-right" alt="" src="<?php echo oxen_asset( 'vector1033.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
+<h2 class="section__item case-studies__title section__text" id="case-studies-title"><span class="case-studies__title-prefix">Numbers that </span><span class="case-studies__title-emphasis">moved.</span></h2>
+<article class="layout-group case-study"><div class="section__item case-study__frame--consulting section__visual case-study__frame" aria-hidden="true">
+<img class="case-study__corner case-study__corner--top-left" alt="" src="<?php echo oxen_asset( 'vector1020.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
+<img class="case-study__corner case-study__corner--top-right" alt="" src="<?php echo oxen_asset( 'vector1033.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
+<img class="case-study__corner case-study__corner--bottom-left" alt="" src="<?php echo oxen_asset( 'vector1020.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
+<img class="case-study__corner case-study__corner--bottom-right" alt="" src="<?php echo oxen_asset( 'vector1033.svg' ); ?>" width="7.47656" height="7.34527" decoding="async">
 </div>
-<div data-node-id="1:449" class="design-layer layer-449 art-layer" aria-hidden="true"><div aria-hidden="true" class="art-623"><div class="art-624"></div><img alt="" src="<?php echo oxen_asset( 'rectangle48.png' ); ?>" decoding="async" class="art-625"></div></div>
-<div data-node-id="1:451" class="design-layer layer-451 art-layer" aria-hidden="true"></div>
-<p data-node-id="1:460" class="design-layer layer-460 copy-layer">
+<div class="section__item case-study__photo--consulting section__visual" aria-hidden="true"><div class="case-study__photo-fill--consulting"></div><img alt="" src="<?php echo oxen_asset( 'rectangle48.png' ); ?>" decoding="async" class="case-study__photo-image--consulting"></div>
+<div class="section__item case-study__overlay--consulting section__visual" aria-hidden="true"></div>
+<p class="section__item case-study__eyebrow--consulting section__text">
           Case study · Professional services · Wellington
         </p>
-<h3 data-node-id="1:455" class="design-layer layer-455 copy-layer">13 years as a client. Still on Jeremy&#x27;s call list.</h3>
+<h3 class="section__item case-study__title--consulting section__text">13 years as a client. Still on Jeremy&#x27;s call list.</h3>
 
-<div class="metric-pair"><div class="metric-unit"><div data-node-id="1:483" class="design-layer layer-483 result-divider" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'vector1034.svg' ); ?>" decoding="async"></div><p data-node-id="1:477" class="design-layer layer-477 copy-layer">
+<div class="case-study__metrics"><div class="case-study__metric"><div class="section__item case-study__tenure-divider case-study__divider" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'vector1034.svg' ); ?>" decoding="async"></div><p class="section__item case-study__tenure-value section__text">
           13
-        </p><p data-node-id="1:479" class="design-layer layer-479 copy-layer">
+        </p><p class="section__item case-study__tenure-label section__text">
           Years as Client
-        </p></div><div class="metric-unit"><div data-node-id="1:484" class="design-layer layer-484 result-divider" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'vector1034.svg' ); ?>" decoding="async"></div><p data-node-id="1:478" class="design-layer layer-478 copy-layer">
+        </p></div><div class="case-study__metric"><div class="section__item case-study__businesses-divider case-study__divider" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'vector1034.svg' ); ?>" decoding="async"></div><p class="section__item case-study__businesses-value section__text">
           12+
-        </p><p data-node-id="1:480" class="design-layer layer-480 copy-layer">
+        </p><p class="section__item case-study__businesses-label section__text">
           Businesses Supported
         </p></div></div>
-<p data-node-id="1:457" class="design-layer layer-457 copy-layer">A consulting firm we&#x27;ve worked with since the founder&#x27;s third year. We&#x27;ve been through 12 hires, two office moves, one capital raise, and one exit conversation.</p></div>
-<p data-node-id="1:453" class="design-layer layer-453 copy-layer">
+<p class="section__item case-study__description--consulting section__text">A consulting firm we&#x27;ve worked with since the founder&#x27;s third year. We&#x27;ve been through 12 hires, two office moves, one capital raise, and one exit conversation.</p></article>
+<p class="section__item case-studies__eyebrow section__text">
             Real results, real clients
           </p>
 

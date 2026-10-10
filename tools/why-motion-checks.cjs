@@ -17,8 +17,8 @@ let browser;
   const layout=await page.locator('#about').evaluate(section=>{
    const rect=n=>{const r=n.getBoundingClientRect();return {x:r.x,y:r.y+scrollY,width:r.width,height:r.height}};
    return {width:innerWidth,section:rect(section),scrollWidth:document.documentElement.scrollWidth,
-    left:[...section.querySelectorAll('.about-copy .copy-layer,.about-team .copy-layer')].map(n=>({node:n.dataset.nodeId,text:n.textContent.trim(),...rect(n)})),
-    items:[...section.querySelectorAll('.why-item')].map(n=>({title:n.querySelector('.why-label').textContent,description:n.querySelector('.why-description').textContent,asset:n.querySelector('.why-photo img').src,...rect(n),photo:rect(n.querySelector('.why-photo')),heading:rect(n.querySelector('.why-heading'))}))};
+    left:[...section.querySelectorAll('.about__content .section__text,.about__team .section__text')].map(n=>({node:n.dataset.nodeId,text:n.textContent.trim(),...rect(n)})),
+    items:[...section.querySelectorAll('.why-accordion__item')].map(n=>({title:n.querySelector('.why-accordion__label').textContent,description:n.querySelector('.why-accordion__description').textContent,asset:n.querySelector('.why-accordion__photo img').src,...rect(n),photo:rect(n.querySelector('.why-accordion__photo')),heading:rect(n.querySelector('.why-accordion__heading'))}))};
   });
   report.push(layout);
   await page.screenshot({path:path.join(folder,`${width}-${baseline?'before':'after'}.png`),style:'.skip-link:not(:focus) { visibility: hidden; }',fullPage:true,clip:{x:0,y:layout.section.y,width,height:Math.ceil(layout.section.height)}});
@@ -36,14 +36,14 @@ let browser;
    await page.evaluate(()=>scrollTo({top:document.querySelector('[data-why-accordion]').getBoundingClientRect().y+scrollY-80,behavior:'instant'}));
    const checkState=async index=>{
     const state=await page.locator('[data-why-accordion]').evaluate(root=>({
-     items:[...root.querySelectorAll('.why-item')].map(n=>{
-      const b=n.querySelector('.why-toggle'),photo=n.querySelector('.why-photo'),description=n.querySelector('.why-description'),head=b.getBoundingClientRect(),p=photo.getBoundingClientRect(),d=description.getBoundingClientRect();
-      return {open:n.classList.contains('is-open'),expanded:b.getAttribute('aria-expanded'),icon:n.querySelector('.why-icon').textContent,
-       photoHeight:n.querySelector('.why-image-reveal').getBoundingClientRect().height,descriptionHeight:n.querySelector('.why-panel').getBoundingClientRect().height,
+     items:[...root.querySelectorAll('.why-accordion__item')].map(n=>{
+      const b=n.querySelector('.why-accordion__toggle'),photo=n.querySelector('.why-accordion__photo'),description=n.querySelector('.why-accordion__description'),head=b.getBoundingClientRect(),p=photo.getBoundingClientRect(),d=description.getBoundingClientRect();
+      return {open:n.classList.contains('is-open'),expanded:b.getAttribute('aria-expanded'),icon:n.querySelector('.why-accordion__icon').textContent,
+       photoHeight:n.querySelector('.why-accordion__image-reveal').getBoundingClientRect().height,descriptionHeight:n.querySelector('.why-accordion__panel').getBoundingClientRect().height,
        controls:b.getAttribute('aria-controls').split(/\s+/).map(id=>{const panel=document.getElementById(id);return {exists:!!panel,hidden:panel.getAttribute('aria-hidden'),inert:panel.inert}}),
        imageLoaded:photo.querySelector('img').complete&&photo.querySelector('img').naturalWidth>0,imageAbove:p.bottom<=head.top+.1,copyBelow:d.top>=head.bottom-.1,
-       clipping:[...n.querySelectorAll('.why-reveal,.why-photo')].map(n=>getComputedStyle(n).overflow),
-       headingVisible:head.height>0,labelFits:n.querySelector('.why-label').getBoundingClientRect().right<=n.querySelector('.why-icon').getBoundingClientRect().left+.1};
+       clipping:[...n.querySelectorAll('.why-accordion__reveal,.why-accordion__photo')].map(n=>getComputedStyle(n).overflow),
+       headingVisible:head.height>0,labelFits:n.querySelector('.why-accordion__label').getBoundingClientRect().right<=n.querySelector('.why-accordion__icon').getBoundingClientRect().left+.1};
      }),dialogs:document.querySelectorAll('dialog[open]').length,overflow:document.documentElement.scrollWidth>innerWidth}));
     assert.equal(state.items.filter(n=>n.open).length,1);assert.equal(state.dialogs,0);assert.equal(state.overflow,false);
     state.items.forEach((n,i)=>{
@@ -58,13 +58,13 @@ let browser;
    for(const index of [1,2,0]){
     const previous=index===1?0:index===2?1:2;
     const samples=await page.evaluate(async({index})=>{
-     const root=document.querySelector('[data-why-accordion]'),nodes=[...root.querySelectorAll('.why-item')],start=performance.now(),scroll=scrollY,result=[];
+     const root=document.querySelector('[data-why-accordion]'),nodes=[...root.querySelectorAll('.why-accordion__item')],start=performance.now(),scroll=scrollY,result=[];
      nodes[index].querySelector('button').click();
      while(performance.now()-start<650){
       await new Promise(requestAnimationFrame);result.push({t:performance.now()-start,scroll:scrollY-scroll,
-       items:nodes.map(n=>({height:n.getBoundingClientRect().height,photo:n.querySelector('.why-image-reveal').getBoundingClientRect().height,
-        opacity:Number(getComputedStyle(n.querySelector('.why-photo')).opacity),transform:getComputedStyle(n.querySelector('.why-photo')).transform,
-        transition:getComputedStyle(n.querySelector('.why-image-reveal')).transitionDuration}))});
+       items:nodes.map(n=>({height:n.getBoundingClientRect().height,photo:n.querySelector('.why-accordion__image-reveal').getBoundingClientRect().height,
+        opacity:Number(getComputedStyle(n.querySelector('.why-accordion__photo')).opacity),transform:getComputedStyle(n.querySelector('.why-accordion__photo')).transform,
+        transition:getComputedStyle(n.querySelector('.why-accordion__image-reveal')).transitionDuration}))});
      }return result;
     },{index});
     const first=samples[0],last=samples.at(-1),startHeight=first.items[previous].photo,endHeight=last.items[index].photo;
@@ -85,7 +85,7 @@ let browser;
    await page.keyboard.press('Home');await page.keyboard.press('Enter');await page.waitForTimeout(600);await checkState(0);
    await page.emulateMedia({reducedMotion:'reduce'});
    await page.evaluate(()=>document.querySelector('[data-about-detail="2"]').click());await page.waitForTimeout(50);await checkState(2);
-   assert(await page.locator('[data-why-accordion] .why-reveal').evaluateAll(ns=>ns.every(n=>n.getAnimations().length===0)),'Reduced motion disables transitions');
+   assert(await page.locator('[data-why-accordion] .why-accordion__reveal').evaluateAll(ns=>ns.every(n=>n.getAnimations().length===0)),'Reduced motion disables transitions');
    await page.evaluate(()=>document.querySelector('[data-about-detail="0"]').click());await page.waitForTimeout(50);await checkState(0);
    await page.emulateMedia({reducedMotion:'no-preference'});layout.motion=motion;
   }

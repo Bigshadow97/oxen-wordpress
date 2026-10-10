@@ -9,7 +9,7 @@
     $('[data-close-dialog]', dialog)?.focus();
   }
   $$('dialog').forEach(dialog => {
-    dialog.addEventListener('close', () => { (opener?.getClientRects().length ? opener : $('.menu-toggle'))?.focus(); opener = null; });
+    dialog.addEventListener('close', () => { (opener?.getClientRects().length ? opener : $('.site-header__toggle'))?.focus(); opener = null; });
     dialog.addEventListener('keydown', event => {
       if (event.key !== 'Tab') return;
       const stops = $$('a[href],button,input,select,textarea,[tabindex]', dialog)
@@ -33,14 +33,14 @@
   }));
   $$('[data-open-policy]').forEach(button => button.addEventListener('click', event => { event.preventDefault(); openDialog($('#policy-dialog'), button); }));
   $$('[data-open-social]').forEach(button => button.addEventListener('click', event => { event.preventDefault(); openDialog($('#social-dialog'), button); }));
-  const menuToggle = $('.menu-toggle'), menu = $('#mobile-navigation');
+  const menuToggle = $('.site-header__toggle'), menu = $('#mobile-navigation');
   function closeMenu() { if (!menuToggle) return; menu.hidden = true; menuToggle.setAttribute('aria-expanded', 'false'); }
   menuToggle?.addEventListener('click', () => { menu.hidden = !menu.hidden; menuToggle.setAttribute('aria-expanded', String(!menu.hidden)); });
   $$('a', menu || document.createElement('nav')).forEach(link => link.addEventListener('click', closeMenu));
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && menu && !menu.hidden) { closeMenu(); menuToggle.focus(); } });
   window.matchMedia('(min-width: 1440px)').addEventListener('change', closeMenu);
 
-  const submenuControls = $$('[aria-controls].submenu-toggle');
+  const submenuControls = $$('[aria-controls].menu__toggle');
   function setSubmenu(button, expanded) {
     button.setAttribute('aria-expanded', String(expanded));
     document.getElementById(button.getAttribute('aria-controls')).hidden = !expanded;
@@ -49,7 +49,7 @@
   submenuControls.forEach(button => button.addEventListener('click', () => {
     const expanded = button.getAttribute('aria-expanded') !== 'true';
     [...button.closest('ul').children].forEach(item => {
-      const sibling = item.querySelector(':scope > .submenu-toggle');
+      const sibling = item.querySelector(':scope > .menu__toggle');
       if (sibling && sibling !== button) setSubmenu(sibling, false);
     });
     setSubmenu(button, expanded);
@@ -62,5 +62,5 @@
   document.addEventListener('click', event => {
     submenuControls.forEach(button => { if (!button.parentElement.contains(event.target)) setSubmenu(button, false); });
   });
-  window.OxenDialogs = { open: openDialog };
+  document.addEventListener('oxen:open-dialog', event => openDialog(event.detail.dialog, event.detail.trigger));
 })();

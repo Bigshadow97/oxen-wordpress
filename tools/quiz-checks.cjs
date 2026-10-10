@@ -32,7 +32,7 @@ let browser;
   }
   async function checkStep(step) {
     const states = await page.locator('[data-quiz-step]').evaluateAll(ns => ns.map(n => ({
-      state: n.dataset.state, current: n.getAttribute('aria-current'), number: n.querySelector('.quiz-step-number').textContent,
+      state: n.dataset.state, current: n.getAttribute('aria-current'), number: n.querySelector('.quiz-card__step-number').textContent,
       image: n.querySelector('img').getAttribute('src'), label: n.getAttribute('aria-label')
     })));
     assert.equal(states.length, 3);
@@ -61,13 +61,13 @@ let browser;
     await page.locator('[data-quiz-answer="2"]').click();
     await checkStep(2);
     await capture(width + '-question-3');
-    const geometry = await page.locator('.quiz-widget').evaluate(card => {
+    const geometry = await page.locator('.quiz-card').evaluate(card => {
       const bounds = n => { const r = n.getBoundingClientRect(); return {x:r.x,y:r.y,right:r.right,bottom:r.bottom,width:r.width,height:r.height}; };
-      return {card:bounds(card), answers:[...card.querySelectorAll('.quiz-answer:not([hidden])')].map(n => ({button:bounds(n),label:bounds(n.querySelector('.copy-layer')),scrollWidth:n.scrollWidth,clientWidth:n.clientWidth})),
-        progress:[...card.querySelectorAll('[data-quiz-step]')].map(bounds), controls:bounds(card.querySelector('.quiz-controls')), support:bounds(card.querySelector('#quiz-support')),
+      return {card:bounds(card), answers:[...card.querySelectorAll('.quiz-card__answer:not([hidden])')].map(n => ({button:bounds(n),label:bounds(n.querySelector('.section__text')),scrollWidth:n.scrollWidth,clientWidth:n.clientWidth})),
+        progress:[...card.querySelectorAll('[data-quiz-step]')].map(bounds), controls:bounds(card.querySelector('.quiz-card__controls')), support:bounds(card.querySelector('#quiz-support')),
         supportText:(()=>{const range=document.createRange();range.selectNodeContents(card.querySelector('#quiz-support'));return bounds({getBoundingClientRect:()=>range.getBoundingClientRect()});})(),
-        header:bounds(card.querySelector('.quiz-header')), divider:bounds(card.querySelector('.quiz-divider')), question:bounds(card.querySelector('#quiz-question')),
-        columns:getComputedStyle(card.querySelector('.quiz-answers')).gridTemplateColumns, scrollWidth:document.documentElement.scrollWidth};
+        header:bounds(card.querySelector('.quiz-card__header')), divider:bounds(card.querySelector('.quiz-card__divider')), question:bounds(card.querySelector('#quiz-question')),
+        columns:getComputedStyle(card.querySelector('.quiz-card__answers')).gridTemplateColumns, scrollWidth:document.documentElement.scrollWidth};
     });
     assert.equal(geometry.scrollWidth, width, 'Page overflow at ' + width);
     assert.equal(geometry.answers.length, 4);

@@ -1,0 +1,268 @@
+/* Tax Intro: component geometry, states and responsive layout. */
+
+.tax-intro__description {
+  word-break: break-word;
+  line-height: normal;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: -0.2679px;
+  width: 367.648px;
+  margin-left: 927.3516px;
+  margin-top: 87.8149px;
+  z-index: 267;
+}
+
+.tax-intro__supporting-copy {
+  word-break: break-word;
+  line-height: normal;
+  font-size: 14px;
+  color: #000;
+  letter-spacing: -0.2679px;
+  width: 367.648px;
+  margin-left: 757.0000px;
+  margin-top: 492.8433px;
+  z-index: 268;
+}
+
+.tax-intro__savings-background {
+  background-color: var(--blue);
+  height: 44.967px;
+  width: 367.648px;
+  margin-left: 927.3020px;
+  margin-top: 146.1900px;
+  z-index: 269;
+}
+
+.tax-intro__activity-dot {
+  width: 18px;
+  height: 18px;
+  margin-left: 939.5220px;
+  margin-top: 159.6700px;
+  z-index: 270;
+}
+
+.tax-intro__activity-dot-image {
+  position: absolute;
+  display: block;
+  inset: 0;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.tax-intro__activity {
+  word-break: break-word;
+  line-height: 0;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: -0.2679px;
+  white-space: nowrap;
+  margin-left: 975.1406px;
+  margin-top: 157.4204px;
+  z-index: 271;
+}
+
+.tax-intro__activity-text {
+  line-height: normal;
+}
+
+.tax-intro__activity-text-inner {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+
+.tax-intro__activity-text-outer {
+  line-height: normal;
+}
+
+.tax-intro__savings {
+  word-break: break-word;
+  font-family: var(--font-heading);
+  line-height: 0;
+  color: #00123a;
+  font-size: 40px;
+  letter-spacing: -0.6667px;
+  white-space: nowrap;
+  font-variation-settings: "CTGR" 0, "wdth" 100;
+  margin-left: 754.8281px;
+  margin-top: 373.0259px;
+  z-index: 290;
+}
+
+.tax-intro__savings-text {
+  line-height: normal;
+  color: var(--blue);
+}
+
+.tax-intro__savings-text-inner {
+  line-height: normal;
+}
+
+.tax-intro__savings-caption {
+  word-break: break-word;
+  line-height: normal;
+  color: var(--ink);
+  font-size: 16px;
+  letter-spacing: -0.2679px;
+  white-space: nowrap;
+  margin-left: 755.1719px;
+  margin-top: 295.7935px;
+  z-index: 291;
+}
+
+.tax-intro {
+  height: 586px;
+}
+
+:where(:where(.tax-intro)) .layout-group {
+  display: contents;
+}
+
+@media (max-width: 1439px) {
+  .tax-intro {
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: none;
+    width: 100%;
+    height: auto;
+    padding: 64px 32px;
+    gap: 24px;
+    overflow: clip;
+  }
+
+  :where(:where(.tax-intro)) .layout-group {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-width: 0;
+  }
+
+  .tax-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tax-intro {
+    padding: 48px 20px;
+    gap: 24px;
+    display: flex;
+  }
+}
+
+@media (min-width:1441px) {
+  .tax-intro__description {
+    margin-left: 64.399414%;
+    width: clamp(367.648px, 25.531111vw, 459.5600px);
+  }
+
+  .tax-intro__supporting-copy {
+    margin-left: 52.569444%;
+    width: clamp(367.648px, 25.531111vw, 459.5600px);
+  }
+
+  .tax-intro__savings-background {
+    margin-left: 64.395972%;
+    width: 25.531111%;
+  }
+
+  .tax-intro__activity-dot {
+    margin-left: 65.244583%;
+  }
+
+  .tax-intro__activity {
+    margin-left: 67.718099%;
+  }
+
+  .tax-intro__savings {
+    margin-left: 52.418620%;
+  }
+
+  .tax-intro__savings-caption {
+    margin-left: 52.442491%;
+  }
+}
+
+
+
+@media (prefers-contrast: more) {
+  :where(.tax-intro) .tax-intro__activity {
+    background: var(--ink);
+  }
+}
+
+@media (max-width: 1439px) {
+  :where(.tax-intro) .section__item {
+    grid-area: auto;
+    order: var(--content-order, 0);
+  }
+
+  :where(.tax-intro) .section__visual {
+    display: none;
+  }
+
+  :where(.tax-intro) .button {
+    display: flex;
+  }
+
+  :where(.tax-intro) .tax-intro__description {
+    color: var(--ink);
+  }
+
+  :where(.tax-intro) .tax-intro__activity {
+    color: var(--blue);
+    white-space: normal;
+  }
+
+  :where(.tax-intro) .tax-intro__savings {
+    font-size: 36px;
+  }
+
+  :where(:where(.tax-intro) .section__text) span {
+    line-height: inherit;
+  }
+
+
+
+
+
+
+
+
+}
+
+@media (min-width: 1441px) {
+  :where(.tax-intro) .tax-intro__savings-background {
+    width: 25.531%;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :where(.tax-intro) .tax-intro__activity {
+    color: white;
+  }
+
+  :where(.tax-intro .tax-intro__activity) :is(.tax-intro__activity-text,.tax-intro__activity-text-inner,.tax-intro__activity-text-outer) {
+    color: white;
+  }
+}
+
+@media (max-width: 1439px) {
+  :where(.tax-intro) .section__item {
+    margin: 0;
+    width: auto;
+    height: auto;
+    transform: none;
+    align-self: auto;
+    justify-self: auto;
+  }
+
+  :where(.tax-intro) .section__text {
+    line-height: 1.45;
+    white-space: normal;
+  }
+}

@@ -2,8 +2,8 @@
   'use strict';
   const pixelsPerSecond = 24;
   document.querySelectorAll('[data-logo-carousel]').forEach(carousel => {
-    const track = carousel.querySelector('.partners-track');
-    const group = track?.querySelector('.partners-logo-group');
+    const track = carousel.querySelector('.partners__track');
+    const group = track?.querySelector('.partners__group');
     if (!group) return;
     let cycleWidth = 0;
     function measureCycle() {

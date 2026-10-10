@@ -1,50 +1,50 @@
 <?php defined( 'ABSPATH' ) || exit; ?>
-<section id="about" class="home-section about-section" aria-labelledby="heading-520">
-<div data-node-id="1:518" class="design-layer layer-518 art-layer" aria-hidden="true"><div class="art-490"><div class="art-491"><div class="art-492"><img alt="" src="<?php echo oxen_asset( 'ellipse2146.svg' ); ?>" decoding="async" class="art-493"></div></div></div></div>
-<div class="responsive-group about-copy"><p data-node-id="1:522" class="design-layer layer-522 copy-layer">
+<section id="about" class="section about" aria-labelledby="about-title">
+<div class="section__item about__glow section__visual" aria-hidden="true"><div class="about__glow-orientation"><div class="about__glow-canvas"><div class="about__glow-frame"><img alt="" src="<?php echo oxen_asset( 'ellipse2146.svg' ); ?>" decoding="async" class="about__glow-image"></div></div></div></div>
+<div class="layout-group about__content"><p class="section__item about__eyebrow section__text">
             Why Oxen
           </p>
-<h2 data-node-id="1:520" class="design-layer layer-520 copy-layer" id="heading-520"><span class="art-496">&quot;The chartered accountant industry treats clients </span><span class="art-497">
-            <span class="art-498">like a number.</span><span class="art-499"> We don&#x27;t.&quot;</span></span></h2>
-<p data-node-id="1:523" class="design-layer layer-523 copy-layer">&quot;We started Oxen because I was tired of watching good business owners get handed off to whoever was free. Your accountant should be the person who knows your business best after you.&quot;</p>
-<p data-node-id="1:519" class="design-layer layer-519 copy-layer">— Jeremy Wilson, Founder &amp; Managing Director</p></div>
+<h2 class="section__item about__title section__text" id="about-title"><span class="about__title-prefix">&quot;The chartered accountant industry treats clients </span><span class="about__title-line">
+            <span class="about__title-emphasis">like a number.</span><span class="about__title-ending"> We don&#x27;t.&quot;</span></span></h2>
+<p class="section__item about__quote section__text">&quot;We started Oxen because I was tired of watching good business owners get handed off to whoever was free. Your accountant should be the person who knows your business best after you.&quot;</p>
+<p class="section__item about__attribution section__text">— Jeremy Wilson, Founder &amp; Managing Director</p></div>
 <?php
 // Preserve the descriptions previously supplied by the three detail controls.
 // Figma defines one photo for this section, shared by the inline panels.
 $why_items = array(
-  array( 'title' => 'Senior, not junior', 'node' => '1:528', 'description' => 'Budgeting, financial planning, and coaching to build sustainable business models and achieve goals.' ),
-  array( 'title' => 'Direct access, real responsiveness', 'node' => '1:533', 'description' => '"We started Oxen because I was tired of watching good business owners get handed off to whoever was free. Your accountant should be the person who knows your business best after you."' ),
-  array( 'title' => 'Strategy, not just compliance', 'node' => '1:536', 'description' => 'Budgeting, financial planning, and coaching to build sustainable business models and achieve goals.' ),
+  array( 'title' => 'Senior, not junior', 'description' => 'Budgeting, financial planning, and coaching to build sustainable business models and achieve goals.' ),
+  array( 'title' => 'Direct access, real responsiveness', 'description' => '"We started Oxen because I was tired of watching good business owners get handed off to whoever was free. Your accountant should be the person who knows your business best after you."' ),
+  array( 'title' => 'Strategy, not just compliance', 'description' => 'Budgeting, financial planning, and coaching to build sustainable business models and achieve goals.' ),
 );
 ?>
 <div class="why-accordion" data-why-accordion>
 <?php foreach ( $why_items as $index => $item ) : ?>
-  <div class="why-item<?php echo 0 === $index ? ' is-open' : ''; ?>">
-    <div id="why-image-<?php echo esc_attr( $index ); ?>" class="why-reveal why-image-reveal" aria-hidden="<?php echo 0 === $index ? 'false' : 'true'; ?>"<?php echo 0 === $index ? '' : ' inert'; ?>>
-      <div class="why-photo-clip"><div class="why-photo"><img alt="" src="<?php echo oxen_asset( 'team-photos-fauxels6.png' ); ?>" decoding="async"></div></div>
+  <div class="why-accordion__item<?php echo 0 === $index ? ' is-open' : ''; ?>">
+    <div id="why-image-<?php echo esc_attr( $index ); ?>" class="why-accordion__reveal why-accordion__image-reveal" aria-hidden="<?php echo 0 === $index ? 'false' : 'true'; ?>"<?php echo 0 === $index ? '' : ' inert'; ?>>
+      <div class="why-accordion__photo-clip"><div class="why-accordion__photo"><img alt="" src="<?php echo oxen_asset( 'team-photos-fauxels6.png' ); ?>" decoding="async"></div></div>
     </div>
-    <h3 class="why-heading">
-      <button id="why-control-<?php echo esc_attr( $index ); ?>" class="why-toggle" type="button" data-node-id="<?php echo esc_attr( $item['node'] ); ?>" data-about-detail="<?php echo esc_attr( $index ); ?>" aria-expanded="<?php echo 0 === $index ? 'true' : 'false'; ?>" aria-controls="why-image-<?php echo esc_attr( $index ); ?> why-panel-<?php echo esc_attr( $index ); ?>">
-        <span class="why-number" aria-hidden="true"><?php echo esc_html( sprintf( '%02d', $index + 1 ) ); ?></span>
-        <span class="why-label"><?php echo esc_html( $item['title'] ); ?></span>
-        <span class="why-icon" aria-hidden="true"><?php echo 0 === $index ? '−' : '+'; ?></span>
+    <h3 class="why-accordion__heading">
+      <button id="why-control-<?php echo esc_attr( $index ); ?>" class="why-accordion__toggle" type="button" data-about-detail="<?php echo esc_attr( $index ); ?>" aria-expanded="<?php echo 0 === $index ? 'true' : 'false'; ?>" aria-controls="why-image-<?php echo esc_attr( $index ); ?> why-panel-<?php echo esc_attr( $index ); ?>">
+        <span class="why-accordion__number" aria-hidden="true"><?php echo esc_html( sprintf( '%02d', $index + 1 ) ); ?></span>
+        <span class="why-accordion__label"><?php echo esc_html( $item['title'] ); ?></span>
+        <span class="why-accordion__icon" aria-hidden="true"><?php echo 0 === $index ? '−' : '+'; ?></span>
       </button>
     </h3>
-    <div id="why-panel-<?php echo esc_attr( $index ); ?>" class="why-reveal why-panel" role="region" aria-labelledby="why-control-<?php echo esc_attr( $index ); ?>" aria-hidden="<?php echo 0 === $index ? 'false' : 'true'; ?>"<?php echo 0 === $index ? '' : ' inert'; ?>>
-      <div class="why-copy-clip"><p class="why-description"><?php echo esc_html( $item['description'] ); ?></p></div>
+    <div id="why-panel-<?php echo esc_attr( $index ); ?>" class="why-accordion__reveal why-accordion__panel" role="region" aria-labelledby="why-control-<?php echo esc_attr( $index ); ?>" aria-hidden="<?php echo 0 === $index ? 'false' : 'true'; ?>"<?php echo 0 === $index ? '' : ' inert'; ?>>
+      <div class="why-accordion__copy-clip"><p class="why-accordion__description"><?php echo esc_html( $item['description'] ); ?></p></div>
     </div>
-    <div class="why-corners" aria-hidden="true">
+    <div class="why-accordion__corners" aria-hidden="true">
       <?php foreach ( array( 'top-left', 'top-right', 'bottom-left', 'bottom-right' ) as $corner ) : ?>
-        <img class="why-corner <?php echo esc_attr( $corner ); ?>" alt="" src="<?php echo oxen_asset( 'vector1023.svg' ); ?>" decoding="async">
+        <img class="why-accordion__corner why-accordion__corner--<?php echo esc_attr( $corner ); ?>" alt="" src="<?php echo oxen_asset( 'vector1023.svg' ); ?>" decoding="async">
       <?php endforeach; ?>
     </div>
   </div>
 <?php endforeach; ?>
 </div>
-<div class="responsive-group about-team"><div data-node-id="1:547" class="design-layer layer-547 art-layer" aria-hidden="true"><div class="art-538"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2147.png' ); ?>" decoding="async" class="art-539"></div></div>
-<div data-node-id="1:548" class="design-layer layer-548 art-layer" aria-hidden="true"><div class="art-541"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2148.png' ); ?>" decoding="async" class="art-542"></div></div>
-<div data-node-id="1:549" class="design-layer layer-549 art-layer" aria-hidden="true"><div class="art-544"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2149.png' ); ?>" decoding="async" class="art-545"></div></div>
-<div data-node-id="1:550" class="design-layer layer-550 art-layer" aria-hidden="true"><div class="art-547"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2150.png' ); ?>" decoding="async" class="art-548"></div></div>
-<div data-node-id="1:551" class="design-layer layer-551 art-layer" aria-hidden="true"><div class="art-550"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2151.png' ); ?>" decoding="async" class="art-551"></div></div>
-<p data-node-id="1:552" class="design-layer layer-552 copy-layer"><span class="art-553">The Oxen team — five people, one promise. </span><a href="https://oxen.nz/about-us/" class="art-554">Meet everyone</a></p></div>
+<div class="layout-group about__team"><div class="section__item about__portrait-jeremy section__visual" aria-hidden="true"><div class="about__portrait-jeremy-frame"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2147.png' ); ?>" decoding="async" class="about__portrait-jeremy-image"></div></div>
+<div class="section__item about__portrait-accountant section__visual" aria-hidden="true"><div class="about__portrait-accountant-frame"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2148.png' ); ?>" decoding="async" class="about__portrait-accountant-image"></div></div>
+<div class="section__item about__portrait-adviser section__visual" aria-hidden="true"><div class="about__portrait-adviser-frame"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2149.png' ); ?>" decoding="async" class="about__portrait-adviser-image"></div></div>
+<div class="section__item about__portrait-manager section__visual" aria-hidden="true"><div class="about__portrait-manager-frame"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2150.png' ); ?>" decoding="async" class="about__portrait-manager-image"></div></div>
+<div class="section__item about__portrait-associate section__visual" aria-hidden="true"><div class="about__portrait-associate-frame"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2151.png' ); ?>" decoding="async" class="about__portrait-associate-image"></div></div>
+<p class="section__item about__team-caption section__text"><span class="about__team-caption-text">The Oxen team — five people, one promise. </span><a href="https://oxen.nz/about-us/" class="about__team-caption-text-inner">Meet everyone</a></p></div>
 </section>

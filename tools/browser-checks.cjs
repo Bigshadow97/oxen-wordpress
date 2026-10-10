@@ -20,10 +20,10 @@ let browser;
   async function checkLayout(width) {
     const layout = await page.evaluate(() => {
       const bounds = n => { const r=n.getBoundingClientRect(); return {x:r.x,y:r.y+scrollY,width:r.width,height:r.height,right:r.right}; };
-      return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,sections:[...document.querySelectorAll('.home-section')].map(n=>({id:n.id,...bounds(n)})),cards:[...document.querySelectorAll('.service-card')].map(n=>({id:n.id,...bounds(n)})),portrait:bounds(document.querySelector('.layer-13')),controls:[...document.querySelectorAll('.service-card .action-link,.calculator-form .tax-control,.calculator-form .calculate-button,.hero-proof > .design-layer')].map(n=>({class:n.className,...bounds(n)})),statistics:[...document.querySelectorAll('.stat-card')].map(bounds)};
+      return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,sections:[...document.querySelectorAll('.section')].map(n=>({id:n.id,...bounds(n)})),cards:[...document.querySelectorAll('.service-card')].map(n=>({id:n.id,...bounds(n)})),portrait:bounds(document.querySelector('.hero__portrait')),controls:[...document.querySelectorAll('.service-card .button,.calculator__form .calculator__input,.calculator__form .calculator__submit,.hero__proof > .section__item')].map(n=>({class:n.className,...bounds(n)})),statistics:[...document.querySelectorAll('.stat-card')].map(bounds)};
     });
     assert.equal(layout.scrollWidth,width,'Horizontal overflow at '+width);
-    assert.equal(await page.locator('footer,#site-footer,.site-footer-section').count(),1,'Shared footer rendered once');
+    assert.equal(await page.locator('footer,#site-footer,.site-footer').count(),1,'Shared footer rendered once');
     assert.equal(layout.sections.at(-1).id,'site-footer','Homepage ends with reusable footer');
     assert.ok(Math.abs(await page.evaluate(()=>document.documentElement.scrollHeight)-(layout.sections.at(-1).y+layout.sections.at(-1).height))<1,'No whitespace after footer');
     assert.equal(await page.locator('[data-contrast-toggle],.contrast-toggle').count(),0,'No non-Figma footer contrast control');
@@ -32,9 +32,9 @@ let browser;
     }
     for(const control of layout.controls) assert.ok(control.x>=-1 && control.right<=width+1,'Control outside viewport: '+control.class+' at '+width);
     layout.partnerLogos = await page.locator('[data-logo-carousel]').evaluate(carousel=>{
-      const r=carousel.getBoundingClientRect(),groups=[...carousel.querySelectorAll('.partners-logo-group')];
+      const r=carousel.getBoundingClientRect(),groups=[...carousel.querySelectorAll('.partners__group')];
       return {groups:groups.length,cloneHidden:groups[1].getAttribute('aria-hidden')==='true'&&groups[1].inert,
-        cloneDisplay:getComputedStyle(groups[1]).display,animations:carousel.querySelector('.partners-track').getAnimations().length,
+        cloneDisplay:getComputedStyle(groups[1]).display,animations:carousel.querySelector('.partners__track').getAnimations().length,
         images:[...groups[0].querySelectorAll('img')].map(n=>{const b=n.getBoundingClientRect();return {alt:n.alt,loaded:n.complete&&n.naturalWidth>0,fit:getComputedStyle(n).objectFit,ratio:b.width/b.height,naturalRatio:n.naturalWidth/n.naturalHeight,inside:b.x>=r.x&&b.right<=r.right+.1&&b.y>=r.y&&b.bottom<=r.bottom+.1};})};
     });
     const logos=layout.partnerLogos;
@@ -51,12 +51,12 @@ let browser;
     assert.equal(comparison.art.length,2,'Comparison icon and underline must belong to the button');
     assert.ok(comparison.art.every(n=>n.loaded&&n.x>=comparison.button.x-1&&n.right<=comparison.button.right+1&&n.height>0),'Comparison artwork hidden or detached at '+width);
     assert.ok(Math.abs(comparison.art[0].width-16)<.1&&Math.abs(comparison.art[0].height-16)<.1&&Math.abs(comparison.art[1].width-224.914)<.1,'Comparison source dimensions at '+width);
-    layout.caseStudyDecorations = await page.locator('.result-card').evaluateAll(cards => cards.map(card => {
+    layout.caseStudyDecorations = await page.locator('.case-study').evaluateAll(cards => cards.map(card => {
       const bounds=n=>{const r=n.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height,right:r.right,bottom:r.bottom};};
-      const frame=card.querySelector('.result-frame');
+      const frame=card.querySelector('.case-study__frame');
       return {frame:bounds(frame),border:getComputedStyle(frame).borderTopWidth,ruleSizes:getComputedStyle(frame,'::before').backgroundSize,
-        corners:[...frame.querySelectorAll('.result-corner')].map(n=>({...bounds(n),loaded:n.complete&&n.naturalWidth>0})),
-        dividers:[...card.querySelectorAll('.result-divider img')].map(n=>({...bounds(n),loaded:n.complete&&n.naturalWidth>0}))};
+        corners:[...frame.querySelectorAll('.case-study__corner')].map(n=>({...bounds(n),loaded:n.complete&&n.naturalWidth>0})),
+        dividers:[...card.querySelectorAll('.case-study__divider img')].map(n=>({...bounds(n),loaded:n.complete&&n.naturalWidth>0}))};
     }));
     assert.equal(layout.caseStudyDecorations.length,2);
     for(const card of layout.caseStudyDecorations) {
@@ -71,7 +71,7 @@ let browser;
       assert.ok(card.dividers.every(line=>line.loaded&&Math.abs(line.width-.5)<.02&&line.height>44),'Missing thin statistic divider at '+width);
       assert.ok(Math.abs(card.dividers[0].y-card.dividers[1].y)<.1&&Math.abs(card.dividers[0].height-card.dividers[1].height)<.1,'Uneven statistic dividers at '+width);
     }
-    assert.deepEqual(await page.locator('.service-card .action-link').evaluateAll(ns=>ns.filter(n=>{const r=n.getBoundingClientRect(),p=n.closest('.service-card').getBoundingClientRect();return r.x<p.x-1 || r.right>p.right+1 || r.bottom>p.bottom+1;}).map(n=>n.className)),[],'Service CTA outside card at '+width);
+    assert.deepEqual(await page.locator('.service-card .button').evaluateAll(ns=>ns.filter(n=>{const r=n.getBoundingClientRect(),p=n.closest('.service-card').getBoundingClientRect();return r.x<p.x-1 || r.right>p.right+1 || r.bottom>p.bottom+1;}).map(n=>n.className)),[],'Service CTA outside card at '+width);
     if (width!==1440) for(const stat of layout.statistics) assert.ok(stat.width>44 && stat.height>44,'Collapsed statistic at '+width);
     const capture=fs.readFileSync(path.join(folder,width===1440?'desktop-1440.png':'responsive-'+width+'.png'));
     assert.equal(capture.readUInt32BE(16),width,'Screenshot width at '+width);
@@ -84,19 +84,19 @@ let browser;
     if (width>=1440) {
       layout.calculatorPanels = await page.locator('#calculator').evaluate(section=>{
         const bounds=n=>{const r=n.getBoundingClientRect();return {x:r.x,right:r.right,width:r.width,height:r.height};};
-        return {formBackground:bounds(section.querySelector('.layer-79')),resultBackground:bounds(section.querySelector('.layer-99')),horizontalRule:bounds(section.querySelector('.layer-115 img'))};
+        return {formBackground:bounds(section.querySelector('.calculator__form-background')),resultBackground:bounds(section.querySelector('.calculator__results-frame')),horizontalRule:bounds(section.querySelector('.calculator__results-divider img'))};
       });
       const panels=layout.calculatorPanels,overlap=panels.formBackground.right-panels.resultBackground.x;
       assert.ok(overlap>=.98&&overlap<=1.1,'Calculator background seam must be covered without moving panel content at '+width);
       assert.ok(Math.abs(panels.horizontalRule.width-width/3)<.05&&panels.horizontalRule.height>0&&panels.horizontalRule.height<=.51,'Calculator horizontal divider stays unchanged at '+width);
-      layout.dividers=await page.locator('.layer-358,.layer-359,.layer-360,.layer-361,.layer-334,.layer-115').evaluateAll(ns=>ns.map(n=>{
+      layout.dividers=await page.locator('.quiz__foundations-divider,.quiz__essentials-divider,.quiz__advisory-divider,.quiz__cfo-divider,.quiz-card__divider,.calculator__results-divider').evaluateAll(ns=>ns.map(n=>{
         const r=n.getBoundingClientRect(),line=n.querySelector('img').getBoundingClientRect();
         return {class:n.className,x:r.x,right:r.right,width:r.width,lineX:line.x,lineRight:line.right,lineWidth:line.width};
       }));
       for(const divider of layout.dividers) assert.ok(Math.abs(divider.lineX-divider.x)<1 && Math.abs(divider.lineRight-divider.right)<1,'SVG divider must fill its fluid container: '+divider.class+' at '+width);
       layout.quizBadge=await page.evaluate(()=>{
         const bounds=selector=>{const r=document.querySelector(selector).getBoundingClientRect();return {x:r.x,right:r.right};};
-        return {label:bounds('.layer-378'),badge:bounds('.layer-375'),text:bounds('.layer-376')};
+        return {label:bounds('.quiz__advisory-button'),badge:bounds('.layer-375'),text:bounds('.quiz__popular-badge')};
       });
       const {label,badge,text}=layout.quizBadge;
       assert.ok(badge.x>=label.right+8,'Quiz badge overlaps the service label at '+width);
@@ -109,8 +109,8 @@ let browser;
     await page.mouse.move(0,0);await page.evaluate(()=>document.activeElement.blur());
     await page.emulateMedia({reducedMotion:'no-preference'});
     await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
-    const track=page.locator('.partners-track');
-    const sample=()=>track.evaluate(n=>{const a=n.getAnimations()[0],t=a.effect.getTiming();return {time:Number(a.currentTime),duration:t.duration,state:a.playState,easing:t.easing,iterations:t.iterations,width:n.querySelector('.partners-logo-group').getBoundingClientRect().width,trackWidth:n.getBoundingClientRect().width};});
+    const track=page.locator('.partners__track');
+    const sample=()=>track.evaluate(n=>{const a=n.getAnimations()[0],t=a.effect.getTiming();return {time:Number(a.currentTime),duration:t.duration,state:a.playState,easing:t.easing,iterations:t.iterations,width:n.querySelector('.partners__group').getBoundingClientRect().width,trackWidth:n.getBoundingClientRect().width};});
     const before=await sample();assert.equal(before.state,'running');assert.equal(before.easing,'linear');assert.equal(before.iterations,Infinity);
     assert.ok(Math.abs(before.width/(before.duration/1000)-24)<.01&&Math.abs(before.trackWidth-2*before.width)<.02,'Exact cycles at constant logo scrolling speed');
     await page.waitForTimeout(100);assert.ok((await sample()).time>before.time,'Logo autoplay starts without interaction');
@@ -127,9 +127,9 @@ let browser;
     async function checkState(slide) {
       assert.equal(await previous.isVisible(),slide>1);assert.equal(await next.isVisible(),slide<3);
       assert.equal(await page.locator('#slider-position').textContent(),'Client story '+slide+' of 3');
-      const layout=await page.locator('.testimonial-navigation').evaluate(n=>{
-        const r=n.getBoundingClientRect(),card=n.closest('.testimonial-card');
-        const frame=(innerWidth>=1440?card.querySelector('.layer-418'):card).getBoundingClientRect();
+      const layout=await page.locator('.testimonial__navigation').evaluate(n=>{
+        const r=n.getBoundingClientRect(),card=n.closest('.testimonial');
+        const frame=(innerWidth>=1440?card.querySelector('.testimonial__background'):card).getBoundingClientRect();
         const styles=[...n.querySelectorAll('button')].map(b=>{const s=getComputedStyle(b);return ['fontFamily','fontSize','fontWeight','lineHeight','color','padding','textAlign'].map(k=>s[k]);});
         return {height:r.height,right:r.right,bottom:r.bottom,cardRight:frame.right,cardBottom:frame.bottom,styles};
       });
@@ -163,22 +163,22 @@ let browser;
   if (process.argv.includes('--blur-variants')) {
     const masks = ['linear-gradient(to bottom,transparent,black)', 'linear-gradient(to bottom,transparent,rgba(0,0,0,.1) 20.681%,rgba(0,0,0,.43) 85.169%)', 'linear-gradient(to bottom,transparent,black 70%)'];
     for (let i=0;i<masks.length;i++) {
-      await page.locator('.hero-blur').evaluate((node,mask)=>node.style.maskImage=mask,masks[i]);
+      await page.locator('.hero__blur').evaluate((node,mask)=>node.style.maskImage=mask,masks[i]);
       await page.screenshot({path:path.join(folder,'hero-blur-'+i+'.png')});
     }
     await browser.close();return;
   }
   console.log('Page:', await page.title());
   console.log('Fonts:', await page.evaluate(() => [...document.fonts].map(f => ({family:f.family,style:f.style,weight:f.weight,status:f.status}))));
-  console.log('Geometry:', await page.evaluate(() => ({width:innerWidth,scroll:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight,sections:[...document.querySelectorAll('.home-section')].map(n=>({id:n.id,y:n.getBoundingClientRect().top+scrollY,height:n.getBoundingClientRect().height}))})));
+  console.log('Geometry:', await page.evaluate(() => ({width:innerWidth,scroll:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight,sections:[...document.querySelectorAll('.section')].map(n=>({id:n.id,y:n.getBoundingClientRect().top+scrollY,height:n.getBoundingClientRect().height}))})));
   if (process.env.OXEN_DIAGNOSTICS) {
-    console.log('Stack:', await page.locator('.layer-416,.layer-414,.layer-544,.layer-525').evaluateAll(ns=>ns.map(n=>({class:n.className,z:getComputedStyle(n).zIndex}))));
+    console.log('Stack:', await page.locator('.testimonials__photo,.testimonials__background,.layer-544,.layer-525').evaluateAll(ns=>ns.map(n=>({class:n.className,z:getComputedStyle(n).zIndex}))));
     console.log('Stylesheets:',await page.evaluate(()=>[...document.styleSheets].map(s=>({href:s.href,rules:s.cssRules.length}))));
-    console.log('Styles:', await page.locator('.layer-13,.layer-13 img,.layer-190,.layer-213,.layer-213 img,.layer-9,.layer-10,.layer-5,.layer-264,.layer-273').evaluateAll(nodes => nodes.map(n => { const s=getComputedStyle(n),r=n.getBoundingClientRect();return {class:n.className,tag:n.tagName,x:r.x,y:r.y,w:r.width,h:r.height,display:s.display,position:s.position,width:s.width,height:s.height,grid:s.gridArea,margin:s.margin,mask:s.maskImage,transform:s.transform,background:s.backgroundColor,src:n.src}; })));
+    console.log('Styles:', await page.locator('.hero__portrait,.hero__portrait img,.layer-190,.layer-213,.layer-213 img,.hero__canvas,.hero__fade,.statistics__canvas,.statistics__experience-frame,.statistics__capital-label').evaluateAll(nodes => nodes.map(n => { const s=getComputedStyle(n),r=n.getBoundingClientRect();return {class:n.className,tag:n.tagName,x:r.x,y:r.y,w:r.width,h:r.height,display:s.display,position:s.position,width:s.width,height:s.height,grid:s.gridArea,margin:s.margin,mask:s.maskImage,transform:s.transform,background:s.backgroundColor,src:n.src}; })));
     if (process.env.OXEN_DIAGNOSTICS==='only') { await browser.close(); return; }
   }
   assert.equal(await page.locator('h1').count(), 1);
-  assert.equal(await page.locator('.home-section').count(), 14);
+  assert.equal(await page.locator('.section').count(), 14);
   assert.deepEqual(await page.evaluate(() => [...document.fonts].filter(f=>f.status !== 'loaded').map(f=>f.family)),[]);
   if (process.argv.includes('--axe')) {
     await page.addScriptTag({path:path.join(__dirname,'axe.min.js')});
@@ -204,21 +204,21 @@ let browser;
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('#tax-owed').textContent(), '$70,000');
   await page.locator('#annual-profit').fill('$ 100,000');
-  await page.locator('.calculate-button').click();
+  await page.locator('.calculator__submit').click();
   assert.equal(await page.locator('#tax-owed').textContent(), '$28,000');
   await page.locator('#business-structure').selectOption('sole-trader');
   assert.equal(await page.locator('#tax-owed').textContent(), '$22,878');
   await page.locator('#annual-profit').fill('incorrect');
-  await page.locator('.calculate-button').click();
+  await page.locator('.calculator__submit').click();
   assert.match(await page.locator('#tax-error').textContent(), /valid annual profit/);
   await page.locator('#annual-profit').fill('$ 250,000.00');
   await page.locator('#business-structure').selectOption('company');
   await page.locator('#annual-profit').fill('200000');
   await page.locator('#business-structure').selectOption('partnership');
-  assert.equal(await page.locator('.partnership-control').isVisible(),true);
+  assert.equal(await page.locator('.calculator__partners').isVisible(),true);
   assert.equal(await page.locator('#tax-owed').textContent(),'$45,755');
   await page.locator('#annual-profit').fill('1300000');
-  await page.locator('.calculate-button').click();
+  await page.locator('.calculator__submit').click();
   assert.match(await page.locator('#tax-error').textContent(),/cannot be greater/);
   await page.locator('#annual-profit').fill('$ 250,000.00');
   await page.locator('#business-structure').selectOption('company');
@@ -236,7 +236,7 @@ let browser;
   await page.locator('[data-quiz-answer="2"]').click();
   assert.equal(await page.locator('#quiz-question').textContent(), 'Advisory +');
   assert.equal(await page.locator('[data-quiz-result-link]').getAttribute('href'),'#service-2');
-  assert.equal((await page.locator('#service-2 .layer-593').textContent()).trim(),'Advisory +');
+  assert.equal((await page.locator('#service-2 .service-card__title--advisory').textContent()).trim(),'Advisory +');
   await page.locator('[data-quiz-restart]').click();
   await page.locator('[data-preview-plan="0"]').first().click();
   assert.equal(await page.locator('#plan-dialog').evaluate(n => n.open), true);
@@ -249,7 +249,7 @@ let browser;
   await checkStoryNavigation();
   await page.locator('[data-about-detail="1"]').click();
   await page.locator('#why-panel-1').waitFor({state:'visible'});
-  assert.equal(await page.locator('.why-panel[aria-hidden="false"]').count(),1);
+  assert.equal(await page.locator('.why-accordion__panel[aria-hidden="false"]').count(),1);
   assert.equal(await page.locator('dialog[open]').count(),0);
   await page.locator('[data-about-detail="0"]').click();
   for (const width of [1600, 1920, 2560, 1280, 1024, 768, 390, 320]) {
@@ -282,21 +282,21 @@ let browser;
       assert.equal(await page.locator('#quiz-question').textContent(),'Advisory +');
       await page.locator('[data-quiz-restart]').click();
       await page.locator('#annual-profit').fill('100000');
-      await page.locator('.calculate-button').click();
+      await page.locator('.calculator__submit').click();
       assert.equal(await page.locator('#tax-owed').textContent(),'$28,000');
       await page.locator('#annual-profit').fill('$ 250,000.00');
-      await page.locator('.calculate-button').click();
+      await page.locator('.calculator__submit').click();
     }
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
     assert.equal(overflow, false, 'Horizontal overflow at ' + width);
     if (width < 1440) {
       if (width === 390) await checkStoryNavigation();
-      assert.deepEqual(await page.locator('.stat-card,.service-card,.result-card').evaluateAll(ns=>ns.filter(n=>n.getBoundingClientRect().height < 44).map(n=>n.className)),[],'Collapsed cards at '+width);
-      await page.locator('.menu-toggle').click();
+      assert.deepEqual(await page.locator('.stat-card,.service-card,.case-study').evaluateAll(ns=>ns.filter(n=>n.getBoundingClientRect().height < 44).map(n=>n.className)),[],'Collapsed cards at '+width);
+      await page.locator('.site-header__toggle').click();
       assert.equal(await page.locator('#mobile-navigation').isVisible(),true);
       await page.keyboard.press('Escape');
       assert.equal(await page.locator('#mobile-navigation').isVisible(),false);
-      assert.equal(await page.locator('.menu-toggle').evaluate(n=>n===document.activeElement),true);
+      assert.equal(await page.locator('.site-header__toggle').evaluate(n=>n===document.activeElement),true);
     }
     if (width === 390 && process.argv.includes('--axe')) {
       await page.emulateMedia({contrast:'more'});
@@ -313,7 +313,7 @@ let browser;
   assert.deepEqual(errors, []);
   const alias = await context.newPage();
   await alias.goto('http://oxen-development.local:10016', {waitUntil:'networkidle'});
-  assert.equal(await alias.locator('.home-section').count(),14);
+  assert.equal(await alias.locator('.section').count(),14);
   console.log('PASS: browser hostname mapping reaches the LocalWP site.');
   await alias.close();
   console.log('PASS: theme render, all 14 sections, fonts, image loads, quiz, service dialogs, comparison, slider, calculator, mobile menu, and viewport overflow checks.');

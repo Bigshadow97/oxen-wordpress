@@ -42,7 +42,8 @@ add_filter( 'style_loader_tag', function ( $html, $handle ) {
 
 add_action( 'wp_head', function () {
 	if ( ! is_page_template( 'page-templates/template-oxen-home.php' ) ) { return; }
-	foreach ( array( 'satoshi-400-normal.woff2', 'noto-serif-400-italic.woff2' ) as $font ) {
+	// Both heading faces are visible in the hero; late regular-face loading rewraps it.
+	foreach ( array( 'satoshi-400-normal.woff2', 'noto-serif-400-normal.woff2', 'noto-serif-400-italic.woff2' ) as $font ) {
 		printf( '<link rel="preload" as="font" type="font/woff2" href="%s" crossorigin>', esc_url( get_template_directory_uri() . '/assets/fonts/' . $font ) );
 	}
 }, 1 );

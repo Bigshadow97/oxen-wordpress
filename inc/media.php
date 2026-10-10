@@ -42,7 +42,7 @@ function oxen_media_url( $key, $size = 'full' ) {
 }
 
 function oxen_media_sizes( $key ) {
-	if ( 'hero_portrait' === $key ) { return '(min-width: 1440px) calc(50vw + 490px), (min-width: 768px) 700px, 520px'; }
+	if ( 'hero_portrait' === $key ) { return '(min-width: 1440px) calc(50vw + 490px), (min-width: 768px) calc((100vw - 92px) / 2.1), calc(100vw - 40px)'; }
 	if ( 'hero_background' === $key ) { return '(min-width: 1440px) 100vw, 1px'; }
 	if ( 'testimonial_background' === $key ) { return '(min-width: 1440px) calc(100vw + 100px), (min-width: 768px) 375px, 350px'; }
 	if ( 'about_team_image' === $key ) { return '(min-width: 1440px) 55vw, 350px'; }
@@ -59,6 +59,7 @@ function oxen_media_image( $key, $attributes = array() ) {
 	$id = oxen_media_id( $key );
 	if ( ! $id ) { return ''; }
 	$attributes = array_merge( array( 'alt' => oxen_media_fields()[ $key ]['alt'] ?? '', 'loading' => 'lazy', 'decoding' => 'async', 'fetchpriority' => 'auto', 'sizes' => oxen_media_sizes( $key ) ), $attributes );
+	if ( 'hero_portrait' === $key ) { $attributes['fetchpriority'] = 'high'; }
 	if ( in_array( $key, array( 'hero_portrait', 'hero_background', 'site_logo' ), true ) || str_starts_with( $attributes['class'] ?? '', 'hero__' ) ) { $attributes['loading'] = 'eager'; }
 	// Browser auto-sizes measures the clipped box, losing pixels needed by transformed crops.
 	$disable_auto_sizes = fn() => false;

@@ -2,7 +2,7 @@
 
 :root {
   --font-body: "Satoshi", sans-serif;
-  --font-heading: "Noto Serif", serif;
+  --font-heading: "Noto Serif", "Oxen Serif Fallback", serif;
   --ink: #18265d;
   --blue: #4559a8;
   --lavender: #f0f2fb;

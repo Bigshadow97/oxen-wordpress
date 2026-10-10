@@ -5,7 +5,6 @@
 <div class="section__item hero__fade section__visual" aria-hidden="true"></div>
 <div class="section__item hero__texture section__visual" aria-hidden="true"><div class="hero__texture-orientation"><div class="hero__texture-canvas"><div class="hero__texture-frame"><?php echo oxen_media_image( 'hero_background', array( 'alt' => '', 'decoding' => 'async', 'class' => 'hero__texture-image' ) ); ?></div></div></div></div>
 <div class="section__item hero__halo section__visual" aria-hidden="true"><div class="hero__halo-frame"><?php echo oxen_media_image( 'hero_halo', array( 'alt' => '', 'decoding' => 'async', 'class' => 'hero__halo-image' ) ); ?></div></div>
-<div class="layout-group hero__visual"><div class="section__item hero__portrait section__visual"><div class="hero__portrait-frame"><?php echo oxen_media_image( 'hero_portrait', array( 'alt' => 'Jeremy Wilson, Founder and Managing Director of Oxen', 'decoding' => 'async', 'class' => 'hero__portrait-image' ) ); ?></div></div></div>
 <div class="section__item hero__overlay section__visual" aria-hidden="true"></div>
 <div class="layout-group hero__content"><p class="section__item hero__eyebrow section__text">Accepting new clients · Auckland &amp; NZ-wide</p>
 <div class="section__item hero__status-dot section__visual" aria-hidden="true"><?php echo oxen_media_image( 'status_indicator', array( 'alt' => '', 'decoding' => 'async', 'class' => 'hero__status-dot-image' ) ); ?></div>
@@ -21,6 +20,7 @@
           </span><span class="section__item hero__phone-prefix section__text">
             Call
           </span></a></div>
+<div class="layout-group hero__visual"><div class="section__item hero__portrait section__visual"><div class="hero__portrait-frame"><?php echo oxen_media_image( 'hero_portrait', array( 'alt' => 'Jeremy Wilson, Founder and Managing Director of Oxen', 'decoding' => 'async', 'class' => 'hero__portrait-image' ) ); ?></div></div></div>
 <div class="layout-group hero__proof"><div class="section__item hero__rating-background section__visual" aria-hidden="true"><div class="hero__rating-background-orientation"><div class="hero__rating-background-fill"></div></div></div>
 <div class="section__item hero__google-logo section__visual" aria-hidden="true"><?php echo oxen_media_image( 'google_review_logo', array( 'alt' => '', 'decoding' => 'async', 'class' => 'hero__google-logo-image' ) ); ?></div>
 <p class="section__item hero__rating-value section__text">

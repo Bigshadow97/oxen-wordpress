@@ -20,7 +20,7 @@ return array(
 										'children' => array(
 											array(
 												'class' => 'service-card__upper-glow-image--foundations',
-												'asset' => 'ellipse2140.svg',
+												'asset' => 'service_card_upper_glow_image_foundations',
 											),
 										),
 									),
@@ -38,7 +38,7 @@ return array(
 						'children' => array(
 							array(
 								'class' => 'service-card__main-glow-image--foundations',
-								'asset' => 'ellipse2136.svg',
+								'asset' => 'service_card_main_glow_image_foundations',
 							),
 						),
 					),
@@ -68,7 +68,7 @@ return array(
 										'children' => array(
 											array(
 												'class' => 'service-card__divider-image--foundations',
-												'asset' => 'vector1035.svg',
+												'asset' => 'service_card_divider_image_foundations',
 											),
 										),
 									),
@@ -92,7 +92,7 @@ return array(
 										'children' => array(
 											array(
 												'class' => 'service-card__center-glow-image--foundations',
-												'asset' => 'ellipse2138.svg',
+												'asset' => 'service_card_center_glow_image_foundations',
 											),
 										),
 									),
@@ -116,7 +116,7 @@ return array(
 										'children' => array(
 											array(
 												'class' => 'service-card__lower-glow-image--foundations',
-												'asset' => 'ellipse2139.svg',
+												'asset' => 'service_card_lower_glow_image_foundations',
 											),
 										),
 									),
@@ -136,7 +136,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__setup-icon-image--foundations',
-							'asset' => 'frame1.svg',
+							'asset' => 'service_checkmark',
 						),
 					),
 				),
@@ -149,7 +149,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__xero-icon-image--foundations',
-							'asset' => 'frame1.svg',
+							'asset' => 'service_checkmark',
 						),
 					),
 				),
@@ -162,7 +162,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__tax-icon-image--foundations',
-							'asset' => 'frame1.svg',
+							'asset' => 'service_checkmark',
 						),
 					),
 				),
@@ -175,7 +175,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__return-icon-image--foundations',
-							'asset' => 'frame1.svg',
+							'asset' => 'service_checkmark',
 						),
 					),
 				),
@@ -191,7 +191,7 @@ return array(
 			'children' => array(
 				array(
 					'class' => 'service-card__button-icon-image--foundations',
-					'asset' => 'add-line9.svg',
+					'asset' => 'service_card_button_icon_image_foundations',
 				),
 			),
 		),
@@ -224,7 +224,7 @@ return array(
 										'children' => array(
 											array(
 												'class' => 'service-card__divider-image--essentials',
-												'asset' => 'vector1035.svg',
+												'asset' => 'service_card_divider_image_foundations',
 											),
 										),
 									),
@@ -244,7 +244,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__statement-icon-image--essentials',
-							'asset' => 'frame1.svg',
+							'asset' => 'service_checkmark',
 						),
 					),
 				),
@@ -257,7 +257,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__tax-icon-image--essentials',
-							'asset' => 'frame1.svg',
+							'asset' => 'service_checkmark',
 						),
 					),
 				),
@@ -270,7 +270,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__planning-icon-image--essentials',
-							'asset' => 'frame1.svg',
+							'asset' => 'service_checkmark',
 						),
 					),
 				),
@@ -283,7 +283,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__ird-icon-image--essentials',
-							'asset' => 'frame1.svg',
+							'asset' => 'service_checkmark',
 						),
 					),
 				),
@@ -299,7 +299,7 @@ return array(
 			'children' => array(
 				array(
 					'class' => 'service-card__button-icon-image--essentials',
-					'asset' => 'add-line9.svg',
+					'asset' => 'service_card_button_icon_image_foundations',
 				),
 			),
 		),
@@ -322,7 +322,7 @@ return array(
 										'children' => array(
 											array(
 												'class' => 'service-card__upper-glow-image--advisory',
-												'asset' => 'ellipse2154.svg',
+												'asset' => 'service_card_upper_glow_image_advisory',
 											),
 										),
 									),
@@ -340,7 +340,7 @@ return array(
 						'children' => array(
 							array(
 								'class' => 'service-card__main-glow-image--advisory',
-								'asset' => 'ellipse2152.svg',
+								'asset' => 'service_card_main_glow_image_advisory',
 							),
 						),
 					),
@@ -370,7 +370,7 @@ return array(
 										'children' => array(
 											array(
 												'class' => 'service-card__divider-image--advisory',
-												'asset' => 'vector1035.svg',
+												'asset' => 'service_card_divider_image_foundations',
 											),
 										),
 									),
@@ -394,7 +394,7 @@ return array(
 										'children' => array(
 											array(
 												'class' => 'service-card__center-glow-image--advisory',
-												'asset' => 'ellipse2153.svg',
+												'asset' => 'service_card_center_glow_image_advisory',
 											),
 										),
 									),
@@ -418,7 +418,7 @@ return array(
 										'children' => array(
 											array(
 												'class' => 'service-card__lower-glow-image--advisory',
-												'asset' => 'ellipse2154.svg',
+												'asset' => 'service_card_upper_glow_image_advisory',
 											),
 										),
 									),
@@ -438,7 +438,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__essentials-icon-image--advisory',
-							'asset' => 'frame2.svg',
+							'asset' => 'service_card_essentials_icon_image_advisory',
 						),
 					),
 				),
@@ -451,7 +451,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__snapshot-icon-image--advisory',
-							'asset' => 'frame2.svg',
+							'asset' => 'service_card_essentials_icon_image_advisory',
 						),
 					),
 				),
@@ -464,7 +464,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__dashboard-icon-image--advisory',
-							'asset' => 'frame2.svg',
+							'asset' => 'service_card_essentials_icon_image_advisory',
 						),
 					),
 				),
@@ -477,7 +477,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__strategy-icon-image--advisory',
-							'asset' => 'frame2.svg',
+							'asset' => 'service_card_essentials_icon_image_advisory',
 						),
 					),
 				),
@@ -494,7 +494,7 @@ return array(
 			'children' => array(
 				array(
 					'class' => 'service-card__button-icon-image--advisory',
-					'asset' => 'add-line10.svg',
+					'asset' => 'service_card_button_icon_image_advisory',
 				),
 			),
 		),
@@ -511,7 +511,7 @@ return array(
 						'children' => array(
 							array(
 								'class' => 'service-card__background-image--cfo',
-								'asset' => 'rectangle32.png',
+								'asset' => 'service_cfo_background',
 							),
 							array(
 								'class' => 'service-card__background-fill--cfo',
@@ -541,7 +541,7 @@ return array(
 										'children' => array(
 											array(
 												'class' => 'service-card__divider-image--cfo',
-												'asset' => 'vector1035.svg',
+												'asset' => 'service_card_divider_image_foundations',
 											),
 										),
 									),
@@ -561,7 +561,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__advisory-icon-image--cfo',
-							'asset' => 'frame2.svg',
+							'asset' => 'service_card_essentials_icon_image_advisory',
 						),
 					),
 				),
@@ -574,7 +574,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__board-icon-image--cfo',
-							'asset' => 'frame2.svg',
+							'asset' => 'service_card_essentials_icon_image_advisory',
 						),
 					),
 				),
@@ -587,7 +587,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__funding-icon-image--cfo',
-							'asset' => 'frame2.svg',
+							'asset' => 'service_card_essentials_icon_image_advisory',
 						),
 					),
 				),
@@ -600,7 +600,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'service-card__exit-icon-image--cfo',
-							'asset' => 'frame2.svg',
+							'asset' => 'service_card_essentials_icon_image_advisory',
 						),
 					),
 				),
@@ -616,7 +616,7 @@ return array(
 			'children' => array(
 				array(
 					'class' => 'service-card__button-icon-image--cfo',
-					'asset' => 'add-line10.svg',
+					'asset' => 'service_card_button_icon_image_advisory',
 				),
 			),
 		),

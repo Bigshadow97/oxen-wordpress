@@ -12,3 +12,6 @@ tools/axe.min.js
 tools/art-diagnostics.cjs
 tools/layers.json
 tools/text-layers.json
+
+tools/performance-runtime/
+tools/media-build/

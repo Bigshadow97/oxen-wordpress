@@ -19,9 +19,9 @@ class Oxen_Menu_Walker extends Walker_Nav_Menu {
 		$markup = preg_replace( '/id="menu-item-\d+"/', 'id="' . esc_attr( $this->prefix . '-item-' . $item->ID ) . '"', $markup, 1 );
 		if ( in_array( 'menu-contact', (array) $item->classes, true ) ) {
 			$markup = preg_replace( '/<a /', '<a data-open-contact aria-haspopup="dialog" ', $markup, 1 );
-			$markup = str_replace( '</a>', '<img src="' . oxen_asset( 'add-line5.svg' ) . '" width="16" height="16" alt=""></a>', $markup );
+			$markup = str_replace( '</a>', oxen_media_image( 'menu_contact_icon', array( 'alt' => '', 'width' => 16, 'height' => 16, 'loading' => 'eager' ) ) . '</a>', $markup );
 		} elseif ( in_array( 'menu-plus', (array) $item->classes, true ) && ! $has_children ) {
-			$markup = str_replace( '</a>', '<img class="menu-plus-icon" src="' . oxen_asset( 'add-line6.svg' ) . '" width="14" height="14" alt=""></a>', $markup );
+			$markup = str_replace( '</a>', oxen_media_image( 'menu_plus_icon', array( 'class' => 'menu-plus-icon', 'alt' => '', 'width' => 14, 'height' => 14, 'loading' => 'eager' ) ) . '</a>', $markup );
 		}
 		foreach ( array( 'menu-cookie' => 'policy', 'menu-social-alternatives' => 'social' ) as $class => $dialog ) {
 			if ( in_array( $class, (array) $item->classes, true ) ) {

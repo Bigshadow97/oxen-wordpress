@@ -28,7 +28,7 @@ return array(
 					'children' => array(
 						array(
 							'class' => 'process-card__glow-image--onboarding',
-							'asset' => 'ellipse2129.svg',
+							'asset' => 'process_card_glow_image_onboarding',
 						),
 					),
 				),

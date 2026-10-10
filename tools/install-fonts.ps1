@@ -5,7 +5,7 @@ $ErrorActionPreference = 'Stop'
 $root = (Resolve-Path -LiteralPath $ThemeRoot).Path
 $fonts = Join-Path $root 'assets\fonts'
 New-Item -ItemType Directory -Path $fonts -Force | Out-Null
-$sources = @('satoshi-source.css','google-fonts-source.css')
+$sources = @('satoshi-source.css')
 $rules = [System.Collections.Generic.List[string]]::new()
 foreach ($source in $sources) {
     $css = Get-Content -LiteralPath (Join-Path $PSScriptRoot $source) -Raw
@@ -27,5 +27,6 @@ foreach ($source in $sources) {
         $rules.Add("@font-face { font-family: '$family'; src: url('../fonts/$file') format('$format'); font-weight: $weight; font-style: $style; font-display: swap; }")
     }
 }
-$rules | Set-Content -LiteralPath (Join-Path $root 'assets\css\fonts.css') -Encoding utf8
-Write-Output "Installed $($rules.Count) official font faces locally."
+# The checked-in CSS already references Satoshi and the OFL WOFF2 subsets.
+# Installation must never replace the verified stylesheet or download public TTFs.
+Write-Output "Installed $($rules.Count) official Satoshi font faces locally; existing font CSS preserved."

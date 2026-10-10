@@ -1,6 +1,6 @@
 <?php defined( 'ABSPATH' ) || exit; ?>
 <section id="about" class="section about" aria-labelledby="about-title">
-<div class="section__item about__glow section__visual" aria-hidden="true"><div class="about__glow-orientation"><div class="about__glow-canvas"><div class="about__glow-frame"><img alt="" src="<?php echo oxen_asset( 'ellipse2146.svg' ); ?>" decoding="async" class="about__glow-image"></div></div></div></div>
+<div class="section__item about__glow section__visual" aria-hidden="true"><div class="about__glow-orientation"><div class="about__glow-canvas"><div class="about__glow-frame"><?php echo oxen_media_image( 'about_glow', array( 'alt' => '', 'decoding' => 'async', 'class' => 'about__glow-image' ) ); ?></div></div></div></div>
 <div class="layout-group about__content"><p class="section__item about__eyebrow section__text">
             Why Oxen
           </p>
@@ -21,7 +21,7 @@ $why_items = array(
 <?php foreach ( $why_items as $index => $item ) : ?>
   <div class="why-accordion__item<?php echo 0 === $index ? ' is-open' : ''; ?>">
     <div id="why-image-<?php echo esc_attr( $index ); ?>" class="why-accordion__reveal why-accordion__image-reveal" aria-hidden="<?php echo 0 === $index ? 'false' : 'true'; ?>"<?php echo 0 === $index ? '' : ' inert'; ?>>
-      <div class="why-accordion__photo-clip"><div class="why-accordion__photo"><img alt="" src="<?php echo oxen_asset( 'team-photos-fauxels6.png' ); ?>" decoding="async"></div></div>
+      <div class="why-accordion__photo-clip"><div class="why-accordion__photo"><?php echo oxen_media_image( 'about_team_image', array( 'alt' => '', 'decoding' => 'async' ) ); ?></div></div>
     </div>
     <h3 class="why-accordion__heading">
       <button id="why-control-<?php echo esc_attr( $index ); ?>" class="why-accordion__toggle" type="button" data-about-detail="<?php echo esc_attr( $index ); ?>" aria-expanded="<?php echo 0 === $index ? 'true' : 'false'; ?>" aria-controls="why-image-<?php echo esc_attr( $index ); ?> why-panel-<?php echo esc_attr( $index ); ?>">
@@ -35,16 +35,16 @@ $why_items = array(
     </div>
     <div class="why-accordion__corners" aria-hidden="true">
       <?php foreach ( array( 'top-left', 'top-right', 'bottom-left', 'bottom-right' ) as $corner ) : ?>
-        <img class="why-accordion__corner why-accordion__corner--<?php echo esc_attr( $corner ); ?>" alt="" src="<?php echo oxen_asset( 'vector1023.svg' ); ?>" decoding="async">
+        <?php echo oxen_media_image( 'why_accordion_corner', array( 'class' => 'why-accordion__corner why-accordion__corner--' . (esc_attr( $corner )), 'alt' => '', 'decoding' => 'async' ) ); ?>
       <?php endforeach; ?>
     </div>
   </div>
 <?php endforeach; ?>
 </div>
-<div class="layout-group about__team"><div class="section__item about__portrait-jeremy section__visual" aria-hidden="true"><div class="about__portrait-jeremy-frame"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2147.png' ); ?>" decoding="async" class="about__portrait-jeremy-image"></div></div>
-<div class="section__item about__portrait-accountant section__visual" aria-hidden="true"><div class="about__portrait-accountant-frame"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2148.png' ); ?>" decoding="async" class="about__portrait-accountant-image"></div></div>
-<div class="section__item about__portrait-adviser section__visual" aria-hidden="true"><div class="about__portrait-adviser-frame"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2149.png' ); ?>" decoding="async" class="about__portrait-adviser-image"></div></div>
-<div class="section__item about__portrait-manager section__visual" aria-hidden="true"><div class="about__portrait-manager-frame"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2150.png' ); ?>" decoding="async" class="about__portrait-manager-image"></div></div>
-<div class="section__item about__portrait-associate section__visual" aria-hidden="true"><div class="about__portrait-associate-frame"><img alt="" height="79.969" width="79.969" src="<?php echo oxen_asset( 'ellipse2151.png' ); ?>" decoding="async" class="about__portrait-associate-image"></div></div>
+<div class="layout-group about__team"><div class="section__item about__portrait-jeremy section__visual" aria-hidden="true"><div class="about__portrait-jeremy-frame"><?php echo oxen_media_image( 'team_portrait_jeremy', array( 'alt' => '', 'height' => '79.969', 'width' => '79.969', 'decoding' => 'async', 'class' => 'about__portrait-jeremy-image' ) ); ?></div></div>
+<div class="section__item about__portrait-accountant section__visual" aria-hidden="true"><div class="about__portrait-accountant-frame"><?php echo oxen_media_image( 'team_portrait_accountant', array( 'alt' => '', 'height' => '79.969', 'width' => '79.969', 'decoding' => 'async', 'class' => 'about__portrait-accountant-image' ) ); ?></div></div>
+<div class="section__item about__portrait-adviser section__visual" aria-hidden="true"><div class="about__portrait-adviser-frame"><?php echo oxen_media_image( 'team_portrait_adviser', array( 'alt' => '', 'height' => '79.969', 'width' => '79.969', 'decoding' => 'async', 'class' => 'about__portrait-adviser-image' ) ); ?></div></div>
+<div class="section__item about__portrait-manager section__visual" aria-hidden="true"><div class="about__portrait-manager-frame"><?php echo oxen_media_image( 'team_portrait_manager', array( 'alt' => '', 'height' => '79.969', 'width' => '79.969', 'decoding' => 'async', 'class' => 'about__portrait-manager-image' ) ); ?></div></div>
+<div class="section__item about__portrait-associate section__visual" aria-hidden="true"><div class="about__portrait-associate-frame"><?php echo oxen_media_image( 'team_portrait_associate', array( 'alt' => '', 'height' => '79.969', 'width' => '79.969', 'decoding' => 'async', 'class' => 'about__portrait-associate-image' ) ); ?></div></div>
 <p class="section__item about__team-caption section__text"><span class="about__team-caption-text">The Oxen team — five people, one promise. </span><a href="https://oxen.nz/about-us/" class="about__team-caption-text-inner">Meet everyone</a></p></div>
 </section>

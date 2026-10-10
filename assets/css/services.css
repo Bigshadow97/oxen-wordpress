@@ -62,7 +62,7 @@
   align-items: center;
   justify-content: center;
   width: 169.068px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   mask-position: -214.6920px 200.1000px;
   mask-size: 333.98px 599.528px;
   mask-repeat: no-repeat;
@@ -105,7 +105,7 @@
   mask-position: 16.672px 130.952px;
   mask-size: 333.98px 599.528px;
   width: 222.348px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   margin-left: -16.6700px;
   margin-top: -130.9600px;
   z-index: 96;
@@ -136,7 +136,7 @@
   mask-size: 333.98px 599.528px;
   border-radius: 1px;
   width: 333.98px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   margin-left: 0.0000px;
   margin-top: 0.0000px;
   z-index: 95;
@@ -242,7 +242,7 @@
   align-items: center;
   justify-content: center;
   width: 320.617px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   mask-position: -96.1600px -236.9500px;
   mask-size: 333.98px 599.528px;
   mask-repeat: no-repeat;
@@ -285,7 +285,7 @@
   mask-size: 333.98px 599.528px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   margin-left: 22.0000px;
   margin-top: 296.1400px;
   z-index: 100;
@@ -321,7 +321,7 @@
   mask-size: 333.98px 599.528px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   margin-left: 22.0000px;
   margin-top: 349.9000px;
   z-index: 101;
@@ -354,7 +354,7 @@
   align-items: center;
   justify-content: center;
   width: 169.068px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   mask-position: 101.7100px -396.7600px;
   mask-size: 333.98px 599.528px;
   mask-repeat: no-repeat;
@@ -397,7 +397,7 @@
   mask-size: 333.98px 599.528px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   margin-left: 22.0000px;
   margin-top: 404.2500px;
   z-index: 102;
@@ -433,7 +433,7 @@
   mask-size: 333.98px 599.528px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   margin-left: 22.0000px;
   margin-top: 441.9200px;
   z-index: 103;
@@ -917,7 +917,7 @@
   mask-size: 333.98px 599.528px;
   border-radius: 1px;
   width: 333.98px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   margin-left: 0.0000px;
   margin-top: 0.0000px;
   z-index: 109;
@@ -1049,7 +1049,7 @@
   mask-size: 333.98px 599.528px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   margin-left: 21.2300px;
   margin-top: 296.1400px;
   z-index: 110;
@@ -1097,7 +1097,7 @@
   mask-size: 333.98px 599.528px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   margin-left: 21.2300px;
   margin-top: 336.9000px;
   z-index: 111;
@@ -1133,7 +1133,7 @@
   mask-size: 333.98px 599.528px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   margin-left: 21.2300px;
   margin-top: 382.2500px;
   z-index: 112;
@@ -1169,7 +1169,7 @@
   mask-size: 333.98px 599.528px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/rectangle31.svg");
+  mask-image: var(--oxen-media-testimonial-mask);
   margin-left: 21.2300px;
   margin-top: 439.9200px;
   z-index: 113;
@@ -1694,7 +1694,7 @@
   align-items: center;
   justify-content: center;
   width: 169.078px;
-  mask-image: url("../images/rectangle35.svg");
+  mask-image: var(--oxen-media-process-card-mask);
   mask-position: -214.7220px 200.1000px;
   mask-size: 334px 599.528px;
   mask-repeat: no-repeat;
@@ -1737,7 +1737,7 @@
   mask-position: 45.859px 85.459px;
   mask-size: 334px 599.528px;
   width: 222.361px;
-  mask-image: url("../images/rectangle35.svg");
+  mask-image: var(--oxen-media-process-card-mask);
   margin-left: -45.8120px;
   margin-top: -85.4600px;
   z-index: 379;
@@ -1765,7 +1765,7 @@
   mask-size: 334px 599.528px;
   border-radius: 1px;
   width: 334px;
-  mask-image: url("../images/rectangle35.svg");
+  mask-image: var(--oxen-media-process-card-mask);
   margin-left: 0.0000px;
   margin-top: 0.0000px;
   z-index: 378;
@@ -1872,7 +1872,7 @@
   align-items: center;
   justify-content: center;
   width: 320.636px;
-  mask-image: url("../images/rectangle35.svg");
+  mask-image: var(--oxen-media-process-card-mask);
   mask-position: -58.1500px -157.4700px;
   mask-size: 334px 599.528px;
   mask-repeat: no-repeat;
@@ -1927,7 +1927,7 @@
   mask-size: 334px 599.528px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/rectangle35.svg");
+  mask-image: var(--oxen-media-process-card-mask);
   margin-left: 21.5000px;
   margin-top: 296.1400px;
   z-index: 383;
@@ -1963,7 +1963,7 @@
   mask-size: 334px 599.528px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/rectangle35.svg");
+  mask-image: var(--oxen-media-process-card-mask);
   margin-left: 21.5000px;
   margin-top: 335.9000px;
   z-index: 384;
@@ -1996,7 +1996,7 @@
   align-items: center;
   justify-content: center;
   width: 169.078px;
-  mask-image: url("../images/rectangle35.svg");
+  mask-image: var(--oxen-media-process-card-mask);
   mask-position: 24.6820px -375.6800px;
   mask-size: 334px 599.528px;
   mask-repeat: no-repeat;
@@ -2039,7 +2039,7 @@
   mask-size: 334px 599.528px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/rectangle35.svg");
+  mask-image: var(--oxen-media-process-card-mask);
   margin-left: 21.5000px;
   margin-top: 395.2500px;
   z-index: 385;
@@ -2075,7 +2075,7 @@
   mask-size: 334px 599.528px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/rectangle35.svg");
+  mask-image: var(--oxen-media-process-card-mask);
   margin-left: 21.5000px;
   margin-top: 455.9200px;
   z-index: 386;
@@ -2304,13 +2304,13 @@
 
   .service-card--advisory {
     background-color: var(--ink);
-    background-image: url('../images/ellipse2152.svg');
+    background-image: var(--oxen-media-service-card-main-glow-image-advisory);
     background-position: -60px -100px;
     background-repeat: no-repeat;
   }
 
   .service-card--cfo {
-    background: linear-gradient(rgb(0 0 0 / .7),rgb(0 0 0 / .7)),url('../images/rectangle32.png') center/cover;
+    background: linear-gradient(rgb(0 0 0 / .7),rgb(0 0 0 / .7)),var(--oxen-media-service-cfo-background) center/cover;
   }
 }
 
@@ -2707,15 +2707,15 @@
   }
 
   :where(.services) .service-card--foundations {
-    background: white url('../images/ellipse2136.svg') right top / auto 100% no-repeat;
+    background: white var(--oxen-media-service-card-main-glow-image-foundations) right top / auto 100% no-repeat;
   }
 
   :where(.services) .service-card--advisory {
-    background: var(--ink) url('../images/ellipse2152.svg') center / cover;
+    background: var(--ink) var(--oxen-media-service-card-main-glow-image-advisory) center / cover;
   }
 
   :where(.services) .service-card--cfo {
-    background: linear-gradient(rgb(0 0 0 / .7),rgb(0 0 0 / .7)),url('../images/rectangle32.png') center / cover;
+    background: linear-gradient(rgb(0 0 0 / .7),rgb(0 0 0 / .7)),var(--oxen-media-service-cfo-background) center / cover;
   }
 
   :where(.service-card) :is(.service-card__stage--advisory,.service-card__stage--cfo) {
@@ -2736,7 +2736,7 @@
 
   :where(.service-card) :is(.service-card__setup-feature--foundations,.service-card__xero-feature--foundations,.service-card__tax-feature--foundations,.service-card__return-feature--foundations,.service-card__statement-feature--essentials,.service-card__tax-feature--essentials,.service-card__planning-feature--essentials,.service-card__ird-feature--essentials,.service-card__essentials-feature--advisory,.service-card__snapshot-feature--advisory,.service-card__dashboard-feature--advisory,.service-card__strategy-feature--advisory,.service-card__advisory-feature--cfo,.service-card__board-feature--cfo,.service-card__funding-feature--cfo,.service-card__exit-feature--cfo) {
     padding-left: 30px;
-    background: url('../images/frame1.svg') 0 2px / 20px 20px no-repeat;
+    background: var(--oxen-media-service-checkmark) 0 2px / 20px 20px no-repeat;
     line-height: 1.45;
     max-width: 52ch;
   }

@@ -5,13 +5,13 @@ defined( 'ABSPATH' ) || exit;
 function oxen_render_decoration( array $visual ) {
 	$classes = isset( $visual['class'] ) ? $visual['class'] : '';
 	if ( isset( $visual['asset'] ) ) {
-		printf( '<img class="%s" src="%s" alt="" decoding="async"', esc_attr( $classes ), oxen_asset( $visual['asset'] ) );
+		$attributes = array( 'class' => $classes, 'alt' => '' );
 		foreach ( array( 'width', 'height' ) as $dimension ) {
 			if ( isset( $visual[ $dimension ] ) ) {
-				printf( ' %s="%s"', esc_attr( $dimension ), esc_attr( $visual[ $dimension ] ) );
+				$attributes[ $dimension ] = $visual[ $dimension ];
 			}
 		}
-		echo '>';
+		echo oxen_media_image( $visual['asset'], $attributes );
 		return;
 	}
 	printf( '<div class="%s" aria-hidden="true">', esc_attr( $classes ) );

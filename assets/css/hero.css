@@ -60,7 +60,7 @@
   mask-size: 1441px 779.239px;
   position: relative;
   width: 1441px;
-  mask-image: url("../images/rectangle44.svg");
+  mask-image: var(--oxen-media-footer-badge-mask);
 }
 
 .hero__fade {
@@ -72,7 +72,7 @@
   mask-size: 1441px 779.239px;
   width: 1441.016px;
   background-image: linear-gradient(to bottom, var(--blue) 0%, var(--lavender) 100%);
-  mask-image: url("../images/rectangle44.svg");
+  mask-image: var(--oxen-media-footer-badge-mask);
   margin-left: -0.5000px;
   margin-top: -45.4190px;
   z-index: 5;
@@ -85,7 +85,7 @@
   justify-content: center;
   mix-blend-mode: screen;
   width: 1442px;
-  mask-image: url("../images/rectangle44.svg");
+  mask-image: var(--oxen-media-footer-badge-mask);
   mask-position: 1.0000px 0.0000px;
   mask-size: 1441px 779.239px;
   mask-repeat: no-repeat;
@@ -132,7 +132,7 @@
   mask-size: 1441px 779.239px;
   width: 1078.365px;
   height: 1078.365px;
-  mask-image: url("../images/rectangle44.svg");
+  mask-image: var(--oxen-media-footer-badge-mask);
   margin-left: 466.9800px;
   margin-top: 260.4710px;
   z-index: 7;
@@ -159,7 +159,7 @@
   mask-position: -78.008px -5.35px;
   mask-size: 1441px 779.239px;
   width: 1207.1px;
-  mask-image: url("../images/rectangle44.svg");
+  mask-image: var(--oxen-media-footer-badge-mask);
   margin-left: 77.4620px;
   margin-top: -40.0690px;
   z-index: 8;

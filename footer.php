@@ -1,8 +1,8 @@
 <?php defined( 'ABSPATH' ) || exit; ?>
 <footer id="site-footer" class="section site-footer">
 <div class="section__item site-footer__background section__visual" aria-hidden="true"></div>
-<div class="section__item site-footer__policy-divider section__visual" aria-hidden="true"><div class="site-footer__policy-divider-frame"><div class="site-footer__policy-divider-frame-inner"><div class="site-footer__policy-divider-frame-outer"><img alt="" src="<?php echo oxen_asset( 'vector7.svg' ); ?>" decoding="async" class="site-footer__policy-divider-image"></div></div></div></div>
-<div class="section__item site-footer__copyright-divider section__visual" aria-hidden="true"><div class="site-footer__copyright-divider-frame"><div class="site-footer__copyright-divider-frame-inner"><div class="site-footer__copyright-divider-frame-outer"><img alt="" src="<?php echo oxen_asset( 'vector7.svg' ); ?>" decoding="async" class="site-footer__copyright-divider-image"></div></div></div></div>
+<div class="section__item site-footer__policy-divider section__visual" aria-hidden="true"><div class="site-footer__policy-divider-frame"><div class="site-footer__policy-divider-frame-inner"><div class="site-footer__policy-divider-frame-outer"><?php echo oxen_media_image( 'site_footer_policy_divider', array( 'alt' => '', 'decoding' => 'async', 'class' => 'site-footer__policy-divider-image' ) ); ?></div></div></div></div>
+<div class="section__item site-footer__copyright-divider section__visual" aria-hidden="true"><div class="site-footer__copyright-divider-frame"><div class="site-footer__copyright-divider-frame-inner"><div class="site-footer__copyright-divider-frame-outer"><?php echo oxen_media_image( 'site_footer_policy_divider', array( 'alt' => '', 'decoding' => 'async', 'class' => 'site-footer__copyright-divider-image' ) ); ?></div></div></div></div>
 <div class="layout-group site-footer__services"><p class="section__item site-footer__services-title section__text">
           Sectores
         </p>
@@ -41,7 +41,7 @@
 <?php wp_nav_menu( array( 'theme_location' => 'footer_social', 'container' => false, 'fallback_cb' => false, 'walker' => new Oxen_Menu_Walker( 'footer_social' ) ) ); ?>
 </nav></div>
 <div class="layout-group site-footer__badge-group"><div class="section__item site-footer__badge-background section__visual" aria-hidden="true"><div class="site-footer__badge-background-frame"><div class="site-footer__badge-background-frame-inner"></div></div></div>
-<div class="section__item site-footer__badge section__visual" aria-hidden="true"><div class="site-footer__badge-frame"><img alt="" src="<?php echo oxen_asset( 'image16.png' ); ?>" decoding="async" class="site-footer__badge-image"></div></div></div>
+<div class="section__item site-footer__badge section__visual" aria-hidden="true"><div class="site-footer__badge-frame"><?php echo oxen_media_image( 'footer_partner_logo', array( 'alt' => '', 'decoding' => 'async', 'class' => 'site-footer__badge-image' ) ); ?></div></div></div>
 </footer>
 <?php get_template_part( 'template-parts/site-dialogs' ); wp_footer(); ?>
 </body>

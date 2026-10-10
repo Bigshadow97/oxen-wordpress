@@ -364,7 +364,7 @@
   align-items: center;
   justify-content: center;
   width: 272.276px;
-  mask-image: url("../images/rectangle33.svg");
+  mask-image: var(--oxen-media-quiz-skip-mask);
   mask-position: -345.8300px 38.8600px;
   mask-size: 537.859px 116.436px;
   mask-repeat: no-repeat;
@@ -407,7 +407,7 @@
   mask-position: 73.859px 16.597px;
   mask-size: 537.859px 116.436px;
   width: 358.081px;
-  mask-image: url("../images/rectangle33.svg");
+  mask-image: var(--oxen-media-quiz-skip-mask);
   margin-left: -15.7200px;
   margin-top: 711.9940px;
   z-index: 239;
@@ -450,7 +450,7 @@
   align-items: center;
   justify-content: center;
   width: 516.338px;
-  mask-image: url("../images/rectangle33.svg");
+  mask-image: var(--oxen-media-quiz-skip-mask);
   mask-position: -93.6020px -30.5900px;
   mask-size: 537.859px 116.436px;
   mask-repeat: no-repeat;
@@ -509,7 +509,7 @@
   align-items: center;
   justify-content: center;
   width: 272.276px;
-  mask-image: url("../images/rectangle33.svg");
+  mask-image: var(--oxen-media-quiz-skip-mask);
   mask-position: 39.8100px -72.9700px;
   mask-size: 537.859px 116.436px;
   mask-repeat: no-repeat;
@@ -564,7 +564,7 @@
   letter-spacing: -0.2679px;
   text-decoration-line: underline;
   white-space: nowrap;
-  mask-image: url("../images/rectangle33.svg");
+  mask-image: var(--oxen-media-quiz-skip-mask);
   position: relative;
   grid-area: 1 / 1;
   align-self: start;

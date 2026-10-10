@@ -1,13 +1,13 @@
 <?php defined( 'ABSPATH' ) || exit; ?>
 <section id="calculator" class="section calculator" aria-labelledby="calculator-title">
-<div class="layout-group calculator__results"><div class="section__item calculator__lower-glow section__visual" aria-hidden="true"><div class="calculator__lower-glow-orientation"><div class="calculator__lower-glow-canvas"><div class="calculator__lower-glow-frame"><img alt="" src="<?php echo oxen_asset( 'ellipse2135.svg' ); ?>" decoding="async" class="calculator__lower-glow-image"></div></div></div></div>
-<div class="section__item calculator__upper-glow section__visual" aria-hidden="true"><div class="calculator__upper-glow-frame"><img alt="" src="<?php echo oxen_asset( 'ellipse2132.svg' ); ?>" decoding="async" class="calculator__upper-glow-image"></div></div>
-<div class="section__item calculator__bridge-glow section__visual" aria-hidden="true"><div class="calculator__bridge-glow-frame"><img alt="" src="<?php echo oxen_asset( 'ellipse2131.svg' ); ?>" decoding="async" class="calculator__bridge-glow-image"></div></div>
+<div class="layout-group calculator__results"><div class="section__item calculator__lower-glow section__visual" aria-hidden="true"><div class="calculator__lower-glow-orientation"><div class="calculator__lower-glow-canvas"><div class="calculator__lower-glow-frame"><?php echo oxen_media_image( 'calculator_lower_glow', array( 'alt' => '', 'decoding' => 'async', 'class' => 'calculator__lower-glow-image' ) ); ?></div></div></div></div>
+<div class="section__item calculator__upper-glow section__visual" aria-hidden="true"><div class="calculator__upper-glow-frame"><?php echo oxen_media_image( 'calculator_upper_glow', array( 'alt' => '', 'decoding' => 'async', 'class' => 'calculator__upper-glow-image' ) ); ?></div></div>
+<div class="section__item calculator__bridge-glow section__visual" aria-hidden="true"><div class="calculator__bridge-glow-frame"><?php echo oxen_media_image( 'calculator_bridge_glow', array( 'alt' => '', 'decoding' => 'async', 'class' => 'calculator__bridge-glow-image' ) ); ?></div></div>
 <div class="section__item calculator__results-background section__visual" aria-hidden="true"></div>
 <div class="section__item calculator__results-frame section__visual" aria-hidden="true"></div>
-<div class="section__item calculator__top-glow section__visual" aria-hidden="true"><div class="calculator__top-glow-orientation"><div class="calculator__top-glow-canvas"><div class="calculator__top-glow-frame"><img alt="" src="<?php echo oxen_asset( 'ellipse2133.svg' ); ?>" decoding="async" class="calculator__top-glow-image"></div></div></div></div>
-<div class="section__item calculator__results-divider section__visual" aria-hidden="true"><div class="calculator__results-divider-orientation"><div class="calculator__results-divider-canvas"><div class="calculator__results-divider-frame"><img alt="" src="<?php echo oxen_asset( 'vector1029.svg' ); ?>" decoding="async" class="calculator__results-divider-image"></div></div></div></div>
-<div class="section__item calculator__side-glow section__visual" aria-hidden="true"><div class="calculator__side-glow-orientation"><div class="calculator__side-glow-canvas"><div class="calculator__side-glow-frame"><img alt="" src="<?php echo oxen_asset( 'ellipse2134.svg' ); ?>" decoding="async" class="calculator__side-glow-image"></div></div></div></div>
+<div class="section__item calculator__top-glow section__visual" aria-hidden="true"><div class="calculator__top-glow-orientation"><div class="calculator__top-glow-canvas"><div class="calculator__top-glow-frame"><?php echo oxen_media_image( 'calculator_top_glow', array( 'alt' => '', 'decoding' => 'async', 'class' => 'calculator__top-glow-image' ) ); ?></div></div></div></div>
+<div class="section__item calculator__results-divider section__visual" aria-hidden="true"><div class="calculator__results-divider-orientation"><div class="calculator__results-divider-canvas"><div class="calculator__results-divider-frame"><?php echo oxen_media_image( 'calculator_results_divider', array( 'alt' => '', 'decoding' => 'async', 'class' => 'calculator__results-divider-image' ) ); ?></div></div></div></div>
+<div class="section__item calculator__side-glow section__visual" aria-hidden="true"><div class="calculator__side-glow-orientation"><div class="calculator__side-glow-canvas"><div class="calculator__side-glow-frame"><?php echo oxen_media_image( 'calculator_side_glow', array( 'alt' => '', 'decoding' => 'async', 'class' => 'calculator__side-glow-image' ) ); ?></div></div></div></div>
 <output id="tax-owed" form="tax-form" class="section__item calculator__tax section__text">
           $70,000
         </output>
@@ -39,7 +39,7 @@
               Expected Annual Profit
             </label>
 <input id="annual-profit" name="profit" form="tax-form" type="text" inputmode="decimal" required="required" value="$ 250,000.00" maxlength="20" class="section__item calculator__profit-input section__visual calculator__input">
-<button type="submit" form="tax-form" class="section__item calculator__submit section__visual"><span>Calculate my Tax</span><img src="<?php echo oxen_asset( 'frame.svg' ); ?>" alt="" width="20" height="20"></button>
+<button type="submit" form="tax-form" class="section__item calculator__submit section__visual"><span>Calculate my Tax</span><?php echo oxen_media_image( 'google_review_star', array( 'alt' => '', 'width' => '20', 'height' => '20' ) ); ?></button>
 <p class="section__item calculator__disclaimer section__text">
               Indicative only. Based on current IRD rates and excludes provisional tax adjustments.
             </p></form>

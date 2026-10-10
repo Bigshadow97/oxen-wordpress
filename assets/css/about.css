@@ -478,7 +478,7 @@
   border-radius: 5px;
   opacity: 0;
   transform: translateY(-10px);
-  mask-image: url('../images/team-photos-fauxels5.svg');
+  mask-image: var(--oxen-media-why-accordion-photo);
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
 }

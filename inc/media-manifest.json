@@ -1,0 +1,907 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "key": "service_card_button_icon_image_advisory",
+      "source": "add-line10.svg",
+      "label": "Service Card Button Icon Image Advisory",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "menu_contact_icon",
+      "source": "add-line5.svg",
+      "label": "Add Line5",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "inc/class-oxen-menu-walker.php"
+      ]
+    },
+    {
+      "key": "menu_plus_icon",
+      "source": "add-line6.svg",
+      "label": "Menu Plus Icon",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "inc/class-oxen-menu-walker.php"
+      ]
+    },
+    {
+      "key": "service_comparison_icon",
+      "source": "add-line7.svg",
+      "label": "Service Comparison Icon",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/services.php"
+      ]
+    },
+    {
+      "key": "case_study_button_icon",
+      "source": "add-line8.svg",
+      "label": "Case Study Button Icon",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/results.php"
+      ]
+    },
+    {
+      "key": "service_card_button_icon_image_foundations",
+      "source": "add-line9.svg",
+      "label": "Service Card Button Icon Image Foundations",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "process_card_glow_image_onboarding",
+      "source": "ellipse2129.svg",
+      "label": "Process Card Glow Image Onboarding",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "inc/home-process.php"
+      ]
+    },
+    {
+      "key": "hero_halo",
+      "source": "ellipse2130.svg",
+      "label": "Hero Halo",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ]
+    },
+    {
+      "key": "calculator_bridge_glow",
+      "source": "ellipse2131.svg",
+      "label": "Calculator Bridge Glow",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/calculator.php",
+        "template-parts/home/contact.php"
+      ]
+    },
+    {
+      "key": "calculator_upper_glow",
+      "source": "ellipse2132.svg",
+      "label": "Calculator Upper Glow",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/calculator.css",
+        "template-parts/home/calculator.php"
+      ]
+    },
+    {
+      "key": "calculator_top_glow",
+      "source": "ellipse2133.svg",
+      "label": "Calculator Top Glow",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/calculator.php"
+      ]
+    },
+    {
+      "key": "calculator_side_glow",
+      "source": "ellipse2134.svg",
+      "label": "Calculator Side Glow",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/calculator.php"
+      ]
+    },
+    {
+      "key": "calculator_lower_glow",
+      "source": "ellipse2135.svg",
+      "label": "Calculator Lower Glow",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/calculator.php"
+      ]
+    },
+    {
+      "key": "service_card_main_glow_image_foundations",
+      "source": "ellipse2136.svg",
+      "label": "Service Card Main Glow Image Foundations",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/services.css",
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "status_indicator",
+      "source": "ellipse2137.svg",
+      "label": "Status Indicator",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/contact.php",
+        "template-parts/home/hero.php"
+      ]
+    },
+    {
+      "key": "service_card_center_glow_image_foundations",
+      "source": "ellipse2138.svg",
+      "label": "Service Card Center Glow Image Foundations",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "service_card_lower_glow_image_foundations",
+      "source": "ellipse2139.svg",
+      "label": "Service Card Lower Glow Image Foundations",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "service_card_upper_glow_image_foundations",
+      "source": "ellipse2140.svg",
+      "label": "Service Card Upper Glow Image Foundations",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "quiz_step_active",
+      "source": "ellipse2141.svg",
+      "label": "Quiz Step Active",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ]
+    },
+    {
+      "key": "quiz_step_inactive",
+      "source": "ellipse2142.svg",
+      "label": "Quiz Step Inactive",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ]
+    },
+    {
+      "key": "quiz_skip_upper_glow",
+      "source": "ellipse2143.svg",
+      "label": "Quiz Skip Upper Glow",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ]
+    },
+    {
+      "key": "quiz_skip_center_glow",
+      "source": "ellipse2144.svg",
+      "label": "Quiz Skip Center Glow",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ]
+    },
+    {
+      "key": "quiz_skip_lower_glow",
+      "source": "ellipse2145.svg",
+      "label": "Quiz Skip Lower Glow",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ]
+    },
+    {
+      "key": "about_glow",
+      "source": "ellipse2146.svg",
+      "label": "About Glow",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/process.css",
+        "template-parts/home/about.php"
+      ]
+    },
+    {
+      "key": "team_portrait_jeremy",
+      "source": "ellipse2147.png",
+      "label": "Team Portrait Jeremy",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/about.php"
+      ]
+    },
+    {
+      "key": "team_portrait_accountant",
+      "source": "ellipse2148.png",
+      "label": "Team Portrait Accountant",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/about.php"
+      ]
+    },
+    {
+      "key": "team_portrait_adviser",
+      "source": "ellipse2149.png",
+      "label": "Team Portrait Adviser",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/about.php"
+      ]
+    },
+    {
+      "key": "team_portrait_manager",
+      "source": "ellipse2150.png",
+      "label": "Team Portrait Manager",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/about.php"
+      ]
+    },
+    {
+      "key": "team_portrait_associate",
+      "source": "ellipse2151.png",
+      "label": "Team Portrait Associate",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/about.php"
+      ]
+    },
+    {
+      "key": "service_card_main_glow_image_advisory",
+      "source": "ellipse2152.svg",
+      "label": "Service Card Main Glow Image Advisory",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/services.css",
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "service_card_center_glow_image_advisory",
+      "source": "ellipse2153.svg",
+      "label": "Service Card Center Glow Image Advisory",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "service_card_upper_glow_image_advisory",
+      "source": "ellipse2154.svg",
+      "label": "Service Card Upper Glow Image Advisory",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "google_review_star",
+      "source": "frame.svg",
+      "label": "Google Review Star",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/calculator.php"
+      ]
+    },
+    {
+      "key": "service_checkmark",
+      "source": "frame1.svg",
+      "label": "Service Checkmark",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/services.css",
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "service_card_essentials_icon_image_advisory",
+      "source": "frame2.svg",
+      "label": "Service Card Essentials Icon Image Advisory",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "service_path_first_arrow",
+      "source": "frame3.svg",
+      "label": "Service Path First Arrow",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/services.php"
+      ]
+    },
+    {
+      "key": "tax_intro_activity_dot",
+      "source": "frame4.svg",
+      "label": "Tax Intro Activity Dot",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/tax-intro.php"
+      ]
+    },
+    {
+      "key": "testimonial_star_first",
+      "source": "frame5.svg",
+      "label": "Testimonial Star First",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/testimonials.php"
+      ]
+    },
+    {
+      "key": "hero_rating_stars",
+      "source": "group2609157.svg",
+      "label": "Hero Rating Stars",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ]
+    },
+    {
+      "key": "hero_rating_star_outline",
+      "source": "group2609158.svg",
+      "label": "Hero Rating Star Outline",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ]
+    },
+    {
+      "key": "partner_follow",
+      "source": "image10.png",
+      "label": "Partner Follow",
+      "alt": "Follow",
+      "decorative": false,
+      "components": [
+        "template-parts/home/partners.php"
+      ]
+    },
+    {
+      "key": "partner_tikitibu",
+      "source": "image11.png",
+      "label": "Partner Tikitibu",
+      "alt": "Tikitibu",
+      "decorative": false,
+      "components": [
+        "template-parts/home/partners.php"
+      ]
+    },
+    {
+      "key": "google_review_logo",
+      "source": "image14.png",
+      "label": "Google Review Logo",
+      "alt": "Google",
+      "decorative": false,
+      "components": [
+        "template-parts/home/hero.php"
+      ]
+    },
+    {
+      "key": "hero_portrait",
+      "source": "image15.png",
+      "label": "Hero Portrait",
+      "alt": "Jeremy Wilson, Founder and Managing Director of Oxen",
+      "decorative": false,
+      "components": [
+        "template-parts/home/hero.php"
+      ]
+    },
+    {
+      "key": "footer_partner_logo",
+      "source": "image16.png",
+      "label": "Footer Partner Logo",
+      "alt": "Regional Business Partner Network",
+      "decorative": false,
+      "components": [
+        "footer.php",
+        "template-parts/home/hero.php"
+      ]
+    },
+    {
+      "key": "site_logo",
+      "source": "image3.png",
+      "label": "Site Logo",
+      "alt": "Oxen Accounting",
+      "decorative": false,
+      "components": [
+        "header.php"
+      ]
+    },
+    {
+      "key": "partner_bootleg",
+      "source": "image6.png",
+      "label": "Partner Bootleg",
+      "alt": "Bootleg Jerky Co",
+      "decorative": false,
+      "components": [
+        "template-parts/home/partners.php"
+      ]
+    },
+    {
+      "key": "partner_cali_woods",
+      "source": "image7.png",
+      "label": "Partner Cali Woods",
+      "alt": "Cali Woods",
+      "decorative": false,
+      "components": [
+        "template-parts/home/partners.php"
+      ]
+    },
+    {
+      "key": "partner_low_carb_haven",
+      "source": "image8.png",
+      "label": "Partner Low Carb Haven",
+      "alt": "Low Carb Haven",
+      "decorative": false,
+      "components": [
+        "template-parts/home/partners.php"
+      ]
+    },
+    {
+      "key": "partner_manage",
+      "source": "image9.png",
+      "label": "Partner Manage",
+      "alt": "Manage",
+      "decorative": false,
+      "components": [
+        "template-parts/home/partners.php"
+      ]
+    },
+    {
+      "key": "case_study_manufacturing",
+      "source": "rectangle28.png",
+      "label": "Case Study Manufacturing",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/results.php"
+      ]
+    },
+    {
+      "key": "calculator_results_mask",
+      "source": "rectangle30.svg",
+      "label": "Calculator Results Mask",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/calculator.css"
+      ]
+    },
+    {
+      "key": "testimonial_mask",
+      "source": "rectangle31.svg",
+      "label": "Testimonial Mask",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/services.css"
+      ]
+    },
+    {
+      "key": "service_cfo_background",
+      "source": "rectangle32.png",
+      "label": "Service Cfo Background",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/services.css",
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "quiz_skip_mask",
+      "source": "rectangle33.svg",
+      "label": "Quiz Skip Mask",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/quiz.css"
+      ]
+    },
+    {
+      "key": "about_photo_mask",
+      "source": "rectangle34.svg",
+      "label": "About Photo Mask",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/process.css"
+      ]
+    },
+    {
+      "key": "process_card_mask",
+      "source": "rectangle35.svg",
+      "label": "Process Card Mask",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/services.css"
+      ]
+    },
+    {
+      "key": "footer_badge_mask",
+      "source": "rectangle44.svg",
+      "label": "Footer Badge Mask",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/hero.css"
+      ]
+    },
+    {
+      "key": "case_study_professional_services",
+      "source": "rectangle48.png",
+      "label": "Case Study Professional Services",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/results.php"
+      ]
+    },
+    {
+      "key": "testimonials_photo_canvas",
+      "source": "team-photos-fauxels3.svg",
+      "label": "Testimonials Photo Canvas",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/testimonials.css"
+      ]
+    },
+    {
+      "key": "testimonial_background",
+      "source": "team-photos-fauxels4.png",
+      "label": "Testimonial Background",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/testimonials.php"
+      ]
+    },
+    {
+      "key": "why_accordion_photo",
+      "source": "team-photos-fauxels5.svg",
+      "label": "Why Accordion Photo",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "assets/css/about.css"
+      ]
+    },
+    {
+      "key": "about_team_image",
+      "source": "team-photos-fauxels6.png",
+      "label": "About Team Image",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/about.php"
+      ]
+    },
+    {
+      "key": "hero_background",
+      "source": "texture-picture-from-unsplash1.png",
+      "label": "Hero Background",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ]
+    },
+    {
+      "key": "hero_edge_mark",
+      "source": "vector1012.svg",
+      "label": "Hero Edge Mark",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ]
+    },
+    {
+      "key": "hero_rating_divider",
+      "source": "vector1013.svg",
+      "label": "Hero Rating Divider",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ]
+    },
+    {
+      "key": "service_path_halo",
+      "source": "vector1015.svg",
+      "label": "Service Path Halo",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/services.php"
+      ]
+    },
+    {
+      "key": "service_comparison_rule",
+      "source": "vector1016.svg",
+      "label": "Service Comparison Rule",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/services.php"
+      ]
+    },
+    {
+      "key": "statistics_experience_top_left_horizontal",
+      "source": "vector1019.svg",
+      "label": "Statistics Experience Top Left Horizontal",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/quiz.php",
+        "template-parts/home/statistics.php",
+        "template-parts/home/testimonials.php"
+      ]
+    },
+    {
+      "key": "service_path_start_divider",
+      "source": "vector1020.svg",
+      "label": "Service Path Start Divider",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/results.php",
+        "template-parts/home/services.php"
+      ]
+    },
+    {
+      "key": "quiz_bottom_mark",
+      "source": "vector1021.svg",
+      "label": "Quiz Bottom Mark",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ]
+    },
+    {
+      "key": "testimonial_corner_end",
+      "source": "vector1022.svg",
+      "label": "Testimonial Corner End",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/testimonials.php"
+      ]
+    },
+    {
+      "key": "why_accordion_corner",
+      "source": "vector1023.svg",
+      "label": "Why Accordion Corner",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/about.php"
+      ]
+    },
+    {
+      "key": "contact_graph",
+      "source": "vector1024.svg",
+      "label": "Contact Graph",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ]
+    },
+    {
+      "key": "contact_guide",
+      "source": "vector1025.svg",
+      "label": "Contact Guide",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ]
+    },
+    {
+      "key": "contact_guide_middle",
+      "source": "vector1026.svg",
+      "label": "Contact Guide Vector1026",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ]
+    },
+    {
+      "key": "contact_guide_short",
+      "source": "vector1027.svg",
+      "label": "Contact Guide Vector1027",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ]
+    },
+    {
+      "key": "contact_guide_lower",
+      "source": "vector1028.svg",
+      "label": "Contact Guide Vector1028",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ]
+    },
+    {
+      "key": "calculator_results_divider",
+      "source": "vector1029.svg",
+      "label": "Calculator Results Divider",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/calculator.php"
+      ]
+    },
+    {
+      "key": "contact_guide_right",
+      "source": "vector1030.svg",
+      "label": "Contact Guide Vector1030",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ]
+    },
+    {
+      "key": "contact_graph_secondary",
+      "source": "vector1031.svg",
+      "label": "Contact Graph Vector1031",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ]
+    },
+    {
+      "key": "quiz_advisory_divider",
+      "source": "vector1032.svg",
+      "label": "Quiz Advisory Divider",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ]
+    },
+    {
+      "key": "case_study_corner",
+      "source": "vector1033.svg",
+      "label": "Case Study Corner",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/results.php"
+      ]
+    },
+    {
+      "key": "section_item",
+      "source": "vector1034.svg",
+      "label": "Section Item",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/results.php"
+      ]
+    },
+    {
+      "key": "service_card_divider_image_foundations",
+      "source": "vector1035.svg",
+      "label": "Service Card Divider Image Foundations",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "inc/home-services.php"
+      ]
+    },
+    {
+      "key": "quiz_side_mark",
+      "source": "vector196.svg",
+      "label": "Quiz Side Mark",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ]
+    },
+    {
+      "key": "site_footer_policy_divider",
+      "source": "vector7.svg",
+      "label": "Site Footer Policy Divider",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "footer.php"
+      ]
+    },
+    {
+      "key": "quiz_card_divider",
+      "source": "vector8.svg",
+      "label": "Quiz Card Divider",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ]
+    },
+    {
+      "key": "quiz_corner_mark",
+      "source": "vector995.svg",
+      "label": "Quiz Corner Mark",
+      "alt": "",
+      "decorative": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ]
+    }
+  ]
+}

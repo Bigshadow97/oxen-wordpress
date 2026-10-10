@@ -17,6 +17,7 @@ add_action( 'after_setup_theme', function () {
 } );
 
 require_once get_template_directory() . '/inc/class-oxen-menu-walker.php';
+require_once get_template_directory() . '/inc/media.php';
 require_once get_template_directory() . '/inc/visuals.php';
 
 // The social alternatives dialog uses the same CMS links, excluding its opener.
@@ -27,34 +28,7 @@ add_filter( 'wp_nav_menu_objects', function ( $items, $args ) {
 	} );
 }, 10, 2 );
 
-add_action( 'wp_enqueue_scripts', function () {
-	$path = get_template_directory();
-	$uri  = get_template_directory_uri();
-	$is_home = is_page_template( 'page-templates/template-oxen-home.php' );
-	$sheets = $is_home ? array( 'fonts', 'base', 'hero', 'statistics', 'quiz', 'services', 'about', 'process', 'case-studies', 'testimonials', 'partners', 'tax-intro', 'calculator', 'contact' ) : array( 'fonts', 'base' );
-	$sheets[] = 'site';
-	$sheets[] = 'site-footer';
-	foreach ( $sheets as $sheet ) {
-		$file = '/assets/css/' . $sheet . '.css';
-		if ( file_exists( $path . $file ) ) {
-			wp_enqueue_style( 'oxen-' . $sheet, $uri . $file, array(), (string) filemtime( $path . $file ) );
-		}
-	}
-	wp_enqueue_script( 'oxen-site', $uri . '/assets/js/site.js', array(), (string) filemtime( $path . '/assets/js/site.js' ), array( 'in_footer' => true, 'strategy' => 'defer' ) );
-	if ( $is_home ) {
-		wp_enqueue_script( 'oxen-tax', $uri . '/assets/js/tax.js', array(), (string) filemtime( $path . '/assets/js/tax.js' ), array( 'in_footer' => true, 'strategy' => 'defer' ) );
-		foreach ( array( 'partners', 'services', 'quiz', 'accordion', 'testimonials', 'calculator' ) as $module ) {
-			$script = '/assets/js/' . $module . '.js';
-			$dependencies = 'calculator' === $module ? array( 'oxen-tax' ) : array( 'oxen-site' );
-			wp_enqueue_script( 'oxen-' . $module, $uri . $script, $dependencies, (string) filemtime( $path . $script ), array( 'in_footer' => true, 'strategy' => 'defer' ) );
-		}
-	}
-} );
-
-/** Resolve locally stored original Figma assets. */
-function oxen_asset( $file ) {
-	return esc_url( get_template_directory_uri() . '/assets/images/' . $file );
-}
+require_once get_template_directory() . '/inc/performance.php';
 
 /** Satoshi's license requires each reviewer to obtain their own original files. */
 add_action( 'admin_notices', function () {

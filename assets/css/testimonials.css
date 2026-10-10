@@ -27,7 +27,7 @@
   position: relative;
   border-radius: 5px;
   width: 1518.556px;
-  mask-image: url("../images/team-photos-fauxels3.svg");
+  mask-image: var(--oxen-media-testimonials-photo-canvas);
 }
 
 .testimonials__photo-image {

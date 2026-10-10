@@ -1,8 +1,8 @@
 <?php defined( 'ABSPATH' ) || exit; ?>
 <section id="quiz" class="section quiz" aria-labelledby="quiz-title">
-<div class="section__item quiz__side-mark section__visual" aria-hidden="true"><img alt="" src="<?php echo oxen_asset( 'vector196.svg' ); ?>" decoding="async" class="quiz__side-mark-image"></div>
-<div class="section__item quiz__corner-mark section__visual" aria-hidden="true"><div class="quiz__corner-mark-frame"><img alt="" src="<?php echo oxen_asset( 'vector995.svg' ); ?>" decoding="async" class="quiz__corner-mark-image"></div></div>
-<div class="section__item quiz__bottom-mark section__visual" aria-hidden="true"><div class="quiz__bottom-mark-frame"><img alt="" src="<?php echo oxen_asset( 'vector1021.svg' ); ?>" decoding="async" class="quiz__bottom-mark-image"></div></div>
+<div class="section__item quiz__side-mark section__visual" aria-hidden="true"><?php echo oxen_media_image( 'quiz_side_mark', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz__side-mark-image' ) ); ?></div>
+<div class="section__item quiz__corner-mark section__visual" aria-hidden="true"><div class="quiz__corner-mark-frame"><?php echo oxen_media_image( 'quiz_corner_mark', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz__corner-mark-image' ) ); ?></div></div>
+<div class="section__item quiz__bottom-mark section__visual" aria-hidden="true"><div class="quiz__bottom-mark-frame"><?php echo oxen_media_image( 'quiz_bottom_mark', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz__bottom-mark-image' ) ); ?></div></div>
 <h2 class="section__item quiz__title section__text" id="quiz-title"><span class="quiz__title-prefix">Pick the right engagement in </span><span class="quiz__title-line">30 seconds.</span></h2>
 <p class="section__item quiz__eyebrow section__text">
           Find your fit
@@ -41,7 +41,7 @@
 <p class="section__item quiz__advisory-description section__text">
           If you’re growing fast
         </p>
-<div class="section__item quiz__advisory-divider section__visual" aria-hidden="true"><div class="quiz__advisory-divider-orientation"><div class="quiz__advisory-divider-canvas"><div class="quiz__advisory-divider-frame"><img alt="" src="<?php echo oxen_asset( 'vector1032.svg' ); ?>" decoding="async" class="quiz__advisory-divider-image"></div></div></div></div>
+<div class="section__item quiz__advisory-divider section__visual" aria-hidden="true"><div class="quiz__advisory-divider-orientation"><div class="quiz__advisory-divider-canvas"><div class="quiz__advisory-divider-frame"><?php echo oxen_media_image( 'quiz_advisory_divider', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz__advisory-divider-image' ) ); ?></div></div></div></div>
 <p class="section__item quiz__cfo-number section__text">
           4
         </p>
@@ -53,29 +53,29 @@
         </p>
 <aside class="quiz-skip" aria-labelledby="skip-quiz-heading">
   <div class="quiz-skip__visual" aria-hidden="true">
-    <div class="section__item quiz-skip__upper-glow section__visual"><div class="quiz-skip__upper-glow-frame"><img alt="" src="<?php echo oxen_asset( 'ellipse2143.svg' ); ?>" decoding="async" class="quiz-skip__upper-glow-image"></div></div>
-    <div class="section__item quiz-skip__center-glow section__visual"><div class="quiz-skip__center-glow-orientation"><div class="quiz-skip__center-glow-canvas"><div class="quiz-skip__center-glow-frame"><img alt="" src="<?php echo oxen_asset( 'ellipse2144.svg' ); ?>" decoding="async" class="quiz-skip__center-glow-image"></div></div></div></div>
-    <div class="section__item quiz-skip__lower-glow section__visual"><div class="quiz-skip__lower-glow-orientation"><div class="quiz-skip__lower-glow-canvas"><div class="quiz-skip__lower-glow-frame"><img alt="" src="<?php echo oxen_asset( 'ellipse2145.svg' ); ?>" decoding="async" class="quiz-skip__lower-glow-image"></div></div></div></div>
-    <div class="section__item quiz-skip__right-glow section__visual"><div class="quiz-skip__right-glow-orientation"><div class="quiz-skip__right-glow-canvas"><div class="quiz-skip__right-glow-frame"><img alt="" src="<?php echo oxen_asset( 'ellipse2145.svg' ); ?>" decoding="async" class="quiz-skip__right-glow-image"></div></div></div></div>
+    <div class="section__item quiz-skip__upper-glow section__visual"><div class="quiz-skip__upper-glow-frame"><?php echo oxen_media_image( 'quiz_skip_upper_glow', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz-skip__upper-glow-image' ) ); ?></div></div>
+    <div class="section__item quiz-skip__center-glow section__visual"><div class="quiz-skip__center-glow-orientation"><div class="quiz-skip__center-glow-canvas"><div class="quiz-skip__center-glow-frame"><?php echo oxen_media_image( 'quiz_skip_center_glow', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz-skip__center-glow-image' ) ); ?></div></div></div></div>
+    <div class="section__item quiz-skip__lower-glow section__visual"><div class="quiz-skip__lower-glow-orientation"><div class="quiz-skip__lower-glow-canvas"><div class="quiz-skip__lower-glow-frame"><?php echo oxen_media_image( 'quiz_skip_lower_glow', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz-skip__lower-glow-image' ) ); ?></div></div></div></div>
+    <div class="section__item quiz-skip__right-glow section__visual"><div class="quiz-skip__right-glow-orientation"><div class="quiz-skip__right-glow-canvas"><div class="quiz-skip__right-glow-frame"><?php echo oxen_media_image( 'quiz_skip_lower_glow', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz-skip__right-glow-image' ) ); ?></div></div></div></div>
   </div>
   <h3 id="skip-quiz-heading" class="quiz-skip__heading">Or skip the quiz</h3>
   <p class="quiz-skip__description">Jeremy answers the phone weekdays. Tell him what you do, hear what fits. <a href="tel:0800640001" class="quiz-skip__phone text-link">0800 640 001</a></p>
 </aside></div>
-<div class="section__item quiz__card-top-left section__visual" aria-hidden="true"><div class="quiz__card-top-left-frame"><img alt="" src="<?php echo oxen_asset( 'vector1019.svg' ); ?>" decoding="async" class="quiz__card-top-left-image"></div></div>
-<div class="section__item quiz__card-bottom-right section__visual" aria-hidden="true"><div class="quiz__card-bottom-right-orientation"><div class="quiz__card-bottom-right-canvas"><div class="quiz__card-bottom-right-frame"><img alt="" src="<?php echo oxen_asset( 'vector1019.svg' ); ?>" decoding="async" class="quiz__card-bottom-right-image"></div></div></div></div>
+<div class="section__item quiz__card-top-left section__visual" aria-hidden="true"><div class="quiz__card-top-left-frame"><?php echo oxen_media_image( 'statistics_experience_top_left_horizontal', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz__card-top-left-image' ) ); ?></div></div>
+<div class="section__item quiz__card-bottom-right section__visual" aria-hidden="true"><div class="quiz__card-bottom-right-orientation"><div class="quiz__card-bottom-right-canvas"><div class="quiz__card-bottom-right-frame"><?php echo oxen_media_image( 'statistics_experience_top_left_horizontal', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz__card-bottom-right-image' ) ); ?></div></div></div></div>
 <?php // Authored interactive card: preserve this structure when a generator check reports drift. ?>
 <div class="layout-group quiz-card quiz-card__card" data-choice-count="5" aria-describedby="quiz-support">
 <div class="quiz-card__header">
 <p class="quiz-card__progress section__text" id="quiz-progress" aria-live="polite" aria-atomic="true">
             Question 01 of 03
           </p>
-<ol class="quiz-card__steps" aria-label="Quiz progress" data-active-image="<?php echo oxen_asset( 'ellipse2141.svg' ); ?>" data-inactive-image="<?php echo oxen_asset( 'ellipse2142.svg' ); ?>">
-<li data-quiz-step="0" data-state="active" aria-current="step" aria-label="Question 1 of 3, current"><img alt="" aria-hidden="true" src="<?php echo oxen_asset( 'ellipse2141.svg' ); ?>" decoding="async"><span class="quiz-card__step-number" aria-hidden="true">1</span></li>
-<li data-quiz-step="1" data-state="upcoming" aria-label="Question 2 of 3, upcoming"><img alt="" aria-hidden="true" src="<?php echo oxen_asset( 'ellipse2142.svg' ); ?>" decoding="async"><span class="quiz-card__step-number" aria-hidden="true">2</span></li>
-<li data-quiz-step="2" data-state="upcoming" aria-label="Question 3 of 3, upcoming"><img alt="" aria-hidden="true" src="<?php echo oxen_asset( 'ellipse2142.svg' ); ?>" decoding="async"><span class="quiz-card__step-number" aria-hidden="true">3</span></li>
+<ol class="quiz-card__steps" aria-label="Quiz progress" data-active-image="<?php echo oxen_media_url( 'quiz_step_active' ); ?>" data-inactive-image="<?php echo oxen_media_url( 'quiz_step_inactive' ); ?>">
+<li data-quiz-step="0" data-state="active" aria-current="step" aria-label="Question 1 of 3, current"><?php echo oxen_media_image( 'quiz_step_active', array( 'alt' => '', 'aria-hidden' => 'true', 'decoding' => 'async' ) ); ?><span class="quiz-card__step-number" aria-hidden="true">1</span></li>
+<li data-quiz-step="1" data-state="upcoming" aria-label="Question 2 of 3, upcoming"><?php echo oxen_media_image( 'quiz_step_inactive', array( 'alt' => '', 'aria-hidden' => 'true', 'decoding' => 'async' ) ); ?><span class="quiz-card__step-number" aria-hidden="true">2</span></li>
+<li data-quiz-step="2" data-state="upcoming" aria-label="Question 3 of 3, upcoming"><?php echo oxen_media_image( 'quiz_step_inactive', array( 'alt' => '', 'aria-hidden' => 'true', 'decoding' => 'async' ) ); ?><span class="quiz-card__step-number" aria-hidden="true">3</span></li>
 </ol>
 </div>
-<div class="quiz-card__divider" aria-hidden="true"><div class="quiz-card__divider-orientation"><div class="quiz-card__divider-canvas"><div class="quiz-card__divider-frame"><img alt="" src="<?php echo oxen_asset( 'vector8.svg' ); ?>" decoding="async" class="quiz-card__divider-image"></div></div></div></div>
+<div class="quiz-card__divider" aria-hidden="true"><div class="quiz-card__divider-orientation"><div class="quiz-card__divider-canvas"><div class="quiz-card__divider-frame"><?php echo oxen_media_image( 'quiz_card_divider', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz-card__divider-image' ) ); ?></div></div></div></div>
 <p class="quiz-card__question section__text" id="quiz-question" tabindex="-1">What&#x27;s your annual revenue?</p>
 <div class="quiz-card__answers" role="group" aria-labelledby="quiz-question">
 <button type="button" data-quiz-answer="0" aria-pressed="false" class="section__item quiz-card__answer--pre-revenue section__visual quiz-card__answer"><span class="section__item quiz-card__answer-label--pre-revenue section__text quiz-card__answer-label">
@@ -98,9 +98,9 @@
 <p class="quiz-card__support section__text" id="quiz-support">
               This is based on the latest gov values and up-to-date evaluation
             </p></div>
-<div class="section__item quiz__foundations-divider section__visual" aria-hidden="true"><div class="quiz__foundations-divider-orientation"><div class="quiz__foundations-divider-canvas"><div class="quiz__foundations-divider-frame"><img alt="" src="<?php echo oxen_asset( 'vector1032.svg' ); ?>" decoding="async" class="quiz__foundations-divider-image"></div></div></div></div>
-<div class="section__item quiz__essentials-divider section__visual" aria-hidden="true"><div class="quiz__essentials-divider-orientation"><div class="quiz__essentials-divider-canvas"><div class="quiz__essentials-divider-frame"><img alt="" src="<?php echo oxen_asset( 'vector1032.svg' ); ?>" decoding="async" class="quiz__essentials-divider-image"></div></div></div></div>
-<div class="section__item quiz__cfo-divider section__visual" aria-hidden="true"><div class="quiz__cfo-divider-orientation"><div class="quiz__cfo-divider-canvas"><div class="quiz__cfo-divider-frame"><img alt="" src="<?php echo oxen_asset( 'vector1032.svg' ); ?>" decoding="async" class="quiz__cfo-divider-image"></div></div></div></div>
+<div class="section__item quiz__foundations-divider section__visual" aria-hidden="true"><div class="quiz__foundations-divider-orientation"><div class="quiz__foundations-divider-canvas"><div class="quiz__foundations-divider-frame"><?php echo oxen_media_image( 'quiz_advisory_divider', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz__foundations-divider-image' ) ); ?></div></div></div></div>
+<div class="section__item quiz__essentials-divider section__visual" aria-hidden="true"><div class="quiz__essentials-divider-orientation"><div class="quiz__essentials-divider-canvas"><div class="quiz__essentials-divider-frame"><?php echo oxen_media_image( 'quiz_advisory_divider', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz__essentials-divider-image' ) ); ?></div></div></div></div>
+<div class="section__item quiz__cfo-divider section__visual" aria-hidden="true"><div class="quiz__cfo-divider-orientation"><div class="quiz__cfo-divider-canvas"><div class="quiz__cfo-divider-frame"><?php echo oxen_media_image( 'quiz_advisory_divider', array( 'alt' => '', 'decoding' => 'async', 'class' => 'quiz__cfo-divider-image' ) ); ?></div></div></div></div>
 
 
 </section>

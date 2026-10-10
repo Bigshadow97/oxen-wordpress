@@ -13,7 +13,7 @@
  <div class="site-header__branding">
  <?php if ( has_custom_logo() ) : the_custom_logo(); else : ?>
  <a class="site-header__brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
- <img alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" src="<?php echo oxen_asset( 'image3.png' ); ?>" width="88" height="18">
+ <?php echo oxen_media_image( 'site_logo', array( 'alt' => esc_attr( get_bloginfo( 'name' ) ), 'width' => '88', 'height' => '18' ) ); ?>
  </a>
  <?php endif; ?>
  </div>

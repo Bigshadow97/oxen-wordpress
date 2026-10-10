@@ -1,0 +1,7280 @@
+{
+  "images": [
+    {
+      "source": "add-line10.svg",
+      "format": "svg",
+      "original_bytes": 369,
+      "source_sha256": "e1cd6e3b0155abf1038cbec794ef0539076c26dd6fbaf69528532b6f193007e3",
+      "used": true,
+      "components": [
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 16,
+      "height": 16,
+      "transparency": true,
+      "key": "service_card_button_icon_image_advisory",
+      "optimized_bytes": 368,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "add-line5.svg",
+      "format": "svg",
+      "original_bytes": 367,
+      "source_sha256": "bf526e0fc63f42ce1bed8191784a79ee1e8c5c073c6fcc5977e28d82c1671352",
+      "used": true,
+      "components": [
+        "inc/class-oxen-menu-walker.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 16,
+          "height": 16,
+          "class": "",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 16,
+          "height": 16,
+          "class": "",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "navigation",
+          "alt": ""
+        }
+      ],
+      "width": 16,
+      "height": 16,
+      "transparency": true,
+      "key": "menu_contact_icon",
+      "optimized_bytes": 366,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "add-line6.svg",
+      "format": "svg",
+      "original_bytes": 367,
+      "source_sha256": "e7b414a289dfe72d4829687b267d487b54fb377077e03f7d26d2bd8e1d8f5da6",
+      "used": true,
+      "components": [
+        "inc/class-oxen-menu-walker.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 14,
+          "height": 14,
+          "class": "menu-plus-icon",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 0,
+          "height": 0,
+          "class": "menu-plus-icon",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 14,
+          "height": 14,
+          "class": "menu-plus-icon",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "menu-plus-icon",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "menu-plus-icon",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "menu-plus-icon",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "menu-plus-icon",
+          "section": "navigation",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "menu-plus-icon",
+          "section": "navigation",
+          "alt": ""
+        }
+      ],
+      "width": 14,
+      "height": 14,
+      "transparency": true,
+      "key": "menu_plus_icon",
+      "optimized_bytes": 366,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "add-line7.svg",
+      "format": "svg",
+      "original_bytes": 369,
+      "source_sha256": "95fc88b0b3fc4747dfd97c30422f5f705e7895164355a96d09776d422127597d",
+      "used": true,
+      "components": [
+        "template-parts/home/services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 16,
+          "height": 16,
+          "class": "service-comparison__icon",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 16,
+          "height": 16,
+          "class": "service-comparison__icon",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 16,
+          "height": 16,
+          "class": "service-comparison__icon",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 16,
+          "height": 16,
+          "class": "service-comparison__icon",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 16,
+      "height": 16,
+      "transparency": true,
+      "key": "service_comparison_icon",
+      "optimized_bytes": 368,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "add-line8.svg",
+      "format": "svg",
+      "original_bytes": 363,
+      "source_sha256": "7be0ce21c3b8883d29e94172d85cb6d6222ed51e8cc3dda93837c17902a9e61c",
+      "used": true,
+      "components": [
+        "template-parts/home/results.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 16,
+          "height": 16,
+          "class": "case-study__button-icon-image",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 16,
+          "height": 16,
+          "class": "case-study__button-icon-image",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 16,
+          "height": 16,
+          "class": "case-study__button-icon-image",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 16,
+          "height": 16,
+          "class": "case-study__button-icon-image",
+          "section": "results",
+          "alt": ""
+        }
+      ],
+      "width": 16,
+      "height": 16,
+      "transparency": true,
+      "key": "case_study_button_icon",
+      "optimized_bytes": 362,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "add-line9.svg",
+      "format": "svg",
+      "original_bytes": 367,
+      "source_sha256": "ab302a4012ee6be88baf6a784423008a1178b5702807c704de90bcea470af02a",
+      "used": true,
+      "components": [
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 16,
+          "height": 16,
+          "class": "service-card__button-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 16,
+      "height": 16,
+      "transparency": true,
+      "key": "service_card_button_icon_image_foundations",
+      "optimized_bytes": 366,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2129.svg",
+      "format": "svg",
+      "original_bytes": 706,
+      "source_sha256": "b07db6c271f287864a6b2a73f13815dcfdb948dd1ea53be47a24a17e566dbce4",
+      "used": true,
+      "components": [
+        "inc/home-process.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 819.40625,
+          "height": 829.171875,
+          "class": "process-card__glow-image--onboarding",
+          "section": "process",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1092.59375,
+          "height": 829.171875,
+          "class": "process-card__glow-image--onboarding",
+          "section": "process",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "process-card__glow-image--onboarding",
+          "section": "process",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "process-card__glow-image--onboarding",
+          "section": "process",
+          "alt": ""
+        }
+      ],
+      "width": 819,
+      "height": 829,
+      "transparency": true,
+      "key": "process_card_glow_image_onboarding",
+      "optimized_bytes": 705,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2130.svg",
+      "format": "svg",
+      "original_bytes": 691,
+      "source_sha256": "520a42ab8a75b9dcd8cdedd49643bf114c02a54651b547921cb30184a4e46b1a",
+      "used": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1478.421875,
+          "height": 1478.421875,
+          "class": "hero__halo-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1971.21875,
+          "height": 1700.03125,
+          "class": "hero__halo-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "hero__halo-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "hero__halo-image",
+          "section": "hero",
+          "alt": ""
+        }
+      ],
+      "width": 1478,
+      "height": 1478,
+      "transparency": true,
+      "key": "hero_halo",
+      "optimized_bytes": 690,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2131.svg",
+      "format": "svg",
+      "original_bytes": 723,
+      "source_sha256": "02d8d88d3569409dd742aac8ac95fc4dd614f7732f2ad36691e481c8732250fc",
+      "used": true,
+      "components": [
+        "template-parts/home/calculator.php",
+        "template-parts/home/contact.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1182.515625,
+          "height": 1066.75,
+          "class": "calculator__bridge-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 1182.53125,
+          "height": 1066.75,
+          "class": "",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1576.703125,
+          "height": 1066.75,
+          "class": "calculator__bridge-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1576.71875,
+          "height": 1066.75,
+          "class": "",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "calculator__bridge-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "calculator__bridge-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "contact",
+          "alt": ""
+        }
+      ],
+      "width": 1183,
+      "height": 1067,
+      "transparency": true,
+      "key": "calculator_bridge_glow",
+      "optimized_bytes": 722,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2132.svg",
+      "format": "svg",
+      "original_bytes": 832,
+      "source_sha256": "f89b965af2780087db182d6804dfff9f1e013bb0a2fb4343758e0bd79419c2bc",
+      "used": true,
+      "components": [
+        "assets/css/calculator.css",
+        "template-parts/home/calculator.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 551.671875,
+          "height": 591.078125,
+          "class": "calculator__upper-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 735.578125,
+          "height": 591.078125,
+          "class": "calculator__upper-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "calculator__upper-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "calculator__upper-glow-image",
+          "section": "calculator",
+          "alt": ""
+        }
+      ],
+      "width": 552,
+      "height": 591,
+      "transparency": true,
+      "key": "calculator_upper_glow",
+      "optimized_bytes": 831,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2133.svg",
+      "format": "svg",
+      "original_bytes": 853,
+      "source_sha256": "62c761f1bbb4d0f6517796fd64ad4080f8ad99e8b6dcf02ae0fe1eba4b1d9926",
+      "used": true,
+      "components": [
+        "template-parts/home/calculator.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 780.4955444335938,
+          "height": 876.802734375,
+          "class": "calculator__top-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 780.49560546875,
+          "height": 876.802734375,
+          "class": "calculator__top-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "calculator__top-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "calculator__top-glow-image",
+          "section": "calculator",
+          "alt": ""
+        }
+      ],
+      "width": 609,
+      "height": 617,
+      "transparency": true,
+      "key": "calculator_top_glow",
+      "optimized_bytes": 852,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2134.svg",
+      "format": "svg",
+      "original_bytes": 827,
+      "source_sha256": "10674f7e221ec2c5c244bdd8911d681661949c403cec40f7330808daa75ab42e",
+      "used": true,
+      "components": [
+        "template-parts/home/calculator.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 504.41748046875,
+          "height": 580.8203125,
+          "class": "calculator__side-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 504.41748046875,
+          "height": 580.8203125,
+          "class": "calculator__side-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "calculator__side-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "calculator__side-glow-image",
+          "section": "calculator",
+          "alt": ""
+        }
+      ],
+      "width": 416,
+      "height": 388,
+      "transparency": true,
+      "key": "calculator_side_glow",
+      "optimized_bytes": 826,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2135.svg",
+      "format": "svg",
+      "original_bytes": 827,
+      "source_sha256": "60b2dae006cd3ced0146478f7dfd35e1bcf22fbf83af2bf1bf30856cc6d494ad",
+      "used": true,
+      "components": [
+        "template-parts/home/calculator.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 504.41748046875,
+          "height": 580.8203125,
+          "class": "calculator__lower-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 504.41748046875,
+          "height": 580.8203125,
+          "class": "calculator__lower-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "calculator__lower-glow-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "calculator__lower-glow-image",
+          "section": "calculator",
+          "alt": ""
+        }
+      ],
+      "width": 416,
+      "height": 388,
+      "transparency": true,
+      "key": "calculator_lower_glow",
+      "optimized_bytes": 826,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2136.svg",
+      "format": "svg",
+      "original_bytes": 844,
+      "source_sha256": "62c2a7a8a1e1a718897a79b7cd1dd85bb0181dea01345e1830548e00f379e3bc",
+      "used": true,
+      "components": [
+        "assets/css/services.css",
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 390.34375,
+          "height": 631.359375,
+          "class": "service-card__main-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__main-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__main-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__main-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 390,
+      "height": 631,
+      "transparency": true,
+      "key": "service_card_main_glow_image_foundations",
+      "optimized_bytes": 843,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2137.svg",
+      "format": "svg",
+      "original_bytes": 274,
+      "source_sha256": "85ad8fa70c3e6e07d897b417910df648b4e3a504af57e6e7c8a16914a1c88f51",
+      "used": true,
+      "components": [
+        "template-parts/home/contact.php",
+        "template-parts/home/hero.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 7.890625,
+          "height": 7.890625,
+          "class": "hero__status-dot-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.90625,
+          "height": 7.90625,
+          "class": "",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.890625,
+          "height": 7.890625,
+          "class": "hero__status-dot-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.90625,
+          "height": 7.90625,
+          "class": "",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "hero__status-dot-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.90625,
+          "height": 7.90625,
+          "class": "",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "hero__status-dot-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.90625,
+          "height": 7.90625,
+          "class": "",
+          "section": "contact",
+          "alt": ""
+        }
+      ],
+      "width": 8,
+      "height": 8,
+      "transparency": true,
+      "key": "status_indicator",
+      "optimized_bytes": 273,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2138.svg",
+      "format": "svg",
+      "original_bytes": 877,
+      "source_sha256": "cb97932301a39baddf8ac74d961ec33902c5720b00a50a0e375f0a2b2fdc055b",
+      "used": true,
+      "components": [
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 462.7878723144531,
+          "height": 1055.8349609375,
+          "class": "service-card__center-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__center-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__center-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__center-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 619,
+      "height": 511,
+      "transparency": true,
+      "key": "service_card_center_glow_image_foundations",
+      "optimized_bytes": 876,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2139.svg",
+      "format": "svg",
+      "original_bytes": 849,
+      "source_sha256": "2cda98e65804b531b98e8c2be74d6845246ba3f6b1009b839d053a81519e60fe",
+      "used": true,
+      "components": [
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 306.77984619140625,
+          "height": 706.8408203125,
+          "class": "service-card__lower-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__lower-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__lower-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__lower-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 421,
+      "height": 335,
+      "transparency": true,
+      "key": "service_card_lower_glow_image_foundations",
+      "optimized_bytes": 848,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2140.svg",
+      "format": "svg",
+      "original_bytes": 849,
+      "source_sha256": "9b7558fe7195a05114c4ab5c160a341f0ced9d4c058e2d6b095b2b580665eefb",
+      "used": true,
+      "components": [
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 306.77984619140625,
+          "height": 706.8408203125,
+          "class": "service-card__upper-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__upper-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__upper-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__upper-glow-image--foundations",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 421,
+      "height": 335,
+      "transparency": true,
+      "key": "service_card_upper_glow_image_foundations",
+      "optimized_bytes": 848,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2141.svg",
+      "format": "svg",
+      "original_bytes": 270,
+      "source_sha256": "d8e749e57dd59e890c5659140f10dadb95f10ed93ca68dc9234a901cddce2530",
+      "used": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 26.640625,
+          "height": 26.640625,
+          "class": "",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 26.640625,
+          "height": 26.640625,
+          "class": "",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 26.640625,
+          "height": 26.640625,
+          "class": "",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 26.640625,
+          "height": 26.640625,
+          "class": "",
+          "section": "quiz",
+          "alt": ""
+        }
+      ],
+      "width": 27,
+      "height": 27,
+      "transparency": true,
+      "key": "quiz_step_active",
+      "optimized_bytes": 269,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2142.svg",
+      "format": "svg",
+      "original_bytes": 270,
+      "source_sha256": "af052727c1359ac177dcb1847e5c1b860e4cc8f7ac0d9b349efe09c6a9564a7f",
+      "used": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 26.640625,
+          "height": 26.640625,
+          "class": "",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 26.640625,
+          "height": 26.640625,
+          "class": "",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 26.640625,
+          "height": 26.640625,
+          "class": "",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 26.640625,
+          "height": 26.640625,
+          "class": "",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 26.640625,
+          "height": 26.640625,
+          "class": "",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 26.640625,
+          "height": 26.640625,
+          "class": "",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 26.640625,
+          "height": 26.640625,
+          "class": "",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 26.640625,
+          "height": 26.640625,
+          "class": "",
+          "section": "quiz",
+          "alt": ""
+        }
+      ],
+      "width": 27,
+      "height": 27,
+      "transparency": true,
+      "key": "quiz_step_inactive",
+      "optimized_bytes": 269,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2143.svg",
+      "format": "svg",
+      "original_bytes": 832,
+      "source_sha256": "d404768b337504ef7c4b5a866845e0017cf6bc803b2de859e1195f86e270afba",
+      "used": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 426.046875,
+          "height": 157.984375,
+          "class": "quiz-skip__upper-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 426.046875,
+          "height": 157.984375,
+          "class": "quiz-skip__upper-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 426.046875,
+          "height": 157.984375,
+          "class": "quiz-skip__upper-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 426.046875,
+          "height": 157.984375,
+          "class": "quiz-skip__upper-glow-image",
+          "section": "quiz",
+          "alt": ""
+        }
+      ],
+      "width": 426,
+      "height": 158,
+      "transparency": true,
+      "key": "quiz_skip_upper_glow",
+      "optimized_bytes": 831,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2144.svg",
+      "format": "svg",
+      "original_bytes": 858,
+      "source_sha256": "4ce2f267a6f80a302b7755ca5097e6d784e7ec8048c52e356139f8b5c4a32220",
+      "used": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 667.5977783203125,
+          "height": 177.9569091796875,
+          "class": "quiz-skip__center-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 667.5977783203125,
+          "height": 177.9569091796875,
+          "class": "quiz-skip__center-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 667.5977783203125,
+          "height": 177.9569091796875,
+          "class": "quiz-skip__center-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 667.5977783203125,
+          "height": 177.95703125,
+          "class": "quiz-skip__center-glow-image",
+          "section": "quiz",
+          "alt": ""
+        }
+      ],
+      "width": 269,
+      "height": 430,
+      "transparency": true,
+      "key": "quiz_skip_center_glow",
+      "optimized_bytes": 857,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2145.svg",
+      "format": "svg",
+      "original_bytes": 825,
+      "source_sha256": "3299dba56fe52770134923d26475e4e9c61a76a9f2553b0cb1cf64fce2d81332",
+      "used": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 400.7989807128906,
+          "height": 111.706298828125,
+          "class": "quiz-skip__lower-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 400.7989501953125,
+          "height": 111.706298828125,
+          "class": "quiz-skip__right-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 400.7989807128906,
+          "height": 111.706298828125,
+          "class": "quiz-skip__lower-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 400.7989501953125,
+          "height": 111.706298828125,
+          "class": "quiz-skip__right-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 400.7989807128906,
+          "height": 111.7064208984375,
+          "class": "quiz-skip__lower-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 400.7989501953125,
+          "height": 111.706298828125,
+          "class": "quiz-skip__right-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 400.7989807128906,
+          "height": 111.706298828125,
+          "class": "quiz-skip__lower-glow-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 400.7989501953125,
+          "height": 111.706298828125,
+          "class": "quiz-skip__right-glow-image",
+          "section": "quiz",
+          "alt": ""
+        }
+      ],
+      "width": 177,
+      "height": 244,
+      "transparency": true,
+      "key": "quiz_skip_lower_glow",
+      "optimized_bytes": 824,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2146.svg",
+      "format": "svg",
+      "original_bytes": 844,
+      "source_sha256": "3539960f90608cd60a413e8b66f5ef0044e48541aa522fe3d868596f3890498c",
+      "used": true,
+      "components": [
+        "assets/css/process.css",
+        "template-parts/home/about.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 780.260986328125,
+          "height": 760.326171875,
+          "class": "about__glow-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 780.260986328125,
+          "height": 760.326171875,
+          "class": "about__glow-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "about__glow-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "about__glow-image",
+          "section": "about",
+          "alt": ""
+        }
+      ],
+      "width": 602,
+      "height": 632,
+      "transparency": true,
+      "key": "about_glow",
+      "optimized_bytes": 843,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2147.png",
+      "format": "png",
+      "original_bytes": 32508,
+      "source_sha256": "4eda2572c9e5b5ad3ce40bc0c57ecceabaeaa7e5ebe74f8f3997dac64a5d0e54",
+      "used": true,
+      "components": [
+        "template-parts/home/about.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 79.96875,
+          "height": 79.953125,
+          "class": "about__portrait-jeremy-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 62,
+          "height": 62,
+          "class": "about__portrait-jeremy-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 60,
+          "height": 60,
+          "class": "about__portrait-jeremy-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 60,
+          "height": 60,
+          "class": "about__portrait-jeremy-image",
+          "section": "about",
+          "alt": ""
+        }
+      ],
+      "width": 160,
+      "height": 160,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "team_portrait_jeremy",
+      "optimized_bytes": 20534,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "ellipse2148.png",
+      "format": "png",
+      "original_bytes": 32720,
+      "source_sha256": "7b4f4b9eb53f7a62a493b12b2a510a0c0cf9da46ce514f59a490df1f01c435f6",
+      "used": true,
+      "components": [
+        "template-parts/home/about.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 79.96875,
+          "height": 79.953125,
+          "class": "about__portrait-accountant-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 62,
+          "height": 62,
+          "class": "about__portrait-accountant-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 60,
+          "height": 60,
+          "class": "about__portrait-accountant-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 60,
+          "height": 60,
+          "class": "about__portrait-accountant-image",
+          "section": "about",
+          "alt": ""
+        }
+      ],
+      "width": 160,
+      "height": 160,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "team_portrait_accountant",
+      "optimized_bytes": 20240,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "ellipse2149.png",
+      "format": "png",
+      "original_bytes": 32530,
+      "source_sha256": "c09a0dc02e809e2886065e88b232f5f43515389ec6d7e3588bfc88faec30cd34",
+      "used": true,
+      "components": [
+        "template-parts/home/about.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 79.96875,
+          "height": 79.953125,
+          "class": "about__portrait-adviser-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 62,
+          "height": 62,
+          "class": "about__portrait-adviser-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 60,
+          "height": 60,
+          "class": "about__portrait-adviser-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 60,
+          "height": 60,
+          "class": "about__portrait-adviser-image",
+          "section": "about",
+          "alt": ""
+        }
+      ],
+      "width": 160,
+      "height": 160,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "team_portrait_adviser",
+      "optimized_bytes": 20230,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "ellipse2150.png",
+      "format": "png",
+      "original_bytes": 32603,
+      "source_sha256": "bf668d3b5a60207a103d237528b2488e0de46365f36cc5e2bd0fdc2944311bce",
+      "used": true,
+      "components": [
+        "template-parts/home/about.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 79.96875,
+          "height": 79.953125,
+          "class": "about__portrait-manager-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 62,
+          "height": 62,
+          "class": "about__portrait-manager-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 60,
+          "height": 60,
+          "class": "about__portrait-manager-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 60,
+          "height": 60,
+          "class": "about__portrait-manager-image",
+          "section": "about",
+          "alt": ""
+        }
+      ],
+      "width": 160,
+      "height": 160,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "team_portrait_manager",
+      "optimized_bytes": 20594,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "ellipse2151.png",
+      "format": "png",
+      "original_bytes": 31204,
+      "source_sha256": "037d04e483510fbdd995569eae0763824095dda880d5312306d6550865ceab24",
+      "used": true,
+      "components": [
+        "template-parts/home/about.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 79.96875,
+          "height": 79.953125,
+          "class": "about__portrait-associate-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 62,
+          "height": 62,
+          "class": "about__portrait-associate-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 60,
+          "height": 60,
+          "class": "about__portrait-associate-image",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 60,
+          "height": 60,
+          "class": "about__portrait-associate-image",
+          "section": "about",
+          "alt": ""
+        }
+      ],
+      "width": 160,
+      "height": 160,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "team_portrait_associate",
+      "optimized_bytes": 19576,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "ellipse2152.svg",
+      "format": "svg",
+      "original_bytes": 835,
+      "source_sha256": "2943ea69409f58ab294a39548d5f546d12038d549b380200d10e9ece0b2d1811",
+      "used": true,
+      "components": [
+        "assets/css/services.css",
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 390.359375,
+          "height": 631.359375,
+          "class": "service-card__main-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__main-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__main-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__main-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 390,
+      "height": 631,
+      "transparency": true,
+      "key": "service_card_main_glow_image_advisory",
+      "optimized_bytes": 834,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2153.svg",
+      "format": "svg",
+      "original_bytes": 860,
+      "source_sha256": "ef96a4971b09369a2f125febe724b16d198869f2e4593376fe2ac6f82a4e1f2c",
+      "used": true,
+      "components": [
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 462.787841796875,
+          "height": 1055.8349609375,
+          "class": "service-card__center-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__center-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__center-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__center-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 619,
+      "height": 511,
+      "transparency": true,
+      "key": "service_card_center_glow_image_advisory",
+      "optimized_bytes": 859,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "ellipse2154.svg",
+      "format": "svg",
+      "original_bytes": 827,
+      "source_sha256": "d29de0fa1d13b5eb22efa11aacbc9b0d8350c5604014fde50c9864422d8e95b5",
+      "used": true,
+      "components": [
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 306.77984619140625,
+          "height": 706.8408203125,
+          "class": "service-card__upper-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 306.77984619140625,
+          "height": 706.8408203125,
+          "class": "service-card__lower-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__upper-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__lower-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__upper-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__lower-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__upper-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__lower-glow-image--advisory",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 421,
+      "height": 335,
+      "transparency": true,
+      "key": "service_card_upper_glow_image_advisory",
+      "optimized_bytes": 826,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "frame.svg",
+      "format": "svg",
+      "original_bytes": 382,
+      "source_sha256": "5e99e9b98b331a1c607b93f17d64ebb619f2865dd868a061737724832c9aa870",
+      "used": true,
+      "components": [
+        "template-parts/home/calculator.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 20,
+          "height": 20,
+          "class": "",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 20,
+          "height": 20,
+          "class": "",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 20,
+          "height": 20,
+          "class": "",
+          "section": "calculator",
+          "alt": ""
+        }
+      ],
+      "width": 20,
+      "height": 20,
+      "transparency": true,
+      "key": "google_review_star",
+      "optimized_bytes": 381,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "frame1.svg",
+      "format": "svg",
+      "original_bytes": 346,
+      "source_sha256": "cf077372925cc4ffb0e7b4496db7226ac0206c65a252b537c5e65adfa2808c50",
+      "used": true,
+      "components": [
+        "assets/css/services.css",
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__setup-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__xero-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__tax-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__return-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__statement-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__tax-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__planning-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__ird-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__setup-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__xero-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__tax-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__return-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__statement-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__tax-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__planning-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__ird-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__setup-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__xero-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__tax-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__return-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__statement-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__tax-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__planning-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__ird-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__setup-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__xero-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__tax-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__return-icon-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__statement-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__tax-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__planning-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__ird-icon-image--essentials",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 20,
+      "height": 20,
+      "transparency": true,
+      "key": "service_checkmark",
+      "optimized_bytes": 345,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "frame2.svg",
+      "format": "svg",
+      "original_bytes": 346,
+      "source_sha256": "6516882836d8e2ad95bb89b05048dd9285c7d5e56f1a12ac8201793637150b95",
+      "used": true,
+      "components": [
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__essentials-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__snapshot-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__dashboard-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__strategy-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__advisory-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__board-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__funding-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 20,
+          "height": 20,
+          "class": "service-card__exit-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__essentials-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__snapshot-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__dashboard-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__strategy-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__advisory-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__board-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__funding-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__exit-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__essentials-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__snapshot-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__dashboard-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__strategy-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__advisory-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__board-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__funding-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__exit-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__essentials-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__snapshot-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__dashboard-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__strategy-icon-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__advisory-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__board-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__funding-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__exit-icon-image--cfo",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 20,
+      "height": 20,
+      "transparency": true,
+      "key": "service_card_essentials_icon_image_advisory",
+      "optimized_bytes": 345,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "frame3.svg",
+      "format": "svg",
+      "original_bytes": 383,
+      "source_sha256": "d5cd10272820053428bdc05cf7017d2922d92e1562d22be230def2c40261ddd9",
+      "used": true,
+      "components": [
+        "template-parts/home/services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 16,
+          "height": 16,
+          "class": "service-path__first-arrow-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 16,
+          "height": 16,
+          "class": "service-path__second-arrow-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 16,
+          "height": 16,
+          "class": "service-path__third-arrow-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 16,
+          "height": 16,
+          "class": "service-path__first-arrow-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 16,
+          "height": 16,
+          "class": "service-path__second-arrow-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 16,
+          "height": 16,
+          "class": "service-path__third-arrow-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__first-arrow-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__second-arrow-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__third-arrow-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__first-arrow-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__second-arrow-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__third-arrow-image",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 16,
+      "height": 16,
+      "transparency": true,
+      "key": "service_path_first_arrow",
+      "optimized_bytes": 382,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "frame4.svg",
+      "format": "svg",
+      "original_bytes": 354,
+      "source_sha256": "a7b7ca7cf4592f5e6c77ff2631cc689aa1ad07d135b364726669f12080804fdc",
+      "used": true,
+      "components": [
+        "template-parts/home/tax-intro.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 18,
+          "height": 18,
+          "class": "tax-intro__activity-dot-image",
+          "section": "tax-intro",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 18,
+          "height": 18,
+          "class": "tax-intro__activity-dot-image",
+          "section": "tax-intro",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "tax-intro__activity-dot-image",
+          "section": "tax-intro",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "tax-intro__activity-dot-image",
+          "section": "tax-intro",
+          "alt": ""
+        }
+      ],
+      "width": 18,
+      "height": 18,
+      "transparency": true,
+      "key": "tax_intro_activity_dot",
+      "optimized_bytes": 353,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "frame5.svg",
+      "format": "svg",
+      "original_bytes": 408,
+      "source_sha256": "cc5971f05a92d888baadffe5fe962832648c3dcd8dc0f4766d1c7cb8aeceb2cd",
+      "used": true,
+      "components": [
+        "template-parts/home/testimonials.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 13,
+          "height": 13,
+          "class": "testimonial__star-first-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 13,
+          "height": 13,
+          "class": "testimonial__star-second-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 13,
+          "height": 13,
+          "class": "testimonial__star-third-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 13,
+          "height": 13,
+          "class": "testimonial__star-fourth-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 13,
+          "height": 13,
+          "class": "testimonial__star-fifth-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 13,
+          "height": 13,
+          "class": "testimonial__star-first-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 13,
+          "height": 13,
+          "class": "testimonial__star-second-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 13,
+          "height": 13,
+          "class": "testimonial__star-third-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 13,
+          "height": 13,
+          "class": "testimonial__star-fourth-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 13,
+          "height": 13,
+          "class": "testimonial__star-fifth-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__star-first-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__star-second-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__star-third-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__star-fourth-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__star-fifth-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__star-first-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__star-second-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__star-third-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__star-fourth-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__star-fifth-image",
+          "section": "testimonials",
+          "alt": ""
+        }
+      ],
+      "width": 13,
+      "height": 13,
+      "transparency": true,
+      "key": "testimonial_star_first",
+      "optimized_bytes": 407,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "group2609157.svg",
+      "format": "svg",
+      "original_bytes": 8699,
+      "source_sha256": "52198e9a048a8d5f0ed2a7619cc517aa10a42e3457035802ef95240b21d1bced",
+      "used": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 18.71875,
+          "height": 42.203125,
+          "class": "hero__rating-stars-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 18.71875,
+          "height": 42.203125,
+          "class": "hero__rating-stars-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "hero__rating-stars-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "hero__rating-stars-image",
+          "section": "hero",
+          "alt": ""
+        }
+      ],
+      "width": 19,
+      "height": 42,
+      "transparency": true,
+      "key": "hero_rating_stars",
+      "optimized_bytes": 8698,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "group2609158.svg",
+      "format": "svg",
+      "original_bytes": 8699,
+      "source_sha256": "8424b8bc37917cf9d439591619d406bcc4acb4f1e76ede30d027fe0d3e07d2d4",
+      "used": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 18.859375,
+          "height": 42.203125,
+          "class": "hero__rating-star-outline-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 18.859375,
+          "height": 42.203125,
+          "class": "hero__rating-star-outline-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "hero__rating-star-outline-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "hero__rating-star-outline-image",
+          "section": "hero",
+          "alt": ""
+        }
+      ],
+      "width": 19,
+      "height": 42,
+      "transparency": true,
+      "key": "hero_rating_star_outline",
+      "optimized_bytes": 8698,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "image10.png",
+      "format": "png",
+      "original_bytes": 27127,
+      "source_sha256": "c48eb58846722d1bc91221f1da80ca3a2d4fbb008ef4bb4ea46af31941386f2c",
+      "used": true,
+      "components": [
+        "template-parts/home/partners.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 128.21875,
+          "height": 128.21875,
+          "class": "",
+          "section": "partners",
+          "alt": "Follow"
+        },
+        {
+          "viewport": 1440,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 128.21875,
+          "height": 128.21875,
+          "class": "",
+          "section": "partners",
+          "alt": "Follow"
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 128.21875,
+          "height": 128.21875,
+          "class": "",
+          "section": "partners",
+          "alt": "Follow"
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 128.21875,
+          "height": 128.21875,
+          "class": "",
+          "section": "partners",
+          "alt": "Follow"
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        }
+      ],
+      "width": 648,
+      "height": 648,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "partner_follow",
+      "optimized_bytes": 6574,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "image11.png",
+      "format": "png",
+      "original_bytes": 290630,
+      "source_sha256": "9b86b87ad9fab567e1889e20a18aca7696e363db43c6a88eb7d6734ecf79b09a",
+      "used": true,
+      "components": [
+        "template-parts/home/partners.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 144.765625,
+          "height": 144.765625,
+          "class": "",
+          "section": "partners",
+          "alt": "Tikitibu"
+        },
+        {
+          "viewport": 1440,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 144.765625,
+          "height": 144.765625,
+          "class": "",
+          "section": "partners",
+          "alt": "Tikitibu"
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 144.765625,
+          "height": 144.765625,
+          "class": "",
+          "section": "partners",
+          "alt": "Tikitibu"
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 144.765625,
+          "height": 144.765625,
+          "class": "",
+          "section": "partners",
+          "alt": "Tikitibu"
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        }
+      ],
+      "width": 1200,
+      "height": 1200,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "partner_tikitibu",
+      "optimized_bytes": 113714,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "image14.png",
+      "format": "png",
+      "original_bytes": 28307,
+      "source_sha256": "aa7bee24538cbc6c470948a10e146f2645909275138d55a5535d798cacc2bbf6",
+      "used": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 23.9375,
+          "height": 24.5,
+          "class": "hero__google-logo-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 23.9375,
+          "height": 24.5,
+          "class": "hero__google-logo-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "hero__google-logo-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "hero__google-logo-image",
+          "section": "hero",
+          "alt": ""
+        }
+      ],
+      "width": 250,
+      "height": 256,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "google_review_logo",
+      "optimized_bytes": 12146,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "image15.png",
+      "format": "png",
+      "original_bytes": 3934437,
+      "source_sha256": "feec2d8c894891fb152b3244f29102a2a2ba290435164d9b02103ef8c4f9794a",
+      "used": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1209.625,
+          "height": 790.96875,
+          "class": "hero__portrait-image",
+          "section": "hero",
+          "alt": "Jeremy Wilson, Founder and Managing Director of Oxen"
+        },
+        {
+          "viewport": 1920,
+          "width": 1309.59375,
+          "height": 856.359375,
+          "class": "hero__portrait-image",
+          "section": "hero",
+          "alt": "Jeremy Wilson, Founder and Managing Director of Oxen"
+        },
+        {
+          "viewport": 768,
+          "width": 321.90625,
+          "height": 440,
+          "class": "hero__portrait-image",
+          "section": "hero",
+          "alt": "Jeremy Wilson, Founder and Managing Director of Oxen"
+        },
+        {
+          "viewport": 390,
+          "width": 350,
+          "height": 340,
+          "class": "hero__portrait-image",
+          "section": "hero",
+          "alt": "Jeremy Wilson, Founder and Managing Director of Oxen"
+        }
+      ],
+      "width": 2878,
+      "height": 1882,
+      "transparency": true,
+      "icc_profile": true,
+      "presentation_mean_error": [
+        0.1543980037429819,
+        0.13243605739238928,
+        0.15570804741110417,
+        0.004045539613225203
+      ],
+      "key": "hero_portrait",
+      "optimized_bytes": 653254,
+      "optimized_format": "image/avif"
+    },
+    {
+      "source": "image16.png",
+      "format": "png",
+      "original_bytes": 62364,
+      "source_sha256": "9a80ea5c312401772c834f5256f8b4633d5d35d8b96389bae2e54e0e2132045d",
+      "used": true,
+      "components": [
+        "footer.php",
+        "template-parts/home/hero.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 117.0625,
+          "height": 110.90625,
+          "class": "hero__partner-badge-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 117.0625,
+          "height": 110.90625,
+          "class": "site-footer__badge-image",
+          "section": "site-footer",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 117.0625,
+          "height": 110.90625,
+          "class": "hero__partner-badge-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 117.0625,
+          "height": 110.90625,
+          "class": "site-footer__badge-image",
+          "section": "site-footer",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 95,
+          "height": 93.625,
+          "class": "hero__partner-badge-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 117.28125,
+          "height": 111.1875,
+          "class": "site-footer__badge-image",
+          "section": "site-footer",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 95,
+          "height": 93.625,
+          "class": "hero__partner-badge-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 117.28125,
+          "height": 111.1875,
+          "class": "site-footer__badge-image",
+          "section": "site-footer",
+          "alt": ""
+        }
+      ],
+      "width": 1253,
+      "height": 1187,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "footer_partner_logo",
+      "optimized_bytes": 11250,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "image3.png",
+      "format": "png",
+      "original_bytes": 8210,
+      "source_sha256": "fd3ecb6f635c97528b8d8ea589bbc9e16eb4b0e6efae364fa15c70a3c2fbdd91",
+      "used": true,
+      "components": [
+        "header.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 87.890625,
+          "height": 18.421875,
+          "class": "",
+          "section": "navigation",
+          "alt": "Oxen Development"
+        },
+        {
+          "viewport": 1920,
+          "width": 87.890625,
+          "height": 18.421875,
+          "class": "",
+          "section": "navigation",
+          "alt": "Oxen Development"
+        },
+        {
+          "viewport": 768,
+          "width": 87.890625,
+          "height": 18.421875,
+          "class": "",
+          "section": "navigation",
+          "alt": "Oxen Development"
+        },
+        {
+          "viewport": 390,
+          "width": 87.890625,
+          "height": 18.421875,
+          "class": "",
+          "section": "navigation",
+          "alt": "Oxen Development"
+        }
+      ],
+      "width": 539,
+      "height": 113,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "site_logo",
+      "optimized_bytes": 2434,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "image6.png",
+      "format": "png",
+      "original_bytes": 88630,
+      "source_sha256": "9a2649ccea31ee0f9378d34620091a796bf12b5749af66a83458a97b2a43684c",
+      "used": true,
+      "components": [
+        "template-parts/home/partners.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 128.59375,
+          "height": 128.59375,
+          "class": "",
+          "section": "partners",
+          "alt": "Bootleg Jerky Co"
+        },
+        {
+          "viewport": 1440,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 128.59375,
+          "height": 128.59375,
+          "class": "",
+          "section": "partners",
+          "alt": "Bootleg Jerky Co"
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 128.59375,
+          "height": 128.59375,
+          "class": "",
+          "section": "partners",
+          "alt": "Bootleg Jerky Co"
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 128.59375,
+          "height": 128.59375,
+          "class": "",
+          "section": "partners",
+          "alt": "Bootleg Jerky Co"
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        }
+      ],
+      "width": 818,
+      "height": 818,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "partner_bootleg",
+      "optimized_bytes": 26044,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "image7.png",
+      "format": "png",
+      "original_bytes": 32491,
+      "source_sha256": "1cced137ce1a721ba36d7db359cc624bb265778d0dbaabf5cb207ea79dda057e",
+      "used": true,
+      "components": [
+        "template-parts/home/partners.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 128.59375,
+          "height": 128.59375,
+          "class": "",
+          "section": "partners",
+          "alt": "Cali Woods"
+        },
+        {
+          "viewport": 1440,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 128.59375,
+          "height": 128.59375,
+          "class": "",
+          "section": "partners",
+          "alt": "Cali Woods"
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 128.59375,
+          "height": 128.59375,
+          "class": "",
+          "section": "partners",
+          "alt": "Cali Woods"
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 128.59375,
+          "height": 128.59375,
+          "class": "",
+          "section": "partners",
+          "alt": "Cali Woods"
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        }
+      ],
+      "width": 400,
+      "height": 400,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "partner_cali_woods",
+      "optimized_bytes": 12414,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "image8.png",
+      "format": "png",
+      "original_bytes": 23931,
+      "source_sha256": "b3e0c366339a4696ed9e3fe521428da2536094660c0e174ab317800f60821eb8",
+      "used": true,
+      "components": [
+        "template-parts/home/partners.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 192.3125,
+          "height": 192.3125,
+          "class": "",
+          "section": "partners",
+          "alt": "Low Carb Haven"
+        },
+        {
+          "viewport": 1440,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 192.3125,
+          "height": 192.3125,
+          "class": "",
+          "section": "partners",
+          "alt": "Low Carb Haven"
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 192.3125,
+          "height": 192.3125,
+          "class": "",
+          "section": "partners",
+          "alt": "Low Carb Haven"
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 163,
+          "height": 163,
+          "class": "",
+          "section": "partners",
+          "alt": "Low Carb Haven"
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        }
+      ],
+      "width": 504,
+      "height": 504,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "partner_low_carb_haven",
+      "optimized_bytes": 5194,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "image9.png",
+      "format": "png",
+      "original_bytes": 14351,
+      "source_sha256": "13e450e3131419a37babc199724aa33116ac241996dc712c9164ff91b4792db8",
+      "used": true,
+      "components": [
+        "template-parts/home/partners.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 138.609375,
+          "height": 138.609375,
+          "class": "",
+          "section": "partners",
+          "alt": "Manage"
+        },
+        {
+          "viewport": 1440,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 138.609375,
+          "height": 138.609375,
+          "class": "",
+          "section": "partners",
+          "alt": "Manage"
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 138.609375,
+          "height": 138.609375,
+          "class": "",
+          "section": "partners",
+          "alt": "Manage"
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 138.609375,
+          "height": 138.609375,
+          "class": "",
+          "section": "partners",
+          "alt": "Manage"
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "",
+          "section": "partners",
+          "alt": ""
+        }
+      ],
+      "width": 400,
+      "height": 400,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "key": "partner_manage",
+      "optimized_bytes": 4198,
+      "optimized_format": "image/webp"
+    },
+    {
+      "source": "rectangle28.png",
+      "format": "png",
+      "original_bytes": 250448,
+      "source_sha256": "839cc783cb8d1f86f9d0652003cb91a0fb3813b443c3acdb1e2269d8a439bc74",
+      "used": true,
+      "components": [
+        "template-parts/home/results.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 629.34375,
+          "height": 1016.484375,
+          "class": "case-study__photo-image--manufacturing",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 839.109375,
+          "height": 156.78125,
+          "class": "case-study__photo-image--manufacturing",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 338,
+          "height": 180,
+          "class": "case-study__photo-image--manufacturing",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 348,
+          "height": 180,
+          "class": "case-study__photo-image--manufacturing",
+          "section": "results",
+          "alt": ""
+        }
+      ],
+      "width": 907,
+      "height": 1361,
+      "transparency": false,
+      "icc_profile": true,
+      "presentation_mean_error": [
+        0.9225401360544218,
+        0.7756244897959184,
+        1.037669387755102
+      ],
+      "key": "case_study_manufacturing",
+      "optimized_bytes": 228251,
+      "optimized_format": "image/avif"
+    },
+    {
+      "source": "rectangle30.svg",
+      "format": "svg",
+      "original_bytes": 274,
+      "source_sha256": "447f741a08d09ec0157909123a6f6f0096e1a5c68e965fb1bcc07a4b3e6c4d66",
+      "used": true,
+      "components": [
+        "assets/css/calculator.css"
+      ],
+      "display": [],
+      "width": 576,
+      "height": 547,
+      "transparency": true,
+      "key": "calculator_results_mask",
+      "optimized_bytes": 273,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "rectangle31.svg",
+      "format": "svg",
+      "original_bytes": 271,
+      "source_sha256": "a381078dfa254b61e694270b2c510c5ab601cc299fd5aa46a1a1b03c09692677",
+      "used": true,
+      "components": [
+        "assets/css/services.css"
+      ],
+      "display": [],
+      "width": 334,
+      "height": 600,
+      "transparency": true,
+      "key": "testimonial_mask",
+      "optimized_bytes": 270,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "rectangle32.png",
+      "format": "png",
+      "original_bytes": 198075,
+      "source_sha256": "d027406bac0fc533c41737f787200670567ec24a0c5125e0b4e2c86480cabfc0",
+      "used": true,
+      "components": [
+        "assets/css/services.css",
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 333.96875,
+          "height": 599.515625,
+          "class": "service-card__background-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__background-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__background-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__background-image--cfo",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 799,
+      "height": 1199,
+      "transparency": false,
+      "icc_profile": true,
+      "presentation_mean_error": [
+        0.9074748299319728,
+        0.7847156462585034,
+        1.0796721088435375
+      ],
+      "key": "service_cfo_background",
+      "optimized_bytes": 181142,
+      "optimized_format": "image/avif"
+    },
+    {
+      "source": "rectangle33.svg",
+      "format": "svg",
+      "original_bytes": 274,
+      "source_sha256": "3d0ad1a449851bef1a80112253b9c99cc5471c7898a3d4800579b6613fee9653",
+      "used": true,
+      "components": [
+        "assets/css/quiz.css"
+      ],
+      "display": [],
+      "width": 538,
+      "height": 116,
+      "transparency": true,
+      "key": "quiz_skip_mask",
+      "optimized_bytes": 273,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "rectangle34.svg",
+      "format": "svg",
+      "original_bytes": 268,
+      "source_sha256": "4b8419988116528a60a842a2f17f2e52da03a3c4c424b6dd17379fbb451cf207",
+      "used": true,
+      "components": [
+        "assets/css/process.css"
+      ],
+      "display": [],
+      "width": 452,
+      "height": 374,
+      "transparency": true,
+      "key": "about_photo_mask",
+      "optimized_bytes": 267,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "rectangle35.svg",
+      "format": "svg",
+      "original_bytes": 262,
+      "source_sha256": "dff233f029cd142fb417477f4ad50187534e6ea51abbbc7c3b36c5b2cb9f86cc",
+      "used": true,
+      "components": [
+        "assets/css/services.css"
+      ],
+      "display": [],
+      "width": 334,
+      "height": 600,
+      "transparency": true,
+      "key": "process_card_mask",
+      "optimized_bytes": 261,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "rectangle44.svg",
+      "format": "svg",
+      "original_bytes": 258,
+      "source_sha256": "5585519fd64b71b5f676ac056b200b30f712edf24bc8abd47316694520c5fd2c",
+      "used": true,
+      "components": [
+        "assets/css/hero.css"
+      ],
+      "display": [],
+      "width": 1441,
+      "height": 779,
+      "transparency": true,
+      "key": "footer_badge_mask",
+      "optimized_bytes": 257,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "rectangle48.png",
+      "format": "png",
+      "original_bytes": 298969,
+      "source_sha256": "7db096db09c01f6a902d89c04562070302952141292c073877233ee213a966b4",
+      "used": true,
+      "components": [
+        "template-parts/home/results.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 626,
+          "height": 156.78125,
+          "class": "case-study__photo-image--consulting",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 834.65625,
+          "height": 156.78125,
+          "class": "case-study__photo-image--consulting",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 338,
+          "height": 180,
+          "class": "case-study__photo-image--consulting",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 348,
+          "height": 180,
+          "class": "case-study__photo-image--consulting",
+          "section": "results",
+          "alt": ""
+        }
+      ],
+      "width": 1355,
+      "height": 903,
+      "transparency": false,
+      "icc_profile": true,
+      "presentation_mean_error": [
+        0.7527099938687921,
+        0.6566707541385653,
+        0.9945800122624157
+      ],
+      "key": "case_study_professional_services",
+      "optimized_bytes": 284790,
+      "optimized_format": "image/avif"
+    },
+    {
+      "source": "team-photos-fauxels3.svg",
+      "format": "svg",
+      "original_bytes": 253,
+      "source_sha256": "b5e5f5280b5a8cf7ab493ac464b34f3632d4d5c8b335e1b645936be4037c6c5c",
+      "used": true,
+      "components": [
+        "assets/css/testimonials.css"
+      ],
+      "display": [],
+      "width": 1384,
+      "height": 725,
+      "transparency": true,
+      "key": "testimonials_photo_canvas",
+      "optimized_bytes": 252,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "team-photos-fauxels4.png",
+      "format": "png",
+      "original_bytes": 598001,
+      "source_sha256": "6dc1c2c1411a357a03b8e589d72267226e9ad1f0e0a5561527259f1742a30a9b",
+      "used": true,
+      "components": [
+        "template-parts/home/testimonials.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1518.546875,
+          "height": 1162.234375,
+          "class": "testimonials__photo-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1845.328125,
+          "height": 724.921875,
+          "class": "testimonials__photo-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 352,
+          "height": 560,
+          "class": "testimonials__photo-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 350,
+          "height": 240,
+          "class": "testimonials__photo-image",
+          "section": "testimonials",
+          "alt": ""
+        }
+      ],
+      "width": 2025,
+      "height": 3036,
+      "transparency": false,
+      "icc_profile": true,
+      "presentation_mean_error": [
+        0.578421626038404,
+        0.5136374778700803,
+        0.7069140678196922
+      ],
+      "key": "testimonial_background",
+      "optimized_bytes": 530301,
+      "optimized_format": "image/avif"
+    },
+    {
+      "source": "team-photos-fauxels5.svg",
+      "format": "svg",
+      "original_bytes": 262,
+      "source_sha256": "000030131e4002419ed1def8cdbf1b1ee75dcf6a9701ce6ad7dc229fbf7eebd4",
+      "used": true,
+      "components": [
+        "assets/css/about.css"
+      ],
+      "display": [],
+      "width": 580,
+      "height": 229,
+      "transparency": true,
+      "key": "why_accordion_photo",
+      "optimized_bytes": 261,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "team-photos-fauxels6.png",
+      "format": "png",
+      "original_bytes": 940815,
+      "source_sha256": "96c3fbcf15a27863670d7c9ab73aaa5fe37de63bf8e5cc8368c298271c404a2c",
+      "used": true,
+      "components": [
+        "template-parts/home/about.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 611.75,
+          "height": 228.59375,
+          "class": "",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 611.75,
+          "height": 228.59375,
+          "class": "",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 611.75,
+          "height": 228.59375,
+          "class": "",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 773.484375,
+          "height": 305.046875,
+          "class": "",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 773.484375,
+          "height": 305.046875,
+          "class": "",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 773.484375,
+          "height": 305.046875,
+          "class": "",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 336,
+          "height": 240,
+          "class": "",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 336,
+          "height": 240,
+          "class": "",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 336,
+          "height": 240,
+          "class": "",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 350,
+          "height": 240,
+          "class": "",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 350,
+          "height": 240,
+          "class": "",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 350,
+          "height": 240,
+          "class": "",
+          "section": "about",
+          "alt": ""
+        }
+      ],
+      "width": 1024,
+      "height": 680,
+      "transparency": true,
+      "icc_profile": false,
+      "presentation_mean_error": [
+        0.8557665130568356,
+        0.6659324116743471,
+        0.9862334869431644,
+        0.00013517665130568357
+      ],
+      "key": "about_team_image",
+      "optimized_bytes": 106473,
+      "optimized_format": "image/avif"
+    },
+    {
+      "source": "texture-picture-from-unsplash1.png",
+      "format": "png",
+      "original_bytes": 3869063,
+      "source_sha256": "6934928d42b0b8835fb53eb7b63a160b086645e4d2d56d75bcc0a5adc59512f7",
+      "used": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1442,
+          "height": 961.4375,
+          "class": "hero__texture-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1922,
+          "height": 1036.671875,
+          "class": "hero__texture-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "hero__texture-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "hero__texture-image",
+          "section": "hero",
+          "alt": ""
+        }
+      ],
+      "width": 2731,
+      "height": 4096,
+      "transparency": false,
+      "icc_profile": true,
+      "presentation_mean_error": [
+        0.5944326530612245,
+        0.630691156462585,
+        0.4729278911564626
+      ],
+      "key": "hero_background",
+      "optimized_bytes": 652746,
+      "optimized_format": "image/avif"
+    },
+    {
+      "source": "vector.svg",
+      "format": "svg",
+      "original_bytes": 194,
+      "source_sha256": "42f0a15fbd864f9cbbda6ccc3b4426d6bb4992be4024cf8bcda837c561089a75",
+      "used": false,
+      "components": [],
+      "display": [],
+      "width": 32,
+      "height": 32,
+      "transparency": true
+    },
+    {
+      "source": "vector1012.svg",
+      "format": "svg",
+      "original_bytes": 237,
+      "source_sha256": "5baf098bd53a6a578a4256876dbd672fad71746d78f029bb40c38f63f0006dc4",
+      "used": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1,
+          "height": 52.75,
+          "class": "hero__edge-mark-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 1,
+          "height": 52.75,
+          "class": "hero__author-mark-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1,
+          "height": 52.75,
+          "class": "hero__edge-mark-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1,
+          "height": 52.75,
+          "class": "hero__author-mark-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "hero__edge-mark-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "hero__author-mark-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "hero__edge-mark-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "hero__author-mark-image",
+          "section": "hero",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 53,
+      "transparency": true,
+      "key": "hero_edge_mark",
+      "optimized_bytes": 236,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1013.svg",
+      "format": "svg",
+      "original_bytes": 242,
+      "source_sha256": "e2743b0fc6e88d921e93946a326a9fff29e174daccc6c8676d1d0287dc16cbe2",
+      "used": true,
+      "components": [
+        "template-parts/home/hero.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 118.59375,
+          "height": 1,
+          "class": "hero__rating-divider-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 118.59375,
+          "height": 1,
+          "class": "hero__rating-divider-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "hero__rating-divider-image",
+          "section": "hero",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "hero__rating-divider-image",
+          "section": "hero",
+          "alt": ""
+        }
+      ],
+      "width": 119,
+      "height": 1,
+      "transparency": true,
+      "key": "hero_rating_divider",
+      "optimized_bytes": 241,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1015.svg",
+      "format": "svg",
+      "original_bytes": 264,
+      "source_sha256": "fa6092aaa42ab6bbb2f3fc9e3b056ff78a30c78d88dab20ae3dafc483f095098",
+      "used": true,
+      "components": [
+        "template-parts/home/services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 0.5,
+          "height": 110.984375,
+          "class": "service-path__halo-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0.5,
+          "height": 110.984375,
+          "class": "service-path__halo-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__halo-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__halo-image",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 111,
+      "transparency": true,
+      "key": "service_path_halo",
+      "optimized_bytes": 263,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1016.svg",
+      "format": "svg",
+      "original_bytes": 242,
+      "source_sha256": "e83c143b3ce584fc3081d14a506a0aaa47dc2e302770ef2e659e86ada64d2595",
+      "used": true,
+      "components": [
+        "template-parts/home/services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 224.90625,
+          "height": 1,
+          "class": "service-comparison__rule",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 224.90625,
+          "height": 1,
+          "class": "service-comparison__rule",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 224.90625,
+          "height": 1,
+          "class": "service-comparison__rule",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 224.90625,
+          "height": 1,
+          "class": "service-comparison__rule",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 225,
+      "height": 1,
+      "transparency": true,
+      "key": "service_comparison_rule",
+      "optimized_bytes": 241,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1019.svg",
+      "format": "svg",
+      "original_bytes": 264,
+      "source_sha256": "242361f1c4223b851c860ecfb27abd5a6e0738bf9b8e08eed60172908d9d0c3a",
+      "used": true,
+      "components": [
+        "template-parts/home/quiz.php",
+        "template-parts/home/statistics.php",
+        "template-parts/home/testimonials.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__experience-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__experience-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__experience-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__experience-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__capital-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__capital-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__growth-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__growth-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__capital-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__capital-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__growth-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__growth-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__owners-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__owners-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__owners-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__owners-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "quiz__card-top-left-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "quiz__card-bottom-right-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "testimonial__corner-start-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "testimonial__quote-start-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__experience-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__experience-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__experience-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__experience-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__capital-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__capital-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__growth-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__growth-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__capital-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__capital-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__growth-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__growth-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__owners-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__owners-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__owners-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "statistics__owners-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "quiz__card-top-left-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "quiz__card-bottom-right-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "testimonial__corner-start-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "testimonial__quote-start-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__experience-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__experience-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__experience-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__experience-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__capital-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__capital-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__growth-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__growth-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__capital-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__capital-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__growth-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__growth-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__owners-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__owners-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__owners-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__owners-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__card-top-left-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__card-bottom-right-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__corner-start-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__quote-start-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__experience-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__experience-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__experience-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__experience-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__capital-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__capital-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__growth-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__growth-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__capital-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__capital-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__growth-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__growth-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__owners-top-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__owners-bottom-right-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__owners-top-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "statistics__owners-bottom-left-horizontal-image",
+          "section": "statistics",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__card-top-left-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__card-bottom-right-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__corner-start-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__quote-start-image",
+          "section": "testimonials",
+          "alt": ""
+        }
+      ],
+      "width": 7,
+      "height": 7,
+      "transparency": true,
+      "key": "statistics_experience_top_left_horizontal",
+      "optimized_bytes": 263,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1020.svg",
+      "format": "svg",
+      "original_bytes": 264,
+      "source_sha256": "904d9722e9a83029a98dcb5b5a52385480de8c27cf4d20ec20f7e0989743bc4a",
+      "used": true,
+      "components": [
+        "template-parts/home/results.php",
+        "template-parts/home/services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "service-path__start-divider-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "service-path__end-divider-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "service-path__start-marker-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "service-path__end-marker-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "service-path__start-divider-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "service-path__end-divider-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "service-path__start-marker-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "service-path__end-marker-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__start-divider-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__end-divider-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__start-marker-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__end-marker-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__start-divider-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__end-divider-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__start-marker-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-path__end-marker-image",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-left",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-left",
+          "section": "results",
+          "alt": ""
+        }
+      ],
+      "width": 7,
+      "height": 7,
+      "transparency": true,
+      "key": "service_path_start_divider",
+      "optimized_bytes": 263,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1021.svg",
+      "format": "svg",
+      "original_bytes": 265,
+      "source_sha256": "2f9d51be3ce01450ae15ba72798e8e3a631b6da94d070015958776b72488c91b",
+      "used": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1,
+          "height": 534.984375,
+          "class": "quiz__bottom-mark-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1,
+          "height": 534.984375,
+          "class": "quiz__bottom-mark-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__bottom-mark-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__bottom-mark-image",
+          "section": "quiz",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 535,
+      "transparency": true,
+      "key": "quiz_bottom_mark",
+      "optimized_bytes": 264,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1022.svg",
+      "format": "svg",
+      "original_bytes": 264,
+      "source_sha256": "242361f1c4223b851c860ecfb27abd5a6e0738bf9b8e08eed60172908d9d0c3a",
+      "used": true,
+      "components": [
+        "template-parts/home/testimonials.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "testimonial__corner-end-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "testimonial__quote-end-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "testimonial__corner-end-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "testimonial__quote-end-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__corner-end-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__quote-end-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__corner-end-image",
+          "section": "testimonials",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "testimonial__quote-end-image",
+          "section": "testimonials",
+          "alt": ""
+        }
+      ],
+      "width": 7,
+      "height": 7,
+      "transparency": true,
+      "key": "testimonial_corner_end",
+      "optimized_bytes": 263,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1023.svg",
+      "format": "svg",
+      "original_bytes": 264,
+      "source_sha256": "54b4aff3a9ba69d3b7ec02f618f51e7d197ddc5558654fc25dfc7333f354afbf",
+      "used": true,
+      "components": [
+        "template-parts/home/about.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--top-right",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-left",
+          "section": "about",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.453125,
+          "height": 7.328125,
+          "class": "why-accordion__corner why-accordion__corner--bottom-right",
+          "section": "about",
+          "alt": ""
+        }
+      ],
+      "width": 7,
+      "height": 7,
+      "transparency": true,
+      "key": "why_accordion_corner",
+      "optimized_bytes": 263,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1024.svg",
+      "format": "svg",
+      "original_bytes": 705,
+      "source_sha256": "40fc9eac055ea61eaf9ec4d83ff4c48673b6cf6004fa9389a140421235b8ff24",
+      "used": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1441,
+          "height": 513.484375,
+          "class": "contact__graph contact__graph--primary",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1441,
+          "height": 513.484375,
+          "class": "contact__graph contact__graph--primary",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 1224.8499755859375,
+          "height": 436.4609375,
+          "class": "contact__graph contact__graph--primary",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 936.6499633789062,
+          "height": 333.765625,
+          "class": "contact__graph contact__graph--primary",
+          "section": "contact",
+          "alt": ""
+        }
+      ],
+      "width": 1441,
+      "height": 513,
+      "transparency": true,
+      "key": "contact_graph",
+      "optimized_bytes": 704,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1025.svg",
+      "format": "svg",
+      "original_bytes": 286,
+      "source_sha256": "f1f66830c83be503278f3b29be4498d46d58c44d9a778eb63c3eb0f588e31457",
+      "used": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1,
+          "height": 562.765625,
+          "class": "contact__guide contact__guide--one",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1,
+          "height": 562.765625,
+          "class": "contact__guide contact__guide--one",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0.8499755859375,
+          "height": 478.3505859375,
+          "class": "contact__guide contact__guide--one",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0.64996337890625,
+          "height": 365.7978515625,
+          "class": "contact__guide contact__guide--one",
+          "section": "contact",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 563,
+      "transparency": true,
+      "key": "contact_guide",
+      "optimized_bytes": 285,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1026.svg",
+      "format": "svg",
+      "original_bytes": 286,
+      "source_sha256": "4ca727045026b67e7d197f950d67911e70e58d46381b83948a0198a4ea9297ff",
+      "used": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1,
+          "height": 457.078125,
+          "class": "contact__guide contact__guide--two",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1,
+          "height": 457.078125,
+          "class": "contact__guide contact__guide--two",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0.8499755859375,
+          "height": 388.515625,
+          "class": "contact__guide contact__guide--two",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0.6500244140625,
+          "height": 297.1015625,
+          "class": "contact__guide contact__guide--two",
+          "section": "contact",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 457,
+      "transparency": true,
+      "key": "contact_guide_middle",
+      "optimized_bytes": 285,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1027.svg",
+      "format": "svg",
+      "original_bytes": 286,
+      "source_sha256": "f2095e414c38327e21f1bde731b8cc59b327fcea417298a5c3cbd5dec1db19de",
+      "used": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1,
+          "height": 201.21875,
+          "class": "contact__guide contact__guide--three",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1,
+          "height": 201.21875,
+          "class": "contact__guide contact__guide--three",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0.850006103515625,
+          "height": 171.0361328125,
+          "class": "contact__guide contact__guide--three",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0.649993896484375,
+          "height": 130.7919921875,
+          "class": "contact__guide contact__guide--three",
+          "section": "contact",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 201,
+      "transparency": true,
+      "key": "contact_guide_short",
+      "optimized_bytes": 285,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1028.svg",
+      "format": "svg",
+      "original_bytes": 286,
+      "source_sha256": "57acb44a88e824a11fcfb0fbcd4506dc288aedc881ddd77ffa33f3efe95ce726",
+      "used": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1,
+          "height": 160.109375,
+          "class": "contact__guide contact__guide--four",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 1,
+          "height": 160.109375,
+          "class": "contact__guide contact__guide--five",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1,
+          "height": 160.109375,
+          "class": "contact__guide contact__guide--four",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1,
+          "height": 160.109375,
+          "class": "contact__guide contact__guide--five",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0.8499755859375,
+          "height": 136.0927734375,
+          "class": "contact__guide contact__guide--four",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0.850006103515625,
+          "height": 136.0927734375,
+          "class": "contact__guide contact__guide--five",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0.64996337890625,
+          "height": 104.0712890625,
+          "class": "contact__guide contact__guide--four",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0.649993896484375,
+          "height": 104.0712890625,
+          "class": "contact__guide contact__guide--five",
+          "section": "contact",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 160,
+      "transparency": true,
+      "key": "contact_guide_lower",
+      "optimized_bytes": 285,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1029.svg",
+      "format": "svg",
+      "original_bytes": 254,
+      "source_sha256": "15d4951bb41ceee03e37d50a7f8f90d68ffa20abc0e2de784427f83c476ad74e",
+      "used": true,
+      "components": [
+        "template-parts/home/calculator.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 480,
+          "height": 0.5,
+          "class": "calculator__results-divider-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 640,
+          "height": 0.5,
+          "class": "calculator__results-divider-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "calculator__results-divider-image",
+          "section": "calculator",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "calculator__results-divider-image",
+          "section": "calculator",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 480,
+      "transparency": true,
+      "key": "calculator_results_divider",
+      "optimized_bytes": 253,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1030.svg",
+      "format": "svg",
+      "original_bytes": 286,
+      "source_sha256": "afe54e513998adc2708270488ad388796e3cab99e3236744f59fae227e0e74bc",
+      "used": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1,
+          "height": 196.0625,
+          "class": "contact__guide contact__guide--six",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1,
+          "height": 196.0625,
+          "class": "contact__guide contact__guide--six",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0.85003662109375,
+          "height": 166.6533203125,
+          "class": "contact__guide contact__guide--six",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0.64996337890625,
+          "height": 127.4404296875,
+          "class": "contact__guide contact__guide--six",
+          "section": "contact",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 196,
+      "transparency": true,
+      "key": "contact_guide_right",
+      "optimized_bytes": 285,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1031.svg",
+      "format": "svg",
+      "original_bytes": 699,
+      "source_sha256": "08034a5bf60e69b96dfd5b15a01a45b16fb8feb12db3cca5887cc3125955a29c",
+      "used": true,
+      "components": [
+        "template-parts/home/contact.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1441,
+          "height": 377.734375,
+          "class": "contact__graph contact__graph--secondary",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1441,
+          "height": 377.734375,
+          "class": "contact__graph contact__graph--secondary",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 1224.8499755859375,
+          "height": 321.07421875,
+          "class": "contact__graph contact__graph--secondary",
+          "section": "contact",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 936.6499633789062,
+          "height": 245.52734375,
+          "class": "contact__graph contact__graph--secondary",
+          "section": "contact",
+          "alt": ""
+        }
+      ],
+      "width": 1441,
+      "height": 378,
+      "transparency": true,
+      "key": "contact_graph_secondary",
+      "optimized_bytes": 698,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1032.svg",
+      "format": "svg",
+      "original_bytes": 266,
+      "source_sha256": "4d4c2c6d2f5a7d92cc0e8293d17469d7816f0fe7b6026797e49f5c9b21baa924",
+      "used": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 537.84375,
+          "height": 0.5,
+          "class": "quiz__advisory-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 537.84375,
+          "height": 0.5,
+          "class": "quiz__foundations-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 537.84375,
+          "height": 0.5,
+          "class": "quiz__essentials-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 537.84375,
+          "height": 0.5,
+          "class": "quiz__cfo-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 725.6875,
+          "height": 0.5,
+          "class": "quiz__advisory-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 725.6875,
+          "height": 0.5,
+          "class": "quiz__foundations-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 725.6875,
+          "height": 0.5,
+          "class": "quiz__essentials-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 725.6875,
+          "height": 0.5,
+          "class": "quiz__cfo-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__advisory-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__foundations-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__essentials-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__cfo-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__advisory-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__foundations-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__essentials-divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__cfo-divider-image",
+          "section": "quiz",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 538,
+      "transparency": true,
+      "key": "quiz_advisory_divider",
+      "optimized_bytes": 265,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1033.svg",
+      "format": "svg",
+      "original_bytes": 264,
+      "source_sha256": "79b161ce3fb0ae765fbecb349ae15b719411b11fdfadbbdeab4bd97509988cdf",
+      "used": true,
+      "components": [
+        "template-parts/home/results.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--top-right",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 7.46875,
+          "height": 7.34375,
+          "class": "case-study__corner case-study__corner--bottom-right",
+          "section": "results",
+          "alt": ""
+        }
+      ],
+      "width": 7,
+      "height": 7,
+      "transparency": true,
+      "key": "case_study_corner",
+      "optimized_bytes": 263,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1034.svg",
+      "format": "svg",
+      "original_bytes": 266,
+      "source_sha256": "4ef833e45b129ad8238603c147a8400464bfa647989158c5821266e7a169c7db",
+      "used": true,
+      "components": [
+        "template-parts/home/results.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 0.5,
+          "height": 88.5,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 0.5,
+          "height": 88.5,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 0.5,
+          "height": 88.5,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 0.5,
+          "height": 88.5,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0.5,
+          "height": 88.5,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0.5,
+          "height": 88.5,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0.5,
+          "height": 88.5,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0.5,
+          "height": 88.5,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0.5,
+          "height": 85.1875,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0.5,
+          "height": 85.1875,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0.5,
+          "height": 108.375,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0.5,
+          "height": 108.375,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0.5,
+          "height": 85.1875,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0.5,
+          "height": 85.1875,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0.5,
+          "height": 108.375,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0.5,
+          "height": 108.375,
+          "class": "",
+          "section": "results",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 89,
+      "transparency": true,
+      "key": "section_item",
+      "optimized_bytes": 265,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector1035.svg",
+      "format": "svg",
+      "original_bytes": 266,
+      "source_sha256": "4ad7ff05e6f62ab230bd50167133bdcdf0d7d8a98e0143ee2a8227a15cf1a77b",
+      "used": true,
+      "components": [
+        "inc/home-services.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 277.5625,
+          "height": 0.5,
+          "class": "service-card__divider-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 277.5625,
+          "height": 0.5,
+          "class": "service-card__divider-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 277.5625,
+          "height": 0.5,
+          "class": "service-card__divider-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 277.5625,
+          "height": 0.5,
+          "class": "service-card__divider-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__divider-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__divider-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__divider-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__divider-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__divider-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__divider-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__divider-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__divider-image--cfo",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__divider-image--foundations",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__divider-image--essentials",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__divider-image--advisory",
+          "section": "services",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "service-card__divider-image--cfo",
+          "section": "services",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 278,
+      "transparency": true,
+      "key": "service_card_divider_image_foundations",
+      "optimized_bytes": 265,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector196.svg",
+      "format": "svg",
+      "original_bytes": 694,
+      "source_sha256": "d2147f035b7ce1f239b748a11cebfb588b9c94a9d187ae29c7f22b80d9b0c014",
+      "used": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1440,
+          "height": 601.140625,
+          "class": "quiz__side-mark-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1920,
+          "height": 601.140625,
+          "class": "quiz__side-mark-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__side-mark-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__side-mark-image",
+          "section": "quiz",
+          "alt": ""
+        }
+      ],
+      "width": 1440,
+      "height": 601,
+      "transparency": true,
+      "key": "quiz_side_mark",
+      "optimized_bytes": 693,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector7.svg",
+      "format": "svg",
+      "original_bytes": 258,
+      "source_sha256": "7c78da85dac89d6473365213ea37a147d616d4c5cbd20c135af25898bb8624e4",
+      "used": true,
+      "components": [
+        "footer.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1384,
+          "height": 0.75,
+          "class": "site-footer__policy-divider-image",
+          "section": "site-footer",
+          "alt": ""
+        },
+        {
+          "viewport": 1440,
+          "width": 1384,
+          "height": 0.75,
+          "class": "site-footer__copyright-divider-image",
+          "section": "site-footer",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1845.328125,
+          "height": 0.75,
+          "class": "site-footer__policy-divider-image",
+          "section": "site-footer",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1845.328125,
+          "height": 0.75,
+          "class": "site-footer__copyright-divider-image",
+          "section": "site-footer",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "site-footer__policy-divider-image",
+          "section": "site-footer",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "site-footer__copyright-divider-image",
+          "section": "site-footer",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "site-footer__policy-divider-image",
+          "section": "site-footer",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "site-footer__copyright-divider-image",
+          "section": "site-footer",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 1384,
+      "transparency": true,
+      "key": "site_footer_policy_divider",
+      "optimized_bytes": 257,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector8.svg",
+      "format": "svg",
+      "original_bytes": 255,
+      "source_sha256": "5955777bd00b960f5e37f95117d53c1b24463f4db5ec3161884524de6ff65edc",
+      "used": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 567,
+          "height": 0.75,
+          "class": "quiz-card__divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 756,
+          "height": 0.75,
+          "class": "quiz-card__divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 338,
+          "height": 0.75,
+          "class": "quiz-card__divider-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 350,
+          "height": 0.75,
+          "class": "quiz-card__divider-image",
+          "section": "quiz",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 567,
+      "transparency": true,
+      "key": "quiz_card_divider",
+      "optimized_bytes": 254,
+      "optimized_format": "image/svg+xml"
+    },
+    {
+      "source": "vector995.svg",
+      "format": "svg",
+      "original_bytes": 264,
+      "source_sha256": "047d1fa3b0852d5ac5dd6179fdfb6612b6ef0669eea963de978f4086602ec1cf",
+      "used": true,
+      "components": [
+        "template-parts/home/quiz.php"
+      ],
+      "display": [
+        {
+          "viewport": 1440,
+          "width": 1,
+          "height": 658.6875,
+          "class": "quiz__corner-mark-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 1920,
+          "width": 1,
+          "height": 658.6875,
+          "class": "quiz__corner-mark-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 768,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__corner-mark-image",
+          "section": "quiz",
+          "alt": ""
+        },
+        {
+          "viewport": 390,
+          "width": 0,
+          "height": 0,
+          "class": "quiz__corner-mark-image",
+          "section": "quiz",
+          "alt": ""
+        }
+      ],
+      "width": 1,
+      "height": 659,
+      "transparency": true,
+      "key": "quiz_corner_mark",
+      "optimized_bytes": 263,
+      "optimized_format": "image/svg+xml"
+    }
+  ],
+  "summary": {
+    "original_assets": 90,
+    "used_assets": 89,
+    "unused_assets": [
+      "vector.svg"
+    ],
+    "original_bytes": 10875049,
+    "used_original_bytes": 10874855,
+    "optimized_master_bytes": 2979472,
+    "variants": 95,
+    "optimized_variant_bytes": 6321492
+  }
+}

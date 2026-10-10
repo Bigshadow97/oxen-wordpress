@@ -200,7 +200,7 @@
   mask-position: -223.945px 129.711px;
   mask-size: 451.5px 374.107px;
   width: 319.477px;
-  mask-image: url("../images/rectangle34.svg");
+  mask-image: var(--oxen-media-about-photo-mask);
   margin-left: 1184.1520px;
   margin-top: 117.6800px;
   z-index: 343;
@@ -228,7 +228,7 @@
   mask-size: 451.5px 374.107px;
   border-radius: 1px;
   width: 451.5px;
-  mask-image: url("../images/rectangle34.svg");
+  mask-image: var(--oxen-media-about-photo-mask);
   margin-left: 960.2980px;
   margin-top: 247.3900px;
   z-index: 339;
@@ -249,7 +249,7 @@
   letter-spacing: -0.8333px;
   white-space: nowrap;
   font-variation-settings: "CTGR" 0, "wdth" 100;
-  mask-image: url("../images/rectangle34.svg");
+  mask-image: var(--oxen-media-about-photo-mask);
   margin-left: 988.5625px;
   margin-top: 281.0410px;
   z-index: 342;
@@ -305,7 +305,7 @@
   color: #fff;
   letter-spacing: -0.2679px;
   white-space: nowrap;
-  mask-image: url("../images/rectangle34.svg");
+  mask-image: var(--oxen-media-about-photo-mask);
   margin-left: 26.3754px;
   margin-top: 11.3373px;
   z-index: 341;
@@ -322,7 +322,7 @@
   mask-size: 451.5px 374.107px;
   border-radius: 2px;
   width: 399.266px;
-  mask-image: url("../images/rectangle34.svg");
+  mask-image: var(--oxen-media-about-photo-mask);
   margin-left: 989.1480px;
   margin-top: 549.2100px;
   z-index: 340;
@@ -393,7 +393,7 @@
   }
 
   .process-card--onboarding {
-    background: var(--ink) url('../images/ellipse2146.svg') center/cover;
+    background: var(--ink) var(--oxen-media-about-glow) center/cover;
   }
 }
 

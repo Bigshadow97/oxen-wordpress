@@ -1,4 +1,8 @@
-<?php defined( 'ABSPATH' ) || exit; ?>
+<?php
+defined( 'ABSPATH' ) || exit;
+// The homepage ends at Contact; other pages retain the reusable site footer.
+if ( ! is_front_page() ) :
+?>
 <footer id="site-footer" class="section site-footer">
 <div class="section__item site-footer__background section__visual" aria-hidden="true"></div>
 <div class="section__item site-footer__policy-divider section__visual" aria-hidden="true"><div class="site-footer__policy-divider-frame"><div class="site-footer__policy-divider-frame-inner"><div class="site-footer__policy-divider-frame-outer"><?php echo oxen_media_image( 'site_footer_policy_divider', array( 'alt' => '', 'decoding' => 'async', 'class' => 'site-footer__policy-divider-image' ) ); ?></div></div></div></div>
@@ -43,6 +47,7 @@
 <div class="layout-group site-footer__badge-group"><div class="section__item site-footer__badge-background section__visual" aria-hidden="true"><div class="site-footer__badge-background-frame"><div class="site-footer__badge-background-frame-inner"></div></div></div>
 <div class="section__item site-footer__badge section__visual" aria-hidden="true"><div class="site-footer__badge-frame"><?php echo oxen_media_image( 'footer_partner_logo', array( 'alt' => '', 'decoding' => 'async', 'class' => 'site-footer__badge-image' ) ); ?></div></div></div>
 </footer>
+<?php endif; ?>
 <?php get_template_part( 'template-parts/site-dialogs' ); wp_footer(); ?>
 </body>
 </html>

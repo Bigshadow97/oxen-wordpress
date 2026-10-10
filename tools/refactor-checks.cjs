@@ -26,7 +26,7 @@ let browser;
     await page.waitForTimeout(550);assert.equal(await page.locator('[data-about-detail][aria-expanded="true"]').count(),1);assert.equal(await page.locator('[data-about-detail="0"]').getAttribute('aria-expanded'),'true');
     await page.emulateMedia({reducedMotion:'reduce'});assert.equal(await track.evaluate(n=>getComputedStyle(n).animationName),'none');
    }
-   assert.equal(await page.locator('header#navigation').count(),1);assert.equal(await page.locator('footer#site-footer').count(),1);
+   assert.equal(await page.locator('header#navigation').count(),1);assert.equal(await page.locator('footer#site-footer').count(),0);
    assert.equal(await page.evaluate(()=>document.querySelectorAll('[data-node-id]').length+[...document.querySelectorAll('[class]')].filter(n=>[...n.classList].some(c=>/^(?:layer|art)-\d+$|^(?:design-layer|art-layer)$/.test(c))).length),0,'No generated markup');
    for(let i=0;i<3;i++)await page.locator('[data-quiz-answer="2"]').click();assert.equal(await page.locator('[data-quiz-result-link]').getAttribute('href'),'#service-2');
    await page.locator('[data-quiz-back]').click();assert.match(await page.locator('#quiz-progress').textContent(),/03/);await page.locator('[data-quiz-answer="2"]').click();await page.locator('[data-quiz-restart]').click();
@@ -42,6 +42,6 @@ let browser;
  const old=fs.existsSync(path.join(folder,'after.json'))?JSON.parse(fs.readFileSync(path.join(folder,'after.json'))):[];
  const combined=baseline?geometry:[...old.filter(n=>!widths.includes(n.width)),...geometry].sort((a,b)=>b.width-a.width);
  fs.writeFileSync(path.join(folder,baseline?'baseline.json':'after.json'),JSON.stringify(combined,null,2));
- if(!baseline&&!capture)assert.deepEqual(geometry,JSON.parse(fs.readFileSync(path.join(folder,'baseline.json'))).filter(n=>widths.includes(n.width)),'Section geometry preserved exactly');
+ if(!baseline&&!capture)assert.deepEqual(geometry,JSON.parse(fs.readFileSync(path.join(folder,'baseline.json'))).filter(n=>widths.includes(n.width)).map(n=>({...n,sections:n.sections.filter(section=>section.id!=='site-footer')})),'Section geometry preserved exactly');
  assert.deepEqual(errors,[]);console.log(capture?'PASS: comparison captures saved; no browser errors.':baseline?'PASS: four baseline captures saved.':`PASS: ${widths.join('/')} layouts, generated-markup removal, shared shell, quiz/Back, calculator, accordion, slider, dialogs, mobile navigation and browser errors.`);
 })().catch(e=>{console.error(e);process.exitCode=1}).finally(async()=>{await browser?.close()});

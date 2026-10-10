@@ -7,7 +7,7 @@ fs.mkdirSync(out,{recursive:true});
 const css=name=>fs.readFileSync(path.join(root,'assets/css',name+'.css'),'utf8');
 const groups={critical:['fonts','base','hero','statistics','site'],home:['quiz','services','about','process','case-studies','testimonials','partners','tax-intro','calculator','contact'],shell:['fonts','base','site','site-footer']};
 for(const [name,files] of Object.entries(groups)){
- const result=new CleanCSS({level:1,rebase:false,roundingPrecision:-1}).minify(files.map(css).join('\n').replaceAll('../fonts/','../fonts/'));
+ const result=new CleanCSS({level:1,rebase:false,roundingPrecision:-1}).minify(files.map(css).join('\n'));
  if(result.errors.length)throw Error(result.errors.join('\n'));
  fs.writeFileSync(path.join(out,name+'.min.css'),result.styles);
 }

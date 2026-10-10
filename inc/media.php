@@ -143,5 +143,7 @@ add_filter( 'wp_prepare_attachment_for_js', function ( $response, $attachment ) 
 }, 10, 2 );
 
 add_action( 'admin_notices', function () {
-	if ( current_user_can( 'manage_options' ) && ! get_option( 'oxen_media_library' ) ) { echo '<div class="notice notice-warning"><p>Oxen media is not configured. Run the documented optimised media import before reviewing the homepage.</p></div>'; }
+	if ( current_user_can( 'manage_options' ) && ! get_option( 'oxen_media_library' ) ) {
+		echo '<div class="notice notice-warning"><p>' . esc_html__( 'Oxen media is not configured. Restore the associated database and uploads from an authorised site backup, or assign images in the Oxen Homepage page editor.', 'oxen' ) . '</p></div>';
+	}
 } );

@@ -37,6 +37,7 @@ oxen_deploy*
 *.bak
 *.backup
 *.log
+error_log
 __pycache__/
 .pytest_cache/
 

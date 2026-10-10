@@ -52,7 +52,7 @@ Public Google PageSpeed Insights, Lighthouse 13.5.0:
 
 [Public report](https://pagespeed.web.dev/analysis/https-oxen-iva-lk/ktvcuegzzr?form_factor=mobile).
 
-The desktop target is met; mobile remains below the requested 97–100. Google's recheck still reported a portrait/font-related shift despite a targeted browser measurement of CLS 0.0019 after the hero source-order correction. That discrepancy is unresolved. The audit also flagged small image/cache savings, contrast, an image aspect-ratio warning and a missing meta description. No CrUX field data or field INP was available for the new domain.
+At that point, the desktop target was met and mobile remained below the requested 97–100. Google's recheck reported a portrait/font-related shift despite a targeted browser measurement of CLS 0.0019 after the hero source-order correction. The 11 October font-loading refinement described above subsequently resolved that performance issue. The earlier audit also flagged small image/cache savings, contrast, an image aspect-ratio warning and a missing meta description. No CrUX field data or field INP was available for the new domain.
 
 These are separate from workstation Lighthouse measurements. Earlier isolated LocalWP medians were mobile 61 / desktop 93. Workstation audits of the public URL before the source-order correction were 44 / 63, with Kaspersky-injected resources and incomplete-load warnings; they are not Google PageSpeed results or final post-fix scores. Endpoint protection was not disabled or filtered. Production browser QA used a verified public-IP mapping to bypass this workstation's negative DNS cache, while preserving HTTPS certificate validation.
 

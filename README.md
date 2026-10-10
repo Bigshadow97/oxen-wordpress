@@ -1,79 +1,53 @@
-# Oxen WordPress homepage
+# Oxen WordPress theme
 
-A custom PHP theme built from the original [Oxen assessment Figma file, node 1:3](https://www.figma.com/design/X8BzSNzhFvn61KCmzWsEPY/Oxen-Home-Page---Interview-Assessment?node-id=1-3). The implementation uses HTML5, CSS Grid/Flexbox and vanilla JavaScript. No page builders, frontend frameworks or runtime build step are required.
+Custom PHP, modular CSS and vanilla JavaScript implementation of the [Oxen interview assessment, Figma node 1:3](https://www.figma.com/design/X8BzSNzhFvn61KCmzWsEPY/Oxen-Home-Page---Interview-Assessment?node-id=1-3). The original Figma document was read only. No page builders or frontend frameworks are required.
 
-## Review locally
+**Live:** [oxen.iva.lk](https://oxen.iva.lk). **Source branch:** `develop`. Deployment and measured performance are recorded in [docs/deployment.md](docs/deployment.md).
 
-1. Place this repository in `wp-content/themes/oxen` on WordPress 6.3+ with PHP 8.2+.
-2. **Install the original Satoshi files before reviewing.** From the theme directory in PowerShell, run `./tools/install-fonts.ps1`. Each reviewer obtains their own unmodified files from the official font CDNs. The script fails on unavailable downloads instead of choosing another font.
-3. Activate **Oxen** in Appearance → Themes, or run `wp theme activate oxen` in Local's site shell. Run `./tools/local-wp.ps1 eval-file tools/configure-wordpress.php` for this LocalWP installation, or create Home, assign **Oxen Homepage**, and select it in Settings → Reading. The selectable `page-templates/template-oxen-home.php` renders the existing sections; `front-page.php` is intentionally absent so WordPress honors the assigned template.
-4. Restore this site's database and uploads when reviewing the existing implementation, or follow [the media import instructions](docs/media-performance.md) to populate a fresh site's native Media Library. Theme code alone does not contain the database or uploads.
-5. Start the Local site. For this checkout, open **[http://localhost:10016](http://localhost:10016)**.
+## Installation and CMS
 
-The current site uses Local's **localhost router mode**. The unresolved `oxen-development.local` name is not its configured canonical URL. Local browser tests also map that name to `127.0.0.1` and verify `http://oxen-development.local:10016`. This mapping belongs to the test browser; no global Windows hosts entry was changed. Use the working localhost URL for normal browsing.
+1. Install the theme in `wp-content/themes/oxen` on WordPress 6.3+ and PHP 8.2+.
+2. Obtain the original Satoshi fonts using `./tools/install-fonts.ps1` in PowerShell before reviewing the design. The installer preserves the checked-in font CSS and fails rather than substituting unavailable fonts.
+3. Activate Oxen. Create or select Home, assign **Oxen Homepage**, and select it as the static homepage in Settings → Reading. `front-page.php` is intentionally absent so WordPress honors the assigned template.
+4. Restore the associated database and uploads from an authorised site backup. Theme code alone does not contain the Media Library, page settings or menu assignments. The existing site has 88 attachments backing 89 semantic media fields, with 183 upload files. Edit homepage imagery through **Oxen homepage media** in the page editor; attachment relationships and sanitised SVG trust metadata must be retained.
+5. Manage Primary navigation and the four footer menus through Appearance → Menus. Preserve `menu-contact` on the contact CTA and `menu-plus` on Services; submenu hierarchy uses normal WordPress menu nesting.
 
-All commands in this implementation used LocalWP's **PHP 8.2.29**, rather than the XAMPP PHP on PATH. The executable on this workstation is `%APPDATA%/Local/lightning-services/php-8.2.29+0/bin/win64/php.exe`. The Local site ID is `WQ8J8IEwe`; its PHP configuration is `%APPDATA%/Local/run/WQ8J8IEwe/conf/php/php.ini`. Local's existing Imagick DLL dependency warning remains an environment issue; the theme renders successfully and does not require Imagick.
+`header.php` and `footer.php` form the reusable shell; `page.php` renders standard CMS pages. The selectable template is `page-templates/template-oxen-home.php`, with reusable sections in `template-parts/home/`. The homepage ends at the dark Contact CTA; the full footer renders on standard pages. `wp_footer()` remains on both.
 
-## Homepage and interactions
+## Design, assets and licensing
 
-The page includes navigation, hero, statistics, quiz, all four service tiers, about/team, onboarding process, case studies, testimonial slider, partner logos, tax introduction, calculator, contact and the complete footer.
+1440px is the reference viewport, not a maximum website width. Sections remain full-width; internal reading widths and artwork adapt across desktop, tablet and mobile.
 
-- The three-question quiz supports back/restart and links to the recommended service. Its first question and visible options match Figma. Figma supplies only the initial quiz state, so the two later questions and recommendation behavior are implemented locally.
-- Service previews and comparison use the original card content. Booking buttons open contact options with the original telephone and email; they do not pretend to submit an appointment to an unavailable booking service.
-- The slider has previous/next and arrow-key controls. It starts with the supplied Amanda testimonial. The additional slides use the two supplied case studies, explicitly labelled **Client stories**. No testimonials have been invented.
-- The tax calculator validates revenue/profit, supports companies, sole traders and equal-share partnerships, and announces results/errors. It calculates locally without sending financial inputs elsewhere.
-- Native dialogs support Escape, focus containment and focus restoration. The mobile navigation supports Escape. Skip navigation, semantic headings, form labels, image alternatives, visible focus and reduced-motion preferences are included.
+Original Figma assets are represented by native Media Library attachments. `inc/media-manifest.json` defines the semantic fields; `assets/asset-map.json` and `assets/provenance.json` retain original source relationships and checksums. The 90 original PNG/SVG exports are preserved privately outside the public document root and remain recoverable from pre-migration Git history. No stock replacements or recreated icons were used. A duplicate source SVG shares one attachment; one unused source SVG was not imported.
 
-Footer text contrast is corrected directly: muted column headings and introduction copy meet 4.5:1 against the original white background. There is no extra footer contrast control or stored device preference. CSS respects the operating system's `prefers-contrast: more` preference. Contrast limitations in other original source colours remain documented in [validation](docs/validation.md).
+- [Satoshi / Fontshare licence](https://www.fontshare.com/licenses/itf-ffl): original, unmodified WOFF2 files are self-hosted on the site and excluded from Git because repository redistribution is restricted. Each reviewer must obtain their own copy through the supplied official-CDN installer.
+- [Noto Serif](https://fonts.google.com/specimen/Noto+Serif) and [Playfair Display](https://fonts.google.com/specimen/Playfair+Display): included Latin WOFF2 subsets preserve the original outlines and OpenType features, with the corresponding SIL Open Font License texts in `assets/fonts/`.
+- The export names **Noto Sans Devanagari UI Condensed** on non-rendering wrapper nodes. That font was unavailable; visible child text explicitly uses Noto Serif. No rendered font was silently substituted.
 
-Figma does not supply external link or booking destinations. Verified Oxen service, story, podcast, privacy and social destinations are used where available. News links point to the local client-results section. The Twitter-labelled control opens verified social alternatives; the Spotify-labelled link opens the official podcast page. Cookies Policy explains this implementation's local behavior in a dialog.
+The maintained CSS/JavaScript sources, compiled delivery files, font licences, original asset provenance and existing Git history are retained. Cleanup does not change authorship or provenance.
 
-## Design data and original assets
+## Assessment disclosures
 
-Figma remained strictly **read-only**. The source was read using design context, node metadata, screenshots and asset exports. When an export hit the 20-asset cap, smaller node groups were requested. The **90 original PNG/SVG assets** are preserved in the private `oxen-original-assets` folder outside this site's public directory and in the pre-migration Git history. Optimised assets now live in the native WordPress uploads directory, referenced through attachment IDs. `tools/media-audit.json`, `assets/asset-map.json` and `assets/provenance.json` retain source relationships/checksums. See [media and performance](docs/media-performance.md). No stock-image replacements or recreated icons were used.
+- Figma provides only the initial quiz state. Questions 2/3 and the recommendation behaviour were authored for the functioning assessment; Back and restart preserve selections.
+- The initial Amanda testimonial is supplied content. The other slides are explicitly labelled **Client stories** and use the supplied case studies, rather than invented endorsements.
+- Booking controls open the original contact options; there is no external appointment-submission backend. Where Figma supplied no destination, verified Oxen destinations are used. News links use local results, the Twitter control offers verified social alternatives, the Spotify control uses the official podcast, and Cookies Policy describes this implementation in a dialog.
+- The calculator uses company tax of 28% and progressive individual brackets effective 1 April 2025. Partnerships assume equal shares and no other partner income. GST, ACC, credits, deductions, provisional tax and shareholder-specific circumstances are excluded. Calculations remain local. Sources: [IRD business rates](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses), [IRD individual rates](https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals).
+- Original source-colour contrast limitations remain outside the corrected standard-page footer. Native `prefers-contrast` and reduced-motion support, semantic controls, keyboard focus, Escape handling and dialog focus restoration are preserved. There is no extra contrast button.
+- The measured mobile performance target of 97–100 is not achieved; see the deployment report. LocalWP's unused Imagick startup warning remains an environment limitation. Local development used LocalWP PHP 8.2.29, not system XAMPP PHP.
 
-Desktop CSS follows the original 1440px coordinates, typography, masks, image cropping, colours and paint order. Development-only metadata preserves source references. The source frame is 1440 × 8443, but its footer children extend to approximately y=9072; the implemented page includes that full footer. The 1440px comparison covers the entire exported frame, and the remaining footer uses the original child measurements. **1440px is the reference viewport, not a maximum page width.** All section containers span the viewport. Above 1440px, percentage anchors, fluid Grid/Flex components and bounded reading widths adapt the composition; photographs use cover/contain crops and the hero portrait scales uniformly. Below 1440px the same semantic content reflows into tablet/mobile layouts, without page zoom.
+## Maintenance
 
-Rendered fonts are **Satoshi** (400/500 normal and italic, 700 normal), **Noto Serif** (400 normal/italic), and **Playfair Display** (400 normal). Eight original font faces were loaded successfully in browser verification.
-
-- [Satoshi / Fontshare license](https://www.fontshare.com/licenses/itf-ffl): permits self-hosting on one's own website but restricts redistribution through repositories. Satoshi binaries are therefore deliberately gitignored; the setup script obtains each reviewer's own copy. Files are not subset, converted or modified.
-- [Noto Serif](https://fonts.google.com/specimen/Noto+Serif) and [Playfair Display](https://fonts.google.com/specimen/Playfair+Display): Latin WOFF2 subsets of the official Google Fonts files are included with their SIL Open Font License texts. Original TTFs are preserved privately; outlines, kerning and OpenType features are retained.
-- The export mentions **Noto Sans Devanagari UI Condensed** on wrapper nodes. That font file was not supplied or obtained. Every visible glyph in those wrappers is explicitly styled with the available Noto Serif face; no visible font substitution was made. A future design change that renders the wrapper font requires its original licensed file.
-
-## Source layout and checks
-
-`header.php` and `footer.php` provide the shared site shell; `page.php` handles standard CMS pages. Appearance → Menus manages Primary navigation and four footer locations. Preserve the `menu-contact` class on the contact CTA and `menu-plus` on Services (Screen Options → CSS Classes); submenu hierarchy is managed normally in Menus. `template-parts/home/` contains one PHP component per section plus homepage dialogs. `assets/js/site.js` owns shared mobile navigation, submenu controls and dialogs; `site.css` and `site-footer.css` style the shared shell. `assets/css/` contains shared tokens/primitives and one stylesheet per homepage component, including each component’s responsive rules and states. `template-parts/components/` renders reusable service and process cards from the escaped content in `inc/home-services.php` and `inc/home-process.php`. `inc/visuals.php` renders original decorative assets with only the transform/crop containers they need. All production classes use descriptive component names; Figma node metadata stays in development reference files.
-
-Homepage interactions are isolated in `services.js`, `quiz.js`, `accordion.js`, `testimonials.js`, `calculator.js` and `partners.js`. They use stable component/data hooks, and service dialogs communicate with the shared shell through a DOM event. `tax.js` remains the independently testable calculation API. Homepage modules load only on the selectable Home template.
+Production loads the existing minified files in `assets/dist/`; Node.js and build tools are not required by WordPress. Edit the component sources under `assets/css/` and `assets/js/`. To rebuild delivery files when intentionally changing sources:
 
 ```powershell
-# In Local's site shell (or use the explicit Local PHP 8.2.29 executable):
-php -n -l functions.php
-node --check assets/js/quiz.js
-node --check assets/js/tax.js
+npm install --prefix tools/performance-runtime --no-save --package-lock=false clean-css@5.3.3 terser@5.51.2
+node tools/build-performance.cjs
+```
+
+The build does not regenerate templates. Font installation uses `tools/install-fonts.ps1` and its `satoshi-source.css`. The reusable calculator tests remain available:
+
+```powershell
 node --test tools/tax.test.cjs
 ```
 
-For browser verification, install Playwright and Chrome on the review workstation. For `--axe`, obtain axe-core 4.10.3's `axe.min.js` in `tools/axe.min.js`. These tools are development-only and are not loaded by the theme.
-
-```powershell
-npm install --no-save --package-lock=false playwright axe-core@4.10.3
-Copy-Item node_modules/axe-core/axe.min.js tools/axe.min.js
-$env:OXEN_URL = 'http://localhost:10016'
-node tools/browser-checks.cjs --axe
-```
-
-The check covers all interactions, image/font loads, browser/network errors, hostname mapping and widths **1440, 1600, 1920, 2560, 1280, 1024, 768, 390 and 320**. It checks every section's viewport bounds, horizontal overflow, hero portrait proportions, card/CTA containment and complete-footer screenshot coverage. Wide-screen quiz, service dialog and calculator behavior is also exercised. The alias check targets this Local site's port; adapt it for another installation. It saves screenshots, geometry and audit JSON in gitignored `tools/screenshots/`.
-
-`tools/flat-layers.json` retains the original measured layer data. The legacy generator predates this CMS architecture. **Do not run `tools/build-homepage.py --write` on this theme:** it would recreate the superseded homepage/navigation files and overwrite verified components. Any future generator update must account for the selectable template and reusable site shell before regeneration is considered.
-
-The legacy generator targets the superseded generated markup and CSS. It is retained only as reference tooling; do not use it to modify this semantic theme. Original image/font assets and development reference data remain unchanged. Expiring Figma asset URLs and bulky QA captures are excluded from Git.
-
-`python tools/generator-check.test.py` tests non-writing checks, manual-correction preservation and verified backups using isolated copies inside the theme's ignored backup directory.
-
-The calculator uses [IRD business rates](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses) and [individual rates effective 1 April 2025](https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals): company tax is 28%; individual tax uses progressive brackets. Partnerships assume equal shares and no other partner income. GST, ACC, credits, deductions, provisional tax and shareholder-specific circumstances are outside this estimate.
-
-Focused architecture verification: `node tools/architecture-checks.cjs`. It verifies static Home/template settings, idempotent setup, reusable header/footer on Sample Page, CMS menu edits with restoration, and interaction smoke checks. The site-specific CLI launcher uses LocalWP PHP 8.2.29 and MySQL port 10017; adapt those paths/port for another workstation.
-
-
-Semantic refactor verification: `node tools/refactor-checks.cjs --baseline` captures an explicit checkpoint; `node tools/refactor-checks.cjs` checks the 1440/1920/768/390 layouts and interactions against it. Captures and migration diagnostics are gitignored. `node tools/architecture-checks.cjs --navigation-only` checks CMS configuration, a standard page and temporary menu edits with restoration. See `docs/semantic-refactor.md` for the scope and validation record.
+Keep credentials, backups, environment files and local audit captures outside the public document root and Git. Runtime releases should contain only PHP templates, `inc/`, `template-parts/`, CSS/JavaScript, required fonts and assets; never upload `tools/`, documentation or Git metadata.

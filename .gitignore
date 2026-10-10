@@ -39,3 +39,11 @@ oxen_deploy*
 *.log
 __pycache__/
 .pytest_cache/
+
+# Local QA captures and temporary build/debug output must not enter releases.
+*.map
+coverage/
+playwright-report/
+test-results/
+*.tmp
+*.temp
